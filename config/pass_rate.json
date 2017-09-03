@@ -1,0 +1,217 @@
+{
+  "england_premiership": {
+    "rate": 50,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "england_championship": {
+    "rate": 40,
+    "attr": [
+      "HomeLastWin",
+      "AwayLastWin",
+      "AwayLast3Games",
+      "AwayLast5Games"
+    ]
+  },
+  "england_league1": {
+    "rate": 50,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "england_league2": {
+    "rate": 40,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "scotland_premiership": {
+    "rate": 40,
+    "attr": [
+      "AwayTeam",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "scotland_championship": {
+    "rate": 40,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "scotland_league1": {
+    "rate": 10,
+    "attr": [
+      "AwayTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games"
+    ]
+  },
+  "scotland_league2": {
+    "rate": 66,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "AwayLast5Games"
+    ]
+  },
+  "germany_bundesliga": {
+    "rate": 60,
+    "attr": [
+      "HomeTeam",
+      "HomeLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "germany_bundesliga2": {
+    "rate": 60,
+    "attr": [
+      "AwayTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games"
+    ]
+  },
+  "france_le_championnat": {
+    "rate": 66,
+    "attr": [
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "france_division_2": {
+    "rate": 50,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast5Games"
+    ]
+  },
+  "netherlands_eredivisie": {
+    "rate": 60,
+    "attr": [
+      "HomeLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "belgium_jupiler": {
+    "rate": 60,
+    "attr": [
+      "AwayTeam",
+      "HomeTeam",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games"
+    ]
+  },
+  "portugal_liga_1": {
+    "rate": 40,
+    "attr": [
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "italy_serie_a": {
+    "rate": 50,
+    "attr": [
+      "HomeLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "italy_serie_b": {
+    "rate": 50,
+    "attr": [
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "HomeLast5Games"
+    ]
+  },
+  "spain_la_liga_premera": {
+    "rate": 50,
+    "attr": [
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "spain_la_liga_segunda": {
+    "rate": 20,
+    "attr": [
+      "AwayTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "HomeLast3Games",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  },
+  "turkey_futbol_ligi_1": {
+    "rate": 60,
+    "attr": [
+      "HomeTeam",
+      "HomeLastWin",
+      "AwayLastWin",
+      "AwayLast3Games",
+      "HomeLast5Games",
+      "AwayLast5Games"
+    ]
+  }
+}
