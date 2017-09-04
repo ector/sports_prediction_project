@@ -73,7 +73,7 @@ class GetFootballData(MyLogger):
         :return: dataframe
         """
         base_dir = "analysis"
-        filename = "sports_betting/data/clean_data/{}".format(league)
+        filename = "prototype/data/clean_data/{}".format(league)
         self.log.info("Starts reading file {}".format(filename))
         abs_path = os.path.abspath(filename).split(base_dir)[0]
         file_path = os.path.join(os.path.join(abs_path, base_dir), filename)

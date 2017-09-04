@@ -1,7 +1,7 @@
 import pandas as pd
 
 from te_logger.logger import MyLogger
-from tools import DeriveFootballFeatures
+from tools.home_draw_away_suite import DeriveFootballFeatures
 
 leagues = {
     'england_premiership': 'E0',
@@ -42,8 +42,8 @@ class CleanProcessStore(MyLogger):
 
     def __init__(self):
         self.football_data = None
-        self.raw_data_directory = 'data/raw_data/'
-        self.clean_data_directory = 'data/clean_data/'
+        self.raw_data_directory = 'prototype/data/raw_data/'
+        self.clean_data_directory = 'prototype/data/clean_data/'
         self.column_dict = None
         self.team_mapping = None
         self.league = None

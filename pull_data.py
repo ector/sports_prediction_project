@@ -2,10 +2,13 @@ import os
 
 import pandas as pd
 import time
-# from te_logger.logger import MyLogger
+from te_logger.logger import MyLogger
 
 
 # class PullData(MyLogger):
+from tools.utils import get_analysis_root_path
+
+
 class PullData(object):
 
     def __init__(self):
@@ -13,7 +16,7 @@ class PullData(object):
         self.football_data = None
         self.filename = 'full.csv'
         self.league_code = ''
-        self.data_directory = 'data/raw_data/'
+        self.data_directory = 'prototype/data/raw_data/'
         self.over_under_file = 'over_under.csv'
 
     def download_football_data(self):
@@ -21,12 +24,14 @@ class PullData(object):
         :rtype: object
         """
         pieces = []
-        for i in range(17, 18):
+        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR"]
+        for i in range(10, 18):
             try:
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
                 print("Year {}".format(year))
-                data = 'http://football-data.co.uk/mmz4281/' + year + '/' + self.league_code + '.csv'
+                data = 'http://www.football-data.co.uk/mmz4281/' + year + '/' + self.league_code + '.csv'
                 dd = pd.read_csv(data, error_bad_lines=False, parse_dates=['Date'])
+                dd = dd[clmns]
                 dd['Season'] = year
                 pieces.append(dd)
                 time.sleep(2)
@@ -42,14 +47,14 @@ class PullData(object):
     def merge_to_existing_data(self):
         """Merge data if any exist"""
         try:
-            existing_data = pd.read_csv(self.data_directory + self.filename)
+            existing_data = pd.read_csv(get_analysis_root_path(self.data_directory + self.filename))
             frames = [existing_data, self.football_data]
             df = pd.DataFrame(pd.concat(frames))
         except IOError:
             df = self.football_data
 
         self.football_data = df.drop_duplicates()
-        self.football_data.to_csv(self.data_directory + self.filename, index=False)
+        self.football_data.to_csv(get_analysis_root_path(self.data_directory + self.filename), index=False)
 
     def download_league_data(self):
         """

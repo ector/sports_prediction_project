@@ -51,8 +51,6 @@ def get_config(file="league"):
     filename = "tools/config/{}.json".format(file)
     file_path = get_analysis_root_path(filepath=filename)
     config = open(file_path).read()
-    # config_data = json.loads(config)
-    # print("Finished reading: {}".format(config))
     return config
 
 

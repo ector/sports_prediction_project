@@ -5,9 +5,11 @@ import numpy as np
 import pandas as pd
 
 from te_logger.logger import MyLogger
-from tools import ProcessData
-from tools import get_config, save_fixtures_to_file, get_analysis_root_path, \
-    get_start_and_end_dates
+# from tools import ProcessData
+# from tools import get_config, save_fixtures_to_file, get_analysis_root_path, \
+#     get_start_and_end_dates
+from tools.process_data import ProcessData
+from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file
 
 
 class GameFixtures(MyLogger):
@@ -28,7 +30,7 @@ class GameFixtures(MyLogger):
         Scrap fixtures from BBC premiership fixtures page
         :return: game fixtures 
         """
-        data = pd.read_csv(get_analysis_root_path('sports_betting/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
+        data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
                            usecols=['Date', 'HomeTeam', 'AwayTeam'])
         start_date, end_date = get_start_and_end_dates(end_days=5)
         teams = ProcessData().get_team_names(league=self.league_file)
