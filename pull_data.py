@@ -30,7 +30,8 @@ class PullData(object):
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
                 print("Year {}".format(year))
                 data = 'http://www.football-data.co.uk/mmz4281/' + year + '/' + self.league_code + '.csv'
-                dd = pd.read_csv(data, error_bad_lines=False, parse_dates=['Date'])
+                dd = pd.read_csv(data, error_bad_lines=False, usecols=clmns)
+                dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
                 dd = dd[clmns]
                 dd['Season'] = year
                 pieces.append(dd)
