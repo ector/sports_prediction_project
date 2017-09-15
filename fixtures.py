@@ -32,7 +32,7 @@ class GameFixtures(MyLogger):
         """
         data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
                            usecols=['Date', 'HomeTeam', 'AwayTeam'])
-        start_date, end_date = get_start_and_end_dates(end_days=5)
+        start_date, end_date = get_start_and_end_dates(end_days=2)
         teams = ProcessData().get_team_names(league=self.league_file)
 
         indexed_data = data.set_index(['Date'])

@@ -25,7 +25,7 @@ class PullData(object):
         """
         pieces = []
         clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR"]
-        for i in range(10, 18):
+        for i in range(17, 18):
             try:
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
                 print("Year {}".format(year))
