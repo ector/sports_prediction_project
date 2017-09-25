@@ -1,5 +1,5 @@
 import pandas as pd
-
+from multiprocessing import Pool
 from te_logger.logger import MyLogger
 from tools.home_draw_away_suite import DeriveFootballFeatures
 
@@ -146,11 +146,6 @@ class CleanProcessStore(MyLogger):
 
         self.log.info("{} HomeLastWin and AwayLastWin completed".format(league))
 
-        ###The need to remove the inverse at this stage imminent###
-        # # Inverse team mapping
-        # inverse_team_mapping = self.home_draw_away_suite.decode_teams(team_mapping=self.team_mapping)
-        # data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=inverse_team_mapping, info="inverse")
-
         return data
 
     def compute_teams_trend(self, data):
@@ -212,6 +207,7 @@ class CleanProcessStore(MyLogger):
         """
         :return: None 
         """
+        pool = Pool(10)
         for league in leagues.keys():
             self.league = league
             process_df = self.clean_football_data(league=self.league)
