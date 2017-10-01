@@ -77,7 +77,7 @@ def get_analysis_root_path(filepath):
     return root_path
 
 
-def get_start_and_end_dates(end_days=4):
+def get_start_and_end_dates(end_days=2):
     """
     Compute 8 days using today as the starts date
     :return: string list of two values
@@ -90,4 +90,4 @@ def get_start_and_end_dates(end_days=4):
     return start_date, end_date
 
 if __name__ == '__main__':
-    print(get_analysis_root_path('ladd'))
+    print(get_start_and_end_dates(1))
