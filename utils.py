@@ -61,7 +61,7 @@ def save_fixtures_to_file(data):
     """
     filename = "prototype/data/fixtures/fixtures"
     file_path = get_analysis_root_path(filepath=filename)
-    fixtures = pd.DataFrame(data=data, columns=['Date', 'HomeTeam', 'AwayTeam', 'League'])
+    fixtures = pd.DataFrame(data=data, columns=['Date', 'Time', 'HomeTeam', 'AwayTeam', 'League'])
     fixtures.to_csv(file_path, index=False)
     return
 

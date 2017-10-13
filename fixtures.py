@@ -31,7 +31,7 @@ class GameFixtures(MyLogger):
         :return: game fixtures 
         """
         data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
-                           usecols=['Date', 'HomeTeam', 'AwayTeam'])
+                           usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
         start_date, end_date = get_start_and_end_dates(end_days=1)
         teams = ProcessData().get_team_names(league=self.league_file)
 
@@ -40,11 +40,11 @@ class GameFixtures(MyLogger):
         df = indexed_data.reset_index()
         fixtures = []
         #
-        for game_time, home, away in zip(df.Date.values, df.HomeTeam.values, df.AwayTeam.values):
+        for game_date, game_time, home, away in zip(df.Date.values, df.Time.values, df.HomeTeam.values, df.AwayTeam.values):
             try:
                 translated_home = get_close_matches(home, teams, n=1)[0]
                 translated_away = get_close_matches(away, teams, n=1)[0]
-                fixtures.append([game_time, translated_home, translated_away, self.league_file])
+                fixtures.append([game_date, game_time, translated_home, translated_away, self.league_file])
             except IndexError:
                 self.log.info("No data for either {} or {}".format(home, away))
 

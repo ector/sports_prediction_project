@@ -26,7 +26,7 @@ class Predictors(MyLogger):
 
     def predict_winner(self):
         fixt = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/fixtures'),
-                           usecols=['Date', 'HomeTeam', 'AwayTeam', 'League'], index_col=False)
+                           usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam', 'League'], index_col=False)
 
         match_predictions = []
         unique_leagues = list(np.unique(fixt.League.values))
@@ -41,9 +41,10 @@ class Predictors(MyLogger):
 
             for game_list in each_fixt_league.itertuples(index=False):
 
-                league = game_list[3]
-                game = {'HomeTeam': game_list[1],
-                        'AwayTeam': game_list[2],
+                league = game_list[4]
+                game_time = game_list[1]
+                game = {'HomeTeam': game_list[2],
+                        'AwayTeam': game_list[3],
                         'Date': game_list[0],
                         'HomeLastWin': 0,
                         'AwayLastWin': 0,
@@ -77,6 +78,7 @@ class Predictors(MyLogger):
                     game_prediction = {"prediction": '-',  "outcome_probs": [[0, 0, 0]][0]}
 
                 game_prediction['date'] = game.get('Date')
+                game_prediction['time'] = game_time
                 game_prediction['home'] = game.get('HomeTeam')
                 game_prediction['away'] = game.get('AwayTeam')
                 game_prediction['league'] = league
@@ -158,10 +160,11 @@ class Predictors(MyLogger):
 
     def save_prediction(self):
         match_predictions = self.predict_winner()
-        preds = pd.DataFrame(match_predictions, columns=['date', 'home', 'away', 'prediction', 'outcome_probs', 'league'])
-        preds = preds.sort_values(['date', 'league'])
+        preds = pd.DataFrame(match_predictions, columns=['date', 'time', 'home', 'away', 'prediction', 'outcome_probs', 'league'])
+        preds = preds.sort_values(['date', 'time', 'league'])
         self.log.info("Saving to wdw")
-        preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'), columns=['date', 'home', 'away', 'prediction','outcome_probs', 'league'], index=False)
+        preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'), columns=['date', 'time', 'home', 'away', 'prediction','outcome_probs', 'league'], index=False)
+
 
 if __name__ == '__main__':
     dr = Predictors()
