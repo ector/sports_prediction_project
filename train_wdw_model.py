@@ -22,7 +22,7 @@ for league in leagues:
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/{}'.format(league)))
     games = games.dropna(how='any')
     games = games.set_index(['Date'])
-    data = games.loc[games.Season.isin([1415, 1516, 1617, 1718])]
+    data = games.loc[games.Season.isin([1617, 1718])]
     data = data.drop(['Season'], axis=1)
 
     target = data.FTR.map({'D': 1, 'A': 2, 'H': 3})
@@ -40,7 +40,7 @@ for league in leagues:
     with open(pass_rate, "w") as writeFile:
         json.dump(ft, writeFile)
 
-    model = LogisticRegression(C=1e5)
+    model = LogisticRegression(C=1e5, max_iter=3000)
 
     stdsc = StandardScaler()
     data_std = stdsc.fit_transform(data)
