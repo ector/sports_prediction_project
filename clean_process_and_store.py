@@ -2,6 +2,7 @@ import pandas as pd
 from multiprocessing import Pool
 from te_logger.logger import MyLogger
 from tools.home_draw_away_suite import DeriveFootballFeatures
+from tools.utils import get_analysis_root_path
 
 leagues = {
     'england_premiership': 'E0',
@@ -42,8 +43,8 @@ class CleanProcessStore(MyLogger):
 
     def __init__(self):
         self.football_data = None
-        self.raw_data_directory = 'prototype/data/raw_data/'
-        self.clean_data_directory = 'prototype/data/clean_data/'
+        self.raw_data_directory = get_analysis_root_path('prototype/data/raw_data/')
+        self.clean_data_directory = get_analysis_root_path('prototype/data/clean_data/')
         self.column_dict = None
         self.team_mapping = None
         self.league = None
@@ -98,7 +99,7 @@ class CleanProcessStore(MyLogger):
         :param league: name of league
         :return: cleaned dataframe
         """
-        data = pd.read_csv(self.raw_data_directory + league, usecols=['HomeTeam', 'AwayTeam', 'FTR', 'Date', 'Season'])
+        data = pd.read_csv(self.raw_data_directory + league, usecols=['HomeTeam', 'AwayTeam', "FTHG", "FTAG", 'FTR', 'Date', 'Season'])
 
         data = data.dropna(how='any')
         # Making map with team names

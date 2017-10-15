@@ -54,7 +54,8 @@ class PullData(object):
         except IOError:
             df = self.football_data
 
-        self.football_data = df.drop_duplicates()
+        df = df.dropna(how='any')
+        self.football_data = df.drop_duplicates(subset=["HomeTeam", "AwayTeam", "Season"], keep="last")
         self.football_data.to_csv(get_analysis_root_path(self.data_directory + self.filename), index=False)
 
     def download_league_data(self):
