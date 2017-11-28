@@ -51,7 +51,7 @@ class GameFixtures(MyLogger):
         return fixtures
 
     def save_games_to_predict(self):
-        config_dict = json.loads(get_config())
+        config_dict = get_config()
 
         fixtures = []
         for key in config_dict.keys():

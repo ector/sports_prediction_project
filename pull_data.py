@@ -1,12 +1,14 @@
 import os
-
+import json
 import pandas as pd
 import time
+from multiprocessing import Pool, Process
+from functools import partial
 from te_logger.logger import MyLogger
 
 
 # class PullData(MyLogger):
-from tools.utils import get_analysis_root_path
+from tools.utils import get_analysis_root_path, get_config
 
 
 class PullData(object):
@@ -16,7 +18,7 @@ class PullData(object):
         self.football_data = None
         self.filename = 'full.csv'
         self.league_code = ''
-        self.data_directory = 'prototype/data/raw_data/'
+        self.data_directory = 'prototype/data/raw_data/{}.csv'
         self.over_under_file = 'over_under.csv'
 
     def download_football_data(self):
@@ -25,7 +27,7 @@ class PullData(object):
         """
         pieces = []
         clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR"]
-        for i in range(17, 18):
+        for i in range(12, 18):
             try:
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
                 print("Year {}".format(year))
@@ -48,7 +50,7 @@ class PullData(object):
     def merge_to_existing_data(self):
         """Merge data if any exist"""
         try:
-            existing_data = pd.read_csv(get_analysis_root_path(self.data_directory + self.filename))
+            existing_data = pd.read_csv(get_analysis_root_path(self.data_directory.format(self.filename)))
             frames = [existing_data, self.football_data]
             df = pd.DataFrame(pd.concat(frames))
         except IOError:
@@ -56,53 +58,23 @@ class PullData(object):
 
         df = df.dropna(how='any')
         self.football_data = df.drop_duplicates(subset=["HomeTeam", "AwayTeam", "Season"], keep="last")
-        self.football_data.to_csv(get_analysis_root_path(self.data_directory + self.filename), index=False)
+        self.football_data.to_csv(get_analysis_root_path(self.data_directory.format(self.filename)), index=False)
 
-    def download_league_data(self):
+    def download_league_data(self, league):
         """
         download leagues data
         :return: 
         """
-        leagues = {
-                   'england_premiership': 'E0',
-                   'england_championship': 'E1',
-                   'england_league1': 'E2',
-                   'england_league2': 'E3',
-
-                   'scotland_premiership': 'SC0',
-                   'scotland_championship': 'SC1',
-                   'scotland_league1': 'SC2',
-                   'scotland_league2': 'SC3',
-
-                   'germany_bundesliga': 'D1',
-                   'germany_bundesliga2': 'D2',
-
-                   'italy_serie_a': 'I1',
-                   'italy_serie_b': 'I2',
-
-                   'spain_la_liga_premera': 'SP1',
-                   'spain_la_liga_segunda': 'SP2',
-
-                   'france_le_championnat': 'F1',
-                   'france_division_2': 'F2',
-
-                   'netherlands_eredivisie': 'N1',
-
-                   'belgium_jupiler': 'B1',
-
-                   'portugal_liga_1': 'P1',
-
-                   'turkey_futbol_ligi_1': 'T1',
-
-                   'greece_ethniki_katigoria': 'G1',
-                   }
-        for league in leagues.keys():
-            self.filename = league
-            self.league_code = leagues.get(league)
-            print(league)
-            self.download_football_data()
+        self.filename = league
+        leagues_data = get_config(file="leagues_id")
+        self.league_code = leagues_data.get(league)
+        print(league, self.league_code)
+        self.download_football_data()
 
 
 if __name__ == '__main__':
     dr = PullData()
-    dr.download_league_data()
+    leagues_data = get_config(file="leagues_id")
+    league_list = list(leagues_data.keys())
+    p = Pool(processes=10)
+    p.map(dr.download_league_data, league_list)
