@@ -54,14 +54,18 @@ def get_config(file="league"):
     return config
 
 
-def save_fixtures_to_file(data):
+def save_fixtures_to_file(data, folder=None):
     """
     Read the football league config from a file
     :return: None
     """
-    filename = "prototype/data/fixtures/fixtures"
+    if folder is None:
+        filename = "prototype/data/fixtures/fixtures.csv"
+    else:
+        filename = "prototype/data/fixtures/{}/{}.csv".format(folder, folder)
+
     file_path = get_analysis_root_path(filepath=filename)
-    fixtures = pd.DataFrame(data=data, columns=['Date', 'Time', 'HomeTeam', 'AwayTeam', 'League'])
+    fixtures = pd.DataFrame(data=data, columns=list(data.columns))
     fixtures.to_csv(file_path, index=False)
     return
 

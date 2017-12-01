@@ -81,6 +81,20 @@ class GetFootballData(MyLogger):
         self.log.info("Finished reading: {}".format(file_path))
         return data
 
+    def get_football_last_win_data(self, league):
+        """
+        Read the football league data from a file
+        :return: dataframe
+        """
+        base_dir = "analysis"
+        filename = "prototype/data/clean_data/last_win/{}.csv".format(league)
+        self.log.info("Starts reading file {}".format(filename))
+        abs_path = os.path.abspath(filename).split(base_dir)[0]
+        file_path = os.path.join(os.path.join(abs_path, base_dir), filename)
+        data = pd.read_csv(file_path, parse_dates=['Date'])
+        self.log.info("Finished reading: {}".format(file_path))
+        return data
+
 
 if __name__ == '__main__':
     dr = ProcessData()

@@ -20,9 +20,9 @@ leagues = list(leagues_data.keys())
 for league in leagues:
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
     games = games.dropna(how='any')
-    games = games.set_index(['Date'])
+    # games = games.set_index(['Date'])
     data = games.loc[games.Season.isin([1516, 1617, 1718])]
-    data = data.drop(['Season', 'FTHG', 'FTAG'], axis=1)
+    data = data.drop(['Date', 'Season', 'FTHG', 'FTAG'], axis=1)
     data = data.sample(frac=1)
     target = data.FTR.map({'D': 1, 'A': 2, 'H': 3})
     # Gent without target
@@ -40,8 +40,8 @@ for league in leagues:
     stdsc_filename = get_analysis_root_path("prototype/league_models/{}_stdsc".format(league))
     joblib.dump(data, stdsc_filename)
 
-    # model = LogisticRegression(C=1e5, max_iter=3000)
-    model = SVC(kernel='rbf', C=1.0, gamma=0.1, random_state=12, probability=True)
+    model = LogisticRegression(C=1e5)
+    # model = SVC(kernel='rbf', C=1.0, gamma=0.1, random_state=121, probability=True)
     model.fit(data_std, target)
     print("League: {}\t score: {}".format(league, model.score(data_std, target)))
 

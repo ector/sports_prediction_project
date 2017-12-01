@@ -14,11 +14,11 @@ from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_con
 
 class GameFixtures(MyLogger):
     """
-    Scrap game fixtures from the web
+    Scrap game fixtures.csv from the web
     with different leagues having there on function
     """
     def __init__(self):
-        self.bbc_url = "http://www.bbc.co.uk/sport/football/premier-league/fixtures"
+        self.bbc_url = "http://www.bbc.co.uk/sport/football/premier-league/fixtures.csv"
         self.flash_score_url = "http://www.livescore.com/soccer/{}/{}"
         self.country = None
         self.league = None
@@ -27,8 +27,8 @@ class GameFixtures(MyLogger):
 
     def fetch_all_league_fixtures(self):
         """
-        Scrap fixtures from BBC premiership fixtures page
-        :return: game fixtures 
+        Scrap fixtures.csv from BBC premiership fixtures.csv page
+        :return: game fixtures.csv
         """
         data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
                            usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
@@ -44,7 +44,7 @@ class GameFixtures(MyLogger):
             try:
                 translated_home = get_close_matches(home, teams, n=1)[0]
                 translated_away = get_close_matches(away, teams, n=1)[0]
-                fixtures.append([game_date, game_time, translated_home, translated_away, self.league_file])
+                fixtures.append({"Date": game_date, "Time": game_time, "HomeTeam": translated_home, "AwayTeam": translated_away, "League": self.league_file})
             except IndexError:
                 self.log.info("No data for either {} or {}".format(home, away))
 
@@ -59,9 +59,9 @@ class GameFixtures(MyLogger):
             self.league_file = key
             fixtures += self.fetch_all_league_fixtures()
 
-        fixtures = np.array(fixtures)
+        fixtures = pd.DataFrame(fixtures)
         self.log.info("Fixtures shape: {}".format(fixtures.shape))
-        save_fixtures_to_file(fixtures)
+        save_fixtures_to_file(fixtures, folder="selected_fixtures")
 
 if __name__ == '__main__':
     GameFixtures().save_games_to_predict()

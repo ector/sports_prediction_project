@@ -19,34 +19,6 @@ class DeriveFootballFeatures(MyLogger):
         self.inverse_result = None
         MyLogger.logger(self)
 
-    # TODO: Move to clean_process_and_store
-    def points_for_and_against(self, data, season=1011, location='home'):
-        """
-        :param data: home or away team data 
-        :param season:  current season 
-        :param location:  home or away
-        :return: data with points for and points against column
-        """
-
-        data = data.loc[data.Season == season]
-
-        if location is "home":
-            data['PFor'] = data.FTHG.cumsum()
-            data['PAgainst'] = data.FTAG.cumsum()
-        else:
-            data['PAgainst'] = data.FTHG.cumsum()
-            data['PFor'] = data.FTAG.cumsum()
-
-        return data
-
-    # TODO: Move to clean_process_and_store
-    def home_away_performance(self, data):
-        """
-        :param data: home or away team data 
-        :return: 
-        """
-        pass
-
     def home_and_away_team_mapper(self, data, mapper, info="original"):
         """
         encodes and decodes HomeTeam and AwayTeam columns of the dataFrame

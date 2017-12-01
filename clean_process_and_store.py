@@ -64,16 +64,40 @@ class CleanProcessStore(MyLogger):
         self.log.info("Last data: {}".format(array_list))
 
         if team == array_list[self.column_dict.get('AwayTeam')]:
-            if array_list[self.column_dict.get('FTR')] == 'H':
+            if array_list[self.column_dict.get('FTR')] == 'H' or array_list[self.column_dict.get('FTR')] is 'H':
                 return 0
-            elif array_list[self.column_dict.get('FTR')] == 'A':
+            elif array_list[self.column_dict.get('FTR')] == 'A' or array_list[self.column_dict.get('FTR')] is 'A':
                 return 3
             else:
                 return 1
         if team == array_list[self.column_dict.get('HomeTeam')]:
-            if array_list[self.column_dict.get('FTR')] == 'H':
+            if array_list[self.column_dict.get('FTR')] == 'H' or array_list[self.column_dict.get('FTR')] is 'H':
                 return 3
-            elif array_list[self.column_dict.get('FTR')] == 'A':
+            elif array_list[self.column_dict.get('FTR')] == 'A' or array_list[self.column_dict.get('FTR')] is 'A':
+                return 0
+            else:
+                return 1
+
+    def fixtures_last_game_win_draw_loss(self, last_data, team):
+        """
+        :param last_data: dataframe
+        :param team: team name
+        :return: 3 or 1 or 0
+        """
+        self.log.info("Team: {}".format(team))
+        self.log.info("Last data: {}".format(last_data))
+
+        if team == last_data.AwayTeam.values.tolist()[0]:
+            if last_data.FTR.values.tolist()[0] == 'H' or last_data.FTR.values.tolist()[0] is 'H':
+                return 0
+            elif last_data.FTR.values.tolist()[0] == 'A' or last_data.FTR.values.tolist()[0] is 'A':
+                return 3
+            else:
+                return 1
+        if team == last_data.HomeTeam.values.tolist()[0]:
+            if last_data.FTR.values.tolist()[0] == 'H' or last_data.FTR.values.tolist()[0] is 'H':
+                return 3
+            elif last_data.FTR.values.tolist()[0] == 'A' or last_data.FTR.values.tolist()[0] is 'A':
                 return 0
             else:
                 return 1
@@ -97,6 +121,25 @@ class CleanProcessStore(MyLogger):
                     teams_trend += team_row[self.column_dict.get('HomeLastWin')]
         return teams_trend
 
+    def fixtures_last_games_trend(self, n_data, team):
+        """
+        Calculate the last n games performance, n being the length of the array_list
+        :param n_data: dataframe - Last n game trend
+        :param team: team id
+        :return: dataframe
+        """
+        self.log.info("Team: {}".format(team))
+        self.log.info("Last n data: {}".format(n_data))
+
+        teams_trend = 0
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if team == str(team_row.get('AwayTeam')):
+                teams_trend += team_row.get('AwayLastWin')
+            if team == str(team_row.get('HomeTeam')):
+                teams_trend += team_row.get('HomeLastWin')
+        return teams_trend
+
     def team_games_trend(self, array_list, team):
         """
         Calculate the last n games performance, n being the length of the array_list
@@ -108,6 +151,22 @@ class CleanProcessStore(MyLogger):
                     trend += team_row[self.column_dict.get('AwayLastTrend')]
                 if team is team_row[self.column_dict.get('HomeTeam')] or team == team_row[self.column_dict.get('HomeTeam')]:
                     trend += team_row[self.column_dict.get('HomeLastTrend')]
+        return trend
+
+    def fixtures_team_games_trend(self, n_data, team):
+        """
+        Calculate the last n games performance, n being the length of the dataframe
+        """
+        trend = ""
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if team == str(team_row.get('AwayTeam')):
+                trend += team_row.get('AwayLastTrend')
+            if team == str(team_row.get('HomeTeam')):
+                trend += team_row.get('HomeLastTrend')
+
+        self.log.info("team game trend: {}".format(trend))
+
         return trend
 
     def team_ft_ave_goals(self, array_list, team):
@@ -124,6 +183,23 @@ class CleanProcessStore(MyLogger):
         ave = float(np.mean(ave_list))
         return ave
 
+########U stopped here~~~~~############
+    def fixtures_team_ft_ave_goals(self, n_data, team):
+        """
+        Calculate average goals scored by the team
+        """
+        ave_list = []
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if team == str(team_row.get('AwayTeam')):
+                ave_list.append(team_row.get('FTAG'))
+            if team == str(team_row.get('HomeTeam')):
+                ave_list.append(team_row.get('FTHG'))
+        ave = float(np.mean(ave_list))
+        self.log.info("Average goals scored : {}".format(ave))
+
+        return ave
+
     def team_ft_ave_goals_concided(self, array_list, team):
         """
         Calculate average goals concided by the team
@@ -136,6 +212,22 @@ class CleanProcessStore(MyLogger):
                 if team is team_row[self.column_dict.get('HomeTeam')] or team == team_row[self.column_dict.get('HomeTeam')]:
                     ave_cd_list.append(team_row[self.column_dict.get('FTAG')])
         ave = float(np.mean(ave_cd_list))
+        return ave
+
+    def fixtures_team_ft_ave_goals_concided(self, n_data, team):
+        """
+        Calculate average goals concided by the team
+        """
+        ave_cd_list = []
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if team == str(team_row.get('AwayTeam')):
+                ave_cd_list.append(team_row.get('FTHG'))
+            if team == str(team_row.get('HomeTeam')):
+                ave_cd_list.append(team_row.get('FTAG'))
+        ave = float(np.mean(ave_cd_list))
+        self.log.info("Average goals concided : {}".format(ave))
+
         return ave
 
     def clean_football_data(self, league):
