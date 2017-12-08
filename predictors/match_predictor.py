@@ -51,6 +51,9 @@ class Predictors(MyLogger):
             next_game_data = next_game.drop("Date", axis=1)
             next_game_data = pd.get_dummies(next_game_data)
 
+            clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
+            np.set_printoptions(precision=10)
+
             for col in clmns:
                 if col not in list(next_game_data.columns):
                     next_game_data[col] = 0
@@ -59,18 +62,13 @@ class Predictors(MyLogger):
 
             stdsc_game_data = stdsc.transform(next_game_data)
 
-            clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
-
-            game_prediction = {"prediction": self.inverse_ftr_class.get(clf.predict(stdsc_game_data)[0])}
-            np.set_printoptions(precision=10)
-            game_prediction['outcome_probs'] = clf.predict_proba(stdsc_game_data)[0]
-            game_prediction['date'] = game_list.get('Date')
-            game_prediction['time'] = game_time
-            game_prediction['home'] = game_list.get('HomeTeam')
-            game_prediction['away'] = game_list.get('AwayTeam')
-            game_prediction['league'] = league
+            game_prediction = {"prediction": self.inverse_ftr_class.get(clf.predict(stdsc_game_data)[0]),
+                               'outcome_probs': clf.predict_proba(stdsc_game_data)[0], 'date': game_list.get('Date'),
+                               'time': game_time, 'home': game_list.get('HomeTeam'), 'away': game_list.get('AwayTeam'),
+                               'league': league}
             self.log.info("Game prediction: {}".format(game_prediction))
-            match_predictions.append(game_prediction)
+            game_pred = game_prediction.copy()
+            match_predictions.append(game_pred)
         return match_predictions
 
     def save_prediction(self):
