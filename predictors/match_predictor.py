@@ -52,7 +52,7 @@ class Predictors(MyLogger):
             next_game_data = pd.get_dummies(next_game_data)
 
             clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
-            np.set_printoptions(precision=10)
+            np.set_printoptions(precision=3)
 
             for col in clmns:
                 if col not in list(next_game_data.columns):
@@ -62,8 +62,12 @@ class Predictors(MyLogger):
 
             stdsc_game_data = stdsc.transform(next_game_data)
 
+            outcome_probs = list(clf.predict_proba(stdsc_game_data)[0])
+
             game_prediction = {"prediction": self.inverse_ftr_class.get(clf.predict(stdsc_game_data)[0]),
-                               'outcome_probs': clf.predict_proba(stdsc_game_data)[0], 'date': game_list.get('Date'),
+                               "d_prob": "{:.2%}".format(outcome_probs[0]), "a_prob": "{:.2%}".format(outcome_probs[1]),
+                               "h_prob": "{:.2%}".format(outcome_probs[2]),
+                               'outcome_probs': list(clf.predict_proba(stdsc_game_data)[0]), 'date': game_list.get('Date'),
                                'time': game_time, 'home': game_list.get('HomeTeam'), 'away': game_list.get('AwayTeam'),
                                'league': league}
             self.log.info("Game prediction: {}".format(game_prediction))
@@ -74,12 +78,12 @@ class Predictors(MyLogger):
     def save_prediction(self):
         match_predictions = self.predict_winner()
         preds = pd.DataFrame(match_predictions,
-                             columns=['date', 'time', 'home', 'away', 'prediction', 'outcome_probs', 'league'])
+                             columns=['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs', 'league'])
         preds = preds.sort_values(['date', 'time', 'league'])
 
         self.log.info("Saving to wdw")
         preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
-                     columns=['date', 'time', 'home', 'away', 'prediction', 'outcome_probs', 'league'], index=False)
+                     columns=['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs', 'league'], index=False)
 
 
 if __name__ == '__main__':
