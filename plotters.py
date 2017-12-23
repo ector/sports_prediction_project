@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from te_logger.logger import MyLogger
-from tools import SequentialBackwardSelection
+from tools.sequential_backward_selection import SequentialBackwardSelection
 
 
 # noinspection PyCallByClass
