@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
+from pymongo import MongoClient
 
 from tools.clean_process_and_store import CleanProcessStore
 from te_logger.logger import MyLogger
@@ -14,6 +15,8 @@ pd.set_option("display.max_rows", 250)
 used_col = ['HomeTeam', 'AwayTeam', 'Date', 'HomeLastWin', 'AwayLastWin', 'HomeLastTrend', 'AwayLastTrend',
             'HomeLast3Games', 'AwayLast3Games', 'HomeLast5Games', 'AwayLast5Games', 'AwayTrend', 'HomeTrend',
             'HomeAveG', 'AwayAveG', 'HomeAveGC', 'AwayAveGC']
+
+mongodb_uri = 'mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction'
 
 
 class Predictors(MyLogger):
@@ -76,14 +79,34 @@ class Predictors(MyLogger):
         return match_predictions
 
     def save_prediction(self):
+        pred_cols = ['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs',
+                   'league']
         match_predictions = self.predict_winner()
-        preds = pd.DataFrame(match_predictions,
-                             columns=['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs', 'league'])
+        preds = pd.DataFrame(match_predictions, columns=pred_cols)
         preds = preds.sort_values(['date', 'time', 'league'])
 
-        self.log.info("Saving to wdw")
-        preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
-                     columns=['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs', 'league'], index=False)
+        pred_list = []
+
+        try:
+            client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+            db = client.get_database("sports_prediction")
+
+            wdw_football = db.wdw_football
+
+            for idx, pred in preds.iterrows():
+                pred = dict(pred)
+                wdw_count = wdw_football.find(pred).count()
+
+                if wdw_count == 0:
+                    pred_list.append(pred)
+
+            if len(pred_list) != 0:
+                wdw_football.insert_many(pred_list)
+
+        except Exception as e:
+            self.log.info("Saving to wdw: ", e)
+            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
+                         columns=pred_cols, index=False)
 
 
 if __name__ == '__main__':
