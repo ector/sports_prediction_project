@@ -95,11 +95,15 @@ class Predictors(MyLogger):
 
             for idx, pred in preds.iterrows():
                 pred = dict(pred)
-                wdw_count = wdw_football.find(pred).count()
+                exist = {'league': pred.get('league'), 'home': pred.get('home'), 'away': pred.get('away'),
+                     'time': pred.get('time'), 'date': pred.get('date')}
+                wdw_count = wdw_football.find(exist).count()
 
                 if wdw_count == 0:
                     pred_list.append(pred)
-
+                elif wdw_count == 1:
+                    wdw_football.update_one(exist, {'$set': pred})
+                
             if len(pred_list) != 0:
                 wdw_football.insert_many(pred_list)
 
