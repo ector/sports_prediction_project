@@ -103,7 +103,7 @@ class Predictors(MyLogger):
                     pred_list.append(pred)
                 elif wdw_count == 1:
                     wdw_football.update_one(exist, {'$set': pred})
-                
+
             if len(pred_list) != 0:
                 wdw_football.insert_many(pred_list)
 
