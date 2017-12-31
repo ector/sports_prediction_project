@@ -16,7 +16,8 @@ used_col = ['HomeTeam', 'AwayTeam', 'Date', 'HomeLastWin', 'AwayLastWin', 'HomeL
             'HomeLast3Games', 'AwayLast3Games', 'HomeLast5Games', 'AwayLast5Games', 'AwayTrend', 'HomeTrend',
             'HomeAveG', 'AwayAveG', 'HomeAveGC', 'AwayAveGC']
 
-mongodb_uri = 'mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction'
+# mongodb_uri = 'mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction'
+mongodb_uri = get_config("db").get("sport_prediction_url")
 
 
 class Predictors(MyLogger):

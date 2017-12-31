@@ -3,43 +3,15 @@ from time import time
 import pandas as pd
 import numpy as np
 from multiprocessing import Pool, Process
+
+from pymongo import MongoClient
+
 from te_logger.logger import MyLogger
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.utils import get_analysis_root_path, get_config
 
-leagues = {
-    'england_premiership': 'E0',
-    'england_championship': 'E1',
-    'england_league1': 'E2',
-    'england_league2': 'E3',
-
-    'scotland_premiership': 'SC0',
-    'scotland_championship': 'SC1',
-    'scotland_league1': 'SC2',
-    'scotland_league2': 'SC3',
-
-    'germany_bundesliga': 'D1',
-    'germany_bundesliga2': 'D2',
-
-    'italy_serie_a': 'I1',
-    'italy_serie_b': 'I2',
-
-    'spain_la_liga_premera': 'SP1',
-    'spain_la_liga_segunda': 'SP2',
-
-    'france_le_championnat': 'F1',
-    'france_division_2': 'F2',
-
-    'netherlands_eredivisie': 'N1',
-
-    'belgium_jupiler.csv': 'B1',
-
-    'portugal_liga_1': 'P1',
-
-    'turkey_futbol_ligi_1': 'T1',
-
-    'greece_ethniki_katigoria': 'G1',
-}
+leagues_json = get_config("leagues_id")
+mongodb_uri = get_config("db").get("sport_read_prediction_url")
 
 
 class CleanProcessStore(MyLogger):
@@ -236,11 +208,23 @@ class CleanProcessStore(MyLogger):
         :return: cleaned dataframe
         """
         self.league = league
+        league_id = leagues_json.get(league)
 
-        data = pd.read_csv(self.raw_data_directory.format(league), usecols=['HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Date', 'Season'])
+        client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+        db = client.get_database("sports_prediction")
+
+        wdw_raw_data = db.wdw_raw_data
+
+        raw_data_list = []
+        for raw_data in wdw_raw_data.find({"Div": league_id}):
+            raw_data_list.append(raw_data)
+
+        data = pd.DataFrame(raw_data_list, columns=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season'])
 
         data = data.dropna(how='any')
+        data = data.sort_values(['Date'])
         # Making map with team names
+
 
         # Team mapping
         self.team_mapping = self.home_draw_away_suite.encode_teams(data=data)
@@ -301,7 +285,7 @@ class CleanProcessStore(MyLogger):
         """
         self.league = league
         data = pd.read_csv(self.clean_last_win_data_directory.format(league),
-                           usecols=['HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Date', 'Season', 'HomeLastWin',
+                           usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season', 'HomeLastWin',
                                     'AwayLastWin'])
 
         self.team_mapping = self.home_draw_away_suite.encode_teams(data=data)
@@ -382,19 +366,6 @@ class CleanProcessStore(MyLogger):
         data.to_csv(self.clean_team_trend_data_directory.format(self.league), index=False)
         self.log.info("{} data saved in clean folder".format(self.league))
         return data
-
-    # Method not in use for now, will soon be deprecated
-    def save_data(self, league):
-        """
-        Not in use for now
-        :return: None 
-        """
-        # for league in leagues.keys():
-        self.league = league
-        self.clean_football_data(league=self.league)
-        self.compute_teams_trend(data=league)
-        # process_df.to_csv(self.clean_data_directory.format(self.league), index=False)
-        # self.log.info("{} data saved in clean folder".format(self.league))
 
 
 if __name__ == '__main__':

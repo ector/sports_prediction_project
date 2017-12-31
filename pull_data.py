@@ -1,14 +1,10 @@
-import os
-import json
-import pandas as pd
 import time
-from multiprocessing import Pool, Process
-from functools import partial
-from te_logger.logger import MyLogger
+import pandas as pd
+from multiprocessing import Pool
+from pymongo import MongoClient
+from tools.utils import get_config
 
-
-# class PullData(MyLogger):
-from tools.utils import get_analysis_root_path, get_config
+mongodb_uri = get_config("db").get("sport_prediction_url")
 
 
 class PullData(object):
@@ -19,7 +15,6 @@ class PullData(object):
         self.filename = 'full.csv'
         self.league_code = ''
         self.data_directory = 'prototype/data/raw_data/{}.csv'
-        self.over_under_file = 'over_under.csv'
 
     def download_football_data(self):
         """
@@ -30,7 +25,7 @@ class PullData(object):
         for i in range(17, 18):
             try:
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
-                print("Year {}".format(year))
+                print("Year {}".format(year), self.league_code)
                 data = 'http://www.football-data.co.uk/mmz4281/' + year + '/' + self.league_code + '.csv'
                 dd = pd.read_csv(data, error_bad_lines=False, usecols=clmns)
                 dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
@@ -49,16 +44,21 @@ class PullData(object):
 
     def merge_to_existing_data(self):
         """Merge data if any exist"""
-        try:
-            existing_data = pd.read_csv(get_analysis_root_path(self.data_directory.format(self.filename)))
-            frames = [existing_data, self.football_data]
-            df = pd.DataFrame(pd.concat(frames))
-        except IOError:
-            df = self.football_data
 
-        df = df.dropna(how='any')
-        self.football_data = df.drop_duplicates(subset=["HomeTeam", "AwayTeam", "Season"], keep="last")
-        self.football_data.to_csv(get_analysis_root_path(self.data_directory.format(self.filename)), index=False)
+        client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+        db = client.get_database("sports_prediction")
+        wdw_raw_data = db.wdw_raw_data
+
+        self.football_data = self.football_data.dropna(how='any')
+
+        for idx, ft_data in self.football_data.iterrows():
+            ft_data = dict(ft_data)
+            exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
+                     'Div': ft_data.get('Div')}
+            wdw_count = wdw_raw_data.find(exist).count()
+
+            if wdw_count == 0:
+                wdw_raw_data.insert_one(ft_data)
 
     def download_league_data(self, league):
         """

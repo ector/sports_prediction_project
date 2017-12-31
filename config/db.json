@@ -1,0 +1,4 @@
+{
+  "sport_prediction_url": "mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction",
+  "sport_read_prediction_url": "mongodb://test:test@ds131237.mlab.com:31237/sports_prediction"
+}
