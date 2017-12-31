@@ -5,12 +5,10 @@ Created on 13-09-2017 at 8:54 PM
 @author: tola
 """
 
-import json
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
 from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
 from sklearn.externals import joblib
 from tools.utils import get_analysis_root_path, get_config
 
@@ -48,4 +46,4 @@ for league in leagues:
     model_filename = get_analysis_root_path("prototype/league_models/{}".format(league))
     joblib.dump(model, model_filename)
 
-print("Finished training model")
+print("Finished wdw training model")

@@ -1,0 +1,14 @@
+{
+  "ou_cols": [
+    "HomeTeam",
+    "AwayTeam",
+    "HomeLastWin",
+    "AwayLastWin",
+    "FTHG",
+    "FTAG",
+    "HomeAveG",
+    "AwayAveG",
+    "HomeAveGC",
+    "AwayAveGC"
+  ]
+}

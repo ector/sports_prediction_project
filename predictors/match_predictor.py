@@ -16,13 +16,13 @@ used_col = ['HomeTeam', 'AwayTeam', 'Date', 'HomeLastWin', 'AwayLastWin', 'HomeL
             'HomeLast3Games', 'AwayLast3Games', 'HomeLast5Games', 'AwayLast5Games', 'AwayTrend', 'HomeTrend',
             'HomeAveG', 'AwayAveG', 'HomeAveGC', 'AwayAveGC']
 
-# mongodb_uri = 'mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction'
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
 
 class Predictors(MyLogger):
     def __init__(self):
         self.inverse_ftr_class = {1: 'D', 2: 'A', 3: 'H'}
+        self.inverse_ou_class = {1: 'O', 0: 'U'}
         MyLogger.logger(self)
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
@@ -42,14 +42,28 @@ class Predictors(MyLogger):
             league = game_list.pop("League")
             game_time = game_list.pop("Time")
 
+            # Get the last game result
+            next_game = pd.DataFrame([game_list])
+            ou_data = next_game.copy()
+
+            # For Over and Under Market
+            ou_cols = list(get_config("over_under").get("ou_cols"))
+            team_map = joblib.load(get_analysis_root_path('prototype/league_models/{}_map'.format(league)))
+            ou_model = joblib.load(get_analysis_root_path('prototype/league_models/{}_ou25'.format(league)))
+
+            ou_cols.remove('FTHG')
+            ou_cols.remove('FTAG')
+            ou_data = ou_data[ou_cols]
+            ou_data["HomeTeam"] = ou_data.HomeTeam.map(team_map)
+            ou_data["AwayTeam"] = ou_data.AwayTeam.map(team_map)
+
+            # For wdw
             clmns = joblib.load(get_analysis_root_path('prototype/league_models/{}_cols'.format(league)))
 
             stdsc = StandardScaler()
             stdsc_data = joblib.load(get_analysis_root_path('prototype/league_models/{}_stdsc'.format(league)))
             stdsc = stdsc.fit(stdsc_data)
 
-            # Get the last game result
-            next_game = pd.DataFrame([game_list])
 
             # next_game_data_wd = next_game.set_index('Date')
             next_game_data = next_game.drop("Date", axis=1)
@@ -73,7 +87,8 @@ class Predictors(MyLogger):
                                "h_prob": "{:.2%}".format(outcome_probs[2]),
                                'outcome_probs': list(clf.predict_proba(stdsc_game_data)[0]), 'date': game_list.get('Date'),
                                'time': game_time, 'home': game_list.get('HomeTeam'), 'away': game_list.get('AwayTeam'),
-                               'league': league}
+                               'league': league,
+                               'ou25': self.inverse_ou_class.get(ou_model.predict(ou_data)[0])}
             self.log.info("Game prediction: {}".format(game_prediction))
             game_pred = game_prediction.copy()
             match_predictions.append(game_pred)
@@ -81,7 +96,7 @@ class Predictors(MyLogger):
 
     def save_prediction(self):
         pred_cols = ['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs',
-                   'league']
+                   'league', 'ou25']
         match_predictions = self.predict_winner()
         preds = pd.DataFrame(match_predictions, columns=pred_cols)
         preds = preds.sort_values(['date', 'time', 'league'])
@@ -109,7 +124,7 @@ class Predictors(MyLogger):
                 wdw_football.insert_many(pred_list)
 
         except Exception as e:
-            self.log.info("Saving to wdw: ", e)
+            self.log.info("Saving to wdw: ", str(e))
             preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
                          columns=pred_cols, index=False)
 
