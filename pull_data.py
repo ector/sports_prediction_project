@@ -21,7 +21,8 @@ class PullData(object):
         :rtype: object
         """
         pieces = []
-        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR"]
+        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR", "HC", "AC", "HS",
+                 "AS", "HST", "AST"]
         for i in range(17, 18):
             try:
                 year = str(i).zfill(2) + str(i + 1).zfill(2)
@@ -44,8 +45,8 @@ class PullData(object):
 
     def merge_to_existing_data(self):
         """Merge data if any exist"""
-
         client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+
         db = client.get_database("sports_prediction")
         wdw_raw_data = db.wdw_raw_data
 
@@ -57,8 +58,13 @@ class PullData(object):
                      'Div': ft_data.get('Div')}
             wdw_count = wdw_raw_data.find(exist).count()
 
-            if wdw_count == 0:
+            if int(wdw_count) == 0:
+                print("inserting {}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
+
+            elif int(wdw_count) == 1:
+                print("updating {}".format(ft_data))
+                wdw_raw_data.update(exist, ft_data)
 
     def download_league_data(self, league):
         """
@@ -66,8 +72,8 @@ class PullData(object):
         :return: 
         """
         self.filename = league
-        leagues_data = get_config(file="leagues_id")
-        self.league_code = leagues_data.get(league)
+        league_data = get_config(file="leagues_id")
+        self.league_code = league_data.get(league)
         print(league, self.league_code)
         self.download_football_data()
 
