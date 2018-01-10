@@ -23,19 +23,30 @@ class PullData(object):
         pieces = []
         clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR", "HC", "AC", "HS",
                  "AS", "HST", "AST"]
+        corner_clmns = ["HC", "AC", "HS", "AS", "HST", "AST"]
+
+        data_url = 'http://www.football-data.co.uk/mmz4281/{}/{}.csv'
+
         for i in range(17, 18):
+            year = str(i).zfill(2) + str(i + 1).zfill(2)
+            data_url = data_url.format(year, self.league_code)
+            print("Year: {}, League code: {}, URL: {}".format(year, self.league_code, data_url))
+
             try:
-                year = str(i).zfill(2) + str(i + 1).zfill(2)
-                print("Year {}".format(year), self.league_code)
-                data = 'http://www.football-data.co.uk/mmz4281/' + year + '/' + self.league_code + '.csv'
-                dd = pd.read_csv(data, error_bad_lines=False, usecols=clmns)
-                dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
-                dd = dd[clmns]
-                dd['Season'] = year
-                pieces.append(dd)
-                time.sleep(2)
-            except:
-                pass
+                dd = pd.read_csv(data_url, error_bad_lines=False, usecols=clmns)
+            except Exception as e:
+                clmns_wo_corner = list(set(clmns) - set(corner_clmns))
+
+                dd = pd.read_csv(data_url, error_bad_lines=False, usecols=clmns_wo_corner)
+
+                for clmn in corner_clmns:
+                    dd[clmn] = 0
+
+            dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
+            dd = dd[clmns]
+            dd['Season'] = year
+            pieces.append(dd)
+            time.sleep(2)
         try:
             self.football_data = pd.concat(pieces, ignore_index=True)
             self.merge_to_existing_data()
