@@ -13,6 +13,7 @@ from sklearn.externals import joblib
 from tools.utils import get_analysis_root_path, get_config
 
 leagues_data = get_config(file="leagues_id")
+model_columns = get_config(file="model_columns")
 leagues = list(leagues_data.keys())
 
 for league in leagues:
@@ -20,11 +21,12 @@ for league in leagues:
     games = games.dropna(how='any')
     # games = games.set_index(['Date'])
     data = games.loc[games.Season.isin([1516, 1617, 1718])]
-    data = data.drop(['Date', 'Season', 'FTHG', 'FTAG'], axis=1)
+    data = data[model_columns.get("match_result_cols")]
     data = data.sample(frac=1)
     target = data.FTR.map({'D': 1, 'A': 2, 'H': 3})
     # Gent without target
-    data = data.drop('FTR', axis=1)
+    data = data.drop(['Date', 'FTR', 'Season', 'FTHG', 'FTAG'], axis=1)
+    # data = data.drop('FTR', axis=1)
     data = pd.get_dummies(data)
 
     # print(ft.get(league))

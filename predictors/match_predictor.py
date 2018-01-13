@@ -47,17 +47,19 @@ class Predictors(MyLogger):
             ou_data = next_game.copy()
 
             # For Over and Under Market
-            ou_cols = list(get_config("over_under").get("ou_cols"))
+            ou_cols = list(get_config("model_columns").get("over_under_25_cols"))
             team_map = joblib.load(get_analysis_root_path('prototype/league_models/{}_map'.format(league)))
             ou_model = joblib.load(get_analysis_root_path('prototype/league_models/{}_ou25'.format(league)))
 
             ou_cols.remove('FTHG')
             ou_cols.remove('FTAG')
+            ou_cols.remove('Date')
+            ou_cols.remove('Season')
             ou_data = ou_data[ou_cols]
             ou_data["HomeTeam"] = ou_data.HomeTeam.map(team_map)
             ou_data["AwayTeam"] = ou_data.AwayTeam.map(team_map)
 
-            # For wdw
+            # For wdw Market
             clmns = joblib.load(get_analysis_root_path('prototype/league_models/{}_cols'.format(league)))
 
             stdsc = StandardScaler()

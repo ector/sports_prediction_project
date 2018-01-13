@@ -177,6 +177,80 @@ class CleanProcessStore(MyLogger):
 
         return ave
 
+    def team_ft_ave_goals_concided(self, array_list, team):
+        """
+        Calculate average goals concided by the team
+        """
+        ave_cd_list = []
+        for team_row in array_list:
+            if isinstance(team_row, list):
+                if team is team_row[self.column_dict.get('AwayTeam')] or team == team_row[
+                    self.column_dict.get('AwayTeam')]:
+                    ave_cd_list.append(team_row[self.column_dict.get('FTHG')])
+                if team is team_row[self.column_dict.get('HomeTeam')] or team == team_row[
+                    self.column_dict.get('HomeTeam')]:
+                    ave_cd_list.append(team_row[self.column_dict.get('FTAG')])
+        ave = float(np.mean(ave_cd_list))
+        return ave
+
+    def fixtures_team_ft_ave_goals_concided(self, n_data, team):
+        """
+        Calculate average goals concided by the team
+        """
+        ave_cd_list = []
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if team == str(team_row.get('AwayTeam')):
+                ave_cd_list.append(team_row.get('FTHG'))
+            if team == str(team_row.get('HomeTeam')):
+                ave_cd_list.append(team_row.get('FTAG'))
+        ave = float(np.mean(ave_cd_list))
+        self.log.info("Average goals concided : {}".format(ave))
+
+        return ave
+
+    def local_and_visitor_goals(self, array_list, team, location):
+        """
+        Calculate team's average home or away goals in the last 5 games
+        """
+        ave_list = []
+
+        for team_row in array_list:
+            if isinstance(team_row, list):
+                if location == "away":
+                    if team is team_row[self.column_dict.get('AwayTeam')]:
+                        ave_list.append(team_row[self.column_dict.get('FTAG')])
+                if location == "home":
+                    if team is team_row[self.column_dict.get('HomeTeam')]:
+                        ave_list.append(team_row[self.column_dict.get('FTHG')])
+
+        ave_list = ave_list[-5:]
+        ave = float(np.mean(ave_list))
+        self.log.info("Average {} goals scored : {}".format(location, ave))
+
+        return ave
+
+    def fixtures_local_and_visitor_goals(self, n_data, team, location):
+        """
+        Calculate team's average home or away goals in the last 5 games
+        """
+        ave_list = []
+
+        for idx, team_row in n_data.iterrows():
+            team_row = dict(team_row)
+            if location == "away":
+                if team == str(team_row.get('AwayTeam')):
+                    ave_list.append(team_row.get('FTAG'))
+            if location == "home":
+                if team == str(team_row.get('HomeTeam')):
+                    ave_list.append(team_row.get('FTHG'))
+
+        ave_list = ave_list[-5:]
+        ave = float(np.mean(ave_list))
+        self.log.info("Average {} goals scored : {}".format(location, ave))
+
+        return ave
+
     def team_ft_ave_corners(self, array_list, team, col):
         """
         Calculate average corners, shots and shots on target by the team
@@ -229,38 +303,6 @@ class CleanProcessStore(MyLogger):
 
         return ave
 
-    def team_ft_ave_goals_concided(self, array_list, team):
-        """
-        Calculate average goals concided by the team
-        """
-        ave_cd_list = []
-        for team_row in array_list:
-            if isinstance(team_row, list):
-                if team is team_row[self.column_dict.get('AwayTeam')] or team == team_row[
-                    self.column_dict.get('AwayTeam')]:
-                    ave_cd_list.append(team_row[self.column_dict.get('FTHG')])
-                if team is team_row[self.column_dict.get('HomeTeam')] or team == team_row[
-                    self.column_dict.get('HomeTeam')]:
-                    ave_cd_list.append(team_row[self.column_dict.get('FTAG')])
-        ave = float(np.mean(ave_cd_list))
-        return ave
-
-    def fixtures_team_ft_ave_goals_concided(self, n_data, team):
-        """
-        Calculate average goals concided by the team
-        """
-        ave_cd_list = []
-        for idx, team_row in n_data.iterrows():
-            team_row = dict(team_row)
-            if team == str(team_row.get('AwayTeam')):
-                ave_cd_list.append(team_row.get('FTHG'))
-            if team == str(team_row.get('HomeTeam')):
-                ave_cd_list.append(team_row.get('FTAG'))
-        ave = float(np.mean(ave_cd_list))
-        self.log.info("Average goals concided : {}".format(ave))
-
-        return ave
-
     def clean_football_data(self, league):
         """
         :param league: name of league
@@ -284,7 +326,6 @@ class CleanProcessStore(MyLogger):
         data = data.dropna(how='any')
         data = data.sort_values(['Date'])
         # Making map with team names
-
 
         # Team mapping
         self.team_mapping = self.home_draw_away_suite.encode_teams(data=data)
@@ -371,6 +412,8 @@ class CleanProcessStore(MyLogger):
         data['AwayAveS'] = 0
         data['HomeAveST'] = 0
         data['AwayAveST'] = 0
+        data['HomeAveHomeG'] = 0
+        data['AwayAveAwayG'] = 0
 
         # Create keys and values for columns
         self.column_dict = {value: key for key, value in enumerate(list(data.columns))}
@@ -385,12 +428,11 @@ class CleanProcessStore(MyLogger):
                 if (idx != 0) & ((team_name is int(df_row[self.column_dict.get('AwayTeam')])) | (
                             team_name is int(df_row[self.column_dict.get('HomeTeam')]))):
                     df_list = df_row
-                    #             print('current row: ', idx)
 
                     if len(last_row) != 0:
-                        prev_rows = last_row[-5:]
-
-                        prev_five_rows_data = [df_to_list[i] for i in prev_rows]
+                        prev_rows = last_row[-15:]
+                        prev_rows_data = [df_to_list[i] for i in prev_rows]
+                        prev_five_rows_data = prev_rows_data[-5:]
                         prev_three_rows_data = prev_five_rows_data[-3:]
 
                         if team_name is df_list[self.column_dict.get('AwayTeam')]:
@@ -415,6 +457,9 @@ class CleanProcessStore(MyLogger):
                             df_list[self.column_dict.get('AwayAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
                                                                                                   team_name,
                                                                                                   col='shots_on_target')
+                            df_list[self.column_dict.get('AwayAveAwayG')] = self.local_and_visitor_goals(prev_rows_data,
+                                                                                                  team_name,
+                                                                                                  location='away')
                         else:
                             df_list[self.column_dict.get('HomeLast5Games')] = self.last_games_trend(prev_five_rows_data,
                                                                                                     team_name)
@@ -437,6 +482,9 @@ class CleanProcessStore(MyLogger):
                             df_list[self.column_dict.get('HomeAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
                                                                                                   team_name,
                                                                                                   col='shots_on_target')
+                            df_list[self.column_dict.get('HomeAveHomeG')] = self.local_and_visitor_goals(prev_rows_data,
+                                                                                                         team_name,
+                                                                                                         location='home')
 
                         data.iloc[idx] = df_list
                     last_row.append(idx)
@@ -444,7 +492,7 @@ class CleanProcessStore(MyLogger):
 
         self.log.info(
             "{} HomeAveC, AwayAveC, HomeAveS, AwayAveS, HomeAveST, AwayAveST, HomeLast3Games, AwayLast3Games, "
-            "HomeLast5Games and AwayLast5Games completed".format(self.league))
+            "HomeAveHomeG, AwayAveAwayG HomeLast5Games and AwayLast5Games completed".format(self.league))
 
         # Inverse team mapping
         inverse_team_mapping = self.home_draw_away_suite.decode_teams(team_mapping=self.team_mapping)
