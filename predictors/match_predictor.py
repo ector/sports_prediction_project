@@ -127,7 +127,7 @@ class Predictors(MyLogger):
 
         except Exception as e:
             self.log.info("Saving to wdw: ", str(e))
-            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
+            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdwe'),
                          columns=pred_cols, index=False)
 
 

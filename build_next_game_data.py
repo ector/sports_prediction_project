@@ -79,11 +79,13 @@ class FixturesStanding(object):
 
             # For away Team
             away_data = hist_data[(hist_data.AwayTeam == dt.get('AwayTeam')) | (hist_data.HomeTeam == dt.get('AwayTeam'))]
+            away_last_data = away_data.tail(11)
             away_last_3_data = away_data.tail(3)
             away_last_5_data = away_data.tail(5)
 
             # For home team
             home_data = hist_data[(hist_data.AwayTeam == dt.get('HomeTeam')) | (hist_data.HomeTeam == dt.get('HomeTeam'))]
+            home_last_data = home_data.tail(11)
             home_last_3_data = home_data.tail(3)
             home_last_5_data = home_data.tail(5)
 
@@ -117,11 +119,15 @@ class FixturesStanding(object):
             dt['HomeAveST'] = self.cps.fixtures_team_ft_ave_corners(n_data=home_last_5_data, team=dt.get('HomeTeam'),
                                                                     col='shots_on_target')
 
-            dt['AwayAveAwayG'] = self.cps.fixtures_local_and_visitor_goals(n_data=away_last_5_data,
+            dt['AwayAveAwayG'] = self.cps.fixtures_local_and_visitor_goals(n_data=away_last_data,
                                                                            team=dt.get('AwayTeam'), location="away")
-            dt['HomeAveHomeG'] = self.cps.fixtures_local_and_visitor_goals(n_data=home_last_5_data,
+            dt['HomeAveHomeG'] = self.cps.fixtures_local_and_visitor_goals(n_data=home_last_data,
                                                                            team=dt.get('HomeTeam'), location="home")
 
+            dt['Away5AwayTrend'] = self.cps.fixtures_team_location_h2h_trend(n_data=away_last_data,
+                                                                             team=dt.get('AwayTeam'), location="away")
+            dt['Home5HomeTrend'] = self.cps.fixtures_team_location_h2h_trend(n_data=home_last_data,
+                                                                             team=dt.get('HomeTeam'), location="home")
             new_data.append(dt)
 
         new_data = pd.DataFrame(new_data)

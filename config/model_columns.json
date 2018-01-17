@@ -22,7 +22,9 @@
     "HomeAveGC",
     "AwayAveGC",
     "HomeAveHomeG",
-    "AwayAveAwayG"
+    "AwayAveAwayG",
+    "Home5HomeTrend",
+    "Away5AwayTrend"
   ],
   "over_under_25_cols": [
     "Date",
@@ -73,6 +75,8 @@
     "HomeAveST",
     "AwayAveST",
     "HomeAveHomeG",
-    "AwayAveAwayG"
+    "AwayAveAwayG",
+    "Home5HomeTrend",
+    "Away5AwayTrend"
   ]
 }
