@@ -6,8 +6,8 @@ Created on 13-09-2017 at 8:54 PM
 """
 
 import pandas as pd
+from te_logger.logger import log
 from sklearn.preprocessing import StandardScaler
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 from tools.utils import get_analysis_root_path, get_config
@@ -31,7 +31,7 @@ for league in leagues:
 
     # print(ft.get(league))
     data_cols = list(data.columns)
-    print(data_cols)
+    log.info("{}".format(data_cols))
     data_cols_filename = get_analysis_root_path("prototype/league_models/{}_cols".format(league))
     joblib.dump(data_cols, data_cols_filename)
 
@@ -43,9 +43,9 @@ for league in leagues:
     model = LogisticRegression(C=1e5)
     # model = SVC(kernel='rbf', C=1.0, gamma=0.1, random_state=121, probability=True)
     model.fit(data_std, target)
-    print("League: {}\t score: {}".format(league, model.score(data_std, target)))
+    log.info("League: {}\t score: {}".format(league, model.score(data_std, target)))
 
     model_filename = get_analysis_root_path("prototype/league_models/{}".format(league))
     joblib.dump(model, model_filename)
 
-print("Finished wdw training model")
+log.info("Finished wdw training model")

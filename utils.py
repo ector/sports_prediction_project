@@ -93,5 +93,6 @@ def get_start_and_end_dates(end_days=2):
 
     return start_date, end_date
 
+
 if __name__ == '__main__':
     print(get_start_and_end_dates(1))

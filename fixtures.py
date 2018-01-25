@@ -4,7 +4,7 @@ from difflib import get_close_matches
 import numpy as np
 import pandas as pd
 
-from te_logger.logger import MyLogger
+from te_logger.logger import log
 # from tools import ProcessData
 # from tools import get_config, save_fixtures_to_file, get_analysis_root_path, \
 #     get_start_and_end_dates
@@ -12,7 +12,7 @@ from tools.process_data import ProcessData
 from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file
 
 
-class GameFixtures(MyLogger):
+class GameFixtures(object):
     """
     Scrap game fixtures.csv from the web
     with different leagues having there on function
@@ -23,7 +23,7 @@ class GameFixtures(MyLogger):
         self.country = None
         self.league = None
         self.league_file = None
-        MyLogger.logger(self)
+        self.log = log
 
     def fetch_all_league_fixtures(self):
         """
@@ -62,6 +62,7 @@ class GameFixtures(MyLogger):
         fixtures = pd.DataFrame(fixtures)
         self.log.info("Fixtures shape: {}".format(fixtures.shape))
         save_fixtures_to_file(fixtures, folder="selected_fixtures")
+
 
 if __name__ == '__main__':
     GameFixtures().save_games_to_predict()

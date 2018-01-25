@@ -6,18 +6,18 @@ import numpy as np
 from pandas import DataFrame
 from sklearn.preprocessing import LabelEncoder
 
-from te_logger.logger import MyLogger
+from te_logger.logger import log
 
 
 # noinspection PyCallByClass
-class DeriveFootballFeatures(MyLogger):
+class DeriveFootballFeatures(object):
     """
     Use this class to derive features needed for football 
     """
     def __init__(self):
         self.class_le = LabelEncoder()
         self.inverse_result = None
-        MyLogger.logger(self)
+        self.log = log
 
     def home_and_away_team_mapper(self, data, mapper, info="original"):
         """

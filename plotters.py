@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from te_logger.logger import MyLogger
+from te_logger.logger import log
 from tools.sequential_backward_selection import SequentialBackwardSelection
 
 
@@ -16,7 +16,7 @@ class Plotter(object):
         self.sbs = None
         self.k_features = None
         self.k_best_features = None
-        MyLogger.logger(self)
+        self.log = log
 
     def use_and_plot_sbs(self, *args):
         fig, ax = plt.subplots()

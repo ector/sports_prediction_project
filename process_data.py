@@ -3,7 +3,7 @@ import os
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-from te_logger.logger import MyLogger
+from te_logger.logger import log
 # from tools import DeriveFootballFeatures
 
 
@@ -11,7 +11,7 @@ from te_logger.logger import MyLogger
 from tools.home_draw_away_suite import DeriveFootballFeatures
 
 
-class ProcessData(MyLogger):
+class ProcessData(object):
     def __init__(self):
         self.class_le = LabelEncoder()
         self.ftr_class = {'D': 1, 'A': 2, 'H': 3}
@@ -19,7 +19,7 @@ class ProcessData(MyLogger):
         self.team_mapping = None
         self.football_data = GetFootballData()
         self.home_draw_away_suite = DeriveFootballFeatures()
-        MyLogger.logger(self)
+        self.log = log
 
     def get_football_game_data(self, league="scotland_premiership", game={}):
         """
@@ -63,9 +63,9 @@ class ProcessData(MyLogger):
         return self.home_draw_away_suite.get_list_teams(data=data)
 
 
-class GetFootballData(MyLogger):
+class GetFootballData(object):
     def __init__(self):
-        MyLogger.logger(self)
+        self.log = log
 
     def get_football_data(self, league):
         """

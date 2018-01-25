@@ -1,29 +1,32 @@
 import numpy as np
 import pandas as pd
+from pymongo import MongoClient
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
-from pymongo import MongoClient
 
+from te_logger.logger import log
 from tools.clean_process_and_store import CleanProcessStore
-from te_logger.logger import MyLogger
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.process_data import ProcessData, GetFootballData
 from tools.utils import get_analysis_root_path, get_config
 
 pd.set_option("display.max_rows", 250)
 
+
+model_columns = get_config(file="model_columns")
+
 used_col = ['HomeTeam', 'AwayTeam', 'Date', 'HomeLastWin', 'AwayLastWin', 'HomeLastTrend', 'AwayLastTrend',
             'HomeLast3Games', 'AwayLast3Games', 'HomeLast5Games', 'AwayLast5Games', 'AwayTrend', 'HomeTrend',
-            'HomeAveG', 'AwayAveG', 'HomeAveGC', 'AwayAveGC']
+            'HomeAveG', 'AwayAveG', 'HomeAveGC', 'AwayAveGC', "HomeAveHomeG", "AwayAveAwayG", 'Home5HomeTrend', 'Away5AwayTrend']
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
 
-class Predictors(MyLogger):
+class Predictors(object):
     def __init__(self):
         self.inverse_ftr_class = {1: 'D', 2: 'A', 3: 'H'}
         self.inverse_ou_class = {1: 'O', 0: 'U'}
-        MyLogger.logger(self)
+        self.log = log
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
         self.home_draw_away_suite = DeriveFootballFeatures()
@@ -126,8 +129,8 @@ class Predictors(MyLogger):
                 wdw_football.insert_many(pred_list)
 
         except Exception as e:
-            self.log.info("Saving to wdw: ", str(e))
-            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdwe'),
+            self.log.error("Saving to wdw: \n{0}".format(str(e)))
+            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdwete'),
                          columns=pred_cols, index=False)
 
 

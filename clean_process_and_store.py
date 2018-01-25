@@ -6,7 +6,7 @@ from multiprocessing import Pool, Process
 
 from pymongo import MongoClient
 
-from te_logger.logger import MyLogger
+from te_logger.logger import log
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.utils import get_analysis_root_path, get_config
 
@@ -14,7 +14,7 @@ leagues_json = get_config("leagues_id")
 mongodb_uri = get_config("db").get("sport_read_prediction_url")
 
 
-class CleanProcessStore(MyLogger):
+class CleanProcessStore(object):
     def __init__(self):
         self.football_data = None
         self.raw_data_directory = get_analysis_root_path('prototype/data/raw_data/{}.csv')
@@ -24,7 +24,7 @@ class CleanProcessStore(MyLogger):
         self.team_mapping = None
         self.league = None
         self.home_draw_away_suite = DeriveFootballFeatures()
-        MyLogger.logger(self)
+        self.log = log
 
     def win_loss(self, array_list, team):
         """

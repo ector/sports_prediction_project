@@ -3,6 +3,7 @@ import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 from tools.utils import get_config
+from te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
@@ -30,7 +31,7 @@ class PullData(object):
         for i in range(17, 18):
             year = str(i).zfill(2) + str(i + 1).zfill(2)
             data_url = data_url.format(year, self.league_code)
-            print("Year: {}, League code: {}, URL: {}".format(year, self.league_code, data_url))
+            log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, data_url))
 
             try:
                 dd = pd.read_csv(data_url, error_bad_lines=False, usecols=clmns)
@@ -70,11 +71,11 @@ class PullData(object):
             wdw_count = wdw_raw_data.find(exist).count()
 
             if int(wdw_count) == 0:
-                print("inserting {}".format(ft_data))
+                log.info("inserting {0}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
 
             elif int(wdw_count) == 1:
-                print("updating {}".format(ft_data))
+                log.info("updating {0}".format(ft_data))
                 wdw_raw_data.update(exist, ft_data)
 
     def download_league_data(self, league):
@@ -85,7 +86,7 @@ class PullData(object):
         self.filename = league
         league_data = get_config(file="leagues_id")
         self.league_code = league_data.get(league)
-        print(league, self.league_code)
+        log.info("{}: {}".format(league, self.league_code))
         self.download_football_data()
 
 

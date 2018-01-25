@@ -6,6 +6,7 @@ Created on 28-11-2017 at 9:16 PM
 """
 import pandas as pd
 
+from te_logger.logger import log
 from tools.clean_process_and_store import CleanProcessStore
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.process_data import ProcessData, GetFootballData
@@ -16,7 +17,7 @@ pd.set_option("display.max_rows", 2500)
 
 class FixturesStanding(object):
     def __init__(self):
-        self.logd = None
+        self.log = log
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
         self.home_draw_away_suite = DeriveFootballFeatures()
@@ -25,7 +26,7 @@ class FixturesStanding(object):
     def fixture_last_win(self):
         file_path = get_analysis_root_path('prototype/data/fixtures/selected_fixtures/selected_fixtures.csv')
         data = pd.read_csv(file_path, usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam', 'League'])
-        print(data)
+        self.log.info("{}".format(data))
 
         new_data = []
         for idx, dt in data.iterrows():
@@ -48,7 +49,7 @@ class FixturesStanding(object):
             dt['HomeLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=home_last_data, team=dt.get('HomeTeam'))
             dt['AwayLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=away_last_data, team=dt.get('AwayTeam'))
 
-            print("Formed data: {}".format(dt))
+            self.log.info("Formed data: {}".format(dt))
 
             new_data.append(dt)
 
@@ -60,7 +61,6 @@ class FixturesStanding(object):
         return
 
     def fixtures_team_trend(self):
-        self.logd = 1
         file_path = get_analysis_root_path('prototype/data/fixtures/fixtures_last_win/fixtures_last_win.csv')
         data = pd.read_csv(file_path)
 
@@ -128,6 +128,7 @@ class FixturesStanding(object):
                                                                              team=dt.get('AwayTeam'), location="away")
             dt['Home5HomeTrend'] = self.cps.fixtures_team_location_h2h_trend(n_data=home_last_data,
                                                                              team=dt.get('HomeTeam'), location="home")
+            self.log.info("Fixtures {}".format(dt))
             new_data.append(dt)
 
         new_data = pd.DataFrame(new_data)
