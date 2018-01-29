@@ -1,8 +1,10 @@
-import json
 import os
+import json
+import requests
 import calendar
 import pandas as pd
 from datetime import date, datetime, timedelta
+
 
 weekday = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
 
@@ -92,6 +94,23 @@ def get_start_and_end_dates(end_days=2):
     end_date = (date_1 + timedelta(days=end_days)).strftime("%Y-%m-%d")
 
     return start_date, end_date
+
+
+def get_data_from_football_api_com(url):
+    """
+    Make data request from football_api_com
+    :param url: string
+    :return: json data
+    """
+    auth = "565ec012251f932ea4000001129d1e07715745dc76b5ee0c0c9bf439"
+    url = url.format(auth=auth)
+    print("api call to: {url}".format(url=url))
+    req = requests.get(url=url)
+    if req.status_code != requests.codes.ok:
+        print("Response code received: {code}".format(code=req.status_code))
+        return None
+    content = req.json()
+    return content
 
 
 if __name__ == '__main__':
