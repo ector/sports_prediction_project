@@ -19,6 +19,7 @@ class Competitions(object):
         :return:
         """
         self.comp_url = self.comp_url.format(auth=self.auth)
+
         comps = get_data_from_football_api_com(url=self.comp_url)
         if comps is not None:
             new_comps = []
@@ -40,7 +41,6 @@ class Competitions(object):
         comp_data = []
         for comp in comps:
             comp.pop("_id")
-            print("Data is: {}".format(comp))
             comp_data.append(comp)
         self.log.info("length of data retrieved from competition table: {num}".format(num=len(comp_data)))
         return comp_data
