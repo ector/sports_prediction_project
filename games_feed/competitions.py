@@ -49,5 +49,5 @@ class Competitions(object):
 
 if __name__ == "__main__":
     de = Competitions()
-    # de.save_competitions()
+    de.save_competitions()
     de.get_all_competitions()
