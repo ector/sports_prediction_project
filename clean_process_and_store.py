@@ -361,12 +361,12 @@ class CleanProcessStore(object):
         wdw_raw_data = db.wdw_raw_data
 
         raw_data_list = []
-        for raw_data in wdw_raw_data.find({"Div": league_id}):
+        for raw_data in wdw_raw_data.find({"Comp_id": league_id}):
             raw_data_list.append(raw_data)
 
-        data = pd.DataFrame(raw_data_list, columns=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
-                                                    "HC", "AC", "HS", "AS", "HST", "AST"])
-
+        # data = pd.DataFrame(raw_data_list, columns=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
+        #                                             "HC", "AC", "HS", "AS", "HST", "AST"])
+        data = pd.DataFrame(raw_data_list, columns=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season'])
         data = data.dropna(how='any')
         data = data.sort_values(['Date'])
         # Making map with team names
@@ -429,9 +429,13 @@ class CleanProcessStore(object):
         :return: cleaned dataframe with team's trends
         """
         self.league = league
+        # data = pd.read_csv(self.clean_last_win_data_directory.format(league),
+        #                    usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
+        #                             "HC", "AC", "HS", "AS", "HST", "AST", 'HomeLastWin', 'AwayLastWin'])
+
         data = pd.read_csv(self.clean_last_win_data_directory.format(league),
                            usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
-                                    "HC", "AC", "HS", "AS", "HST", "AST", 'HomeLastWin', 'AwayLastWin'])
+                                    'HomeLastWin', 'AwayLastWin'])
 
         self.team_mapping = self.home_draw_away_suite.encode_teams(data=data)
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=self.team_mapping)
@@ -450,12 +454,12 @@ class CleanProcessStore(object):
         data['AwayAveG'] = 0  # float
         data['HomeAveGC'] = 0  # float
         data['AwayAveGC'] = 0  # float
-        data['HomeAveC'] = 0  # float
-        data['AwayAveC'] = 0  # float
-        data['HomeAveS'] = 0  # float
-        data['AwayAveS'] = 0  # float
-        data['HomeAveST'] = 0  # float
-        data['AwayAveST'] = 0  # float
+        # data['HomeAveC'] = 0  # float
+        # data['AwayAveC'] = 0  # float
+        # data['HomeAveS'] = 0  # float
+        # data['AwayAveS'] = 0  # float
+        # data['HomeAveST'] = 0  # float
+        # data['AwayAveST'] = 0  # float
         data['HomeAveHomeG'] = 0  # float
         data['AwayAveAwayG'] = 0  # float
         data['HomeAveHomeG'] = 0  # float
@@ -497,14 +501,14 @@ class CleanProcessStore(object):
                                 prev_five_rows_data,
                                 team_name)
 
-                            df_list[self.column_dict.get('AwayAveC')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                 team_name,
-                                                                                                 col='corner')
-                            df_list[self.column_dict.get('AwayAveS')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                 team_name, col='shots')
-                            df_list[self.column_dict.get('AwayAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                  team_name,
-                                                                                                  col='shots_on_target')
+                            # df_list[self.column_dict.get('AwayAveC')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                      team_name,
+                            #                                                                      col='corner')
+                            # df_list[self.column_dict.get('AwayAveS')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                      team_name, col='shots')
+                            # df_list[self.column_dict.get('AwayAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                       team_name,
+                            #                                                                       col='shots_on_target')
                             df_list[self.column_dict.get('AwayAveAwayG')] = self.local_and_visitor_goals(prev_rows_data,
                                                                                                   team_name,
                                                                                                   location='away')
@@ -525,14 +529,14 @@ class CleanProcessStore(object):
                                 prev_five_rows_data,
                                 team_name)
 
-                            df_list[self.column_dict.get('HomeAveC')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                 team_name,
-                                                                                                 col='corner')
-                            df_list[self.column_dict.get('HomeAveS')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                 team_name, col='shots')
-                            df_list[self.column_dict.get('HomeAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
-                                                                                                  team_name,
-                                                                                                  col='shots_on_target')
+                            # df_list[self.column_dict.get('HomeAveC')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                      team_name,
+                            #                                                                      col='corner')
+                            # df_list[self.column_dict.get('HomeAveS')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                      team_name, col='shots')
+                            # df_list[self.column_dict.get('HomeAveST')] = self.team_ft_ave_corners(prev_five_rows_data,
+                            #                                                                       team_name,
+                            #                                                                       col='shots_on_target')
                             df_list[self.column_dict.get('HomeAveHomeG')] = self.local_and_visitor_goals(prev_rows_data,
                                                                                                          team_name,
                                                                                                          location='home')

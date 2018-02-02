@@ -67,7 +67,7 @@ class PullData(object):
         for idx, ft_data in self.football_data.iterrows():
             ft_data = dict(ft_data)
             exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
-                     'Div': ft_data.get('Div')}
+                     'Comp_id': ft_data.get('Div')}
             wdw_count = wdw_raw_data.find(exist).count()
 
             if int(wdw_count) == 0:
