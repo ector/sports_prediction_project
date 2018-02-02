@@ -5,9 +5,6 @@ Created on 29-01-2018 at 12:19 PM
 @author: desco
 """
 
-import json
-from datetime import datetime
-
 from tools.games_feed.competitions import Competitions
 from tools.games_feed.matches import Matches
 from tools.utils import date_change
@@ -48,8 +45,6 @@ class ExtractAndManipulateData(object):
         return new_season
 
     def matches_extract_and_manipulate_by_id(self, comp_id):
-        # json_file = open('wwww.json', "r")
-        # data = json.load(json_file)
 
         data = self.matches.get_all_matches(condition={"comp_id": comp_id})
         clubs = []
@@ -79,4 +74,3 @@ if __name__ == "__main__":
 
     for comp in competitions.get_all_competitions():
         emd.matches_extract_and_manipulate_by_id(comp_id=comp.get('id'))
-

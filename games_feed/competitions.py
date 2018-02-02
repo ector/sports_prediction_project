@@ -41,6 +41,7 @@ class Competitions(object):
         comp_data = []
         for comp in comps:
             comp.pop("_id")
+            print("Data is: {}".format(comp))
             comp_data.append(comp)
         self.log.info("length of data retrieved from competition table: {num}".format(num=len(comp_data)))
         return comp_data
@@ -48,5 +49,5 @@ class Competitions(object):
 
 if __name__ == "__main__":
     de = Competitions()
-    de.save_competitions()
+    # de.save_competitions()
     de.get_all_competitions()
