@@ -102,8 +102,6 @@ def get_data_from_football_api_com(url):
     :param url: string
     :return: json data
     """
-    auth = "565ec012251f932ea4000001129d1e07715745dc76b5ee0c0c9bf439"
-    url = url.format(auth=auth)
     print("api call to: {url}".format(url=url))
     req = requests.get(url=url)
     if req.status_code != requests.codes.ok:
@@ -111,6 +109,12 @@ def get_data_from_football_api_com(url):
         return None
     content = req.json()
     return content
+
+
+def date_change(old_format="05.11.2017", frm='%d.%m.%Y', to='%Y-%m-%d'):
+    datetimeobject = datetime.strptime(old_format, frm)
+    new_format = datetimeobject.strftime(to)
+    return new_format
 
 
 if __name__ == '__main__':

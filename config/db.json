@@ -1,4 +1,5 @@
 {
   "sport_prediction_url": "mongodb://atokawp:atokawp@ds131237.mlab.com:31237/sports_prediction",
-  "sport_read_prediction_url": "mongodb://test:test@ds131237.mlab.com:31237/sports_prediction"
+  "sport_read_prediction_url": "mongodb://test:test@ds131237.mlab.com:31237/sports_prediction",
+  "auth_key": "565ec012251f932ea4000001129d1e07715745dc76b5ee0c0c9bf439"
 }
