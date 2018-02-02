@@ -431,6 +431,10 @@ class CleanProcessStore(object):
         :return: cleaned dataframe with team's trends
         """
         self.league = league
+        # data = pd.read_csv(self.clean_last_win_data_directory.format(league),
+        #                    usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
+        #                             "HC", "AC", "HS", "AS", "HST", "AST", 'HomeLastWin', 'AwayLastWin'])
+
         data = pd.read_csv(self.clean_last_win_data_directory.format(league),
                            usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
                                     'HomeLastWin', 'AwayLastWin'])
