@@ -11,12 +11,13 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 from tools.utils import get_analysis_root_path, get_config
-
+from te_logger.logger import log
 leagues_data = get_config(file="leagues_id")
 model_columns = get_config(file="model_columns")
 leagues = list(leagues_data.keys())
 
 for league in leagues:
+    log.info(msg="Building model for league: {}".format(league))
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
     games = games.dropna(how='any')
     # games = games.set_index(['Date'])

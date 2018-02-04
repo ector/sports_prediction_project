@@ -130,7 +130,7 @@ class Predictors(object):
 
         except Exception as e:
             self.log.error("Saving to wdw: \n{0}".format(str(e)))
-            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdwete'),
+            preds.to_csv(get_analysis_root_path('sports_betting/predictions/wdw'),
                          columns=pred_cols, index=False)
 
 

@@ -22,26 +22,16 @@ class PullData(object):
         :rtype: object
         """
         pieces = []
-        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR", "HTHG", "HTAG", "HTR", "HC", "AC", "HS",
-                 "AS", "HST", "AST"]
-        corner_clmns = ["HC", "AC", "HS", "AS", "HST", "AST"]
+        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]
 
-        data_url = 'http://www.football-data.co.uk/mmz4281/{}/{}.csv'
+        data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
 
-        for i in range(17, 18):
+        for i in range(14, 18):
             year = str(i).zfill(2) + str(i + 1).zfill(2)
-            data_url = data_url.format(year, self.league_code)
-            log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, data_url))
+            formated_data_url = data_url.format(year=year, league_id=self.league_code)
+            log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
 
-            try:
-                dd = pd.read_csv(data_url, error_bad_lines=False, usecols=clmns)
-            except Exception as e:
-                clmns_wo_corner = list(set(clmns) - set(corner_clmns))
-
-                dd = pd.read_csv(data_url, error_bad_lines=False, usecols=clmns_wo_corner)
-
-                for clmn in corner_clmns:
-                    dd[clmn] = 0
+            dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
 
             dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
             dd = dd[clmns]
@@ -66,17 +56,19 @@ class PullData(object):
 
         for idx, ft_data in self.football_data.iterrows():
             ft_data = dict(ft_data)
+            ft_data["Comp_id"] = ft_data.pop("Div")
             exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
-                     'Div': ft_data.get('Div')}
+                     'Comp_id': ft_data.get('Comp_id')}
             wdw_count = wdw_raw_data.find(exist).count()
 
             if int(wdw_count) == 0:
                 log.info("inserting {0}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
 
-            elif int(wdw_count) == 1:
-                log.info("updating {0}".format(ft_data))
-                wdw_raw_data.update(exist, ft_data)
+            ## Only use this when adding new field/attribute to the data
+            # elif int(wdw_count) == 1:
+            #     log.info("updating {0}".format(ft_data))
+            #     wdw_raw_data.update_one(exist, , {'$set': ft_data})
 
     def download_league_data(self, league):
         """

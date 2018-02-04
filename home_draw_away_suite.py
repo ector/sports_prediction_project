@@ -72,6 +72,6 @@ class DeriveFootballFeatures(object):
         :return: array list
         """
         self.log.info("Getting the names of teams")
-        teams = np.unique(data.HomeTeam.tolist() + data.AwayTeam.tolist())
+        teams = list(np.unique(data.HomeTeam.tolist() + data.AwayTeam.tolist()))
         self.log.info("Got the names of teams: {}".format(teams))
         return teams

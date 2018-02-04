@@ -18,10 +18,6 @@ class GameFixtures(object):
     with different leagues having there on function
     """
     def __init__(self):
-        self.bbc_url = "http://www.bbc.co.uk/sport/football/premier-league/fixtures.csv"
-        self.flash_score_url = "http://www.livescore.com/soccer/{}/{}"
-        self.country = None
-        self.league = None
         self.league_file = None
         self.log = log
 
@@ -39,12 +35,13 @@ class GameFixtures(object):
         indexed_data = indexed_data.loc[start_date:end_date]
         df = indexed_data.reset_index()
         fixtures = []
-        #
+
         for game_date, game_time, home, away in zip(df.Date.values, df.Time.values, df.HomeTeam.values, df.AwayTeam.values):
             try:
-                translated_home = get_close_matches(home, teams, n=1)[0]
-                translated_away = get_close_matches(away, teams, n=1)[0]
-                fixtures.append({"Date": game_date, "Time": game_time, "HomeTeam": translated_home, "AwayTeam": translated_away, "League": self.league_file})
+                translated_home = get_close_matches(home, teams)[0]
+                translated_away = get_close_matches(away, teams)[0]
+                fixtures.append({"Date": game_date, "Time": game_time, "HomeTeam": translated_home,
+                                 "AwayTeam": translated_away, "League": self.league_file})
             except IndexError:
                 self.log.info("No data for either {} or {}".format(home, away))
 
@@ -55,7 +52,6 @@ class GameFixtures(object):
 
         fixtures = []
         for key in config_dict.keys():
-            self.country, self.league = config_dict.get(key).split('_')
             self.league_file = key
             fixtures += self.fetch_all_league_fixtures()
 

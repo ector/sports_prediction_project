@@ -1,21 +1,11 @@
 {
-  "england_premiership": "england_premier-league",
-  "england_championship": "england_championship",
   "england_league1": "england_league-1",
   "england_league2": "england_league-2",
   "scotland_premiership": "scotland_premier-league",
   "scotland_championship": "scotland_1-division",
   "scotland_league1": "scotland_2-division",
   "scotland_league2": "scotland_3-division",
-  "germany_bundesliga": "germany_bundesliga",
   "germany_bundesliga2": "germany_2-bundesliga",
-  "france_le_championnat": "france_ligue-1",
   "france_division_2": "france_ligue-2",
-  "netherlands_eredivisie": "holland_eredivisie",
-  "belgium_jupiler": "belgium_jupiler-pro-league",
-  "portugal_liga_1": "portugal_liga-sagres",
-  "italy_serie_a": "italy_serie-a",
-  "italy_serie_b": "italy_serie-b",
-  "spain_la_liga_premera": "spain_la-liga-premera",
   "spain_la_liga_segunda": "spain_la-liga-segunda"
 }
