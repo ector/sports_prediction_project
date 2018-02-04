@@ -5,6 +5,7 @@ Created on 29-01-2018 at 12:19 PM
 @author: desco
 """
 
+from te_logger.logger import log
 from tools.games_feed.competitions import Competitions
 from tools.games_feed.matches import Matches
 from tools.utils import date_change
@@ -13,6 +14,7 @@ from tools.utils import date_change
 class ExtractAndManipulateData(object):
     def __init__(self):
         self.matches = Matches()
+        self.log = log
 
     def ft_score(self, fthg, ftag):
 
@@ -60,12 +62,10 @@ class ExtractAndManipulateData(object):
                 'FTR': self.ft_score(fthg=i['localteam_score'], ftag=i['visitorteam_score']),
                 'Comp_id': i["comp_id"]
             }
-            clubs.append(i["localteam_name"])
-            clubs.append(i["visitorteam_name"])
-            print(footy)
+            self.log.info(msg="football-api.com data: {}".format(footy))
+            clubs.append(footy)
 
-        print(list(set(clubs)))
-        return footy
+        return comp
 
 
 if __name__ == "__main__":

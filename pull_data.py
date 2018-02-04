@@ -2,6 +2,10 @@ import time
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
+
+from tools.games_feed.competitions import Competitions
+from tools.games_feed.data_manipulation import ExtractAndManipulateData
+from tools.games_feed.matches import Matches
 from tools.utils import get_config
 from te_logger.logger import log
 
@@ -16,6 +20,8 @@ class PullData(object):
         self.filename = 'full.csv'
         self.league_code = ''
         self.data_directory = 'prototype/data/raw_data/{}.csv'
+        self.matches = Matches()
+        self.emd = ExtractAndManipulateData()
 
     def download_football_data(self):
         """
@@ -27,6 +33,39 @@ class PullData(object):
         data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
 
         for i in range(17, 18):
+            year = str(i).zfill(2) + str(i + 1).zfill(2)
+            formated_data_url = data_url.format(year=year, league_id=self.league_code)
+            log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
+
+            dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
+
+            dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
+            dd = dd[clmns]
+            dd['Season'] = year
+            dd["Comp_id"] = dd["Div"]
+            dd = dd.drop('Div', axis=1)
+            pieces.append(dd)
+            time.sleep(2)
+        try:
+            self.football_data = pd.concat(pieces, ignore_index=True)
+            self.merge_to_existing_data()
+        except ValueError:
+            pass
+        return self
+
+    def download_football_api_data(self):
+        """
+        :rtype: object
+        """
+        pieces = []
+        clmns = ["Comp_id", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]
+
+        self.matches.save_matches(comp_id=self.league_code)
+        self.emd.matches_extract_and_manipulate_by_id(comp_id=self.league_code)
+
+        data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
+
+        for i in range(14, 18):
             year = str(i).zfill(2) + str(i + 1).zfill(2)
             formated_data_url = data_url.format(year=year, league_id=self.league_code)
             log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
@@ -56,7 +95,6 @@ class PullData(object):
 
         for idx, ft_data in self.football_data.iterrows():
             ft_data = dict(ft_data)
-            ft_data["Comp_id"] = ft_data.pop("Div")
             exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
                      'Comp_id': ft_data.get('Comp_id')}
             wdw_count = wdw_raw_data.find(exist).count()
