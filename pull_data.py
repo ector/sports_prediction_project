@@ -26,7 +26,7 @@ class PullData(object):
 
         data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
 
-        for i in range(14, 18):
+        for i in range(17, 18):
             year = str(i).zfill(2) + str(i + 1).zfill(2)
             formated_data_url = data_url.format(year=year, league_id=self.league_code)
             log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
