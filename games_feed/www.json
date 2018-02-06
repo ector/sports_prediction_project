@@ -2,13 +2,8 @@
     {
         "comp_id": "1204",
         "et_score": null,
-<<<<<<< HEAD
         "events": [
           {
-
-=======
-        "events": [           {
->>>>>>> need to hook football api into pull_data
                 "assist": "J. Izquierdo",
                 "assist_id": "114881",
                 "extra_min": "",

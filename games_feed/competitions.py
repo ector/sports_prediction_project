@@ -19,7 +19,6 @@ class Competitions(object):
         :return:
         """
         self.comp_url = self.comp_url.format(auth=self.auth)
-
         comps = get_data_from_football_api_com(url=self.comp_url)
         if comps is not None:
             new_comps = []
