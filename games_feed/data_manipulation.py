@@ -65,7 +65,7 @@ class ExtractAndManipulateData(object):
             self.log.info(msg="football-api.com data: {}".format(footy))
             clubs.append(footy)
 
-        return comp
+        return clubs
 
 
 if __name__ == "__main__":
