@@ -3,7 +3,6 @@ import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 
-from tools.games_feed.competitions import Competitions
 from tools.games_feed.data_manipulation import ExtractAndManipulateData
 from tools.games_feed.matches import Matches
 from tools.utils import get_config
@@ -12,7 +11,7 @@ from te_logger.logger import log
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
 
-class PullData(object):
+class SaveFootballApiData(object):
 
     def __init__(self):
         # MyLogger.__init__(self)
@@ -20,36 +19,25 @@ class PullData(object):
         self.filename = 'full.csv'
         self.league_code = ''
         self.data_directory = 'prototype/data/raw_data/{}.csv'
+        # self.log = log
 
-    def download_football_data(self):
+    def download_football_api_data(self):
         """
         :rtype: object
         """
         pieces = []
-        clmns = ["Div", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]
+        clmns = ["Comp_id", "Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]
 
-        data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
+        self.matches = Matches()
+        self.emd = ExtractAndManipulateData()
+        self.matches.save_matches(comp_id=self.league_code)
+        matches_list = self.emd.matches_extract_and_manipulate_by_id(comp_id=self.league_code)
 
-        for i in range(17, 18):
-            year = str(i).zfill(2) + str(i + 1).zfill(2)
-            formated_data_url = data_url.format(year=year, league_id=self.league_code)
-            log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
+        df = pd.DataFrame(matches_list)
 
-            dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
-
-            dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
-            dd = dd[clmns]
-            dd['Season'] = year
-            dd["Comp_id"] = dd["Div"]
-            dd = dd.drop('Div', axis=1)
-            pieces.append(dd)
-            time.sleep(2)
-        try:
-            self.football_data = pd.concat(pieces, ignore_index=True)
-            self.merge_to_existing_data()
-        except ValueError:
-            pass
-        return self
+        df["Date"] = pd.to_datetime(df["Date"], dayfirst=True)
+        self.football_data = df
+        self.merge_to_existing_data()
 
     def merge_to_existing_data(self):
         """Merge data if any exist"""
@@ -67,7 +55,7 @@ class PullData(object):
             wdw_count = wdw_raw_data.find(exist).count()
 
             if int(wdw_count) == 0:
-                log.info("inserting {0}".format(ft_data))
+                print("inserting {0}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
 
             ## Only use this when adding new field/attribute to the data
@@ -81,15 +69,16 @@ class PullData(object):
         :return: 
         """
         self.filename = league
-        league_data = get_config(file="leagues_id")
+        league_data = get_config(file="football_api_com")
         self.league_code = league_data.get(league)
         log.info("{}: {}".format(league, self.league_code))
-        self.download_football_data()
+        self.download_football_api_data()
 
 
 if __name__ == '__main__':
-    dr = PullData()
-    leagues_data = get_config(file="leagues_id")
+    sfad = SaveFootballApiData()
+    leagues_data = get_config(file="football_api_com")
     league_list = list(leagues_data.keys())
+    print(league_list)
     p = Pool(processes=10)
-    p.map(dr.download_league_data, league_list)
+    p.map(sfad.download_league_data, league_list)

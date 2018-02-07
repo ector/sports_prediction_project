@@ -12,7 +12,7 @@ class Matches(object):
     """
     def __init__(self):
         self.log = log
-        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=02-02-2017&to_date={to_date}&Authorization={auth}"
+        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=15-07-2017&to_date={to_date}&Authorization={auth}"
         self.db = MongoConnect().matches_db()
         self.auth = get_config("db").get("auth_key")
         self.competition = Competitions()
@@ -34,7 +34,7 @@ class Matches(object):
 
         for competition_id in comps_id:
 
-            matches_url = self.matches_url.format(to_date=to_date, comp_id=competition_id.get('id'), auth=self.auth)
+            matches_url = self.matches_url.format(to_date=to_date, comp_id=competition_id, auth=self.auth)
 
             matches = get_data_from_football_api_com(url=matches_url)
 
@@ -43,7 +43,7 @@ class Matches(object):
                 for match in matches:
                     if '?' not in [match.get('localteam_score'), match.get('visitorteam_score')]:
                         result = self.db.update({"id": match.get("id")}, match, upsert=True)
-                        log.info("matches inserted data ids: {id}".format(id=result))
+                        log.info("local mongodb, match inserted data ids: {id}".format(id=result))
             else:
                 log.info("no new matches data to store")
 
@@ -52,16 +52,20 @@ class Matches(object):
         retrieve matches data from mongo database
         :return: list of dict
         """
-
         if condition is None:
             condition = {}
 
         matches = self.db.find(condition)
         match_data = []
         for match in matches:
-            match.pop("_id")
-            match_data.append(match)
+            # Remove data where home and away scores are empty strings
+            if "" not in [match.get('localteam_score'), match.get('visitorteam_score')]:
+                match.pop("_id")
+                match_data.append(match)
+            else:
+                self.log.warn("match has empty string in home and/or away score: {}".format(match))
         self.log.info("length of data retrieved from matches table: {num}".format(num=len(match_data)))
+
         return match_data
 
 

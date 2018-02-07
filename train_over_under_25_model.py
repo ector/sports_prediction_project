@@ -12,7 +12,7 @@ from sklearn.svm import SVC
 from sklearn.externals import joblib
 from tools.utils import get_analysis_root_path, get_config
 
-leagues_data = get_config(file="leagues_id")
+leagues_data = get_config(file="league")
 model_columns = get_config(file="model_columns")
 leagues = list(leagues_data.keys())
 

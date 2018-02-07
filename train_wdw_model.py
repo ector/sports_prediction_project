@@ -6,13 +6,15 @@ Created on 13-09-2017 at 8:54 PM
 """
 
 import pandas as pd
-from te_logger.logger import log
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
+
 from tools.utils import get_analysis_root_path, get_config
 from te_logger.logger import log
-leagues_data = get_config(file="leagues_id")
+
+
+leagues_data = get_config(file="league")
 model_columns = get_config(file="model_columns")
 leagues = list(leagues_data.keys())
 
@@ -32,7 +34,7 @@ for league in leagues:
 
     # print(ft.get(league))
     data_cols = list(data.columns)
-    log.info("{}".format(data_cols))
+    log.info("length of data column {}".format(len(data_cols)))
     data_cols_filename = get_analysis_root_path("prototype/league_models/{}_cols".format(league))
     joblib.dump(data_cols, data_cols_filename)
 

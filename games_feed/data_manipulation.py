@@ -62,7 +62,9 @@ class ExtractAndManipulateData(object):
                 'FTR': self.ft_score(fthg=i['localteam_score'], ftag=i['visitorteam_score']),
                 'Comp_id': i["comp_id"]
             }
-            self.log.info(msg="football-api.com data: {}".format(footy))
+            # using print to avoid logging non ascii issue but this needs fixing
+            print("football-api.com data: {}".format(footy))
+
             clubs.append(footy)
 
         return clubs

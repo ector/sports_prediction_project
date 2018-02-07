@@ -10,7 +10,7 @@ from te_logger.logger import log
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.utils import get_analysis_root_path, get_config
 
-leagues_json = get_config("leagues_id")
+leagues_json = get_config("league")
 mongodb_uri = get_config("db").get("sport_read_prediction_url")
 
 
@@ -565,7 +565,7 @@ class CleanProcessStore(object):
 
 if __name__ == '__main__':
     dr = CleanProcessStore()
-    leagues_data = get_config(file="leagues_id")
+    leagues_data = get_config(file="league")
     league_list = list(leagues_data.keys())
 
     procs = []
