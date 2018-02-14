@@ -37,9 +37,8 @@ class FixturesStanding(object):
             # only need the last 40 games
             hist_data = hist_data.tail(40)
 
-            away_data = hist_data[(hist_data.AwayTeam == dt.get('AwayTeam')) | (hist_data.HomeTeam == dt.get('AwayTeam'))]
-
             # For away Team
+            away_data = hist_data[(hist_data.AwayTeam == dt.get('AwayTeam')) | (hist_data.HomeTeam == dt.get('AwayTeam'))]
             away_last_data = away_data.tail(1)
 
             # For home team

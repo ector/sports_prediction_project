@@ -28,7 +28,7 @@ class GameFixtures(object):
         """
         data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
                            usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
-        start_date, end_date = get_start_and_end_dates(end_days=1)
+        start_date, end_date = get_start_and_end_dates(end_days=2)
         teams = ProcessData().get_team_names(league=self.league_file)
 
         indexed_data = data.set_index(['Date'])
@@ -40,8 +40,14 @@ class GameFixtures(object):
             try:
                 translated_home = get_close_matches(home, teams)[0]
                 translated_away = get_close_matches(away, teams)[0]
-                fixtures.append({"Date": game_date, "Time": game_time, "HomeTeam": translated_home,
-                                 "AwayTeam": translated_away, "League": self.league_file})
+                fix = {"Date": game_date, "Time": game_time, "HomeTeam": translated_home,
+                                 "AwayTeam": translated_away, "League": self.league_file, "away": away, "home": home}
+
+                # Added home and away keys for debugging purpose
+                self.log.warn(msg="{}".format(fix))
+                fix.pop("home")
+                fix.pop("away")
+                fixtures.append(fix)
             except IndexError:
                 self.log.info("No data for either {} or {}".format(home, away))
 

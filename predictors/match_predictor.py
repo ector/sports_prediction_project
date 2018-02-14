@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from copy import deepcopy
 from pymongo import MongoClient
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
@@ -21,13 +22,37 @@ mongodb_uri = get_config("db").get("sport_prediction_url")
 
 class Predictors(object):
     def __init__(self):
-        self.inverse_ftr_class = {1: 'D', 2: 'A', 3: 'H'}
+        self.result_map = {0: "X", 1: "2", 2: "1"}
         self.inverse_ou_class = {1: 'O', 0: 'U'}
         self.log = log
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
         self.home_draw_away_suite = DeriveFootballFeatures()
         self.cps = CleanProcessStore()
+
+    def treat_result(self, result):
+        c = deepcopy(result)
+        d = deepcopy(result)
+
+        max_one = d.index(max(d))
+        c[max_one] = 0.0
+        max_two = c.index(max(c))
+
+        if (result[max_one] - result[max_two]) <= 0.19:
+            result_index = sorted([max_one, max_two])
+        else:
+            result_index = [max_one]
+
+        self.log.info("result indices {}".format(result_index))
+
+        mapped = "".join([self.result_map.get(i) for i in result_index])
+
+        if mapped in ["X1", "21"]:
+            mapped = mapped[::-1]
+
+        self.log.info("mapped result {}".format(mapped))
+
+        return mapped
 
     def predict_winner(self):
         used_col.append("Time")
@@ -87,7 +112,7 @@ class Predictors(object):
 
                 outcome_probs = list(clf.predict_proba(stdsc_game_data)[0])
 
-                game_prediction = {"prediction": self.inverse_ftr_class.get(clf.predict(stdsc_game_data)[0]),
+                game_prediction = {"prediction": self.treat_result(outcome_probs),
                                    "d_prob": "{:.2%}".format(outcome_probs[0]), "a_prob": "{:.2%}".format(outcome_probs[1]),
                                    "h_prob": "{:.2%}".format(outcome_probs[2]),
                                    'outcome_probs': list(clf.predict_proba(stdsc_game_data)[0]), 'date': game_list.get('Date'),

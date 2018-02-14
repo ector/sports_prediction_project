@@ -66,7 +66,6 @@ class ExtractAndManipulateData(object):
             print("football-api.com data: {}".format(footy))
 
             clubs.append(footy)
-
         return clubs
 
 

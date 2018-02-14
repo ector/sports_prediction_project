@@ -44,7 +44,7 @@ class SaveFootballApiData(object):
         client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
 
         db = client.get_database("sports_prediction")
-        wdw_raw_data = db.wdw_raw_data
+        wdw_raw_data = db[self.filename]
 
         self.football_data = self.football_data.dropna(how='any')
 

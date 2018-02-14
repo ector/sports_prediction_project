@@ -23,7 +23,7 @@ for league in leagues:
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
     games = games.dropna(how='any')
     # games = games.set_index(['Date'])
-    data = games.loc[games.Season.isin([1516, 1617, 1718])]
+    data = games.loc[games.Season.isin([1415, 1516, 1617, 1718])]
     data = data[model_columns.get("match_result_cols")]
     data = data.sample(frac=1)
     target = data.FTR.map({'D': 1, 'A': 2, 'H': 3})

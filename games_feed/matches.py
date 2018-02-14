@@ -12,7 +12,7 @@ class Matches(object):
     """
     def __init__(self):
         self.log = log
-        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=15-07-2017&to_date={to_date}&Authorization={auth}"
+        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=30-12-2017&to_date={to_date}&Authorization={auth}"
         self.db = MongoConnect().matches_db()
         self.auth = get_config("db").get("auth_key")
         self.competition = Competitions()
@@ -41,7 +41,7 @@ class Matches(object):
             if matches is not None:
 
                 for match in matches:
-                    if '?' not in [match.get('localteam_score'), match.get('visitorteam_score')]:
+                    if '?' not in [match.get('localteam_score'), match.get('visitorteam_score'), match.get('season')]:
                         result = self.db.update({"id": match.get("id")}, match, upsert=True)
                         log.info("local mongodb, match inserted data ids: {id}".format(id=result))
             else:
@@ -59,7 +59,7 @@ class Matches(object):
         match_data = []
         for match in matches:
             # Remove data where home and away scores are empty strings
-            if "" not in [match.get('localteam_score'), match.get('visitorteam_score')]:
+            if "" not in [match.get('localteam_score'), match.get('visitorteam_score'), match.get('season')]:
                 match.pop("_id")
                 match_data.append(match)
             else:

@@ -72,6 +72,7 @@ class DeriveFootballFeatures(object):
         :return: array list
         """
         self.log.info("Getting the names of teams")
+        data = data[data.Season.isin([1617, 1718])]
         teams = list(np.unique(data.HomeTeam.tolist() + data.AwayTeam.tolist()))
         self.log.info("Got the names of teams: {}".format(teams))
         return teams

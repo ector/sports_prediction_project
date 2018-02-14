@@ -23,8 +23,7 @@ class CleanProcessStore(object):
         self.column_dict = None
         self.team_mapping = None
         self.league = None
-        self.home_draw_away_suite = DeriveFootballFeatures()
-        self.log = log
+        self.home_draw_away_suite = None
 
     def win_loss(self, array_list, team):
         """
@@ -32,8 +31,8 @@ class CleanProcessStore(object):
         :param team: team id
         :return: 3 or 1 or 0
         """
-        self.log.info("Team: {}".format(team))
-        self.log.info("Last data: {}".format(array_list))
+        log.info("Team: {}".format(team))
+        log.info("Last data: {}".format(array_list))
 
         if team == array_list[self.column_dict.get('AwayTeam')]:
             if array_list[self.column_dict.get('FTR')] == 'H' or array_list[self.column_dict.get('FTR')] is 'H':
@@ -56,8 +55,8 @@ class CleanProcessStore(object):
         :param team: team name
         :return: 3 or 1 or 0
         """
-        self.log.info("Team: {}".format(team))
-        self.log.info("Last data: {}".format(last_data))
+        log.info("Team: {}".format(team))
+        log.info("Last data: {}".format(last_data))
 
         if team == last_data.AwayTeam.values.tolist()[0]:
             if last_data.FTR.values.tolist()[0] == 'H' or last_data.FTR.values.tolist()[0] is 'H':
@@ -81,8 +80,8 @@ class CleanProcessStore(object):
         :param team: team id
         :return: dataframe
         """
-        self.log.info("Team: {}".format(team))
-        self.log.info("Last n data: {}".format(array_list))
+        log.info("Team: {}".format(team))
+        log.info("Last n data: {}".format(array_list))
 
         teams_trend = 0
         for team_row in array_list:
@@ -102,8 +101,8 @@ class CleanProcessStore(object):
         :param team: team id
         :return: dataframe
         """
-        self.log.info("Team: {}".format(team))
-        self.log.info("Last n data: {}".format(n_data))
+        log.info("Team: {}".format(team))
+        log.info("Last n data: {}".format(n_data))
 
         teams_trend = 0
         for idx, team_row in n_data.iterrows():
@@ -141,7 +140,7 @@ class CleanProcessStore(object):
             if team == str(team_row.get('HomeTeam')):
                 trend += team_row.get('HomeLastTrend')
 
-        self.log.info("team game trend: {}".format(trend))
+        log.info("team game trend: {}".format(trend))
 
         return trend
 
@@ -173,7 +172,7 @@ class CleanProcessStore(object):
             if team == str(team_row.get('HomeTeam')):
                 ave_list.append(team_row.get('FTHG'))
         ave = float(np.mean(ave_list))
-        self.log.info("Average goals scored : {}".format(ave))
+        log.info("Average goals scored : {}".format(ave))
 
         return ave
 
@@ -205,7 +204,7 @@ class CleanProcessStore(object):
             if team == str(team_row.get('HomeTeam')):
                 ave_cd_list.append(team_row.get('FTAG'))
         ave = float(np.mean(ave_cd_list))
-        self.log.info("Average goals concided : {}".format(ave))
+        log.info("Average goals concided : {}".format(ave))
 
         return ave
 
@@ -228,7 +227,7 @@ class CleanProcessStore(object):
 
         ave_list = ave_list[-5:]
         ave = float(np.mean(ave_list))
-        self.log.info("Average {} goals scored : {}".format(location, ave))
+        log.info("Average {} goals scored : {}".format(location, ave))
 
         return ave
 
@@ -249,7 +248,7 @@ class CleanProcessStore(object):
 
         ave_list = ave_list[-5:]
         ave = float(np.mean(ave_list))
-        self.log.info("Average {} goals scored : {}".format(location, ave))
+        log.info("Average {} goals scored : {}".format(location, ave))
 
         return ave
 
@@ -271,7 +270,7 @@ class CleanProcessStore(object):
                         trend += team_row[self.column_dict.get('HomeLastTrend')]
 
         trend_5 = trend[-5:]
-        self.log.info("{} last 5 {} games trend: {}".format(team, location, trend_5))
+        log.info("{} last 5 {} games trend: {}".format(team, location, trend_5))
 
         return trend_5
 
@@ -291,7 +290,7 @@ class CleanProcessStore(object):
                     trend += team_row.get('HomeLastTrend')
 
         trend_5 = trend[-5:]
-        self.log.info("{} fixture's last 5 {} games trend: {}".format(team, location, trend_5))
+        log.info("{} fixture's last 5 {} games trend: {}".format(team, location, trend_5))
 
         return trend_5
 
@@ -343,7 +342,7 @@ class CleanProcessStore(object):
             if team == str(team_row.get('HomeTeam')):
                 ave_list.append(team_row.get(home_col))
         ave = float(np.mean(ave_list))
-        self.log.info("Average goals scored : {}".format(ave))
+        log.info("Average goals scored : {}".format(ave))
 
         return ave
 
@@ -353,6 +352,7 @@ class CleanProcessStore(object):
         :return: cleaned dataframe
         """
         self.league = league
+        self.home_draw_away_suite = DeriveFootballFeatures()
         league_id = leagues_json.get(league)
 
         client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
@@ -360,16 +360,21 @@ class CleanProcessStore(object):
 
         raw_data_list = []
 
-        self.log.info("Query database for comp_id: {}".format(league_id))
+        log.info("Query database for comp_id: {}".format(league_id))
+        league_collection = db[league]
 
-        for raw_data in db.wdw_raw_data.find({"Comp_id": league_id}):
-            raw_data_list.append(raw_data)
+        # for raw_data in league_collection.find({"Comp_id": league_id}):
+        #     raw_data_list.append(raw_data)
 
-        self.log.info("length of raw data list {}".format(len(raw_data_list)))
+        raw_data_list = list(league_collection.find({"Comp_id": league_id}))
+
+        log.info("length of raw data list {}".format(len(raw_data_list)))
 
         data = pd.DataFrame(raw_data_list, columns=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season'])
 
         data = data.dropna(how='any')
+        data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
+
         data = data.sort_values(['Date'])
         # Making map with team names
 
@@ -383,7 +388,7 @@ class CleanProcessStore(object):
 
         # Create keys and values for columns
         self.column_dict = {value: key for key, value in enumerate(list(data.columns))}
-        # self.log.info("Column dict: \n{}".format(self.column_dict))
+        # log.info("Column dict: \n{}".format(self.column_dict))
 
         # Copy football data
         df = data
@@ -398,8 +403,8 @@ class CleanProcessStore(object):
 
             for idx, df_row in enumerate(df_new):
 
-                if (idx != 0) & ((team_name is int(df_row[self.column_dict.get('AwayTeam')])) | (
-                            team_name is int(df_row[self.column_dict.get('HomeTeam')]))):
+                if (idx != 0) & ((team_name == int(df_row[self.column_dict.get('AwayTeam')])) | (
+                            team_name == int(df_row[self.column_dict.get('HomeTeam')]))):
                     df_list = df_row
 
                     prev_row = last_row[-1]
@@ -413,14 +418,14 @@ class CleanProcessStore(object):
 
                         data.iloc[idx] = df_list
                     last_row.append(idx)
-                    # self.log.info("home and away last wins completed for {} :- {}".format(league, key))
+                    # log.info("home and away last wins completed for {} :- {}".format(league, key))
 
         # Inverse team mapping
         inverse_team_mapping = self.home_draw_away_suite.decode_teams(team_mapping=self.team_mapping)
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=inverse_team_mapping,
                                                                    info="inverse")
 
-        # self.log.info("{} HomeLastWin and AwayLastWin completed".format(league))
+        # log.info("{} HomeLastWin and AwayLastWin completed".format(league))
         data.to_csv(self.clean_last_win_data_directory.format(self.league), index=False)
         return data
 
@@ -434,10 +439,12 @@ class CleanProcessStore(object):
         # data = pd.read_csv(self.clean_last_win_data_directory.format(league),
         #                    usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
         #                             "HC", "AC", "HS", "AS", "HST", "AST", 'HomeLastWin', 'AwayLastWin'])
+        self.home_draw_away_suite = DeriveFootballFeatures()
 
         data = pd.read_csv(self.clean_last_win_data_directory.format(league),
                            usecols=['Date', 'HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR', 'Season',
                                     'HomeLastWin', 'AwayLastWin'])
+        data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
 
         self.team_mapping = self.home_draw_away_suite.encode_teams(data=data)
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=self.team_mapping)
@@ -471,7 +478,7 @@ class CleanProcessStore(object):
 
         # Create keys and values for columns
         self.column_dict = {value: key for key, value in enumerate(list(data.columns))}
-        self.log.info("Column dict: \n{}".format(self.column_dict))
+        log.info("Column dict: \n{}".format(self.column_dict))
 
         bel_data = data
         df_to_list = bel_data.values.tolist()
@@ -548,9 +555,9 @@ class CleanProcessStore(object):
 
                         data.iloc[idx] = df_list
                     last_row.append(idx)
-            self.log.info("home and away last 3 and 5 games completed for {} :- {}".format(self.league, key))
+            log.info("home and away last 3 and 5 games completed for {} :- {}".format(self.league, key))
 
-        self.log.info(
+        log.info(
             "{} HomeLast3Games, AwayLast3Games, "
             "HomeAveHomeG, AwayAveAwayG, Home5HomeTrend, Away5AwayTrend HomeLast5Games and AwayLast5Games completed".format(self.league))
 
@@ -559,31 +566,19 @@ class CleanProcessStore(object):
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=inverse_team_mapping,
                                                                    info="inverse")
         data.to_csv(self.clean_team_trend_data_directory.format(self.league), index=False)
-        self.log.info("{} data saved in clean folder".format(self.league))
+        log.info("{} data saved in clean folder".format(self.league))
         return data
 
 
 if __name__ == '__main__':
-    dr = CleanProcessStore()
+    cfd = CleanProcessStore().clean_football_data
+    ctt = CleanProcessStore().compute_teams_trend
     leagues_data = get_config(file="league")
     league_list = list(leagues_data.keys())
 
-    procs = []
+    with Pool(20) as p:
+        p.map(cfd, league_list)
 
-    for index, number in enumerate(league_list):
-        proc = Process(target=dr.clean_football_data, args=(number,))
-        procs.append(proc)
-        proc.start()
+    with Pool(20) as p:
+        p.map(ctt, league_list)
 
-    for proc in procs:
-        proc.join()
-
-    procs_trend = []
-
-    for index, number in enumerate(league_list):
-        proc_tr = Process(target=dr.compute_teams_trend, args=(number,))
-        procs_trend.append(proc_tr)
-        proc_tr.start()
-
-    for proc_tr in procs_trend:
-        proc_tr.join()

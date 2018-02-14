@@ -17,7 +17,7 @@ class PullData(object):
     def __init__(self):
         # MyLogger.__init__(self)
         self.football_data = None
-        self.filename = 'full.csv'
+        self.filename = None
         self.league_code = ''
         self.data_directory = 'prototype/data/raw_data/{}.csv'
 
@@ -45,7 +45,9 @@ class PullData(object):
             pieces.append(dd)
             time.sleep(2)
         try:
-            self.football_data = pd.concat(pieces, ignore_index=True)
+            data = pd.concat(pieces, ignore_index=True)
+            data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
+            self.football_data = data.copy()
             self.merge_to_existing_data()
         except ValueError:
             pass
@@ -56,7 +58,7 @@ class PullData(object):
         client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
 
         db = client.get_database("sports_prediction")
-        wdw_raw_data = db.wdw_raw_data
+        wdw_raw_data = db[self.filename]
 
         self.football_data = self.football_data.dropna(how='any')
 
@@ -69,11 +71,6 @@ class PullData(object):
             if int(wdw_count) == 0:
                 log.info("inserting {0}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
-
-            ## Only use this when adding new field/attribute to the data
-            # elif int(wdw_count) == 1:
-            #     log.info("updating {0}".format(ft_data))
-            #     wdw_raw_data.update_one(exist, , {'$set': ft_data})
 
     def download_league_data(self, league):
         """
