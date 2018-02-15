@@ -38,7 +38,7 @@ class Predictors(object):
         c[max_one] = 0.0
         max_two = c.index(max(c))
 
-        if (result[max_one] - result[max_two]) <= 0.19:
+        if (result[max_one] - result[max_two]) <= 0.2:
             result_index = sorted([max_one, max_two])
         else:
             result_index = [max_one]
