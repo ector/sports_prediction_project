@@ -12,7 +12,7 @@ class Matches(object):
     """
     def __init__(self):
         self.log = log
-        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=30-12-2017&to_date={to_date}&Authorization={auth}"
+        self.matches_url = "http://api.football-api.com/2.0/matches?comp_id={comp_id}&from_date=20-07-2017&to_date={to_date}&Authorization={auth}"
         self.db = MongoConnect().matches_db()
         self.auth = get_config("db").get("auth_key")
         self.competition = Competitions()
@@ -23,7 +23,8 @@ class Matches(object):
         :return:
         """
         if comp_id is None:
-            comps_id = self.competition.get_all_competitions()
+            comps = self.competition.get_all_competitions()
+            comps_id = [i.get('id') for i in comps]
         elif isinstance(comp_id, list):
             comps_id = comp_id
         else:
