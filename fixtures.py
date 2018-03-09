@@ -49,19 +49,19 @@ class GameFixtures(object):
                 fix.pop("away")
                 fixtures.append(fix)
             except IndexError:
-                self.log.info("No data for either {} or {}".format(home, away))
+                self.log.error("No data for either {} or {}".format(home, away))
 
         return fixtures
 
     def save_games_to_predict(self):
-        config_dict = get_config()
+        config_dict = get_config("league")
 
         fixtures = []
         for key in config_dict.keys():
             self.league_file = key
             fixtures += self.fetch_all_league_fixtures()
 
-        fixtures = pd.DataFrame(fixtures)
+        fixtures = pd.DataFrame(fixtures).dropna()
         self.log.info("Fixtures shape: {}".format(fixtures.shape))
         save_fixtures_to_file(fixtures, folder="selected_fixtures")
 

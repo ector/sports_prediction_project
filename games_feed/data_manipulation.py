@@ -48,7 +48,7 @@ class ExtractAndManipulateData(object):
 
     def matches_extract_and_manipulate_by_id(self, comp_id):
 
-        data = self.matches.get_all_matches(condition={"comp_id": comp_id})
+        data = self.matches.get_all_matches(condition={"comp_id": comp_id, "status": "FT"})
         clubs = []
         for i in data:
             footy = {

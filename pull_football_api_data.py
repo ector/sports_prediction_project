@@ -9,6 +9,7 @@ from tools.utils import get_config
 from te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
+translation = get_config("team_translation")
 
 
 class SaveFootballApiData(object):
@@ -47,6 +48,11 @@ class SaveFootballApiData(object):
         wdw_raw_data = db[self.filename]
 
         self.football_data = self.football_data.dropna(how='any')
+
+        translate = translation.get(self.filename)
+        if translate:
+            self.football_data["HomeTeam"].replace(translate, inplace=True)
+            self.football_data["AwayTeam"].replace(translate, inplace=True)
 
         for idx, ft_data in self.football_data.iterrows():
             ft_data = dict(ft_data)

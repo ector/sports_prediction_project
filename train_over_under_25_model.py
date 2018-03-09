@@ -21,7 +21,7 @@ for league in leagues:
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
     games = games.dropna(how='any')
 
-    data = games.loc[games.Season.isin([1415, 1516, 1617, 1718])]
+    data = games.loc[games.Season.isin([1516, 1617, 1718])]
     data = data[model_columns.get("over_under_25_cols")]
 
     data["OU25"] = np.where((data.FTHG + data.FTAG) > 2.5, 1, 0)

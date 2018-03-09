@@ -366,7 +366,7 @@ class CleanProcessStore(object):
         # for raw_data in league_collection.find({"Comp_id": league_id}):
         #     raw_data_list.append(raw_data)
 
-        raw_data_list = list(league_collection.find({"Comp_id": league_id}))
+        raw_data_list = list(league_collection.find({}))
 
         log.info("length of raw data list {}".format(len(raw_data_list)))
 
@@ -424,6 +424,7 @@ class CleanProcessStore(object):
         inverse_team_mapping = self.home_draw_away_suite.decode_teams(team_mapping=self.team_mapping)
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=inverse_team_mapping,
                                                                    info="inverse")
+        data = data.dropna(how="any")
 
         # log.info("{} HomeLastWin and AwayLastWin completed".format(league))
         data.to_csv(self.clean_last_win_data_directory.format(self.league), index=False)
@@ -457,8 +458,8 @@ class CleanProcessStore(object):
         data['AwayLast3Games'] = 0  # float
         data['HomeLast5Games'] = 0  # float
         data['AwayLast5Games'] = 0  # float
-        data['HomeTrend'] = ''  # string WDWWW
-        data['AwayTrend'] = ''  # string WDLLW
+        data['HomeTrend'] = 'D'  # string WDWWW
+        data['AwayTrend'] = 'D'  # string WDLLW
         data['HomeAveG'] = 0  # float
         data['AwayAveG'] = 0  # float
         data['HomeAveGC'] = 0  # float
@@ -473,8 +474,8 @@ class CleanProcessStore(object):
         data['AwayAveAwayG'] = 0  # float
         data['HomeAveHomeG'] = 0  # float
         data['AwayAveAwayG'] = 0  # float
-        data['Home5HomeTrend'] = ''  # string WDWWW
-        data['Away5AwayTrend'] = ''  # string WDLLW
+        data['Home5HomeTrend'] = 'D'  # string WDWWW
+        data['Away5AwayTrend'] = 'D'  # string WDLLW
 
         # Create keys and values for columns
         self.column_dict = {value: key for key, value in enumerate(list(data.columns))}
@@ -565,6 +566,7 @@ class CleanProcessStore(object):
         inverse_team_mapping = self.home_draw_away_suite.decode_teams(team_mapping=self.team_mapping)
         data = self.home_draw_away_suite.home_and_away_team_mapper(data=data, mapper=inverse_team_mapping,
                                                                    info="inverse")
+        data = data.dropna(how="any")
         data.to_csv(self.clean_team_trend_data_directory.format(self.league), index=False)
         log.info("{} data saved in clean folder".format(self.league))
         return data
@@ -576,9 +578,9 @@ if __name__ == '__main__':
     leagues_data = get_config(file="league")
     league_list = list(leagues_data.keys())
 
-    with Pool(20) as p:
+    with Pool(10) as p:
         p.map(cfd, league_list)
 
-    with Pool(20) as p:
+    with Pool(10) as p:
         p.map(ctt, league_list)
 

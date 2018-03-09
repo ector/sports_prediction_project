@@ -63,6 +63,9 @@ class Predictors(object):
         try:
             fixt = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/fixtures_team_trend/fixtures_team_trend.csv'),
                                usecols=used_col, index_col=False)
+            # Added this to
+            # fixt = fixt.dropna()
+
             for idx, game_list in fixt.iterrows():
                 game_list = dict(game_list)
                 league = game_list.pop("League")
