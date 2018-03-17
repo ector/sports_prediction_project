@@ -24,6 +24,7 @@ class Predictors(object):
     def __init__(self):
         self.result_map = {0: "X", 1: "2", 2: "1"}
         self.inverse_ou_class = {1: 'O', 0: 'U'}
+        self.inverse_dc_class = {1: '2', 0: '1X'}
         self.log = log
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
@@ -89,6 +90,28 @@ class Predictors(object):
                 ou_data["HomeTeam"] = ou_data.HomeTeam.map(team_map)
                 ou_data["AwayTeam"] = ou_data.AwayTeam.map(team_map)
 
+                # For Double Chance Market
+                self.log.info("Loading data for double chance market")
+                clmns_dc = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc_cols'.format(league)))
+
+                stddc = StandardScaler()
+                stddc_data = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc_stdsc'.format(league)))
+                stddc = stddc.fit(stddc_data)
+
+                next_game_dc_data = next_game.drop("Date", axis=1)
+                next_game_dc_data = pd.get_dummies(next_game_dc_data)
+
+                clf_dc = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc'.format(league)))
+                np.set_printoptions(precision=3)
+
+                for col in clmns_dc:
+                    if col not in list(next_game_dc_data.columns):
+                        next_game_dc_data[col] = 0
+
+                next_game_dc_data = next_game_dc_data[clmns_dc]
+
+                stddc_game_data = stddc.transform(next_game_dc_data)
+
                 # For wdw Market
                 self.log.info("Loading data for win draw win market")
                 clmns = joblib.load(get_analysis_root_path('prototype/league_models/{}_cols'.format(league)))
@@ -121,7 +144,8 @@ class Predictors(object):
                                    'outcome_probs': list(clf.predict_proba(stdsc_game_data)[0]), 'date': game_list.get('Date'),
                                    'time': game_time, 'home': game_list.get('HomeTeam'), 'away': game_list.get('AwayTeam'),
                                    'league': league,
-                                   'ou25': self.inverse_ou_class.get(ou_model.predict(ou_data)[0])}
+                                   'ou25': self.inverse_ou_class.get(ou_model.predict(ou_data)[0]),
+                                   'dc': self.inverse_dc_class.get(clf_dc.predict(stddc_game_data)[0])}
                 self.log.info("Game prediction: {}".format(game_prediction))
                 game_pred = game_prediction.copy()
                 match_predictions.append(game_pred)
@@ -133,7 +157,7 @@ class Predictors(object):
 
     def save_prediction(self):
         pred_cols = ['date', 'time', 'home', 'away', 'prediction', 'd_prob', 'a_prob', 'h_prob', 'outcome_probs',
-                   'league', 'ou25']
+                   'league', 'ou25', 'dc']
 
         match_predictions = self.predict_winner()
 

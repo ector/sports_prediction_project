@@ -94,5 +94,5 @@ if __name__ == '__main__':
     dr = PullData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
-    p = Pool(processes=10)
+    p = Pool(processes=20)
     p.map(dr.download_league_data, league_list)
