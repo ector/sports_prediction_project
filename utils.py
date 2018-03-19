@@ -117,5 +117,24 @@ def date_change(old_format="05.11.2017", frm='%d.%m.%Y', to='%Y-%m-%d'):
     return new_format
 
 
+def encode_data(data, team_mapping):
+    cols_to_encode = ['HomeTeam', 'AwayTeam', 'AwayLastTrend', 'HomeLastTrend', 'HomeTrend', 'AwayTrend',
+                      'Home5HomeTrend', 'Away5AwayTrend']
+    trend_code = get_config(file="trend_code")
+    last_trend = {"L": 0, "D": 1, "W": 3}
+
+    for i in cols_to_encode:
+        if i in ["HomeTeam", "AwayTeam"]:
+            data[i] = data[i].map(team_mapping)
+        elif i in ['AwayLastTrend', 'HomeLastTrend']:
+            data[i] = data[i].map(last_trend)
+        else:
+            data[i] = data[i].map(trend_code)
+
+    data = data.dropna(how="any")
+
+    return data
+
+
 if __name__ == '__main__':
     print(get_start_and_end_dates(1))

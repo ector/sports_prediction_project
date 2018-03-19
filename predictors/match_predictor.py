@@ -9,7 +9,7 @@ from te_logger.logger import log
 from tools.clean_process_and_store import CleanProcessStore
 from tools.home_draw_away_suite import DeriveFootballFeatures
 from tools.process_data import ProcessData, GetFootballData
-from tools.utils import get_analysis_root_path, get_config
+from tools.utils import get_analysis_root_path, get_config, encode_data
 
 model_columns = get_config(file="model_columns")
 
@@ -22,34 +22,25 @@ mongodb_uri = get_config("db").get("sport_prediction_url")
 
 class Predictors(object):
     def __init__(self):
-        self.result_map = {0: "X", 1: "2", 2: "1"}
+        self.result_map = {1: "X", 2: "2", 3: "1"}
         self.inverse_ou_class = {1: 'O', 0: 'U'}
-        self.inverse_dc_class = {1: '2', 0: '1X'}
+        self.inverse_1x = {0: '1X', 1: 'A'}
+        self.inverse_x2 = {0: 'X2', 1: 'H'}
         self.log = log
         self.process_data = ProcessData()
         self.football_data = GetFootballData()
         self.home_draw_away_suite = DeriveFootballFeatures()
         self.cps = CleanProcessStore()
 
-    def treat_result(self, result):
-        c = deepcopy(result)
-        d = deepcopy(result)
+    def treat_result(self, rst_1x, rst_x2):
+        results = [self.inverse_1x.get(rst_1x), self.inverse_x2.get(rst_x2)]
 
-        max_one = d.index(max(d))
-        c[max_one] = 0.0
-        max_two = c.index(max(c))
-
-        if (result[max_one] - result[max_two]) <= 0.2:
-            result_index = sorted([max_one, max_two])
+        if results == ["1X", "H"]:
+            mapped = "1X"
+        elif results == ["A", "X2"]:
+            mapped = "X2"
         else:
-            result_index = [max_one]
-
-        self.log.info("result indices {}".format(result_index))
-
-        mapped = "".join([self.result_map.get(i) for i in result_index])
-
-        if mapped in ["X1", "21"]:
-            mapped = mapped[::-1]
+            mapped = "12"
 
         self.log.info("mapped result {}".format(mapped))
 
@@ -61,13 +52,15 @@ class Predictors(object):
 
         match_predictions = []
 
-        try:
-            fixt = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/fixtures_team_trend/fixtures_team_trend.csv'),
-                               usecols=used_col, index_col=False)
+        fixt = pd.read_csv(
+            get_analysis_root_path('prototype/data/fixtures/fixtures_team_trend/fixtures_team_trend.csv'),
+            usecols=used_col, index_col=False)
+        # try:
             # Added this to
             # fixt = fixt.dropna()
 
-            for idx, game_list in fixt.iterrows():
+        for idx, game_list in fixt.iterrows():
+            try:
                 game_list = dict(game_list)
                 league = game_list.pop("League")
                 game_time = game_list.pop("Time")
@@ -90,42 +83,14 @@ class Predictors(object):
                 ou_data["HomeTeam"] = ou_data.HomeTeam.map(team_map)
                 ou_data["AwayTeam"] = ou_data.AwayTeam.map(team_map)
 
-                # For Double Chance Market
-                self.log.info("Loading data for double chance market")
-                clmns_dc = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc_cols'.format(league)))
-
-                stddc = StandardScaler()
-                stddc_data = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc_stdsc'.format(league)))
-                stddc = stddc.fit(stddc_data)
-
-                next_game_dc_data = next_game.drop("Date", axis=1)
-                next_game_dc_data = pd.get_dummies(next_game_dc_data)
-
-                clf_dc = joblib.load(get_analysis_root_path('prototype/league_models/{}_dc'.format(league)))
-                np.set_printoptions(precision=3)
-
-                for col in clmns_dc:
-                    if col not in list(next_game_dc_data.columns):
-                        next_game_dc_data[col] = 0
-
-                next_game_dc_data = next_game_dc_data[clmns_dc]
-
-                stddc_game_data = stddc.transform(next_game_dc_data)
-
-                # For wdw Market
-                self.log.info("Loading data for win draw win market")
+                self.log.info("Loading data for wdw and double chance markets")
                 clmns = joblib.load(get_analysis_root_path('prototype/league_models/{}_cols'.format(league)))
 
-                stdsc = StandardScaler()
-                stdsc_data = joblib.load(get_analysis_root_path('prototype/league_models/{}_stdsc'.format(league)))
-                stdsc = stdsc.fit(stdsc_data)
+                team_mapping = joblib.load(get_analysis_root_path('prototype/league_models/{}_stdsc'.format(league)))
 
-
-                # next_game_data_wd = next_game.set_index('Date')
                 next_game_data = next_game.drop("Date", axis=1)
-                next_game_data = pd.get_dummies(next_game_data)
+                next_game_data = encode_data(data=next_game_data, team_mapping=team_mapping)
 
-                clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
                 np.set_printoptions(precision=3)
 
                 for col in clmns:
@@ -134,24 +99,30 @@ class Predictors(object):
 
                 next_game_data = next_game_data[clmns]
 
-                stdsc_game_data = stdsc.transform(next_game_data)
+                # For wdw Market
+                clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
+                # For Double Chance Market
+                clf_1x = joblib.load(get_analysis_root_path('prototype/league_models/{}_1x'.format(league)))
+                clf_x2 = joblib.load(get_analysis_root_path('prototype/league_models/{}_x2'.format(league)))
 
-                outcome_probs = list(clf.predict_proba(stdsc_game_data)[0])
+                outcome_probs = list(clf.predict_proba(next_game_data)[0])
 
-                game_prediction = {"prediction": self.treat_result(outcome_probs),
+                dc = self.treat_result(clf_1x.predict(next_game_data)[0], clf_x2.predict(next_game_data)[0])
+
+                game_prediction = {"prediction": self.result_map.get(clf.predict(next_game_data)[0]),
                                    "d_prob": "{:.2%}".format(outcome_probs[0]), "a_prob": "{:.2%}".format(outcome_probs[1]),
                                    "h_prob": "{:.2%}".format(outcome_probs[2]),
-                                   'outcome_probs': list(clf.predict_proba(stdsc_game_data)[0]), 'date': game_list.get('Date'),
+                                   'outcome_probs': outcome_probs, 'date': game_list.get('Date'),
                                    'time': game_time, 'home': game_list.get('HomeTeam'), 'away': game_list.get('AwayTeam'),
                                    'league': league,
                                    'ou25': self.inverse_ou_class.get(ou_model.predict(ou_data)[0]),
-                                   'dc': self.inverse_dc_class.get(clf_dc.predict(stddc_game_data)[0])}
+                                   'dc': dc}
                 self.log.info("Game prediction: {}".format(game_prediction))
                 game_pred = game_prediction.copy()
                 match_predictions.append(game_pred)
 
-        except Exception as e:
-            self.log.error(msg="The following error occurred: {}".format(e))
+            except Exception as e:
+                self.log.error(msg="The following error occurred: {}".format(e))
 
         return match_predictions
 
