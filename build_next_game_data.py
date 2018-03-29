@@ -103,21 +103,6 @@ class FixturesStanding(object):
             dt['AwayAveGC'] = self.cps.fixtures_team_ft_ave_goals_concided(n_data=away_last_5_data, team=dt.get('AwayTeam'))
             dt['HomeAveGC'] = self.cps.fixtures_team_ft_ave_goals_concided(n_data=home_last_5_data, team=dt.get('HomeTeam'))
 
-            # dt['AwayAveC'] = self.cps.fixtures_team_ft_ave_corners(n_data=away_last_5_data, team=dt.get('AwayTeam'),
-            #                                                        col='corner')
-            # dt['HomeAveC'] = self.cps.fixtures_team_ft_ave_corners(n_data=home_last_5_data, team=dt.get('HomeTeam'),
-            #                                                        col='corner')
-            #
-            # dt['AwayAveS'] = self.cps.fixtures_team_ft_ave_corners(n_data=away_last_5_data, team=dt.get('AwayTeam'),
-            #                                                        col='shots')
-            # dt['HomeAveS'] = self.cps.fixtures_team_ft_ave_corners(n_data=home_last_5_data, team=dt.get('HomeTeam'),
-            #                                                        col='shots')
-            #
-            # dt['AwayAveST'] = self.cps.fixtures_team_ft_ave_corners(n_data=away_last_5_data, team=dt.get('AwayTeam'),
-            #                                                         col='shots_on_target')
-            # dt['HomeAveST'] = self.cps.fixtures_team_ft_ave_corners(n_data=home_last_5_data, team=dt.get('HomeTeam'),
-            #                                                         col='shots_on_target')
-
             dt['AwayAveAwayG'] = self.cps.fixtures_local_and_visitor_goals(n_data=away_last_data,
                                                                            team=dt.get('AwayTeam'), location="away")
             dt['HomeAveHomeG'] = self.cps.fixtures_local_and_visitor_goals(n_data=home_last_data,
