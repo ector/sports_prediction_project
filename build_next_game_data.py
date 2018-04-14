@@ -30,27 +30,29 @@ class FixturesStanding(object):
 
         new_data = []
         for idx, dt in data.iterrows():
-            dt = dict(dt)
-            # pull historical last_win data
-            hist_data = self.football_data.get_football_last_win_data(league=dt.get("League"))
+            try:
+                dt = dict(dt)
+                # pull historical last_win data
+                hist_data = self.football_data.get_football_last_win_data(league=dt.get("League"))
 
-            # only need the last 40 games
-            hist_data = hist_data.tail(40)
+                # only need the last 40 games
+                hist_data = hist_data.tail(40)
 
-            # For away Team
-            away_data = hist_data[(hist_data.AwayTeam == dt.get('AwayTeam')) | (hist_data.HomeTeam == dt.get('AwayTeam'))]
-            away_last_data = away_data.tail(1)
+                # For away Team
+                away_data = hist_data[(hist_data.AwayTeam == dt.get('AwayTeam')) | (hist_data.HomeTeam == dt.get('AwayTeam'))]
+                away_last_data = away_data.tail(1)
 
-            # For home team
-            home_data = hist_data[(hist_data.AwayTeam == dt.get('HomeTeam')) | (hist_data.HomeTeam == dt.get('HomeTeam'))]
-            home_last_data = home_data.tail(1)
+                # For home team
+                home_data = hist_data[(hist_data.AwayTeam == dt.get('HomeTeam')) | (hist_data.HomeTeam == dt.get('HomeTeam'))]
+                home_last_data = home_data.tail(1)
 
-            dt['HomeLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=home_last_data, team=dt.get('HomeTeam'))
-            dt['AwayLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=away_last_data, team=dt.get('AwayTeam'))
+                dt['HomeLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=home_last_data, team=dt.get('HomeTeam'))
+                dt['AwayLastWin'] = self.cps.fixtures_last_game_win_draw_loss(last_data=away_last_data, team=dt.get('AwayTeam'))
 
-            self.log.info("Formed data: {}".format(dt))
-
-            new_data.append(dt)
+                self.log.info("Formed data: {}".format(dt))
+                new_data.append(dt)
+            except Exception as e:
+                self.log.error("{}".format(e))
 
         new_data = pd.DataFrame(new_data)
         trend_map = {1: "D", 0: "L", 3: "W"}
