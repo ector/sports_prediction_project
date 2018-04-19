@@ -427,8 +427,10 @@
     "Wurzburger Kickers": "Wurzburger Kickers"
   },
   "france_division_2": {
-    "Ajaccio": "Ajaccio",
+    "Ajaccio": "AC Ajaccio",
+    "AC Ajaccio": "AC Ajaccio",
     "Ajaccio GFCO": "GFC Ajaccio",
+    "GFC Ajaccio": "GFC Ajaccio",
     "Amiens": "Amiens",
     "Angers": "Angers",
     "Arles": "Arles",
