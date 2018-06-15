@@ -3,9 +3,6 @@ import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 
-from tools.games_feed.competitions import Competitions
-from tools.games_feed.data_manipulation import ExtractAndManipulateData
-from tools.games_feed.matches import Matches
 from tools.utils import get_config
 from te_logger.logger import log
 

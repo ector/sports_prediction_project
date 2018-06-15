@@ -5,10 +5,6 @@ import numpy as np
 import pandas as pd
 
 from te_logger.logger import log
-# from tools import ProcessData
-# from tools import get_config, save_fixtures_to_file, get_analysis_root_path, \
-#     get_start_and_end_dates
-from tools.process_data import ProcessData
 from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file
 
 
@@ -21,35 +17,24 @@ class GameFixtures(object):
         self.league_file = None
         self.log = log
 
-    def fetch_all_league_fixtures(self):
+    def fetch_all_league_fixtures(self, league):
         """
-        Scrap fixtures.csv from BBC premiership fixtures.csv page
         :return: game fixtures.csv
         """
-        data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(self.league_file)),
+        self.log.info("Getting {} league fixture".format(league))
+        data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(league)),
                            usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
         start_date, end_date = get_start_and_end_dates(end_days=2)
-        teams = ProcessData().get_team_names(league=self.league_file)
 
         indexed_data = data.set_index(['Date'])
         indexed_data = indexed_data.loc[start_date:end_date]
-        df = indexed_data.reset_index()
+        data = indexed_data.reset_index()
+
+        team_mapping = get_config(file="team_mapping/{}".format(league))
+        team_mapping = team_mapping.get(league)
+        data.loc[:, "HomeTeam"] = data.HomeTeam.map(team_mapping)
+        data.loc[:, "AwayTeam"] = data.AwayTeam.map(team_mapping)
         fixtures = []
-
-        for game_date, game_time, home, away in zip(df.Date.values, df.Time.values, df.HomeTeam.values, df.AwayTeam.values):
-            try:
-                translated_home = get_close_matches(home, teams)[0]
-                translated_away = get_close_matches(away, teams)[0]
-                fix = {"Date": game_date, "Time": game_time, "HomeTeam": translated_home,
-                                 "AwayTeam": translated_away, "League": self.league_file, "away": away, "home": home}
-
-                # Added home and away keys for debugging purpose
-                self.log.warn(msg="{}".format(fix))
-                fix.pop("home")
-                fix.pop("away")
-                fixtures.append(fix)
-            except IndexError:
-                self.log.error("No data for either {} or {}".format(home, away))
 
         return fixtures
 
@@ -59,7 +44,7 @@ class GameFixtures(object):
         fixtures = []
         for key in config_dict.keys():
             self.league_file = key
-            fixtures += self.fetch_all_league_fixtures()
+            fixtures += self.fetch_all_league_fixtures(league=key)
 
         fixtures = pd.DataFrame(fixtures).dropna()
         self.log.info("Fixtures shape: {}".format(fixtures.shape))

@@ -56,6 +56,22 @@ def get_config(file="league"):
     return config
 
 
+def save_league_model_attr(model, league, cols):
+    """
+    :param model: string
+    :param cols: list
+    :param league: string
+    :return:
+    """
+    filename = "tools/config/{}/{}.json".format(model, league)
+    file_path = get_analysis_root_path(filepath=filename)
+    config = {league: cols}
+
+    with open(file_path, 'w') as outfile:
+        json.dump(config, outfile)
+    outfile.close()
+
+
 def save_fixtures_to_file(data, folder=None):
     """
     Read the football league config from a file
