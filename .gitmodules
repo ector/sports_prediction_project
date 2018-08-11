@@ -1,0 +1,3 @@
+[submodule "te_logger"]
+	path = te_logger
+	url = git@bitbucket.org:xanateam/te_logger.git

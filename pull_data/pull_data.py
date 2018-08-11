@@ -1,9 +1,11 @@
 import time
 import pandas as pd
 from multiprocessing import Pool
+
+import requests
 from pymongo import MongoClient
 
-from tools.utils import get_config
+from utils import get_config
 from te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
@@ -28,27 +30,29 @@ class PullData(object):
 
         data_url = 'http://www.football-data.co.uk/mmz4281/{year}/{league_id}.csv'
 
-        for i in range(17, 18):
+        for i in range(18, 19):
             year = str(i).zfill(2) + str(i + 1).zfill(2)
             formated_data_url = data_url.format(year=year, league_id=self.league_code)
             log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
 
-            dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
+            if requests.get(formated_data_url).status_code == 200:
 
-            dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
-            dd = dd[clmns]
-            dd['Season'] = year
-            dd["Comp_id"] = dd["Div"]
-            dd = dd.drop('Div', axis=1)
-            pieces.append(dd)
-            time.sleep(2)
-        try:
-            data = pd.concat(pieces, ignore_index=True)
-            data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
-            self.football_data = data.copy()
-            self.merge_to_existing_data()
-        except ValueError:
-            pass
+                dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
+
+                dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
+                dd = dd[clmns]
+                dd['Season'] = year
+                dd["Comp_id"] = dd["Div"]
+                dd = dd.drop('Div', axis=1)
+                pieces.append(dd)
+                time.sleep(2)
+            try:
+                data = pd.concat(pieces, ignore_index=True)
+                data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
+                self.football_data = data.copy()
+                self.merge_to_existing_data()
+            except ValueError:
+                pass
         return self
 
     def merge_to_existing_data(self):

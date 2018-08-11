@@ -12,7 +12,7 @@ import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 
-from tools.utils import get_config, save_league_model_attr, get_analysis_root_path
+from utils import get_config, save_league_model_attr, get_analysis_root_path
 
 
 def string_to_array(string, length=5):
@@ -86,7 +86,7 @@ class ProcessPreviousData(object):
         data.A5ATREND.replace("", "D", inplace=True)
         data.HTREND.replace("", "D", inplace=True)
         data.ATREND.replace("", "D", inplace=True)
-        trend = json.load(open("/home/tola/workshop/analysis/tools/config/trend_code.json", "r"))
+        trend = get_config('trend_code')
         data.loc[:, "HTREND"] = data.HTREND.map(trend).values
         data.loc[:, "ATREND"] = data.ATREND.map(trend).values
         data.loc[:, "H5HTREND"] = data.H5HTREND.map(trend).values
@@ -131,8 +131,11 @@ class ProcessPreviousData(object):
 
     def store_significant_columns(self, lg="england_premiership"):
         raw_data = get_analysis_root_path('prototype/data/raw_data/{}.csv')
+        fix_path = get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv')
         data = pd.read_csv(raw_data.format(lg), usecols=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
                                                          "Season"])
+        fix_data = pd.read_csv(fix_path.format(lg))
+        fix_data
         data = self.compute_last_point_ave_goals_and_goals_conceded(data=data, lg=lg)
         target_real = data.FTR.map({"A": -3, "D": 0, "H": 3})
 
@@ -149,8 +152,8 @@ class ProcessPreviousData(object):
 
 
 if __name__ == '__main__':
-    ppd = ProcessPreviousData().store_significant_columns
+    ppd = ProcessPreviousData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
     p = Pool(processes=20)
-    p.map(ppd, league_list)
+    p.map(ppd.store_significant_columns, league_list)

@@ -52,7 +52,7 @@ def get_config(file="league"):
     """
     filename = "tools/config/{}.json".format(file)
     file_path = get_analysis_root_path(filepath=filename)
-    config = json.loads(open(file_path).read())
+    config = json.load(open(file_path, encoding="utf8"))
     return config
 
 
@@ -95,7 +95,7 @@ def get_analysis_root_path(filepath):
     :return: string
     """
     complete_path = os.getcwd()
-    root_path = os.path.join(complete_path.split('analysis')[0], 'analysis', filepath)
+    root_path = os.path.join(complete_path.split('workshop')[0], 'workshop', filepath)
     return root_path
 
 
@@ -153,4 +153,4 @@ def encode_data(data, team_mapping):
 
 
 if __name__ == '__main__':
-    print(get_start_and_end_dates(1))
+    print(get_config('team_translation'))
