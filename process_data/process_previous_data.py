@@ -4,15 +4,15 @@ Created on 15-06-2018 at 2:09 PM
 
 @author: tola
 """
-import json
-import time
-
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 
-from utils import get_config, save_league_model_attr, get_analysis_root_path
+from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+
+mongodb_uri = get_config("db").get("sport_prediction_url")
+translation = get_config("team_translation")
 
 
 def string_to_array(string, length=5):
@@ -40,7 +40,6 @@ class ProcessPreviousData(object):
         data["ATREND"] = ""
         data["H5HTREND"] = ""
         data["A5ATREND"] = ""
-
         clubs = np.unique(data['AwayTeam'].tolist() + data['HomeTeam'].tolist())
         team_mapping = {label: idx for idx, label in enumerate(clubs)}
         save_league_model_attr(model="team_mapping", league=lg, cols=team_mapping)
@@ -91,6 +90,9 @@ class ProcessPreviousData(object):
         data.loc[:, "ATREND"] = data.ATREND.map(trend).values
         data.loc[:, "H5HTREND"] = data.H5HTREND.map(trend).values
         data.loc[:, "A5ATREND"] = data.A5ATREND.map(trend).values
+
+        #TODO: check if dropping na in trend makes the prediction better
+        data = data.fillna(0)
         return data
 
     def compute_last_point_ave_goals_and_goals_conceded(self, data, lg):
@@ -105,8 +107,9 @@ class ProcessPreviousData(object):
         data[["A", "D", "H"]] = pd.get_dummies(data.FTR)
         data["HLM"] = data.H * 3 + data.D
         data["ALM"] = data.A * 3 + data.D
-        data["HLM"] = data.groupby("HomeTeam")["HLM"].shift(1)
-        data["ALM"] = data.groupby("AwayTeam")["ALM"].shift(1)
+
+        data["HLM"] = data.groupby("HomeTeam")["HLM"].shift(1).fillna(value=0)
+        data["ALM"] = data.groupby("AwayTeam")["ALM"].shift(1).fillna(value=0)
         data["ACUM"] = data.groupby(["Season", "AwayTeam"])["ALM"].cumsum()
         data["HCUM"] = data.groupby(["Season", "HomeTeam"])["HLM"].cumsum()
         data = data.drop(["A", "D", "H"], axis=1).dropna()
@@ -130,25 +133,40 @@ class ProcessPreviousData(object):
         return data
 
     def store_significant_columns(self, lg="england_premiership"):
-        raw_data = get_analysis_root_path('prototype/data/raw_data/{}.csv')
-        fix_path = get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv')
-        data = pd.read_csv(raw_data.format(lg), usecols=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
+
+        client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+        db = client.get_database("sports_prediction")
+        lg_data = db[lg]
+
+        fix_path = get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv')
+        data = pd.DataFrame(list(lg_data.find({})), columns=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
                                                          "Season"])
+        data = team_translation(data=data, league=lg)
+        data["played"] = 1
+
+        #TODO: get upcoming games
         fix_data = pd.read_csv(fix_path.format(lg))
-        fix_data
-        data = self.compute_last_point_ave_goals_and_goals_conceded(data=data, lg=lg)
-        target_real = data.FTR.map({"A": -3, "D": 0, "H": 3})
+        fix_data["FTHG"] = 0
+        fix_data["FTAG"] = 0
+        fix_data["FTR"] = 'D'
+        fix_data["Season"] = 1819
+        fix_data["played"] = 0
 
-        # test_dt.set_index("Date")
-        data = data.drop(['Date', 'Season', 'FTR', 'FTHG', 'FTAG'], axis=1)
+        agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
 
-        me = data.corrwith(target_real)
+        agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
+        target_real = agg_data.FTR.map({"A": -3, "D": 0, "H": 3})
+        agg_data = agg_data.drop(['FTR', 'FTHG', 'FTAG'], axis=1)
+
+        me = agg_data[agg_data["played"] == 1].corrwith(target_real)
         sig_data = me.where(me.abs() > 0.05)
         sig_data = sig_data.dropna()
         sig_cols = list(sig_data.index)
         save_league_model_attr(model="wdw_columns", league=lg, cols=sig_cols)
-        data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
-        print("{} data saved in clean folder".format(lg))
+
+        agg_data["FTR"] = target_real
+        agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
+        print("{} data saved in clean folder".format(lg.upper()))
 
 
 if __name__ == '__main__':

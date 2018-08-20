@@ -80,11 +80,10 @@ def save_fixtures_to_file(data, folder=None):
     if folder is None:
         filename = "prototype/data/fixtures/fixtures.csv"
     else:
-        filename = "prototype/data/fixtures/{}/{}.csv".format(folder, folder)
+        filename = "prototype/data/fixtures/{}.csv".format(folder)
 
     file_path = get_analysis_root_path(filepath=filename)
-    fixtures = pd.DataFrame(data=data, columns=list(data.columns))
-    fixtures.to_csv(file_path, index=False)
+    data.to_csv(file_path, index=False)
     return
 
 
@@ -149,6 +148,22 @@ def encode_data(data, team_mapping):
 
     data = data.dropna(how="any")
 
+    return data
+
+
+def team_translation(data, league):
+    """
+    match each team name in the league
+    :param data: dataframe
+    :param league: string
+    :return: dataframe
+    """
+
+    translation = get_config("team_translation")
+    translate = translation.get(league)
+    if translate:
+        data["HomeTeam"].replace(translate, inplace=True)
+        data["AwayTeam"].replace(translate, inplace=True)
     return data
 
 

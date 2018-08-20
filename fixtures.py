@@ -5,7 +5,9 @@ import numpy as np
 import pandas as pd
 
 from te_logger.logger import log
-from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file
+from utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file, team_translation
+
+translation = get_config("team_translation")
 
 
 class GameFixtures(object):
@@ -16,6 +18,7 @@ class GameFixtures(object):
     def __init__(self):
         self.league_file = None
         self.log = log
+        self.days = 3
 
     def fetch_all_league_fixtures(self, league):
         """
@@ -24,31 +27,28 @@ class GameFixtures(object):
         self.log.info("Getting {} league fixture".format(league))
         data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(league)),
                            usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
-        start_date, end_date = get_start_and_end_dates(end_days=2)
+
+        data = team_translation(data=data, league=league)
+        start_date, end_date = get_start_and_end_dates(end_days=self.days)
 
         indexed_data = data.set_index(['Date'])
         indexed_data = indexed_data.loc[start_date:end_date]
         data = indexed_data.reset_index()
 
-        team_mapping = get_config(file="team_mapping/{}".format(league))
-        team_mapping = team_mapping.get(league)
-        data.loc[:, "HomeTeam"] = data.HomeTeam.map(team_mapping)
-        data.loc[:, "AwayTeam"] = data.AwayTeam.map(team_mapping)
-        fixtures = []
-
-        return fixtures
+        return data
 
     def save_games_to_predict(self):
         config_dict = get_config("league")
 
-        fixtures = []
-        for key in config_dict.keys():
-            self.league_file = key
-            fixtures += self.fetch_all_league_fixtures(league=key)
-
-        fixtures = pd.DataFrame(fixtures).dropna()
-        self.log.info("Fixtures shape: {}".format(fixtures.shape))
-        save_fixtures_to_file(fixtures, folder="selected_fixtures")
+        for league in config_dict.keys():
+            self.league_file = league
+            fixtures = self.fetch_all_league_fixtures(league=league)
+            fixtures = pd.DataFrame(fixtures).dropna()
+            if len(fixtures) != 0:
+                self.log.info("{} Fixtures shape: {}".format(league.upper(), fixtures.shape))
+                save_fixtures_to_file(fixtures, folder="selected_fixtures/{}".format(league))
+            else:
+                self.log.warn("{} has no game in the next {} days".format(league.upper(), self.days))
 
 
 if __name__ == '__main__':

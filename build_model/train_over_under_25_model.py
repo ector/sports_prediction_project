@@ -21,25 +21,15 @@ for league in leagues:
     games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
     games = games.dropna(how='any')
 
-    data = games.loc[games.Season.isin([1516, 1617, 1718])]
-    data = data[model_columns.get("over_under_25_cols")]
+    data = games.loc[(games.Season.isin([1516, 1617, 1718, 1819])) & (games.played == 1)]
 
-    data["OU25"] = np.where((data.FTHG + data.FTAG) > 2.5, 1, 0)
-
-    team = list(np.unique(list(data.HomeTeam.values) + list(data.AwayTeam.values)))
-    team.sort()
-    team_map = {value: key for key, value in enumerate(team)}
-    data["HomeTeam"] = data.HomeTeam.map(team_map)
-    data["AwayTeam"] = data.AwayTeam.map(team_map)
-
-    data_team_inv_filename = get_analysis_root_path("prototype/league_models/{}_map".format(league))
-    joblib.dump(team_map, data_team_inv_filename)
+    data["OU25"] = np.where((data.HAG + data.AAG) > 2.5, 1, 0)
 
     data = data.sample(frac=1)
     target = data.OU25
 
-    # Gent without target
-    data = data.drop(['Date', 'Season', 'OU25', 'FTHG', 'FTAG'], axis=1)
+    # Data without target
+    data = data.drop(['Date', 'Time', 'played', 'OU25'], axis=1)
 
     model = SVC(kernel='rbf', gamma=0.3, C=1.0, probability=True)
     model.fit(data, target)
