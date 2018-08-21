@@ -104,9 +104,6 @@ class Predictors(object):
                 self.log.info("Inserting predictions")
                 for idx, pred in preds.iterrows():
 
-                    #TODO: remove this and remove the field from api
-                    pred["outcome_probs"] = [1, 1, 1]
-
                     pred = dict(pred)
                     exist = {'league': pred.get('league'), 'home': pred.get('home'), 'away': pred.get('away'),
                          'time': pred.get('time'), 'date': pred.get('date')}
