@@ -78,6 +78,7 @@ class Predictors(object):
                 prediction["home"].replace(team_mapping_inv, inplace=True)
                 prediction["away"].replace(team_mapping_inv, inplace=True)
                 prediction["prediction"].replace(self.result_map, inplace=True)
+                prediction["ou25"].replace(self.inverse_ou_class, inplace=True)
 
             except Exception as e:
                 self.log.error(msg="The following error occurred: {}".format(e))

@@ -18,7 +18,7 @@ class GameFixtures(object):
     def __init__(self):
         self.league_file = None
         self.log = log
-        self.days = 3
+        self.days = 5
 
     def fetch_all_league_fixtures(self, league):
         """
