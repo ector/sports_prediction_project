@@ -15,7 +15,6 @@ translation = get_config("team_translation")
 class PullData(object):
 
     def __init__(self):
-        # MyLogger.__init__(self)
         self.football_data = None
         self.filename = None
         self.league_code = ''

@@ -1,7 +1,3 @@
-import json
-from difflib import get_close_matches
-
-import numpy as np
 import pandas as pd
 
 from te_logger.logger import log
@@ -18,7 +14,7 @@ class GameFixtures(object):
     def __init__(self):
         self.league_file = None
         self.log = log
-        self.days = 5
+        self.days = 3
 
     def fetch_all_league_fixtures(self, league):
         """
