@@ -90,7 +90,7 @@ class Predictors(object):
         match_predictions = self.predict_winner(league=league)
 
         if match_predictions is not None:
-            self.log.info("Sort prediction dataframe by date, time and league")
+            self.log.info("{} prediction dataframe sorted by date, time and league".format(league))
             preds = match_predictions.sort_values(['date', 'time', 'league'])
 
             pred_list = []

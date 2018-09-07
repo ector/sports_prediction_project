@@ -1,0 +1,21 @@
+{
+  "belgium_jupiler": "belgium_jupiler-league",
+ "england_championship": "england_championship",
+ "england_league1": "england_league-one",
+ "england_league2": "england_league-two",
+ "england_premiership": "england_premier-league",
+ "france_division_2": "france_ligue-2",
+ "france_le_championnat": "france_ligue-1",
+ "germany_bundesliga": "germany_bundesliga",
+ "germany_bundesliga2": "germany_2-bundesliga",
+ "italy_serie_a": "italy_serie-a",
+ "italy_serie_b": "italy_serie-b",
+ "netherlands_eredivisie": "netherlands_eredivisie",
+ "portugal_liga_1": "portugal_primeira-liga",
+ "scotland_championship": "scotland_championship",
+ "scotland_league1": "scotland_league-one",
+ "scotland_league2": "scotland_league-two",
+ "scotland_premiership": "scotland_premiership",
+ "spain_la_liga_premera": "spain_laliga",
+ "spain_la_liga_segunda": "spain_laliga2"
+}

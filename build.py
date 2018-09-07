@@ -73,10 +73,11 @@ if time_now.hour in range(4, 23):
 
     print_with_spinner_when_running_py_file(filename="pull_data/pull_data")
 
+    print_with_spinner_when_running_py_file(filename="pull_data/download_fixtures")
+
     print_with_spinner_when_running_py_file(filename="fixtures")
 
-    print_with_spinner_when_running_py_file(filename="process_data/process_previous_data")
-    # pass
+print_with_spinner_when_running_py_file(filename="process_data/process_previous_data")
 
 print_with_spinner_when_running_py_file(filename="build_model/train_wdw_model")
 
