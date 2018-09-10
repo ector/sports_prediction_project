@@ -2,7 +2,6 @@ import os
 import json
 import requests
 import calendar
-import pandas as pd
 from datetime import date, datetime, timedelta
 
 
@@ -84,6 +83,21 @@ def save_fixtures_to_file(data, folder=None):
 
     file_path = get_analysis_root_path(filepath=filename)
     data.to_csv(file_path, index=False)
+    return
+
+
+def delete_fixtures_in_file(folder=None):
+    """
+    delete the football league config from a file
+    :return: None
+    """
+    if folder is None:
+        filename = "prototype/data/fixtures/fixtures.csv"
+    else:
+        filename = "prototype/data/fixtures/{}.csv".format(folder)
+
+    file_path = get_analysis_root_path(filepath=filename)
+    os.remove(file_path)
     return
 
 

@@ -4,12 +4,19 @@ Created on 15-06-2018 at 2:09 PM
 
 @author: tola
 """
+import os
+
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
 
-from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+try:
+    from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+except ImportError:
+    from tools.utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+
+from te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")
@@ -133,40 +140,43 @@ class ProcessPreviousData(object):
         return data
 
     def store_significant_columns(self, lg="england_premiership"):
+        self.log = log
 
-        client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
-        db = client.get_database("sports_prediction")
-        lg_data = db[lg]
+        fix_path = get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv'.format(lg))
+        if os.path.exists(fix_path):
+            fix_data = pd.read_csv(fix_path)
+            fix_data["FTHG"] = 0
+            fix_data["FTAG"] = 0
+            fix_data["FTR"] = 'D'
+            fix_data["Season"] = 1819
+            fix_data["played"] = 0
 
-        fix_path = get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv')
-        data = pd.DataFrame(list(lg_data.find({})), columns=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
-                                                         "Season"])
-        data = team_translation(data=data, league=lg)
-        data["played"] = 1
+            client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+            db = client.get_database("sports_prediction")
+            lg_data = db[lg]
 
-        #TODO: get upcoming games
-        fix_data = pd.read_csv(fix_path.format(lg))
-        fix_data["FTHG"] = 0
-        fix_data["FTAG"] = 0
-        fix_data["FTR"] = 'D'
-        fix_data["Season"] = 1819
-        fix_data["played"] = 0
+            data = pd.DataFrame(list(lg_data.find({})), columns=["Date", "HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR",
+                                                             "Season"])
+            data = team_translation(data=data, league=lg)
+            data["played"] = 1
 
-        agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
+            agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
 
-        agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
-        target_real = agg_data.FTR.map({"A": -3, "D": 0, "H": 3})
-        agg_data = agg_data.drop(['FTR', 'FTHG', 'FTAG'], axis=1)
+            agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
+            target_real = agg_data.FTR.map({"A": -3, "D": 0, "H": 3})
+            agg_data = agg_data.drop(['FTR', 'FTHG', 'FTAG'], axis=1)
 
-        me = agg_data[agg_data["played"] == 1].corrwith(target_real)
-        sig_data = me.where(me.abs() > 0.05)
-        sig_data = sig_data.dropna()
-        sig_cols = list(sig_data.index)
-        save_league_model_attr(model="wdw_columns", league=lg, cols=sig_cols)
+            me = agg_data[agg_data["played"] == 1].corrwith(target_real)
+            sig_data = me.where(me.abs() > 0.05)
+            sig_data = sig_data.dropna()
+            sig_cols = list(sig_data.index)
+            save_league_model_attr(model="wdw_columns", league=lg, cols=sig_cols)
 
-        agg_data["FTR"] = target_real
-        agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
-        print("{} data saved in clean folder".format(lg.upper()))
+            agg_data["FTR"] = target_real
+            agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
+            self.log.info("{} data saved in clean folder".format(lg.upper()))
+        else:
+            self.log.warn("{} not proceeds as there are no fixtures for the next 3 days".format(lg).upper())
 
 
 if __name__ == '__main__':
@@ -174,4 +184,4 @@ if __name__ == '__main__':
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
     p = Pool(processes=20)
-    p.map(ppd.store_significant_columns, league_list)
+    p.map(ProcessPreviousData().store_significant_columns, league_list)

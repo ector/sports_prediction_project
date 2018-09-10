@@ -5,8 +5,12 @@ from multiprocessing import Pool
 import requests
 from pymongo import MongoClient
 
-from utils import get_config
 from te_logger.logger import log
+
+try:
+    from utils import get_config
+except ImportError:
+    from tools.utils import get_config
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")

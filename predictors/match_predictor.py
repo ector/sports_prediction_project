@@ -1,10 +1,15 @@
+import os
+
 import pandas as pd
 from pymongo import MongoClient
 from sklearn.externals import joblib
 
 from te_logger.logger import log
-from utils import get_analysis_root_path, get_config
 
+try:
+    from utils import get_analysis_root_path, get_config
+except ImportError:
+    from tools.utils import get_analysis_root_path, get_config
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
@@ -127,4 +132,7 @@ class Predictors(object):
 if __name__ == '__main__':
     dr = Predictors()
     for lg in get_config().keys():
-        dr.save_prediction(league=lg)
+        if os.path.exists(get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv'.format(lg))):
+            dr.save_prediction(league=lg)
+        else:
+            log.warn("{} has no new games".format(lg).upper())

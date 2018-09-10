@@ -3,7 +3,10 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-from utils import get_config
+try:
+    from utils import get_config
+except ImportError:
+    from tools.utils import get_config
 
 leagues = get_config(file="flashscore_leagues")
 translation = get_config(file='team_translation')

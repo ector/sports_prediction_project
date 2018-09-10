@@ -10,7 +10,10 @@ import numpy as np
 from te_logger.logger import log
 from sklearn.svm import SVC
 from sklearn.externals import joblib
-from utils import get_analysis_root_path, get_config
+try:
+    from utils import get_analysis_root_path, get_config
+except ImportError:
+    from tools.utils import get_analysis_root_path, get_config
 
 leagues_data = get_config(file="league")
 model_columns = get_config(file="model_columns")
@@ -18,24 +21,27 @@ leagues = list(leagues_data.keys())
 
 
 for league in leagues:
-    games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
-    games = games.dropna(how='any')
+    try:
+        games = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)))
+        games = games.dropna(how='any')
 
-    data = games.loc[(games.Season.isin([1516, 1617, 1718, 1819])) & (games.played == 1)]
+        data = games.loc[(games.Season.isin([1516, 1617, 1718, 1819])) & (games.played == 1)]
 
-    data["OU25"] = np.where((data.HAG + data.AAG) > 2.5, 1, 0)
+        data["OU25"] = np.where((data.HAG + data.AAG) > 2.5, 1, 0)
 
-    data = data.sample(frac=1)
-    target = data.OU25
+        data = data.sample(frac=1)
+        target = data.OU25
 
-    # Data without target
-    data = data.drop(['Date', 'Time', 'played', 'OU25'], axis=1)
+        # Data without target
+        data = data.drop(['Date', 'Time', 'played', 'OU25'], axis=1)
 
-    model = SVC(kernel='rbf', gamma=0.3, C=1.0, probability=True)
-    model.fit(data, target)
-    log.info("League: {}\t score: {}".format(league, model.score(data, target)))
+        model = SVC(kernel='rbf', gamma=0.3, C=1.0, probability=True)
+        model.fit(data, target)
+        log.info("League: {}\t score: {}".format(league, model.score(data, target)))
 
-    model_filename = get_analysis_root_path("prototype/league_models/{}_ou25".format(league))
-    joblib.dump(model, model_filename)
+        model_filename = get_analysis_root_path("prototype/league_models/{}_ou25".format(league))
+        joblib.dump(model, model_filename)
+    except:
+        log.warn("New O/U 2.5 model not built for {}".format(league).upper())
 
 log.info("Finished training over under 2.5 model")
