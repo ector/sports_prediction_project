@@ -5,8 +5,10 @@ from selenium.webdriver.common.keys import Keys
 
 try:
     from utils import get_config
+    from te_logger.logger import log
 except ImportError:
     from tools.utils import get_config
+    from tools.te_logger.logger import log
 
 leagues = get_config(file="flashscore_leagues")
 translation = get_config(file='team_translation')
@@ -34,7 +36,7 @@ for k in leagues.keys():
             tmp_yr = '2018'
         else:
             tmp_yr = '2019'
-        ddt.append(tmp_yr + '-' + tmp_mth + '-' + tmp_day)
+        ddt.append(tmp_yr + '-' + tmp_mth + '-' + tmp_day + ' 00:00:00')
         dtm.append(tm.strip())
 
     for e in driver.find_elements_by_class_name("padr"):
@@ -51,4 +53,4 @@ for k in leagues.keys():
 
     er["HomeTeam"].replace(translate, inplace=True)
     er["AwayTeam"].replace(translate, inplace=True)
-    er.to_csv('../../prototype/data/fixtures/all_fixtures/{}.csv'.format(k), index=False)
+    er.to_csv('../../tools/data/fixtures/all_fixtures/{}.csv'.format(k), index=False)

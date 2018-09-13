@@ -1,0 +1,109 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-14,19:30,Borussia Dortmund,Ein Frankfurt
+2018-09-15,14:30,Bayern München,Bayer Leverkusen
+2018-09-15,14:30,Dusseldorf,Hoffenheim
+2018-09-15,14:30,Mainz 05,Augsburg
+2018-09-15,14:30,RB Leipzig,Hannover 96
+2018-09-15,14:30,Wolfsburg,Hertha Berlin
+2018-09-15,17:30,Borussia M'gladbach,Schalke 04
+2018-09-16,14:30,Werder Bremen,Nurnberg
+2018-09-16,17:00,Freiburg,Stuttgart
+2018-09-21,19:30,Stuttgart,Dusseldorf
+2018-09-22,14:30,Augsburg,Werder Bremen
+2018-09-22,14:30,Hertha Berlin,Borussia M'gladbach
+2018-09-22,14:30,Hoffenheim,Borussia Dortmund
+2018-09-22,14:30,Nurnberg,Hannover 96
+2018-09-22,14:30,Wolfsburg,Freiburg
+2018-09-22,17:30,Schalke 04,Bayern München
+2018-09-23,14:30,Bayer Leverkusen,Mainz 05
+2018-09-23,17:00,Ein Frankfurt,RB Leipzig
+2018-09-25,17:30,Werder Bremen,Hertha Berlin
+2018-09-25,19:30,Bayern München,Augsburg
+2018-09-25,19:30,Freiburg,Schalke 04
+2018-09-25,19:30,Hannover 96,Hoffenheim
+2018-09-26,17:30,Dusseldorf,Bayer Leverkusen
+2018-09-26,19:30,Borussia M'gladbach,Ein Frankfurt
+2018-09-26,19:30,Borussia Dortmund,Nurnberg
+2018-09-26,19:30,Mainz 05,Wolfsburg
+2018-09-26,19:30,RB Leipzig,Stuttgart
+2018-09-28,19:30,Hertha Berlin,Bayern München
+2018-09-29,14:30,Hoffenheim,RB Leipzig
+2018-09-29,14:30,Nurnberg,Dusseldorf
+2018-09-29,14:30,Schalke 04,Mainz 05
+2018-09-29,14:30,Stuttgart,Werder Bremen
+2018-09-29,14:30,Wolfsburg,Borussia M'gladbach
+2018-09-29,17:30,Bayer Leverkusen,Borussia Dortmund
+2018-09-30,14:30,Ein Frankfurt,Hannover 96
+2018-09-30,17:00,Augsburg,Freiburg
+2018-10-05,19:30,Werder Bremen,Wolfsburg
+2018-10-06,14:30,Borussia Dortmund,Augsburg
+2018-10-06,14:30,Dusseldorf,Schalke 04
+2018-10-06,14:30,Hannover 96,Stuttgart
+2018-10-06,14:30,Mainz 05,Hertha Berlin
+2018-10-06,17:30,Bayern München,Borussia M'gladbach
+2018-10-07,12:30,Freiburg,Bayer Leverkusen
+2018-10-07,14:30,Hoffenheim,Ein Frankfurt
+2018-10-07,17:00,RB Leipzig,Nurnberg
+2018-10-19,19:30,Ein Frankfurt,Dusseldorf
+2018-10-20,14:30,Augsburg,RB Leipzig
+2018-10-20,14:30,Bayer Leverkusen,Hannover 96
+2018-10-20,14:30,Nurnberg,Hoffenheim
+2018-10-20,14:30,Stuttgart,Borussia Dortmund
+2018-10-20,14:30,Wolfsburg,Bayern München
+2018-10-20,17:30,Schalke 04,Werder Bremen
+2018-10-21,14:30,Hertha Berlin,Freiburg
+2018-10-21,17:00,Borussia M'gladbach,Mainz 05
+2018-10-26,19:30,Freiburg,Borussia M'gladbach
+2018-10-27,14:30,Borussia Dortmund,Hertha Berlin
+2018-10-27,14:30,Dusseldorf,Wolfsburg
+2018-10-27,14:30,Hannover 96,Augsburg
+2018-10-27,14:30,Mainz 05,Bayern München
+2018-10-27,17:30,Hoffenheim,Stuttgart
+2018-10-28,12:30,Nurnberg,Ein Frankfurt
+2018-10-28,14:30,RB Leipzig,Schalke 04
+2018-10-28,17:00,Werder Bremen,Bayer Leverkusen
+2018-11-02,19:30,Stuttgart,Ein Frankfurt
+2018-11-03,14:30,Augsburg,Nurnberg
+2018-11-03,14:30,Bayer Leverkusen,Hoffenheim
+2018-11-03,14:30,Bayern München,Freiburg
+2018-11-03,14:30,Schalke 04,Hannover 96
+2018-11-03,14:30,Wolfsburg,Borussia Dortmund
+2018-11-03,17:30,Hertha Berlin,RB Leipzig
+2018-11-04,14:30,Borussia M'gladbach,Dusseldorf
+2018-11-04,17:00,Mainz 05,Werder Bremen
+2018-11-09,19:30,Hannover 96,Wolfsburg
+2018-11-10,14:30,Dusseldorf,Hertha Berlin
+2018-11-10,14:30,Freiburg,Mainz 05
+2018-11-10,14:30,Hoffenheim,Augsburg
+2018-11-10,14:30,Nurnberg,Stuttgart
+2018-11-10,14:30,Werder Bremen,Borussia M'gladbach
+2018-11-10,17:30,Borussia Dortmund,Bayern München
+2018-11-11,14:30,RB Leipzig,Bayer Leverkusen
+2018-11-11,17:00,Ein Frankfurt,Schalke 04
+2018-11-23,19:30,Bayer Leverkusen,Stuttgart
+2018-11-24,14:30,Augsburg,Ein Frankfurt
+2018-11-24,14:30,Bayern München,Dusseldorf
+2018-11-24,14:30,Hertha Berlin,Hoffenheim
+2018-11-24,14:30,Mainz 05,Borussia Dortmund
+2018-11-24,14:30,Wolfsburg,RB Leipzig
+2018-11-24,17:30,Schalke 04,Nurnberg
+2018-11-25,14:30,Freiburg,Werder Bremen
+2018-11-25,17:00,Borussia M'gladbach,Hannover 96
+2018-11-30,19:30,Dusseldorf,Mainz 05
+2018-12-01,14:30,Borussia Dortmund,Freiburg
+2018-12-01,14:30,Hannover 96,Hertha Berlin
+2018-12-01,14:30,Stuttgart,Augsburg
+2018-12-01,14:30,Werder Bremen,Bayern München
+2018-12-01,17:30,Hoffenheim,Schalke 04
+2018-12-02,14:30,RB Leipzig,Borussia M'gladbach
+2018-12-02,17:00,Ein Frankfurt,Wolfsburg
+2018-12-03,19:30,Nurnberg,Bayer Leverkusen
+2018-12-07,19:30,Werder Bremen,Dusseldorf
+2018-12-08,14:30,Bayer Leverkusen,Augsburg
+2018-12-08,14:30,Bayern München,Nurnberg
+2018-12-08,14:30,Freiburg,RB Leipzig
+2018-12-08,14:30,Schalke 04,Borussia Dortmund
+2018-12-08,14:30,Wolfsburg,Hoffenheim
+2018-12-08,17:30,Hertha Berlin,Ein Frankfurt
+2018-12-09,14:30,Mainz 05,Hannover 96
+2018-12-09,17:00,Borussia M'gladbach,Stuttgart

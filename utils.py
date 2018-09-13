@@ -77,9 +77,9 @@ def save_fixtures_to_file(data, folder=None):
     :return: None
     """
     if folder is None:
-        filename = "prototype/data/fixtures/fixtures.csv"
+        filename = "tools/data/fixtures/fixtures.csv"
     else:
-        filename = "prototype/data/fixtures/{}.csv".format(folder)
+        filename = "tools/data/fixtures/{}.csv".format(folder)
 
     file_path = get_analysis_root_path(filepath=filename)
     data.to_csv(file_path, index=False)
@@ -92,12 +92,13 @@ def delete_fixtures_in_file(folder=None):
     :return: None
     """
     if folder is None:
-        filename = "prototype/data/fixtures/fixtures.csv"
+        filename = "tools/data/fixtures/fixtures.csv"
     else:
-        filename = "prototype/data/fixtures/{}.csv".format(folder)
+        filename = "tools/data/fixtures/{}.csv".format(folder)
 
     file_path = get_analysis_root_path(filepath=filename)
-    os.remove(file_path)
+    if os.path.exists(file_path):
+        os.remove(file_path)
     return
 
 
@@ -181,5 +182,5 @@ def team_translation(data, league):
     return data
 
 
-if __name__ == '__main__':
-    print(get_config('team_translation'))
+# if __name__ == '__main__':
+#     print(get_config('team_translation'))

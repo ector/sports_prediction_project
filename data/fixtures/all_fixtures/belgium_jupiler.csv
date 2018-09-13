@@ -1,0 +1,113 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-14,19:30,Club Brugge KV,Lokeren
+2018-09-15,17:00,Standard Liège,Charleroi
+2018-09-15,19:00,KV Oostende,Cercle Brugge KSV
+2018-09-15,19:00,Waasland-Beveren,AS Eupen
+2018-09-15,19:30,Genk,Anderlecht
+2018-09-16,13:30,Royal Excel Mouscron,Kortrijk
+2018-09-16,17:00,Antwerp,Zulte-Waregem
+2018-09-16,19:00,Gent,Sint-Truiden
+2018-09-21,19:30,Zulte-Waregem,Kortrijk
+2018-09-22,17:00,Waasland-Beveren,Charleroi
+2018-09-22,19:00,AS Eupen,KV Oostende
+2018-09-22,19:00,Lokeren,Royal Excel Mouscron
+2018-09-22,19:30,Sint-Truiden,Antwerp
+2018-09-23,13:30,Gent,Club Brugge KV
+2018-09-23,17:00,Anderlecht,Standard Liège
+2018-09-23,19:00,Cercle Brugge KSV,Genk
+2018-09-28,19:30,Kortrijk,AS Eupen
+2018-09-29,17:00,Genk,Zulte-Waregem
+2018-09-29,19:00,Charleroi,Lokeren
+2018-09-29,19:00,Royal Excel Mouscron,Waasland-Beveren
+2018-09-29,19:30,Club Brugge KV,Cercle Brugge KSV
+2018-09-30,13:30,Anderlecht,Sint-Truiden
+2018-09-30,17:00,KV Oostende,Standard Liège
+2018-09-30,19:00,Antwerp,Gent
+2018-10-05,19:30,Cercle Brugge KSV,Charleroi
+2018-10-06,17:00,AS Eupen,Antwerp
+2018-10-06,19:00,Lokeren,Kortrijk
+2018-10-06,19:00,Sint-Truiden,Royal Excel Mouscron
+2018-10-06,19:30,Waasland-Beveren,KV Oostende
+2018-10-07,13:30,Zulte-Waregem,Anderlecht
+2018-10-07,17:00,Standard Liège,Club Brugge KV
+2018-10-07,19:00,Gent,Genk
+2018-10-19,19:30,Club Brugge KV,Waasland-Beveren
+2018-10-20,17:00,Royal Excel Mouscron,Standard Liège
+2018-10-20,19:00,Antwerp,Lokeren
+2018-10-20,19:00,Kortrijk,Sint-Truiden
+2018-10-20,19:30,Genk,AS Eupen
+2018-10-21,13:30,Anderlecht,Cercle Brugge KSV
+2018-10-21,17:00,KV Oostende,Gent
+2018-10-21,19:00,Charleroi,Zulte-Waregem
+2018-10-26,19:30,Gent,Charleroi
+2018-10-27,17:00,Zulte-Waregem,Royal Excel Mouscron
+2018-10-27,19:00,Cercle Brugge KSV,Kortrijk
+2018-10-27,19:00,Lokeren,KV Oostende
+2018-10-27,19:30,Sint-Truiden,Club Brugge KV
+2018-10-28,13:30,Standard Liège,Genk
+2018-10-28,17:00,AS Eupen,Anderlecht
+2018-10-28,19:00,Waasland-Beveren,Antwerp
+2018-10-30,19:30,Charleroi,Sint-Truiden
+2018-10-30,19:30,Club Brugge KV,KV Oostende
+2018-10-30,19:30,Royal Excel Mouscron,Gent
+2018-10-31,19:30,Antwerp,Genk
+2018-10-31,19:30,AS Eupen,Cercle Brugge KSV
+2018-10-31,19:30,Kortrijk,Waasland-Beveren
+2018-11-01,13:30,Anderlecht,Lokeren
+2018-11-01,17:00,Zulte-Waregem,Standard Liège
+2018-11-02,19:30,KV Oostende,Charleroi
+2018-11-03,17:00,Genk,Club Brugge KV
+2018-11-03,18:00,Cercle Brugge KSV,Royal Excel Mouscron
+2018-11-03,19:30,Gent,Kortrijk
+2018-11-04,13:30,Standard Liège,Antwerp
+2018-11-04,17:00,Waasland-Beveren,Anderlecht
+2018-11-04,19:00,Lokeren,AS Eupen
+2018-11-04,19:00,Sint-Truiden,Zulte-Waregem
+2018-11-10,19:00,Anderlecht,Gent
+2018-11-10,19:00,Antwerp,KV Oostende
+2018-11-10,19:00,Cercle Brugge KSV,Waasland-Beveren
+2018-11-10,19:00,Charleroi,Club Brugge KV
+2018-11-10,19:00,AS Eupen,Sint-Truiden
+2018-11-10,19:00,Kortrijk,Standard Liège
+2018-11-10,19:00,Royal Excel Mouscron,Genk
+2018-11-10,19:00,Zulte-Waregem,Lokeren
+2018-11-24,19:00,Club Brugge KV,Zulte-Waregem
+2018-11-24,19:00,Genk,Cercle Brugge KSV
+2018-11-24,19:00,Gent,Antwerp
+2018-11-24,19:00,Lokeren,Charleroi
+2018-11-24,19:00,KV Oostende,Kortrijk
+2018-11-24,19:00,Standard Liège,AS Eupen
+2018-11-24,19:00,Sint-Truiden,Anderlecht
+2018-11-24,19:00,Waasland-Beveren,Royal Excel Mouscron
+2018-12-01,19:00,Anderlecht,Genk
+2018-12-01,19:00,Antwerp,Sint-Truiden
+2018-12-01,19:00,Charleroi,Cercle Brugge KSV
+2018-12-01,19:00,Club Brugge KV,Standard Liège
+2018-12-01,19:00,AS Eupen,Waasland-Beveren
+2018-12-01,19:00,Kortrijk,Royal Excel Mouscron
+2018-12-01,19:00,Lokeren,Gent
+2018-12-01,19:00,Zulte-Waregem,KV Oostende
+2018-12-08,19:00,Anderlecht,Charleroi
+2018-12-08,19:00,Cercle Brugge KSV,Antwerp
+2018-12-08,19:00,Genk,Kortrijk
+2018-12-08,19:00,Gent,AS Eupen
+2018-12-08,19:00,Royal Excel Mouscron,Zulte-Waregem
+2018-12-08,19:00,KV Oostende,Lokeren
+2018-12-08,19:00,Sint-Truiden,Standard Liège
+2018-12-08,19:00,Waasland-Beveren,Club Brugge KV
+2018-12-15,19:00,Antwerp,Waasland-Beveren
+2018-12-15,19:00,Cercle Brugge KSV,Anderlecht
+2018-12-15,19:00,Charleroi,Gent
+2018-12-15,19:00,AS Eupen,Royal Excel Mouscron
+2018-12-15,19:00,Genk,KV Oostende
+2018-12-15,19:00,Kortrijk,Club Brugge KV
+2018-12-15,19:00,Lokeren,Sint-Truiden
+2018-12-15,19:00,Standard Liège,Zulte-Waregem
+2018-12-22,19:00,Club Brugge KV,Antwerp
+2018-12-22,19:00,AS Eupen,Genk
+2018-12-22,19:00,Gent,Cercle Brugge KSV
+2018-12-22,19:00,Royal Excel Mouscron,Anderlecht
+2018-12-22,19:00,Standard Liège,KV Oostende
+2018-12-22,19:00,Sint-Truiden,Kortrijk
+2018-12-22,19:00,Waasland-Beveren,Lokeren
+2018-12-22,19:00,Zulte-Waregem,Charleroi

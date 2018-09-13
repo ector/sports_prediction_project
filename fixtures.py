@@ -26,7 +26,7 @@ class GameFixtures(object):
         :return: game fixtures.csv
         """
         self.log.info("Getting {} league fixture".format(league))
-        data = pd.read_csv(get_analysis_root_path('prototype/data/fixtures/all_fixtures/{}.csv'.format(league)),
+        data = pd.read_csv(get_analysis_root_path('tools/data/fixtures/all_fixtures/{}.csv'.format(league)),
                            usecols=['Date', 'Time', 'HomeTeam', 'AwayTeam'])
 
         data = team_translation(data=data, league=league)

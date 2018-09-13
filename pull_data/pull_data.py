@@ -5,12 +5,12 @@ from multiprocessing import Pool
 import requests
 from pymongo import MongoClient
 
-from te_logger.logger import log
-
 try:
     from utils import get_config
+    from te_logger.logger import log
 except ImportError:
     from tools.utils import get_config
+    from tools.te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")
@@ -22,7 +22,6 @@ class PullData(object):
         self.football_data = None
         self.filename = None
         self.league_code = ''
-        self.data_directory = 'prototype/data/raw_data/{}.csv'
 
     def download_football_data(self):
         """

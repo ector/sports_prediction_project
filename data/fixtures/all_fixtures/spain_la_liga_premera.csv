@@ -1,0 +1,121 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-14,20:00,Huesca,Rayo Vallecano
+2018-09-15,12:00,Atlético Madrid,Eibar
+2018-09-15,15:15,Real Sociedad,Barcelona
+2018-09-15,17:30,Valencia,Real Betis
+2018-09-15,19:45,Athletic Club,Real Madrid
+2018-09-16,11:00,Leganés,Villarreal
+2018-09-16,15:15,Espanol,Levante
+2018-09-16,17:30,Valladolid,Deportivo Alavés
+2018-09-16,19:45,Sevilla,Getafe
+2018-09-17,20:00,Girona,Celta de Vigo
+2018-09-21,20:00,Huesca,Real Sociedad
+2018-09-22,12:00,Rayo Vallecano,Deportivo Alavés
+2018-09-22,15:15,Celta de Vigo,Valladolid
+2018-09-22,15:15,Eibar,Leganés
+2018-09-22,17:30,Getafe,Atlético Madrid
+2018-09-22,19:45,Real Madrid,Espanol
+2018-09-23,11:00,Levante,Sevilla
+2018-09-23,15:15,Villarreal,Valencia
+2018-09-23,17:30,Real Betis,Athletic Club
+2018-09-23,19:45,Barcelona,Girona
+2018-09-25,19:00,Espanol,Eibar
+2018-09-25,20:00,Real Sociedad,Rayo Vallecano
+2018-09-25,21:00,Atlético Madrid,Huesca
+2018-09-26,19:00,Athletic Club,Villarreal
+2018-09-26,19:00,Leganés,Barcelona
+2018-09-26,21:00,Sevilla,Real Madrid
+2018-09-26,21:00,Valencia,Celta de Vigo
+2018-09-27,19:00,Deportivo Alavés,Getafe
+2018-09-27,19:00,Valladolid,Levante
+2018-09-27,21:00,Girona,Real Betis
+2018-09-28,20:00,Rayo Vallecano,Espanol
+2018-09-29,12:00,Real Sociedad,Valencia
+2018-09-29,15:15,Barcelona,Athletic Club
+2018-09-29,17:30,Eibar,Sevilla
+2018-09-29,19:45,Real Madrid,Atlético Madrid
+2018-09-30,11:00,Huesca,Girona
+2018-09-30,15:15,Villarreal,Valladolid
+2018-09-30,17:30,Levante,Deportivo Alavés
+2018-09-30,19:45,Real Betis,Leganés
+2018-10-01,20:00,Celta de Vigo,Getafe
+2018-10-05,20:00,Athletic Club,Real Sociedad
+2018-10-06,12:00,Girona,Eibar
+2018-10-06,15:15,Getafe,Levante
+2018-10-06,17:30,Deportivo Alavés,Real Madrid
+2018-10-06,19:45,Leganés,Rayo Vallecano
+2018-10-07,11:00,Valladolid,Huesca
+2018-10-07,15:15,Atlético Madrid,Real Betis
+2018-10-07,17:30,Espanol,Villarreal
+2018-10-07,17:30,Sevilla,Celta de Vigo
+2018-10-07,19:45,Valencia,Barcelona
+2018-10-21,19:00,Barcelona,Sevilla
+2018-10-21,19:00,Real Betis,Valladolid
+2018-10-21,19:00,Celta de Vigo,Deportivo Alavés
+2018-10-21,19:00,Eibar,Athletic Club
+2018-10-21,19:00,Huesca,Espanol
+2018-10-21,19:00,Rayo Vallecano,Getafe
+2018-10-21,19:00,Real Madrid,Levante
+2018-10-21,19:00,Real Sociedad,Girona
+2018-10-21,19:00,Valencia,Leganés
+2018-10-21,19:00,Villarreal,Atlético Madrid
+2018-10-28,19:00,Deportivo Alavés,Villarreal
+2018-10-28,19:00,Athletic Club,Valencia
+2018-10-28,19:00,Atlético Madrid,Real Sociedad
+2018-10-28,19:00,Barcelona,Real Madrid
+2018-10-28,19:00,Celta de Vigo,Eibar
+2018-10-28,19:00,Getafe,Real Betis
+2018-10-28,19:00,Girona,Rayo Vallecano
+2018-10-28,19:00,Levante,Leganés
+2018-10-28,19:00,Sevilla,Huesca
+2018-10-28,19:00,Valladolid,Espanol
+2018-11-04,19:00,Real Betis,Celta de Vigo
+2018-11-04,19:00,Eibar,Deportivo Alavés
+2018-11-04,19:00,Espanol,Athletic Club
+2018-11-04,19:00,Huesca,Getafe
+2018-11-04,19:00,Leganés,Atlético Madrid
+2018-11-04,19:00,Rayo Vallecano,Barcelona
+2018-11-04,19:00,Real Madrid,Valladolid
+2018-11-04,19:00,Real Sociedad,Sevilla
+2018-11-04,19:00,Valencia,Girona
+2018-11-04,19:00,Villarreal,Levante
+2018-11-11,19:00,Deportivo Alavés,Huesca
+2018-11-11,19:00,Atlético Madrid,Athletic Club
+2018-11-11,19:00,Barcelona,Real Betis
+2018-11-11,19:00,Celta de Vigo,Real Madrid
+2018-11-11,19:00,Getafe,Valencia
+2018-11-11,19:00,Girona,Leganés
+2018-11-11,19:00,Levante,Real Sociedad
+2018-11-11,19:00,Rayo Vallecano,Villarreal
+2018-11-11,19:00,Sevilla,Espanol
+2018-11-11,19:00,Valladolid,Eibar
+2018-11-25,19:00,Athletic Club,Getafe
+2018-11-25,19:00,Atlético Madrid,Barcelona
+2018-11-25,19:00,Eibar,Real Madrid
+2018-11-25,19:00,Espanol,Girona
+2018-11-25,19:00,Huesca,Levante
+2018-11-25,19:00,Leganés,Deportivo Alavés
+2018-11-25,19:00,Real Sociedad,Celta de Vigo
+2018-11-25,19:00,Sevilla,Valladolid
+2018-11-25,19:00,Valencia,Rayo Vallecano
+2018-11-25,19:00,Villarreal,Real Betis
+2018-12-02,19:00,Deportivo Alavés,Sevilla
+2018-12-02,19:00,Barcelona,Villarreal
+2018-12-02,19:00,Real Betis,Real Sociedad
+2018-12-02,19:00,Celta de Vigo,Huesca
+2018-12-02,19:00,Getafe,Espanol
+2018-12-02,19:00,Girona,Atlético Madrid
+2018-12-02,19:00,Levante,Athletic Club
+2018-12-02,19:00,Rayo Vallecano,Eibar
+2018-12-02,19:00,Real Madrid,Valencia
+2018-12-02,19:00,Valladolid,Leganés
+2018-12-09,19:00,Athletic Club,Girona
+2018-12-09,19:00,Atlético Madrid,Deportivo Alavés
+2018-12-09,19:00,Real Betis,Rayo Vallecano
+2018-12-09,19:00,Eibar,Levante
+2018-12-09,19:00,Espanol,Barcelona
+2018-12-09,19:00,Huesca,Real Madrid
+2018-12-09,19:00,Leganés,Getafe
+2018-12-09,19:00,Real Sociedad,Valladolid
+2018-12-09,19:00,Valencia,Sevilla
+2018-12-09,19:00,Villarreal,Celta de Vigo

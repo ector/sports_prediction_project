@@ -1,0 +1,109 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-15,17:30,Den Haag,PSV
+2018-09-15,17:30,Graafschap,Venlo
+2018-09-15,19:45,Ajax,Groningen
+2018-09-15,19:45,Willem II,Excelsior
+2018-09-16,11:15,AZ Alkmaar,Feyenoord
+2018-09-16,13:30,Breda,Sittard
+2018-09-16,13:30,Heerenveen,Heracles
+2018-09-16,13:30,Utrecht,FC Emmen
+2018-09-16,15:45,Zwolle,Vitesse
+2018-09-21,19:00,Heracles,Graafschap
+2018-09-22,17:30,Sittard,Willem II
+2018-09-22,18:45,Excelsior,Heerenveen
+2018-09-22,18:45,Venlo,Breda
+2018-09-22,19:45,FC Emmen,Zwolle
+2018-09-23,11:15,Feyenoord,Utrecht
+2018-09-23,13:30,Groningen,AZ Alkmaar
+2018-09-23,13:30,Vitesse,Den Haag
+2018-09-23,15:45,PSV,Ajax
+2018-09-29,17:30,Breda,PSV
+2018-09-29,17:30,Heerenveen,Den Haag
+2018-09-29,19:45,Excelsior,Venlo
+2018-09-29,19:45,Sittard,Ajax
+2018-09-30,11:15,Heracles,FC Emmen
+2018-09-30,13:30,AZ Alkmaar,Zwolle
+2018-09-30,13:30,Graafschap,Willem II
+2018-09-30,13:30,Groningen,Utrecht
+2018-09-30,15:45,Feyenoord,Vitesse
+2018-10-05,19:00,Utrecht,Breda
+2018-10-06,17:30,Den Haag,Groningen
+2018-10-06,18:45,PSV,Venlo
+2018-10-06,18:45,Zwolle,Excelsior
+2018-10-06,19:45,Graafschap,Heerenveen
+2018-10-07,11:15,FC Emmen,Sittard
+2018-10-07,13:30,Vitesse,Heracles
+2018-10-07,13:30,Willem II,Feyenoord
+2018-10-07,15:45,Ajax,AZ Alkmaar
+2018-10-20,17:30,Excelsior,Vitesse
+2018-10-20,17:30,PSV,FC Emmen
+2018-10-20,19:45,Heerenveen,Ajax
+2018-10-20,19:45,Utrecht,AZ Alkmaar
+2018-10-21,11:15,Breda,Willem II
+2018-10-21,13:30,Feyenoord,Zwolle
+2018-10-21,13:30,Heracles,Groningen
+2018-10-21,13:30,Venlo,Den Haag
+2018-10-21,15:45,Sittard,Graafschap
+2018-10-26,19:00,FC Emmen,Venlo
+2018-10-27,17:30,Zwolle,Heracles
+2018-10-27,18:45,Graafschap,Excelsior
+2018-10-27,18:45,Groningen,PSV
+2018-10-27,19:45,Den Haag,Breda
+2018-10-28,11:15,Vitesse,Sittard
+2018-10-28,13:30,Ajax,Feyenoord
+2018-10-28,13:30,Willem II,Utrecht
+2018-10-28,15:45,AZ Alkmaar,Heerenveen
+2018-11-02,19:00,Excelsior,Groningen
+2018-11-03,17:30,Ajax,Willem II
+2018-11-03,17:30,Breda,Heracles
+2018-11-03,19:45,AZ Alkmaar,Graafschap
+2018-11-03,19:45,PSV,Vitesse
+2018-11-04,11:15,Heerenveen,FC Emmen
+2018-11-04,13:30,Sittard,Zwolle
+2018-11-04,13:30,Utrecht,Den Haag
+2018-11-04,15:45,Feyenoord,Venlo
+2018-11-09,19:00,Zwolle,Willem II
+2018-11-10,17:30,FC Emmen,Breda
+2018-11-10,18:45,Graafschap,PSV
+2018-11-10,18:45,Vitesse,Utrecht
+2018-11-10,19:45,Venlo,Sittard
+2018-11-11,11:15,Groningen,Heerenveen
+2018-11-11,13:30,Den Haag,AZ Alkmaar
+2018-11-11,13:30,Excelsior,Ajax
+2018-11-11,15:45,Heracles,Feyenoord
+2018-11-24,17:30,PSV,Heerenveen
+2018-11-24,17:30,Zwolle,Den Haag
+2018-11-24,19:45,Breda,Ajax
+2018-11-24,19:45,Sittard,Heracles
+2018-11-25,11:15,FC Emmen,Excelsior
+2018-11-25,13:30,Feyenoord,Groningen
+2018-11-25,13:30,Utrecht,Graafschap
+2018-11-25,13:30,Willem II,Vitesse
+2018-11-25,15:45,Venlo,AZ Alkmaar
+2018-11-30,19:00,Excelsior,Utrecht
+2018-12-01,17:30,Vitesse,FC Emmen
+2018-12-01,18:45,AZ Alkmaar,Willem II
+2018-12-01,18:45,Graafschap,Zwolle
+2018-12-01,19:45,Heerenveen,Sittard
+2018-12-02,11:15,Ajax,Den Haag
+2018-12-02,13:30,Feyenoord,PSV
+2018-12-02,13:30,Heracles,Venlo
+2018-12-02,15:45,Groningen,Breda
+2018-12-07,19:00,Sittard,AZ Alkmaar
+2018-12-08,17:30,PSV,Excelsior
+2018-12-08,17:30,Willem II,Heerenveen
+2018-12-08,19:45,Den Haag,Graafschap
+2018-12-08,19:45,Zwolle,Ajax
+2018-12-09,11:15,Utrecht,Heracles
+2018-12-09,13:30,FC Emmen,Feyenoord
+2018-12-09,13:30,Venlo,Groningen
+2018-12-09,15:45,Breda,Vitesse
+2018-12-14,19:00,Willem II,Den Haag
+2018-12-15,17:30,Zwolle,Breda
+2018-12-15,18:45,AZ Alkmaar,Excelsior
+2018-12-15,18:45,Heracles,PSV
+2018-12-15,19:45,Vitesse,Venlo
+2018-12-16,11:15,Heerenveen,Utrecht
+2018-12-16,13:30,Ajax,Graafschap
+2018-12-16,13:30,Groningen,FC Emmen
+2018-12-16,15:45,Feyenoord,Sittard

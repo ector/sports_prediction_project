@@ -1,6 +1,8 @@
 #!/usr/local/bin/python3
 
 import sys
+from itertools import chain
+
 import time
 import datetime
 import subprocess as sp
@@ -55,35 +57,45 @@ class Spinner:
         time.sleep(self.delay)
 
 
-spinner = Spinner()
-
-
 def print_with_spinner_when_running_py_file(filename):
+    spinner = Spinner()
     print("Running {}.py".format(filename))
     spinner.start()
     execute_with_python(command="python3 tools/{}.py".format(filename))
     spinner.stop()
 
 
-start = time.time()
+def set_all_scripts_on_fire():
+    """
+    run all scripts
+    :return:
+    """
+    start = time.time()
 
-time_now = datetime.datetime.now()
+    time_now = datetime.datetime.now()
 
-if time_now.hour in range(4, 21):
+    # Get gmaes fixture from the web
+    if time_now.hour in chain(range(4, 12), range(16, 18)):
 
-    print_with_spinner_when_running_py_file(filename="pull_data/pull_data")
+        print_with_spinner_when_running_py_file(filename="pull_data/download_fixtures")
+        # pass
 
-    print_with_spinner_when_running_py_file(filename="pull_data/download_fixtures")
+    # Pull dated result and get next 3 days fixtures ready for prediction
+    if time_now.hour in range(4, 21):
 
-print_with_spinner_when_running_py_file(filename="fixtures")
+        print_with_spinner_when_running_py_file(filename="pull_data/pull_data")
+        print_with_spinner_when_running_py_file(filename="fixtures")
 
-print_with_spinner_when_running_py_file(filename="process_data/process_previous_data")
+    print_with_spinner_when_running_py_file(filename="process_data/process_previous_data")
 
-print_with_spinner_when_running_py_file(filename="build_model/train_wdw_model")
+    print_with_spinner_when_running_py_file(filename="build_model/train_wdw_model")
 
-print_with_spinner_when_running_py_file(filename="build_model/train_over_under_25_model")
+    print_with_spinner_when_running_py_file(filename="build_model/train_over_under_25_model")
 
-print_with_spinner_when_running_py_file(filename="predictors/match_predictor")
+    print_with_spinner_when_running_py_file(filename="predictors/match_predictor")
 
-print("The whole program took: {} sec".format(time.time() - start))
-sys.exit()
+    print("The whole program took: {} sec".format(time.time() - start))
+
+
+if __name__ == '__main__':
+    set_all_scripts_on_fire()

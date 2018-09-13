@@ -1,0 +1,121 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-14,18:00,Nice,Rennes
+2018-09-14,19:45,Paris SG,Saint-Étienne
+2018-09-15,16:00,Caen,Olympique Lyonnais
+2018-09-15,19:00,Amiens SC,Lille
+2018-09-15,19:00,Dijon,Angers SCO
+2018-09-15,19:00,Montpellier,Strasbourg
+2018-09-15,19:00,Toulouse,Monaco
+2018-09-16,14:00,Nantes,Reims
+2018-09-16,16:00,Bordeaux,Nimes
+2018-09-16,20:00,Olympique Marseille,Guingamp
+2018-09-21,19:45,Monaco,Nimes
+2018-09-22,16:00,Lille,Nantes
+2018-09-22,19:00,Angers SCO,Toulouse
+2018-09-22,19:00,Montpellier,Nice
+2018-09-22,19:00,Reims,Dijon
+2018-09-22,19:00,Saint-Étienne,Caen
+2018-09-22,19:00,Strasbourg,Amiens SC
+2018-09-23,14:00,Rennes,Paris SG
+2018-09-23,16:00,Guingamp,Bordeaux
+2018-09-23,20:00,Olympique Lyonnais,Olympique Marseille
+2018-09-25,18:00,Monaco,Angers SCO
+2018-09-25,18:00,Nantes,Nice
+2018-09-25,20:00,Toulouse,Saint-Étienne
+2018-09-26,18:00,Amiens SC,Rennes
+2018-09-26,18:00,Bordeaux,Lille
+2018-09-26,18:00,Caen,Montpellier
+2018-09-26,18:00,Dijon,Olympique Lyonnais
+2018-09-26,18:00,Olympique Marseille,Strasbourg
+2018-09-26,18:00,Nimes,Guingamp
+2018-09-26,20:00,Paris SG,Reims
+2018-09-28,19:45,Saint-Étienne,Monaco
+2018-09-29,16:15,Nice,Paris SG
+2018-09-29,19:00,Angers SCO,Guingamp
+2018-09-29,19:00,Caen,Amiens SC
+2018-09-29,19:00,Olympique Lyonnais,Nantes
+2018-09-29,19:00,Reims,Bordeaux
+2018-09-29,19:00,Strasbourg,Dijon
+2018-09-30,14:00,Rennes,Toulouse
+2018-09-30,16:00,Montpellier,Nimes
+2018-09-30,20:00,Lille,Olympique Marseille
+2018-10-05,19:45,Toulouse,Nice
+2018-10-06,16:00,Lille,Saint-Étienne
+2018-10-06,19:00,Amiens SC,Dijon
+2018-10-06,19:00,Angers SCO,Strasbourg
+2018-10-06,19:00,Guingamp,Montpellier
+2018-10-06,19:00,Nimes,Reims
+2018-10-07,14:00,Bordeaux,Nantes
+2018-10-07,16:00,Olympique Marseille,Caen
+2018-10-07,16:00,Monaco,Rennes
+2018-10-07,20:00,Paris SG,Olympique Lyonnais
+2018-10-20,19:00,Caen,Guingamp
+2018-10-20,19:00,Dijon,Lille
+2018-10-20,19:00,Olympique Lyonnais,Nimes
+2018-10-20,19:00,Montpellier,Bordeaux
+2018-10-20,19:00,Nantes,Toulouse
+2018-10-20,19:00,Nice,Olympique Marseille
+2018-10-20,19:00,Paris SG,Amiens SC
+2018-10-20,19:00,Reims,Angers SCO
+2018-10-20,19:00,Saint-Étienne,Rennes
+2018-10-20,19:00,Strasbourg,Monaco
+2018-10-27,19:00,Amiens SC,Nantes
+2018-10-27,19:00,Angers SCO,Olympique Lyonnais
+2018-10-27,19:00,Bordeaux,Nice
+2018-10-27,19:00,Guingamp,Strasbourg
+2018-10-27,19:00,Lille,Caen
+2018-10-27,19:00,Monaco,Dijon
+2018-10-27,19:00,Nimes,Saint-Étienne
+2018-10-27,19:00,Rennes,Reims
+2018-10-27,19:00,Toulouse,Montpellier
+2018-10-28,20:00,Olympique Marseille,Paris SG
+2018-11-03,19:00,Caen,Rennes
+2018-11-03,19:00,Dijon,Nimes
+2018-11-03,19:00,Olympique Lyonnais,Bordeaux
+2018-11-03,19:00,Montpellier,Olympique Marseille
+2018-11-03,19:00,Nantes,Guingamp
+2018-11-03,19:00,Nice,Amiens SC
+2018-11-03,19:00,Paris SG,Lille
+2018-11-03,19:00,Reims,Monaco
+2018-11-03,19:00,Saint-Étienne,Angers SCO
+2018-11-03,19:00,Strasbourg,Toulouse
+2018-11-10,19:00,Angers SCO,Montpellier
+2018-11-10,19:00,Bordeaux,Caen
+2018-11-10,19:00,Guingamp,Olympique Lyonnais
+2018-11-10,19:00,Lille,Strasbourg
+2018-11-10,19:00,Olympique Marseille,Dijon
+2018-11-10,19:00,Nimes,Nice
+2018-11-10,19:00,Rennes,Nantes
+2018-11-10,19:00,Saint-Étienne,Reims
+2018-11-10,19:00,Toulouse,Amiens SC
+2018-11-11,20:00,Monaco,Paris SG
+2018-11-24,19:00,Amiens SC,Olympique Marseille
+2018-11-24,19:00,Caen,Monaco
+2018-11-24,19:00,Dijon,Bordeaux
+2018-11-24,19:00,Olympique Lyonnais,Saint-Étienne
+2018-11-24,19:00,Montpellier,Rennes
+2018-11-24,19:00,Nantes,Angers SCO
+2018-11-24,19:00,Nice,Lille
+2018-11-24,19:00,Paris SG,Toulouse
+2018-11-24,19:00,Reims,Guingamp
+2018-11-24,19:00,Strasbourg,Nimes
+2018-12-01,19:00,Angers SCO,Caen
+2018-12-01,19:00,Bordeaux,Paris SG
+2018-12-01,19:00,Guingamp,Nice
+2018-12-01,19:00,Lille,Olympique Lyonnais
+2018-12-01,19:00,Olympique Marseille,Reims
+2018-12-01,19:00,Monaco,Montpellier
+2018-12-01,19:00,Nimes,Amiens SC
+2018-12-01,19:00,Rennes,Strasbourg
+2018-12-01,19:00,Saint-Étienne,Nantes
+2018-12-01,19:00,Toulouse,Dijon
+2018-12-05,19:00,Amiens SC,Monaco
+2018-12-05,19:00,Bordeaux,Saint-Étienne
+2018-12-05,19:00,Caen,Nimes
+2018-12-05,19:00,Dijon,Guingamp
+2018-12-05,19:00,Olympique Lyonnais,Rennes
+2018-12-05,19:00,Montpellier,Lille
+2018-12-05,19:00,Nantes,Olympique Marseille
+2018-12-05,19:00,Nice,Angers SCO
+2018-12-05,19:00,Reims,Toulouse
+2018-12-05,19:00,Strasbourg,Paris SG

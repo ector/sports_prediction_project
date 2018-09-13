@@ -4,12 +4,14 @@ import pandas as pd
 from pymongo import MongoClient
 from sklearn.externals import joblib
 
-from te_logger.logger import log
 
 try:
     from utils import get_analysis_root_path, get_config
+    from te_logger.logger import log
+
 except ImportError:
     from tools.utils import get_analysis_root_path, get_config
+    from tools.te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 
@@ -44,17 +46,18 @@ class Predictors(object):
         prediction = None
 
         wdw_columns = get_config(file="wdw_columns/{}".format(league)).get(league)
+        ou25_columns = get_config(file="ou25_columns/{}".format(league)).get(league)
 
-        lg_data = pd.read_csv(get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv'.format(league)), index_col=False)
+        lg_data = pd.read_csv(get_analysis_root_path('tools/data/clean_data/team_trend/{}.csv'.format(league)), index_col=False)
         unplayed_data = lg_data[lg_data["played"] == 0]
 
         if len(unplayed_data) > 0:
             wdw_data = unplayed_data[wdw_columns]
-            ou25_data = unplayed_data.drop(['Date', 'played', 'Time'], axis=1)
+            ou25_data = unplayed_data[ou25_columns]
 
             try:
                 # For wdw Market
-                clf = joblib.load(get_analysis_root_path('prototype/league_models/{}'.format(league)))
+                clf = joblib.load(get_analysis_root_path('tools/league_models/{}'.format(league)))
 
                 unplayed_data.loc[:, "p_ftr"] = clf.predict(wdw_data)
                 unplayed_data.loc[:, "league"] = league
@@ -64,13 +67,13 @@ class Predictors(object):
                 unplayed_data.loc[:, "a_prob"] = outcome_probs[:, 0]
                 unplayed_data.loc[:, "h_prob"] = outcome_probs[:, 2]
                 # For Double Chance Market
-                clf_1x = joblib.load(get_analysis_root_path('prototype/league_models/{}_1x'.format(league)))
-                clf_x2 = joblib.load(get_analysis_root_path('prototype/league_models/{}_x2'.format(league)))
+                clf_1x = joblib.load(get_analysis_root_path('tools/league_models/{}_1x'.format(league)))
+                clf_x2 = joblib.load(get_analysis_root_path('tools/league_models/{}_x2'.format(league)))
 
                 unplayed_data.loc[:, "dc"] = self.treat_result(clf_1x.predict(wdw_data), clf_x2.predict(wdw_data))
 
                 # For O/U 2.5 Market
-                ou25_model = joblib.load(get_analysis_root_path('prototype/league_models/{}_ou25'.format(league)))
+                ou25_model = joblib.load(get_analysis_root_path('tools/league_models/{}_ou25'.format(league)))
                 unplayed_data.loc[:, "ou25"] = ou25_model.predict(ou25_data)
 
                 prediction = unplayed_data[["Date", "Time", "HomeTeam", "AwayTeam", "p_ftr", "d_prob", "a_prob", "h_prob",
@@ -102,7 +105,7 @@ class Predictors(object):
 
             try:
                 self.log.info("Connecting to the database")
-                client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+                client = MongoClient(mongodb_uri+'11', connectTimeoutMS=30000)
                 db = client.get_database("sports_prediction")
 
                 wdw_football = db.wdw_football
@@ -125,14 +128,14 @@ class Predictors(object):
                 self.log.info("Done!!!")
             except Exception as e:
                 self.log.error("Saving to wdw: \n{0}".format(str(e)))
-                preds.to_csv(get_analysis_root_path('prototype/data/predictions/wdw_{}'.format(league)),
+                preds.to_csv(get_analysis_root_path('tools/data/predictions/wdw_{}'.format(league)),
                              index=False)
 
 
 if __name__ == '__main__':
     dr = Predictors()
     for lg in get_config().keys():
-        if os.path.exists(get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv'.format(lg))):
+        if os.path.exists(get_analysis_root_path('tools/data/fixtures/selected_fixtures/{}.csv'.format(lg))):
             dr.save_prediction(league=lg)
         else:
             log.warn("{} has no new games".format(lg).upper())

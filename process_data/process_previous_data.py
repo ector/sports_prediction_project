@@ -10,13 +10,14 @@ import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
+# from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
 
 try:
     from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
-except ImportError:
+    from te_logger.logger import log
+except:
     from tools.utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
-
-from te_logger.logger import log
+    from tools.te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")
@@ -37,7 +38,7 @@ def string_to_array(string, length=5):
 
 class ProcessPreviousData(object):
     def __init__(self):
-        self.clean_team_trend_data_directory = get_analysis_root_path('prototype/data/clean_data/team_trend/{}.csv')
+        self.clean_team_trend_data_directory = get_analysis_root_path('tools/data/clean_data/team_trend/{}.csv')
 
     def compute_trend(self, data, lg):
         """
@@ -112,29 +113,29 @@ class ProcessPreviousData(object):
         data = self.compute_trend(data, lg)
 
         data[["A", "D", "H"]] = pd.get_dummies(data.FTR)
-        data["HLM"] = data.H * 3 + data.D
-        data["ALM"] = data.A * 3 + data.D
+        data.loc[:, "HLM"] = data.H * 3 + data.D
+        data.loc[:, "ALM"] = data.A * 3 + data.D
 
-        data["HLM"] = data.groupby("HomeTeam")["HLM"].shift(1).fillna(value=0)
-        data["ALM"] = data.groupby("AwayTeam")["ALM"].shift(1).fillna(value=0)
-        data["ACUM"] = data.groupby(["Season", "AwayTeam"])["ALM"].cumsum()
-        data["HCUM"] = data.groupby(["Season", "HomeTeam"])["HLM"].cumsum()
+        data.loc[:, "HLM"] = data.groupby("HomeTeam")["HLM"].shift(1).fillna(value=0)
+        data.loc[:, "ALM"] = data.groupby("AwayTeam")["ALM"].shift(1).fillna(value=0)
+        data.loc[:, "ACUM"] = data.groupby(["Season", "AwayTeam"])["ALM"].cumsum()
+        data.loc[:, "HCUM"] = data.groupby(["Season", "HomeTeam"])["HLM"].cumsum()
         data = data.drop(["A", "D", "H"], axis=1).dropna()
 
-        data["AAG"] = data.groupby(["AwayTeam"])["FTAG"].shift(1).fillna(0)
-        data["AAG"] = data.groupby(["Season", "AwayTeam"])["AAG"].apply(
+        data.loc[:, "AAG"] = data.groupby(["AwayTeam"])["FTAG"].shift(1).fillna(0)
+        data.loc[:, "AAG"] = data.groupby(["Season", "AwayTeam"])["AAG"].apply(
             lambda x: x.rolling(window=5, min_periods=1).mean())
 
-        data["HAG"] = data.groupby(["HomeTeam"])["FTHG"].shift(1).fillna(0)
-        data["HAG"] = data.groupby(["Season", "HomeTeam"])["HAG"].apply(
+        data.loc[:, "HAG"] = data.groupby(["HomeTeam"])["FTHG"].shift(1).fillna(0)
+        data.loc[:, "HAG"] = data.groupby(["Season", "HomeTeam"])["HAG"].apply(
             lambda x: x.rolling(window=5, min_periods=1).mean())
 
-        data["AAGC"] = data.groupby(["AwayTeam"])["FTHG"].shift(1).fillna(0)
-        data["AAGC"] = data.groupby(["Season", "AwayTeam"])["AAGC"].apply(
+        data.loc[:, "AAGC"] = data.groupby(["AwayTeam"])["FTHG"].shift(1).fillna(0)
+        data.loc[:, "AAGC"] = data.groupby(["Season", "AwayTeam"])["AAGC"].apply(
             lambda x: x.rolling(min_periods=1, window=5).mean())
 
-        data["HAGC"] = data.groupby(["AwayTeam"])["FTAG"].shift(1).fillna(0)
-        data["HAGC"] = data.groupby(["Season", "HomeTeam"])["HAGC"].apply(
+        data.loc[:, "HAGC"] = data.groupby(["AwayTeam"])["FTAG"].shift(1).fillna(0)
+        data.loc[:, "HAGC"] = data.groupby(["Season", "HomeTeam"])["HAGC"].apply(
             lambda x: x.rolling(min_periods=1, window=5).mean())
 
         return data
@@ -142,7 +143,7 @@ class ProcessPreviousData(object):
     def store_significant_columns(self, lg="england_premiership"):
         self.log = log
 
-        fix_path = get_analysis_root_path('prototype/data/fixtures/selected_fixtures/{}.csv'.format(lg))
+        fix_path = get_analysis_root_path('tools/data/fixtures/selected_fixtures/{}.csv'.format(lg))
         if os.path.exists(fix_path):
             fix_data = pd.read_csv(fix_path)
             fix_data["FTHG"] = 0
@@ -163,20 +164,34 @@ class ProcessPreviousData(object):
             agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
 
             agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
-            target_real = agg_data.FTR.map({"A": -3, "D": 0, "H": 3})
-            agg_data = agg_data.drop(['FTR', 'FTHG', 'FTAG'], axis=1)
 
-            me = agg_data[agg_data["played"] == 1].corrwith(target_real)
-            sig_data = me.where(me.abs() > 0.05)
-            sig_data = sig_data.dropna()
-            sig_cols = list(sig_data.index)
-            save_league_model_attr(model="wdw_columns", league=lg, cols=sig_cols)
 
-            agg_data["FTR"] = target_real
+            #TODO: make sure that played_data is used to find significant columns
+            played_data = agg_data[agg_data["played"] == 1]
+
+            target_real = played_data.FTR.map({"A": -3, "D": 0, "H": 3})
+            played_data.loc[:, 'ou25_target'] = list(np.where((played_data.HAG + played_data.AAG) > 2.5, 1, 0))
+            ou25_target = played_data.ou25_target
+            played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'ou25_target'], axis=1)
+
+            wdw_coef_data = played_data.corrwith(target_real)
+            wdw_sig_data = wdw_coef_data.where(wdw_coef_data.abs() > 0.05)
+            wdw_sig_data = wdw_sig_data.dropna()
+            wdw_sig_cols = list(wdw_sig_data.index)
+            save_league_model_attr(model="wdw_columns", league=lg, cols=wdw_sig_cols)
+
+            ou25_coef_data = played_data.corrwith(ou25_target)
+            ou25_sig_data = ou25_coef_data.where(ou25_coef_data.abs() > 0.05)
+            ou25_sig_data = ou25_sig_data.dropna()
+            ou25_sig_cols = list(ou25_sig_data.index)
+            save_league_model_attr(model="ou25_columns", league=lg, cols=ou25_sig_cols)
+
+            agg_data = agg_data.drop(['FTHG', 'FTAG'], axis=1)
+            # agg_data["FTR"] = target_real
             agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
             self.log.info("{} data saved in clean folder".format(lg.upper()))
         else:
-            self.log.warn("{} not proceeds as there are no fixtures for the next 3 days".format(lg).upper())
+            self.log.warn("{} not processed as there are no fixtures for the next 3 days".format(lg).upper())
 
 
 if __name__ == '__main__':

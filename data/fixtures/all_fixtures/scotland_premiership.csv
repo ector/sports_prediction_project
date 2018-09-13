@@ -1,0 +1,109 @@
+Date,Time,HomeTeam,AwayTeam
+2018-09-14,19:45,St. Mirren,Celtic
+2018-09-15,15:00,Hibernian,Kilmarnock
+2018-09-15,15:00,Livingston,Hamilton
+2018-09-15,15:00,Motherwell,Hearts
+2018-09-15,15:00,Rangers,Dundee FC
+2018-09-15,15:00,St Johnstone,Aberdeen
+2018-09-22,15:00,Aberdeen,Motherwell
+2018-09-22,15:00,Dundee FC,Hibernian
+2018-09-22,15:00,Hamilton,St. Mirren
+2018-09-22,15:00,Hearts,Livingston
+2018-09-23,12:30,Kilmarnock,Celtic
+2018-09-23,15:00,Rangers,St Johnstone
+2018-09-29,15:00,Celtic,Aberdeen
+2018-09-29,15:00,Hamilton,Dundee FC
+2018-09-29,15:00,Hearts,St Johnstone
+2018-09-29,15:00,Kilmarnock,Motherwell
+2018-09-29,15:00,St. Mirren,Hibernian
+2018-09-30,13:30,Livingston,Rangers
+2018-10-06,15:00,Aberdeen,St. Mirren
+2018-10-06,15:00,Dundee FC,Kilmarnock
+2018-10-06,15:00,Hibernian,Hamilton
+2018-10-06,15:00,Motherwell,Livingston
+2018-10-07,15:00,Rangers,Hearts
+2018-10-07,15:30,St Johnstone,Celtic
+2018-10-20,15:00,Celtic,Hibernian
+2018-10-20,15:00,Hearts,Aberdeen
+2018-10-20,15:00,Livingston,Dundee FC
+2018-10-20,15:00,Motherwell,St Johnstone
+2018-10-20,15:00,St. Mirren,Kilmarnock
+2018-10-21,13:30,Hamilton,Rangers
+2018-10-27,15:00,Aberdeen,Livingston
+2018-10-27,15:00,Dundee FC,Hearts
+2018-10-27,15:00,Kilmarnock,Hamilton
+2018-10-27,15:00,St Johnstone,St. Mirren
+2018-10-28,12:15,Hibernian,Rangers
+2018-10-28,15:00,Celtic,Motherwell
+2018-10-31,19:45,Aberdeen,Hamilton
+2018-10-31,19:45,Dundee FC,Celtic
+2018-10-31,19:45,Hearts,Hibernian
+2018-10-31,19:45,Livingston,St Johnstone
+2018-10-31,19:45,Rangers,Kilmarnock
+2018-10-31,19:45,St. Mirren,Motherwell
+2018-11-03,12:30,St. Mirren,Rangers
+2018-11-03,15:00,Celtic,Hearts
+2018-11-03,15:00,Hamilton,Livingston
+2018-11-03,15:00,Hibernian,St Johnstone
+2018-11-03,15:00,Motherwell,Dundee FC
+2018-11-04,12:15,Kilmarnock,Aberdeen
+2018-11-09,19:45,Aberdeen,Hibernian
+2018-11-10,15:00,Dundee FC,St. Mirren
+2018-11-10,15:00,Hearts,Kilmarnock
+2018-11-10,15:00,St Johnstone,Hamilton
+2018-11-11,12:00,Livingston,Celtic
+2018-11-11,15:00,Rangers,Motherwell
+2018-11-24,12:30,Hamilton,Celtic
+2018-11-24,15:00,Hibernian,Dundee FC
+2018-11-24,15:00,Motherwell,Aberdeen
+2018-11-24,15:00,Rangers,Livingston
+2018-11-24,15:00,St Johnstone,Kilmarnock
+2018-11-24,15:00,St. Mirren,Hearts
+2018-12-01,15:00,Aberdeen,Dundee FC
+2018-12-01,15:00,Kilmarnock,Hibernian
+2018-12-01,15:00,Livingston,Motherwell
+2018-12-01,15:00,St. Mirren,Hamilton
+2018-12-02,15:00,Celtic,St Johnstone
+2018-12-02,15:00,Hearts,Rangers
+2018-12-05,19:45,Dundee FC,Hamilton
+2018-12-05,19:45,Hibernian,St. Mirren
+2018-12-05,19:45,Kilmarnock,Livingston
+2018-12-05,19:45,Motherwell,Celtic
+2018-12-05,19:45,Rangers,Aberdeen
+2018-12-05,19:45,St Johnstone,Hearts
+2018-12-08,15:00,Aberdeen,St Johnstone
+2018-12-08,15:00,Celtic,Kilmarnock
+2018-12-08,15:00,Dundee FC,Rangers
+2018-12-08,15:00,Hamilton,Hibernian
+2018-12-08,15:00,Hearts,Motherwell
+2018-12-08,15:00,Livingston,St. Mirren
+2018-12-15,15:00,Kilmarnock,Dundee FC
+2018-12-15,15:00,Livingston,Hearts
+2018-12-15,15:00,St Johnstone,Motherwell
+2018-12-15,15:00,St. Mirren,Aberdeen
+2018-12-16,15:00,Hibernian,Celtic
+2018-12-16,15:00,Rangers,Hamilton
+2018-12-22,15:00,Aberdeen,Hearts
+2018-12-22,15:00,Celtic,Dundee FC
+2018-12-22,15:00,Hamilton,Kilmarnock
+2018-12-22,15:00,Hibernian,Livingston
+2018-12-22,15:00,Motherwell,St. Mirren
+2018-12-22,15:00,St Johnstone,Rangers
+2018-12-26,15:00,Aberdeen,Celtic
+2018-12-26,15:00,Dundee FC,Livingston
+2018-12-26,15:00,Hearts,Hamilton
+2018-12-26,15:00,Motherwell,Kilmarnock
+2018-12-26,15:00,Rangers,Hibernian
+2018-12-26,15:00,St. Mirren,St Johnstone
+2018-12-29,15:00,Dundee FC,St Johnstone
+2018-12-29,15:00,Hamilton,Motherwell
+2018-12-29,15:00,Hibernian,Hearts
+2018-12-29,15:00,Kilmarnock,St. Mirren
+2018-12-29,15:00,Livingston,Aberdeen
+2018-12-29,15:00,Rangers,Celtic
+2019-01-23,19:45,Celtic,St. Mirren
+2019-01-23,19:45,Hamilton,Aberdeen
+2019-01-23,19:45,Hearts,Dundee FC
+2019-01-23,19:45,Kilmarnock,Rangers
+2019-01-23,19:45,Motherwell,Hibernian
+2019-01-23,19:45,St Johnstone,Livingston
