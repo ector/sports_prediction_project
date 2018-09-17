@@ -85,6 +85,7 @@ def set_all_scripts_on_fire():
 
         print_with_spinner_when_running_py_file(filename="pull_data/pull_data")
         print_with_spinner_when_running_py_file(filename="fixtures")
+        # pass
 
     print_with_spinner_when_running_py_file(filename="process_data/process_previous_data")
 
