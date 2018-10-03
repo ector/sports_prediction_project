@@ -10,14 +10,9 @@ import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
-# from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
+from te_logger.logger import log
 
-try:
-    from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
-    from te_logger.logger import log
-except:
-    from tools.utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
-    from tools.te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")

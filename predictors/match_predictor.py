@@ -4,14 +4,9 @@ import pandas as pd
 from pymongo import MongoClient
 from sklearn.externals import joblib
 
+from utils import get_analysis_root_path, get_config
+from te_logger.logger import log
 
-try:
-    from utils import get_analysis_root_path, get_config
-    from te_logger.logger import log
-
-except ImportError:
-    from tools.utils import get_analysis_root_path, get_config
-    from tools.te_logger.logger import log
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 

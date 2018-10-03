@@ -3,12 +3,8 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-try:
-    from utils import get_config
-    from te_logger.logger import log
-except ImportError:
-    from tools.utils import get_config
-    from tools.te_logger.logger import log
+from utils import get_config
+from te_logger.logger import log
 
 leagues = get_config(file="flashscore_leagues")
 translation = get_config(file='team_translation')

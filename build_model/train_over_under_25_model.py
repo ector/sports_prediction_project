@@ -7,15 +7,10 @@ Created on 31-12-2017 at 5:10 PM
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-
-from sklearn.svm import SVC
 from sklearn.externals import joblib
-try:
-    from utils import get_analysis_root_path, get_config
-    from te_logger.logger import log
-except ImportError:
-    from tools.utils import get_analysis_root_path, get_config
-    from tools.te_logger.logger import log
+
+from utils import get_analysis_root_path, get_config
+from te_logger.logger import log
 
 leagues_data = get_config(file="league")
 model_columns = get_config(file="model_columns")

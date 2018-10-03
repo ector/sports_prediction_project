@@ -1,12 +1,8 @@
 import pandas as pd
 
 from te_logger.logger import log
-try:
-    from utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file, team_translation, \
-        delete_fixtures_in_file
-except ImportError:
-    from tools.utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file, \
-        team_translation, delete_fixtures_in_file
+from utils import get_analysis_root_path, get_start_and_end_dates, get_config, save_fixtures_to_file, team_translation, \
+    delete_fixtures_in_file
 
 translation = get_config("team_translation")
 
