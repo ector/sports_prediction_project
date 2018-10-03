@@ -4,18 +4,12 @@ Created on 13-09-2017 at 8:54 PM
 
 @author: tola
 """
-import os
-
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
 
-try:
-    from utils import get_analysis_root_path, get_config
-    from te_logger.logger import log
-except ImportError:
-    from tools.utils import get_analysis_root_path, get_config
-    from tools.te_logger.logger import log
+from utils import get_analysis_root_path, get_config
+from te_logger.logger import log
 
 
 leagues_data = get_config(file="league")
