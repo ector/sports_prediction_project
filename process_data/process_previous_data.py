@@ -5,7 +5,6 @@ Created on 15-06-2018 at 2:09 PM
 @author: tola
 """
 import os
-
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
@@ -165,6 +164,8 @@ class ProcessPreviousData(object):
     def store_significant_columns(self, lg="england_premiership"):
         self.log = log
 
+        self.log.info("Processing {} data".format(lg))
+
         fix_path = get_analysis_root_path('tools/data/fixtures/selected_fixtures/{}.csv'.format(lg))
         if os.path.exists(fix_path):
             fix_data = pd.read_csv(fix_path)
@@ -187,7 +188,9 @@ class ProcessPreviousData(object):
 
             agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
             agg_data = agg_data.fillna(0)
-            agg_data.loc[:, 'UO25'] = list(np.where((agg_data.FTHG + agg_data.FTAG) > 2.5, 1, 0))
+            # data.loc[:, "FTAG"] = pd.to_numeric(agg_data.FTAG.values)
+            # data.loc[:, "FTHG"] = pd.to_numeric(agg_data.FTHG.values)
+            agg_data.loc[:, 'UO25'] = list(np.where((pd.to_numeric(agg_data.FTHG.values) + pd.to_numeric(agg_data.FTAG.values)) > 2.5, 1, 0))
 
             #TODO: make sure that played_data is used to find significant columns
             played_data = agg_data[agg_data["played"] == 1]

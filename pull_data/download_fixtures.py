@@ -9,13 +9,14 @@ from te_logger.logger import log
 leagues = get_config(file="flashscore_leagues")
 translation = get_config(file='team_translation')
 
+driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+
 for k in leagues.keys():
     country, league = leagues.get(k).split("_")
     translate = translation.get(k)
 
     url = "https://www.flashscore.com/football/{}/{}/fixtures".format(country, league)
     print(url)
-    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
     driver.get(url)
     time.sleep(2)
     ddt = []  # date
@@ -40,8 +41,6 @@ for k in leagues.keys():
     for e in driver.find_elements_by_class_name("padl"):
         away.append(e.text)
 
-    driver.close()
-
     er = pd.DataFrame(ddt, columns=["Date"])
     er["Time"] = dtm
     er["HomeTeam"] = home
@@ -50,3 +49,5 @@ for k in leagues.keys():
     er["HomeTeam"].replace(translate, inplace=True)
     er["AwayTeam"].replace(translate, inplace=True)
     er.to_csv('../../tools/data/fixtures/all_fixtures/{}.csv'.format(k), index=False)
+
+driver.close()

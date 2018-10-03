@@ -4,8 +4,6 @@ Created on 13-09-2017 at 8:54 PM
 
 @author: tola
 """
-import os
-
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
