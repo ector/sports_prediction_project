@@ -188,8 +188,6 @@ class ProcessPreviousData(object):
 
             agg_data = self.compute_last_point_ave_goals_and_goals_conceded(data=agg_data, lg=lg)
             agg_data = agg_data.fillna(0)
-            # data.loc[:, "FTAG"] = pd.to_numeric(agg_data.FTAG.values)
-            # data.loc[:, "FTHG"] = pd.to_numeric(agg_data.FTHG.values)
             agg_data.loc[:, 'UO25'] = list(np.where((pd.to_numeric(agg_data.FTHG.values) + pd.to_numeric(agg_data.FTAG.values)) > 2.5, 1, 0))
 
             #TODO: make sure that played_data is used to find significant columns
