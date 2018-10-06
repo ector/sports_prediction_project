@@ -23,12 +23,9 @@ for league in leagues:
         games = games.dropna(how='any')
 
         model_columns = get_config(file="ou25_columns/{}".format(league)).get(league)
-        data = games.loc[(games.Season.isin([1516, 1617, 1718, 1819])) & (games.played == 1)]
+        data = games.loc[(games.Season.isin([1415, 1516, 1617, 1718, 1819])) & (games.played == 1)]
 
-        data.loc[:, "OU25"] = np.where((data.HAG + data.AAG) > 2.5, 1, 0)
-
-        data = data.sample(frac=1)
-        target = data.OU25
+        target = data.UO25.values
 
         # Data without target
         data = data[model_columns]
@@ -39,7 +36,7 @@ for league in leagues:
 
         model_filename = get_analysis_root_path("tools/league_models/{}_ou25".format(league))
         joblib.dump(model, model_filename)
-    except:
-        log.warn("New O/U 2.5 model not built for {}".format(league).upper())
+    except Exception as e:
+        log.warn("New O/U 2.5 model not built for {} \n{}".format(league.upper(), e))
 
 log.info("Finished training over under 2.5 model")

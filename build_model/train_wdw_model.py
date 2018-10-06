@@ -27,9 +27,9 @@ for league in leagues:
         model_columns = get_config(file="wdw_columns/{}".format(league)).get(league)
         played_data = games.loc[(games.Season.isin([1415, 1516, 1617, 1718, 1819])) & (games.played == 1)]
 
-        target = played_data.FTR
-        target_1x = played_data.FTR.map({0: 0, -3: 1, 3: 0})
-        target_x2 = played_data.FTR.map({0: 0, -3: 0, 3: 1})
+        target = played_data.FTR.map({"D": 0, "A": -3, "H": 3})
+        target_1x = played_data.FTR.map({"D": 0, "A": 1, "H": 0})
+        target_x2 = played_data.FTR.map({"D": 0, "A": 0, "H": 1})
 
         log.info("{} significant columns: {}".format(league.upper(), model_columns))
 
