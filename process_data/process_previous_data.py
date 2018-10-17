@@ -186,12 +186,14 @@ class ProcessPreviousData(object):
             agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
             self.log.info("{} data saved in clean folder".format(lg.upper()))
         else:
-            self.log.warn("{} not processed as there are no fixtures for the next 3 days".format(lg).upper())
+            self.log.warning("{} not processed as there are no fixtures for the next 3 days".format(lg).upper())
 
 
 if __name__ == '__main__':
     ppd = ProcessPreviousData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
-    p = Pool(processes=20)
-    p.map(ProcessPreviousData().store_significant_columns, league_list)
+    for league in league_list:
+        ppd.store_significant_columns(lg=league)
+    # p = Pool(processes=20)
+    # p.map(ProcessPreviousData().store_significant_columns, league_list)

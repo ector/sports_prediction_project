@@ -1,5 +1,4 @@
 import os
-
 import pandas as pd
 from pymongo import MongoClient
 from sklearn.externals import joblib
@@ -111,7 +110,7 @@ class Predictors(object):
                     pred = dict(pred)
                     exist = {'league': pred.get('league'), 'home': pred.get('home'), 'away': pred.get('away'),
                          'time': pred.get('time'), 'date': pred.get('date')}
-                    wdw_count = wdw_football.find(exist).count()
+                    wdw_count = wdw_football.count_documents(exist)
 
                     if wdw_count == 0:
                         pred_list.append(pred)
@@ -133,4 +132,4 @@ if __name__ == '__main__':
         if os.path.exists(get_analysis_root_path('tools/data/fixtures/selected_fixtures/{}.csv'.format(lg))):
             dr.save_prediction(league=lg)
         else:
-            log.warn("{} has no new games".format(lg).upper())
+            log.warning("{} has no new games".format(lg).upper())

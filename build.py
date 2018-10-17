@@ -81,7 +81,8 @@ def set_all_scripts_on_fire():
         # pass
 
     # Pull dated result and get next 3 days fixtures ready for prediction
-    if time_now.hour in range(4, 21):
+    if time_now.hour in range(4, 23):
+        print_with_spinner_when_running_py_file(filename="pull_data/download_fixtures")
 
         print_with_spinner_when_running_py_file(filename="pull_data/pull_data")
         print_with_spinner_when_running_py_file(filename="fixtures")

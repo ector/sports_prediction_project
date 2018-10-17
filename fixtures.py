@@ -15,7 +15,7 @@ class GameFixtures(object):
     def __init__(self):
         self.league_file = None
         self.log = log
-        self.days = 3
+        self.days = 5
 
     def fetch_all_league_fixtures(self, league):
         """
@@ -27,8 +27,7 @@ class GameFixtures(object):
 
         data = team_translation(data=data, league=league)
         start_date, end_date = get_start_and_end_dates(end_days=self.days)
-
-        indexed_data = data.set_index(['Date'])
+        indexed_data = data.set_index('Date')
         indexed_data = indexed_data.loc[start_date:end_date]
         data = indexed_data.reset_index()
 
@@ -41,12 +40,13 @@ class GameFixtures(object):
             self.league_file = league
             fixtures = self.fetch_all_league_fixtures(league=league)
             fixtures = pd.DataFrame(fixtures).dropna()
-            if len(fixtures) != 0:
+            fixtures_length = len(fixtures)
+            if fixtures_length != 0:
                 self.log.info("{} Fixtures shape: {}".format(league.upper(), fixtures.shape))
                 save_fixtures_to_file(fixtures, folder="selected_fixtures/{}".format(league))
             else:
                 delete_fixtures_in_file(folder="selected_fixtures/{}".format(league))
-                self.log.warn("{} has no game in the next {} days".format(league.upper(), self.days))
+                self.log.warning("{} has no game in the next {} days".format(league.upper(), self.days))
 
 
 if __name__ == '__main__':
