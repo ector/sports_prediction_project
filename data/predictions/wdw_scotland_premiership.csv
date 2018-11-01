@@ -1,0 +1,4 @@
+date,time,home,away,prediction,d_prob,a_prob,h_prob,dc,ou25,league
+2018-11-03,15:00,Celtic,Hearts,1,0.06443121431635497,0.1301112898339958,0.8054574958496491,1X,U,scotland_premiership
+2018-11-03,15:00,Hibernian,St Johnstone,1,0.05088969116934508,0.10767046642538314,0.8414398424052719,1X,U,scotland_premiership
+2018-11-04,12:15,Kilmarnock,Aberdeen,X,0.393615226855498,0.29676686206661995,0.3096179110778821,1X,U,scotland_premiership
