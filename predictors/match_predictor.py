@@ -97,7 +97,7 @@ class Predictors(object):
 
             try:
                 self.log.info("Connecting to the database")
-                client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
+                client = MongoClient(mongodb_uri + "22", connectTimeoutMS=30000)
                 db = client.get_database("sports_prediction")
 
                 wdw_football = db.wdw_football
