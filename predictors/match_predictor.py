@@ -12,23 +12,20 @@ mongodb_uri = get_config("db").get("sport_prediction_url")
 
 class Predictors(object):
     def __init__(self):
-        self.result_map = {-3: "2", 0: "X", 3: "1"}
+        self.result_map = {1: "A", 0: "X", 2: "H"}
         self.inverse_ou_class = {1: 'O', 0: 'U'}
         self.log = log
 
-    def treat_result(self, rst_1x, rst_x2):
+    def treat_result(self, rst_1x):
         """
         Mapping results in
         :param rst_1x: data {0: '1X', 1: 'A'}
-        :param rst_x2: data {0: 'X2', 1: 'H'}
         :return:
         """
         dc_map = []
-        for i, j in zip(rst_1x, rst_x2):
-            if [i, j] == [0, 1]:
+        for i in rst_1x:
+            if i == 0:
                 dc_map.append("1X")
-            elif [i, j] == [1, 0]:
-                dc_map.append("X2")
             else:
                 dc_map.append("12")
 
@@ -40,6 +37,7 @@ class Predictors(object):
         prediction = None
 
         wdw_columns = get_config(file="wdw_columns/{}".format(league)).get(league)
+        dc_columns = get_config(file="dc_columns/{}".format(league)).get(league)
         ou25_columns = get_config(file="ou25_columns/{}".format(league)).get(league)
 
         lg_data = pd.read_csv(get_analysis_root_path('tools/data/clean_data/team_trend/{}.csv'.format(league)), index_col=False)
@@ -47,6 +45,7 @@ class Predictors(object):
 
         if len(unplayed_data) > 0:
             wdw_data = unplayed_data[wdw_columns]
+            dc_data = unplayed_data[dc_columns]
             ou25_data = unplayed_data[ou25_columns]
 
             try:
@@ -57,14 +56,13 @@ class Predictors(object):
                 unplayed_data.loc[:, "league"] = league
 
                 outcome_probs = clf.predict_proba(wdw_data)
-                unplayed_data.loc[:, "d_prob"] = outcome_probs[:, 1]
-                unplayed_data.loc[:, "a_prob"] = outcome_probs[:, 0]
+                unplayed_data.loc[:, "d_prob"] = outcome_probs[:, 0]
+                unplayed_data.loc[:, "a_prob"] = outcome_probs[:, 1]
                 unplayed_data.loc[:, "h_prob"] = outcome_probs[:, 2]
                 # For Double Chance Market
                 clf_1x = joblib.load(get_analysis_root_path('tools/league_models/{}_1x'.format(league)))
-                clf_x2 = joblib.load(get_analysis_root_path('tools/league_models/{}_x2'.format(league)))
 
-                unplayed_data.loc[:, "dc"] = self.treat_result(clf_1x.predict(wdw_data), clf_x2.predict(wdw_data))
+                unplayed_data.loc[:, "dc"] = self.treat_result(clf_1x.predict(dc_data))
 
                 # For O/U 2.5 Market
                 ou25_model = joblib.load(get_analysis_root_path('tools/league_models/{}_ou25'.format(league)))
@@ -99,7 +97,7 @@ class Predictors(object):
 
             try:
                 self.log.info("Connecting to the database")
-                client = MongoClient(mongodb_uri + "22", connectTimeoutMS=30000)
+                client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
                 db = client.get_database("sports_prediction")
 
                 wdw_football = db.wdw_football
@@ -122,7 +120,7 @@ class Predictors(object):
                 self.log.info("Done!!!")
             except Exception as e:
                 self.log.error("Saving to wdw: \n{0}".format(str(e)))
-                preds.to_csv(get_analysis_root_path('tools/data/predictions/wdw_{}'.format(league)),
+                preds.to_csv(get_analysis_root_path('tools/data/predictions/wdw_{}.csv'.format(league)),
                              index=False)
 
 

@@ -25,16 +25,16 @@ for league in leagues:
         games = games.dropna(how='any')
 
         model_columns = get_config(file="wdw_columns/{}".format(league)).get(league)
+        dc_columns = get_config(file="dc_columns/{}".format(league)).get(league)
         played_data = games.loc[(games.Season.isin([1415, 1516, 1617, 1718, 1819])) & (games.played == 1)]
 
-        target = played_data.FTR.map({"D": 0, "A": -3, "H": 3})
+        target = played_data.FTR.map({"D": 0, "A": 1, "H": 2})
         target_1x = played_data.FTR.map({"D": 0, "A": 1, "H": 0})
-        target_x2 = played_data.FTR.map({"D": 0, "A": 0, "H": 1})
-
         log.info("{} significant columns: {}".format(league.upper(), model_columns))
 
         # Select significant columns
         data = played_data[model_columns]
+        dc_data = played_data[dc_columns]
 
         model = LogisticRegression(C=1e5)
         model.fit(data, target)
@@ -44,16 +44,12 @@ for league in leagues:
 
         # Double chance model fit
         model = LogisticRegression(C=1e5)
-        model.fit(data, target_1x)
-        log.info("0: '1x', 1: 'A' League: {}\t DC score: {}".format(league, model.score(data, target_1x)))
+        model.fit(dc_data, target_1x)
+        log.info("0: '1x', 1: 'A' League: {}\t DC score: {}".format(league, model.score(dc_data, target_1x)))
         model_filename = get_analysis_root_path("tools/league_models/{}_1x".format(league))
         joblib.dump(model, model_filename)
 
-        model = LogisticRegression(C=1e5)
-        model.fit(data, target_x2)
-        log.info("0: 'x2', 1: 'H' League: {}\t DC score: {}".format(league, model.score(data, target_x2)))
-        model_filename = get_analysis_root_path("tools/league_models/{}_x2".format(league))
-        joblib.dump(model, model_filename)
-    except:
+    except Exception as e:
         log.warn("New wdw model not built for {}".format(league).upper())
+        log.warn("See why:::::: {}".format(e))
 log.info("Finished wdw training model")
