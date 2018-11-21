@@ -7,6 +7,7 @@ Created on 13-09-2017 at 8:54 PM
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals import joblib
+from imblearn.over_sampling import SMOTE
 
 from utils import get_analysis_root_path, get_config
 from te_logger.logger import log
@@ -37,15 +38,20 @@ for league in leagues:
         dc_data = played_data[dc_columns]
 
         model = LogisticRegression(C=1e5)
-        model.fit(data, target)
-        log.info("League: {}\t score: {}".format(league, model.score(data, target)))
+        sm = SMOTE(random_state=2)
+        data_res, target_res = sm.fit_sample(data, target.ravel())
+        model.fit(data_res, target_res)
+        log.info("League: {}\t score: {}".format(league, model.score(data_res, target_res)))
         model_filename = get_analysis_root_path("tools/league_models/{}".format(league))
         joblib.dump(model, model_filename)
 
         # Double chance model fit
+        sm = SMOTE(random_state=2)
+        dc_data_res, target_1x_res = sm.fit_sample(dc_data, target_1x.ravel())
+
         model = LogisticRegression(C=1e5)
-        model.fit(dc_data, target_1x)
-        log.info("0: '1x', 1: 'A' League: {}\t DC score: {}".format(league, model.score(dc_data, target_1x)))
+        model.fit(dc_data_res, target_1x_res)
+        log.info("0: '1x', 1: 'A' League: {}\t DC score: {}".format(league, model.score(dc_data_res, target_1x_res)))
         model_filename = get_analysis_root_path("tools/league_models/{}_1x".format(league))
         joblib.dump(model, model_filename)
 

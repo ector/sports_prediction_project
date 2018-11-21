@@ -218,7 +218,7 @@ if __name__ == '__main__':
     ppd = ProcessPreviousData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
-    for league in league_list:
-        ppd.store_significant_columns(lg=league)
-    # p = Pool(processes=20)
-    # p.map(ProcessPreviousData().store_significant_columns, league_list)
+    # for league in league_list:
+    #     ppd.store_significant_columns(lg=league)
+    p = Pool(processes=20)
+    p.map(ProcessPreviousData().store_significant_columns, league_list)
