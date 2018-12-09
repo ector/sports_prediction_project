@@ -98,15 +98,15 @@ class ProcessPreviousData(object):
         data.ATREND.replace("", "D", inplace=True)
         trend = get_config('ldw')
         data.loc[:, "HTREND"] = data.HTREND.map(trend).values
-        data.loc[:, "HTREND2"] = data.HTREND2.map(trend).values
-        data.loc[:, "HTREND3"] = data.HTREND3.map(trend).values
-        data.loc[:, "HTREND4"] = data.HTREND4.map(trend).values
-        data.loc[:, "HTREND5"] = data.HTREND5.map(trend).values
+        data.loc[:, "HTREND2"] = data.HTREND2.map(trend).values + data.HTREND.values
+        data.loc[:, "HTREND3"] = data.HTREND3.map(trend).values + data.HTREND2.values
+        data.loc[:, "HTREND4"] = data.HTREND4.map(trend).values + data.HTREND3.values
+        data.loc[:, "HTREND5"] = data.HTREND5.map(trend).values + data.HTREND4.values
         data.loc[:, "ATREND"] = data.ATREND.map(trend).values
-        data.loc[:, "ATREND2"] = data.ATREND2.map(trend).values
-        data.loc[:, "ATREND3"] = data.ATREND3.map(trend).values
-        data.loc[:, "ATREND4"] = data.ATREND4.map(trend).values
-        data.loc[:, "ATREND5"] = data.ATREND5.map(trend).values
+        data.loc[:, "ATREND2"] = data.ATREND2.map(trend).values + data.ATREND.values
+        data.loc[:, "ATREND3"] = data.ATREND3.map(trend).values + data.ATREND2.values
+        data.loc[:, "ATREND4"] = data.ATREND4.map(trend).values + data.ATREND3.values
+        data.loc[:, "ATREND5"] = data.ATREND5.map(trend).values + data.ATREND4.values
         data.loc[:, "HPOINT"] = data.groupby(["Season", "HomeTeam"])["HTREND"].cumsum()
         data.loc[:, "APOINT"] = data.groupby(["Season", "AwayTeam"])["ATREND"].cumsum()
 
@@ -190,21 +190,28 @@ class ProcessPreviousData(object):
             played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'UO25', "HLM", "ALM"], axis=1)
 
             wdw_coef_data = played_data.corrwith(target_real)
+            wdw_sig_cols = list(played_data.drop(["Date", "played", "Time"], axis=1).columns)
             wdw_sig_data = wdw_coef_data.where(wdw_coef_data.abs() > 0.05)
             wdw_sig_data = wdw_sig_data.dropna()
-            wdw_sig_cols = list(wdw_sig_data.index)
+            if len(list(wdw_sig_data.index)) != 0:
+                wdw_sig_cols = list(wdw_sig_data.index)
             save_league_model_attr(model="wdw_columns", league=lg, cols=wdw_sig_cols)
 
             dc_coef_data = played_data.corrwith(dc_real)
+            dc_sig_cols = list(played_data.drop(["Date", "played", "Time"], axis=1).columns)
             dc_sig_data = dc_coef_data.where(dc_coef_data.abs() > 0.05)
             dc_sig_data = dc_sig_data.dropna()
-            dc_sig_cols = list(dc_sig_data.index)
+            if len(list(dc_sig_data.index)) != 0:
+                dc_sig_cols = list(dc_sig_data.index)
             save_league_model_attr(model="dc_columns", league=lg, cols=dc_sig_cols)
 
             ou25_coef_data = played_data.corrwith(ou25_target)
+            ou25_sig_cols = list(played_data.drop(["Date", "played", "Time"], axis=1).columns)
             ou25_sig_data = ou25_coef_data.where(ou25_coef_data.abs() > 0.05)
             ou25_sig_data = ou25_sig_data.dropna()
-            ou25_sig_cols = list(ou25_sig_data.index)
+            if len(list(ou25_sig_data.index)) != 0:
+                ou25_sig_cols = list(ou25_sig_data.index)
+
             save_league_model_attr(model="ou25_columns", league=lg, cols=ou25_sig_cols)
 
             agg_data = agg_data.drop(['FTHG', 'FTAG'], axis=1)

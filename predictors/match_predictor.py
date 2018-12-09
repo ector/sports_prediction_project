@@ -59,6 +59,7 @@ class Predictors(object):
                 unplayed_data.loc[:, "d_prob"] = outcome_probs[:, 0]
                 unplayed_data.loc[:, "a_prob"] = outcome_probs[:, 1]
                 unplayed_data.loc[:, "h_prob"] = outcome_probs[:, 2]
+
                 # For Double Chance Market
                 clf_1x = joblib.load(get_analysis_root_path('tools/league_models/{}_1x'.format(league)))
 
