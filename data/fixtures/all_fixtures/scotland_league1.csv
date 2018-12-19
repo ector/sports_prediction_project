@@ -1,111 +1,101 @@
 Date,Time,HomeTeam,AwayTeam
-2018-09-15,15:00,Arbroath,Forfar Athletic
-2018-09-15,15:00,Brechin,Raith
-2018-09-15,15:00,Dumbarton,Montrose
-2018-09-15,15:00,East Fife,Airdrieonians
-2018-09-15,15:00,Stranraer,Stenhousemuir
-2018-09-22,15:00,Airdrieonians,Dumbarton
-2018-09-22,15:00,Forfar Athletic,Brechin
-2018-09-22,15:00,Raith,Montrose
-2018-09-22,15:00,Stenhousemuir,Arbroath
-2018-09-22,15:00,Stranraer,East Fife
-2018-09-29,15:00,Arbroath,Airdrieonians
-2018-09-29,15:00,Brechin,Stranraer
-2018-09-29,15:00,Dumbarton,Raith
-2018-09-29,15:00,East Fife,Stenhousemuir
-2018-09-29,15:00,Montrose,Forfar Athletic
-2018-10-06,15:00,Airdrieonians,Brechin
-2018-10-06,15:00,Forfar Athletic,East Fife
-2018-10-06,15:00,Raith,Arbroath
-2018-10-06,15:00,Stenhousemuir,Montrose
-2018-10-06,15:00,Stranraer,Dumbarton
-2018-10-20,15:00,Arbroath,Dumbarton
-2018-10-20,15:00,East Fife,Brechin
-2018-10-20,15:00,Montrose,Airdrieonians
-2018-10-20,15:00,Raith,Stranraer
-2018-10-20,15:00,Stenhousemuir,Forfar Athletic
-2018-10-27,15:00,Airdrieonians,Stenhousemuir
-2018-10-27,15:00,Brechin,Montrose
-2018-10-27,15:00,Dumbarton,East Fife
-2018-10-27,15:00,Forfar Athletic,Raith
-2018-10-27,15:00,Stranraer,Arbroath
-2018-11-03,15:00,Airdrieonians,Forfar Athletic
-2018-11-03,15:00,Arbroath,East Fife
-2018-11-03,15:00,Montrose,Dumbarton
-2018-11-03,15:00,Raith,Brechin
-2018-11-03,15:00,Stenhousemuir,Stranraer
-2018-11-10,15:00,Arbroath,Montrose
-2018-11-10,15:00,Brechin,Forfar Athletic
-2018-11-10,15:00,Dumbarton,Stenhousemuir
-2018-11-10,15:00,East Fife,Raith
-2018-11-10,15:00,Stranraer,Airdrieonians
-2018-11-17,15:00,Airdrieonians,East Fife
-2018-11-17,15:00,Brechin,Arbroath
-2018-11-17,15:00,Forfar Athletic,Dumbarton
-2018-11-17,15:00,Montrose,Stranraer
-2018-11-17,15:00,Stenhousemuir,Raith
-2018-12-01,15:00,Arbroath,Stenhousemuir
-2018-12-01,15:00,Dumbarton,Brechin
-2018-12-01,15:00,East Fife,Montrose
-2018-12-01,15:00,Raith,Airdrieonians
-2018-12-01,15:00,Stranraer,Forfar Athletic
-2018-12-08,15:00,Brechin,Stenhousemuir
-2018-12-08,15:00,Dumbarton,Airdrieonians
-2018-12-08,15:00,East Fife,Stranraer
-2018-12-08,15:00,Forfar Athletic,Arbroath
-2018-12-08,15:00,Montrose,Raith
-2018-12-15,15:00,Airdrieonians,Arbroath
-2018-12-15,15:00,Forfar Athletic,Montrose
-2018-12-15,15:00,Raith,Dumbarton
-2018-12-15,15:00,Stenhousemuir,East Fife
-2018-12-15,15:00,Stranraer,Brechin
-2018-12-22,15:00,Arbroath,Raith
-2018-12-22,15:00,Brechin,Airdrieonians
-2018-12-22,15:00,Dumbarton,Stranraer
-2018-12-22,15:00,East Fife,Forfar Athletic
-2018-12-22,15:00,Montrose,Stenhousemuir
-2018-12-29,15:00,Airdrieonians,Stranraer
-2018-12-29,15:00,Forfar Athletic,Brechin
-2018-12-29,15:00,Montrose,Arbroath
-2018-12-29,15:00,Raith,East Fife
-2018-12-29,15:00,Stenhousemuir,Dumbarton
-2019-01-05,15:00,Arbroath,Brechin
-2019-01-05,15:00,Dumbarton,Forfar Athletic
-2019-01-05,15:00,East Fife,Airdrieonians
-2019-01-05,15:00,Raith,Stenhousemuir
-2019-01-05,15:00,Stranraer,Montrose
-2019-01-12,15:00,Airdrieonians,Raith
-2019-01-12,15:00,Brechin,Dumbarton
-2019-01-12,15:00,Forfar Athletic,Stranraer
-2019-01-12,15:00,Montrose,East Fife
-2019-01-12,15:00,Stenhousemuir,Arbroath
-2019-01-26,15:00,Arbroath,Forfar Athletic
-2019-01-26,15:00,Brechin,Raith
-2019-01-26,15:00,Dumbarton,Montrose
-2019-01-26,15:00,Stenhousemuir,Airdrieonians
-2019-01-26,15:00,Stranraer,East Fife
-2019-02-02,15:00,Airdrieonians,Dumbarton
-2019-02-02,15:00,East Fife,Arbroath
-2019-02-02,15:00,Montrose,Brechin
-2019-02-02,15:00,Raith,Forfar Athletic
-2019-02-02,15:00,Stranraer,Stenhousemuir
-2019-02-09,15:00,Arbroath,Stranraer
-2019-02-09,15:00,Brechin,East Fife
-2019-02-09,15:00,Dumbarton,Raith
-2019-02-09,15:00,Forfar Athletic,Airdrieonians
-2019-02-09,15:00,Stenhousemuir,Montrose
-2019-02-16,15:00,Airdrieonians,Brechin
-2019-02-16,15:00,East Fife,Stenhousemuir
-2019-02-16,15:00,Montrose,Forfar Athletic
-2019-02-16,15:00,Raith,Arbroath
-2019-02-16,15:00,Stranraer,Dumbarton
-2019-02-23,15:00,Arbroath,Airdrieonians
-2019-02-23,15:00,Brechin,Stranraer
-2019-02-23,15:00,East Fife,Dumbarton
-2019-02-23,15:00,Forfar Athletic,Stenhousemuir
-2019-02-23,15:00,Raith,Montrose
-2019-03-02,15:00,Airdrieonians,Montrose
-2019-03-02,15:00,Dumbarton,Arbroath
-2019-03-02,15:00,Forfar Athletic,East Fife
-2019-03-02,15:00,Stenhousemuir,Brechin
-2019-03-02,15:00,Stranraer,Raith
+2018-12-15 00:00:00,15:00,Airdrieonians,Arbroath
+2018-12-15 00:00:00,15:00,Forfar Athletic,Montrose
+2018-12-15 00:00:00,15:00,Raith,Dumbarton
+2018-12-15 00:00:00,15:00,Stenhousemuir,East Fife
+2018-12-15 00:00:00,15:00,Stranraer,Brechin
+2018-12-22 00:00:00,15:00,Arbroath,Raith
+2018-12-22 00:00:00,15:00,Brechin,Airdrieonians
+2018-12-22 00:00:00,15:00,Dumbarton,Stranraer
+2018-12-22 00:00:00,15:00,East Fife,Forfar Athletic
+2018-12-22 00:00:00,15:00,Montrose,Stenhousemuir
+2018-12-29 00:00:00,15:00,Airdrieonians,Stranraer
+2018-12-29 00:00:00,15:00,Forfar Athletic,Brechin
+2018-12-29 00:00:00,15:00,Montrose,Arbroath
+2018-12-29 00:00:00,15:00,Raith,East Fife
+2018-12-29 00:00:00,15:00,Stenhousemuir,Dumbarton
+2019-01-05 00:00:00,15:00,Arbroath,Brechin
+2019-01-05 00:00:00,15:00,Dumbarton,Forfar Athletic
+2019-01-05 00:00:00,15:00,East Fife,Airdrieonians
+2019-01-05 00:00:00,15:00,Raith,Stenhousemuir
+2019-01-05 00:00:00,15:00,Stranraer,Montrose
+2019-01-12 00:00:00,15:00,Airdrieonians,Raith
+2019-01-12 00:00:00,15:00,Brechin,Dumbarton
+2019-01-12 00:00:00,15:00,Forfar Athletic,Stranraer
+2019-01-12 00:00:00,15:00,Montrose,East Fife
+2019-01-12 00:00:00,15:00,Stenhousemuir,Arbroath
+2019-01-26 00:00:00,15:00,Arbroath,Forfar Athletic
+2019-01-26 00:00:00,15:00,Brechin,Raith
+2019-01-26 00:00:00,15:00,Dumbarton,Montrose
+2019-01-26 00:00:00,15:00,Stenhousemuir,Airdrieonians
+2019-01-26 00:00:00,15:00,Stranraer,East Fife
+2019-02-02 00:00:00,15:00,Airdrieonians,Dumbarton
+2019-02-02 00:00:00,15:00,East Fife,Arbroath
+2019-02-02 00:00:00,15:00,Montrose,Brechin
+2019-02-02 00:00:00,15:00,Raith,Forfar Athletic
+2019-02-02 00:00:00,15:00,Stranraer,Stenhousemuir
+2019-02-09 00:00:00,15:00,Arbroath,Stranraer
+2019-02-09 00:00:00,15:00,Brechin,East Fife
+2019-02-09 00:00:00,15:00,Dumbarton,Raith
+2019-02-09 00:00:00,15:00,Forfar Athletic,Airdrieonians
+2019-02-09 00:00:00,15:00,Stenhousemuir,Montrose
+2019-02-16 00:00:00,15:00,Airdrieonians,Brechin
+2019-02-16 00:00:00,15:00,East Fife,Stenhousemuir
+2019-02-16 00:00:00,15:00,Montrose,Forfar Athletic
+2019-02-16 00:00:00,15:00,Raith,Arbroath
+2019-02-16 00:00:00,15:00,Stranraer,Dumbarton
+2019-02-23 00:00:00,15:00,Arbroath,Airdrieonians
+2019-02-23 00:00:00,15:00,Brechin,Stranraer
+2019-02-23 00:00:00,15:00,East Fife,Dumbarton
+2019-02-23 00:00:00,15:00,Forfar Athletic,Stenhousemuir
+2019-02-23 00:00:00,15:00,Raith,Montrose
+2019-03-02 00:00:00,15:00,Airdrieonians,Montrose
+2019-03-02 00:00:00,15:00,Dumbarton,Arbroath
+2019-03-02 00:00:00,15:00,Forfar Athletic,East Fife
+2019-03-02 00:00:00,15:00,Stenhousemuir,Brechin
+2019-03-02 00:00:00,15:00,Stranraer,Raith
+2019-03-09 00:00:00,15:00,Arbroath,Stenhousemuir
+2019-03-09 00:00:00,15:00,Brechin,Forfar Athletic
+2019-03-09 00:00:00,15:00,East Fife,Stranraer
+2019-03-09 00:00:00,15:00,Montrose,Dumbarton
+2019-03-09 00:00:00,15:00,Raith,Airdrieonians
+2019-03-16 00:00:00,15:00,Arbroath,East Fife
+2019-03-16 00:00:00,15:00,Brechin,Montrose
+2019-03-16 00:00:00,15:00,Dumbarton,Airdrieonians
+2019-03-16 00:00:00,15:00,Forfar Athletic,Raith
+2019-03-16 00:00:00,15:00,Stenhousemuir,Stranraer
+2019-03-23 00:00:00,15:00,Airdrieonians,Forfar Athletic
+2019-03-23 00:00:00,15:00,East Fife,Brechin
+2019-03-23 00:00:00,15:00,Montrose,Stenhousemuir
+2019-03-23 00:00:00,15:00,Raith,Dumbarton
+2019-03-23 00:00:00,15:00,Stranraer,Arbroath
+2019-03-30 00:00:00,15:00,Brechin,Airdrieonians
+2019-03-30 00:00:00,15:00,Dumbarton,Stenhousemuir
+2019-03-30 00:00:00,15:00,East Fife,Raith
+2019-03-30 00:00:00,15:00,Forfar Athletic,Arbroath
+2019-03-30 00:00:00,15:00,Montrose,Stranraer
+2019-04-06 00:00:00,15:00,Airdrieonians,East Fife
+2019-04-06 00:00:00,15:00,Arbroath,Montrose
+2019-04-06 00:00:00,15:00,Dumbarton,Brechin
+2019-04-06 00:00:00,15:00,Stenhousemuir,Raith
+2019-04-06 00:00:00,15:00,Stranraer,Forfar Athletic
+2019-04-13 00:00:00,15:00,Airdrieonians,Stenhousemuir
+2019-04-13 00:00:00,15:00,Brechin,Arbroath
+2019-04-13 00:00:00,15:00,East Fife,Montrose
+2019-04-13 00:00:00,15:00,Forfar Athletic,Dumbarton
+2019-04-13 00:00:00,15:00,Raith,Stranraer
+2019-04-20 00:00:00,15:00,Arbroath,Raith
+2019-04-20 00:00:00,15:00,Dumbarton,East Fife
+2019-04-20 00:00:00,15:00,Montrose,Airdrieonians
+2019-04-20 00:00:00,15:00,Stenhousemuir,Forfar Athletic
+2019-04-20 00:00:00,15:00,Stranraer,Brechin
+2019-04-27 00:00:00,15:00,Airdrieonians,Arbroath
+2019-04-27 00:00:00,15:00,Dumbarton,Stranraer
+2019-04-27 00:00:00,15:00,Forfar Athletic,Montrose
+2019-04-27 00:00:00,15:00,Raith,Brechin
+2019-04-27 00:00:00,15:00,Stenhousemuir,East Fife
+2019-05-04 00:00:00,15:00,Arbroath,Dumbarton
+2019-05-04 00:00:00,15:00,Brechin,Stenhousemuir
+2019-05-04 00:00:00,15:00,East Fife,Forfar Athletic
+2019-05-04 00:00:00,15:00,Montrose,Raith
+2019-05-04 00:00:00,15:00,Stranraer,Airdrieonians

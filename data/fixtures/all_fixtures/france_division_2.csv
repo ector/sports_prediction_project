@@ -1,112 +1,121 @@
 Date,Time,HomeTeam,AwayTeam
-2018-09-14,19:00,AC Ajaccio,Paris FC
-2018-09-14,19:00,Brest,GFC Ajaccio
-2018-09-14,19:00,Clermont,Auxerre
-2018-09-14,19:00,Grenoble,Valenciennes
-2018-09-14,19:00,Nancy,Le Havre
-2018-09-14,19:00,Orleans,Chateauroux
-2018-09-14,19:00,Red Star,Lorient
-2018-09-14,19:00,Troyes,Niort
-2018-09-15,14:00,Lens,Sochaux
-2018-09-17,19:45,Beziers,Metz
-2018-09-21,19:00,Auxerre,AC Ajaccio
-2018-09-21,19:00,Chateauroux,Beziers
-2018-09-21,19:00,GFC Ajaccio,Nancy
-2018-09-21,19:00,Grenoble,Brest
-2018-09-21,19:00,Le Havre,Troyes
-2018-09-21,19:00,Lorient,Clermont
-2018-09-21,19:00,Sochaux,Orleans
-2018-09-21,19:00,Valenciennes,Red Star
-2018-09-22,14:00,Paris FC,Metz
-2018-09-24,19:45,Niort,Lens
-2018-09-28,19:00,AC Ajaccio,Valenciennes
-2018-09-28,19:00,Beziers,Niort
-2018-09-28,19:00,Brest,Chateauroux
-2018-09-28,19:00,Clermont,GFC Ajaccio
-2018-09-28,19:00,Lens,Paris FC
-2018-09-28,19:00,Nancy,Sochaux
-2018-09-28,19:00,Orleans,Lorient
-2018-09-28,19:00,Red Star,Grenoble
-2018-09-29,14:00,Metz,Le Havre
-2018-10-01,19:45,Troyes,Auxerre
-2018-10-02,18:00,Beziers,Lens
-2018-10-05,19:00,Chateauroux,Troyes
-2018-10-05,19:00,GFC Ajaccio,Orleans
-2018-10-05,19:00,Grenoble,Clermont
-2018-10-05,19:00,Le Havre,Beziers
-2018-10-05,19:00,Lorient,Nancy
-2018-10-05,19:00,Niort,Paris FC
-2018-10-05,19:00,Red Star,AC Ajaccio
-2018-10-05,19:00,Valenciennes,Brest
-2018-10-06,14:00,Auxerre,Lens
-2018-10-08,19:45,Sochaux,Metz
-2018-10-19,19:00,AC Ajaccio,Le Havre
-2018-10-19,19:00,Beziers,Auxerre
-2018-10-19,19:00,Brest,Lorient
-2018-10-19,19:00,Clermont,Red Star
-2018-10-19,19:00,Lens,GFC Ajaccio
-2018-10-19,19:00,Metz,Niort
-2018-10-19,19:00,Nancy,Grenoble
-2018-10-19,19:00,Orleans,Valenciennes
-2018-10-19,19:00,Paris FC,Chateauroux
-2018-10-19,19:00,Troyes,Sochaux
-2018-10-26,19:00,Auxerre,Paris FC
-2018-10-26,19:00,Chateauroux,AC Ajaccio
-2018-10-26,19:00,Clermont,Brest
-2018-10-26,19:00,GFC Ajaccio,Beziers
-2018-10-26,19:00,Grenoble,Troyes
-2018-10-26,19:00,Le Havre,Lens
-2018-10-26,19:00,Lorient,Metz
-2018-10-26,19:00,Red Star,Orleans
-2018-10-26,19:00,Sochaux,Niort
-2018-10-26,19:00,Valenciennes,Nancy
-2018-11-02,19:00,AC Ajaccio,GFC Ajaccio
-2018-11-02,19:00,Beziers,Lorient
-2018-11-02,19:00,Brest,Red Star
-2018-11-02,19:00,Lens,Chateauroux
-2018-11-02,19:00,Metz,Auxerre
-2018-11-02,19:00,Nancy,Clermont
-2018-11-02,19:00,Niort,Le Havre
-2018-11-02,19:00,Orleans,Grenoble
-2018-11-02,19:00,Paris FC,Sochaux
-2018-11-02,19:00,Troyes,Valenciennes
-2018-11-09,19:00,Auxerre,Niort
-2018-11-09,19:00,Brest,Nancy
-2018-11-09,19:00,Chateauroux,Metz
-2018-11-09,19:00,Clermont,Orleans
-2018-11-09,19:00,GFC Ajaccio,Troyes
-2018-11-09,19:00,Grenoble,AC Ajaccio
-2018-11-09,19:00,Le Havre,Sochaux
-2018-11-09,19:00,Lorient,Paris FC
-2018-11-09,19:00,Red Star,Beziers
-2018-11-09,19:00,Valenciennes,Lens
-2018-11-23,19:00,AC Ajaccio,Clermont
-2018-11-23,19:00,Beziers,Valenciennes
-2018-11-23,19:00,Lens,Grenoble
-2018-11-23,19:00,Metz,GFC Ajaccio
-2018-11-23,19:00,Nancy,Red Star
-2018-11-23,19:00,Niort,Chateauroux
-2018-11-23,19:00,Orleans,Brest
-2018-11-23,19:00,Paris FC,Le Havre
-2018-11-23,19:00,Sochaux,Auxerre
-2018-11-23,19:00,Troyes,Lorient
-2018-11-30,19:00,Brest,AC Ajaccio
-2018-11-30,19:00,Chateauroux,Sochaux
-2018-11-30,19:00,Clermont,Beziers
-2018-11-30,19:00,GFC Ajaccio,Niort
-2018-11-30,19:00,Grenoble,Metz
-2018-11-30,19:00,Le Havre,Auxerre
-2018-11-30,19:00,Lorient,Lens
-2018-11-30,19:00,Orleans,Nancy
-2018-11-30,19:00,Red Star,Troyes
-2018-11-30,19:00,Valenciennes,Paris FC
-2018-12-04,19:00,AC Ajaccio,Nancy
-2018-12-04,19:00,Auxerre,Lorient
-2018-12-04,19:00,Beziers,Grenoble
-2018-12-04,19:00,Le Havre,Chateauroux
-2018-12-04,19:00,Lens,Brest
-2018-12-04,19:00,Metz,Red Star
-2018-12-04,19:00,Niort,Valenciennes
-2018-12-04,19:00,Paris FC,Clermont
-2018-12-04,19:00,Sochaux,GFC Ajaccio
-2018-12-04,19:00,Troyes,Orleans
+2018-12-14 00:00:00,19:00,Brest,Beziers
+2018-12-14 00:00:00,19:00,Chateauroux,Auxerre
+2018-12-14 00:00:00,19:00,GFC Ajaccio,Le Havre
+2018-12-14 00:00:00,19:00,Grenoble,Paris FC
+2018-12-14 00:00:00,19:00,Lorient,Niort
+2018-12-14 00:00:00,19:00,Nancy,Troyes
+2018-12-14 00:00:00,19:00,Orleans,AC Ajaccio
+2018-12-14 00:00:00,19:00,Red Star,Sochaux
+2018-12-15 00:00:00,14:00,Clermont,Lens
+2018-12-17 00:00:00,19:45,Valenciennes,Metz
+2018-12-21 00:00:00,19:30,Auxerre,Grenoble
+2018-12-21 00:00:00,19:30,Beziers,Orleans
+2018-12-21 00:00:00,19:30,Chateauroux,GFC Ajaccio
+2018-12-21 00:00:00,19:30,Metz,Nancy
+2018-12-21 00:00:00,19:30,Niort,Brest
+2018-12-21 00:00:00,19:30,Paris FC,Red Star
+2018-12-21 00:00:00,19:30,Troyes,Clermont
+2018-12-22 00:00:00,14:00,Le Havre,Valenciennes
+2018-12-22 00:00:00,14:00,Lens,AC Ajaccio
+2018-12-22 00:00:00,14:00,Sochaux,Lorient
+2019-01-11 00:00:00,19:00,AC Ajaccio,Beziers
+2019-01-11 00:00:00,19:00,Brest,Troyes
+2019-01-11 00:00:00,19:00,Clermont,Niort
+2019-01-11 00:00:00,19:00,GFC Ajaccio,Auxerre
+2019-01-11 00:00:00,19:00,Grenoble,Le Havre
+2019-01-11 00:00:00,19:00,Lorient,Chateauroux
+2019-01-11 00:00:00,19:00,Nancy,Paris FC
+2019-01-11 00:00:00,19:00,Orleans,Metz
+2019-01-11 00:00:00,19:00,Red Star,Lens
+2019-01-11 00:00:00,19:00,Valenciennes,Sochaux
+2019-01-18 00:00:00,19:00,Auxerre,Orleans
+2019-01-18 00:00:00,19:00,Beziers,Troyes
+2019-01-18 00:00:00,19:00,Chateauroux,Valenciennes
+2019-01-18 00:00:00,19:00,Le Havre,Red Star
+2019-01-18 00:00:00,19:00,Lens,Nancy
+2019-01-18 00:00:00,19:00,Lorient,GFC Ajaccio
+2019-01-18 00:00:00,19:00,Metz,Clermont
+2019-01-18 00:00:00,19:00,Niort,Grenoble
+2019-01-18 00:00:00,19:00,Paris FC,Brest
+2019-01-18 00:00:00,19:00,Sochaux,AC Ajaccio
+2019-01-25 00:00:00,19:00,AC Ajaccio,Metz
+2019-01-25 00:00:00,19:00,Beziers,Paris FC
+2019-01-25 00:00:00,19:00,Brest,Sochaux
+2019-01-25 00:00:00,19:00,Clermont,Le Havre
+2019-01-25 00:00:00,19:00,Grenoble,GFC Ajaccio
+2019-01-25 00:00:00,19:00,Nancy,Auxerre
+2019-01-25 00:00:00,19:00,Orleans,Niort
+2019-01-25 00:00:00,19:00,Red Star,Chateauroux
+2019-01-25 00:00:00,19:00,Troyes,Lens
+2019-01-25 00:00:00,19:00,Valenciennes,Lorient
+2019-02-01 00:00:00,19:00,Auxerre,Red Star
+2019-02-01 00:00:00,19:00,Chateauroux,Grenoble
+2019-02-01 00:00:00,19:00,GFC Ajaccio,Valenciennes
+2019-02-01 00:00:00,19:00,Le Havre,Brest
+2019-02-01 00:00:00,19:00,Lens,Beziers
+2019-02-01 00:00:00,19:00,Lorient,AC Ajaccio
+2019-02-01 00:00:00,19:00,Metz,Troyes
+2019-02-01 00:00:00,19:00,Niort,Nancy
+2019-02-01 00:00:00,19:00,Paris FC,Orleans
+2019-02-01 00:00:00,19:00,Sochaux,Clermont
+2019-02-08 00:00:00,19:00,AC Ajaccio,Niort
+2019-02-08 00:00:00,19:00,Beziers,Sochaux
+2019-02-08 00:00:00,19:00,Brest,Auxerre
+2019-02-08 00:00:00,19:00,Clermont,Valenciennes
+2019-02-08 00:00:00,19:00,Grenoble,Lorient
+2019-02-08 00:00:00,19:00,Lens,Metz
+2019-02-08 00:00:00,19:00,Nancy,Chateauroux
+2019-02-08 00:00:00,19:00,Orleans,Le Havre
+2019-02-08 00:00:00,19:00,Red Star,GFC Ajaccio
+2019-02-08 00:00:00,19:00,Troyes,Paris FC
+2019-02-15 00:00:00,19:00,Auxerre,Clermont
+2019-02-15 00:00:00,19:00,Chateauroux,Orleans
+2019-02-15 00:00:00,19:00,GFC Ajaccio,Brest
+2019-02-15 00:00:00,19:00,Le Havre,Nancy
+2019-02-15 00:00:00,19:00,Lorient,Red Star
+2019-02-15 00:00:00,19:00,Metz,Beziers
+2019-02-15 00:00:00,19:00,Niort,Troyes
+2019-02-15 00:00:00,19:00,Paris FC,AC Ajaccio
+2019-02-15 00:00:00,19:00,Sochaux,Lens
+2019-02-15 00:00:00,19:00,Valenciennes,Grenoble
+2019-02-22 00:00:00,19:00,AC Ajaccio,Auxerre
+2019-02-22 00:00:00,19:00,Beziers,Chateauroux
+2019-02-22 00:00:00,19:00,Brest,Grenoble
+2019-02-22 00:00:00,19:00,Clermont,Lorient
+2019-02-22 00:00:00,19:00,Lens,Niort
+2019-02-22 00:00:00,19:00,Metz,Paris FC
+2019-02-22 00:00:00,19:00,Nancy,GFC Ajaccio
+2019-02-22 00:00:00,19:00,Orleans,Sochaux
+2019-02-22 00:00:00,19:00,Red Star,Valenciennes
+2019-02-22 00:00:00,19:00,Troyes,Le Havre
+2019-03-01 00:00:00,19:00,Auxerre,Troyes
+2019-03-01 00:00:00,19:00,Chateauroux,Brest
+2019-03-01 00:00:00,19:00,GFC Ajaccio,Clermont
+2019-03-01 00:00:00,19:00,Grenoble,Red Star
+2019-03-01 00:00:00,19:00,Le Havre,Metz
+2019-03-01 00:00:00,19:00,Lorient,Orleans
+2019-03-01 00:00:00,19:00,Niort,Beziers
+2019-03-01 00:00:00,19:00,Paris FC,Lens
+2019-03-01 00:00:00,19:00,Sochaux,Nancy
+2019-03-01 00:00:00,19:00,Valenciennes,AC Ajaccio
+2019-03-08 00:00:00,19:00,AC Ajaccio,Red Star
+2019-03-08 00:00:00,19:00,Beziers,Le Havre
+2019-03-08 00:00:00,19:00,Brest,Valenciennes
+2019-03-08 00:00:00,19:00,Clermont,Grenoble
+2019-03-08 00:00:00,19:00,Lens,Auxerre
+2019-03-08 00:00:00,19:00,Metz,Sochaux
+2019-03-08 00:00:00,19:00,Nancy,Lorient
+2019-03-08 00:00:00,19:00,Orleans,GFC Ajaccio
+2019-03-08 00:00:00,19:00,Paris FC,Niort
+2019-03-08 00:00:00,19:00,Troyes,Chateauroux
+2019-03-15 00:00:00,19:00,Beziers,Auxerre
+2019-03-15 00:00:00,19:00,Chateauroux,Paris FC
+2019-03-15 00:00:00,19:00,GFC Ajaccio,Lens
+2019-03-15 00:00:00,19:00,Grenoble,Nancy
+2019-03-15 00:00:00,19:00,Le Havre,AC Ajaccio
+2019-03-15 00:00:00,19:00,Lorient,Brest
+2019-03-15 00:00:00,19:00,Niort,Metz
+2019-03-15 00:00:00,19:00,Red Star,Clermont
+2019-03-15 00:00:00,19:00,Sochaux,Troyes
+2019-03-15 00:00:00,19:00,Valenciennes,Orleans

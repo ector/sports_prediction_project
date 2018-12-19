@@ -1,111 +1,101 @@
 Date,Time,HomeTeam,AwayTeam
-2018-09-15,15:00,Ayr,Falkirk
-2018-09-15,15:00,Dundee Utd,Morton
-2018-09-15,15:00,Dunfermline,Alloa
-2018-09-15,15:00,Inverness,Partick Thistle
-2018-09-15,15:00,Queen of South,Ross County
-2018-09-22,15:00,Alloa,Ayr
-2018-09-22,15:00,Falkirk,Dundee Utd
-2018-09-22,15:00,Morton,Dunfermline
-2018-09-22,15:00,Partick Thistle,Queen of South
-2018-09-22,15:00,Ross County,Inverness
-2018-09-28,19:45,Dunfermline,Partick Thistle
-2018-09-29,15:00,Alloa,Falkirk
-2018-09-29,15:00,Dundee Utd,Ross County
-2018-09-29,15:00,Inverness,Queen of South
-2018-09-29,15:00,Morton,Ayr
-2018-10-06,15:00,Ayr,Dundee Utd
-2018-10-06,15:00,Falkirk,Dunfermline
-2018-10-06,15:00,Inverness,Morton
-2018-10-06,15:00,Partick Thistle,Ross County
-2018-10-06,15:00,Queen of South,Alloa
-2018-10-20,15:00,Alloa,Partick Thistle
-2018-10-20,15:00,Dundee Utd,Inverness
-2018-10-20,15:00,Dunfermline,Queen of South
-2018-10-20,15:00,Morton,Falkirk
-2018-10-20,15:00,Ross County,Ayr
-2018-10-27,15:00,Alloa,Inverness
-2018-10-27,15:00,Dunfermline,Dundee Utd
-2018-10-27,15:00,Partick Thistle,Ayr
-2018-10-27,15:00,Queen of South,Falkirk
-2018-10-27,15:00,Ross County,Morton
-2018-10-30,19:45,Ayr,Alloa
-2018-10-30,19:45,Falkirk,Ross County
-2018-10-30,19:45,Inverness,Dunfermline
-2018-10-30,19:45,Partick Thistle,Dundee Utd
-2018-10-30,19:45,Queen of South,Morton
-2018-11-03,15:00,Alloa,Dunfermline
-2018-11-03,15:00,Dundee Utd,Queen of South
-2018-11-03,15:00,Falkirk,Ayr
-2018-11-03,15:00,Inverness,Ross County
-2018-11-03,15:00,Morton,Partick Thistle
-2018-11-10,15:00,Ayr,Queen of South
-2018-11-10,15:00,Dunfermline,Falkirk
-2018-11-10,15:00,Morton,Alloa
-2018-11-10,15:00,Partick Thistle,Inverness
-2018-11-10,15:00,Ross County,Dundee Utd
-2018-11-17,15:00,Ayr,Morton
-2018-11-17,15:00,Dundee Utd,Alloa
-2018-11-17,15:00,Falkirk,Partick Thistle
-2018-11-17,15:00,Queen of South,Inverness
-2018-11-17,15:00,Ross County,Dunfermline
-2018-12-01,15:00,Alloa,Ross County
-2018-12-01,15:00,Dundee Utd,Ayr
-2018-12-01,15:00,Dunfermline,Morton
-2018-12-01,15:00,Inverness,Falkirk
-2018-12-01,15:00,Queen of South,Partick Thistle
-2018-12-08,15:00,Ayr,Inverness
-2018-12-08,15:00,Falkirk,Alloa
-2018-12-08,15:00,Morton,Dundee Utd
-2018-12-08,15:00,Partick Thistle,Dunfermline
-2018-12-08,15:00,Ross County,Queen of South
-2018-12-15,15:00,Ayr,Ross County
-2018-12-15,15:00,Falkirk,Morton
-2018-12-15,15:00,Inverness,Dundee Utd
-2018-12-15,15:00,Partick Thistle,Alloa
-2018-12-15,15:00,Queen of South,Dunfermline
-2018-12-22,15:00,Alloa,Queen of South
-2018-12-22,15:00,Dundee Utd,Falkirk
-2018-12-22,15:00,Dunfermline,Ayr
-2018-12-22,15:00,Morton,Inverness
-2018-12-22,15:00,Ross County,Partick Thistle
-2018-12-29,15:00,Alloa,Dundee Utd
-2018-12-29,15:00,Falkirk,Dunfermline
-2018-12-29,15:00,Partick Thistle,Morton
-2018-12-29,15:00,Queen of South,Ayr
-2018-12-29,15:00,Ross County,Inverness
-2019-01-05,15:00,Ayr,Falkirk
-2019-01-05,15:00,Dundee Utd,Partick Thistle
-2019-01-05,15:00,Dunfermline,Alloa
-2019-01-05,15:00,Inverness,Queen of South
-2019-01-05,15:00,Morton,Ross County
-2019-01-12,15:00,Alloa,Morton
-2019-01-12,15:00,Dundee Utd,Dunfermline
-2019-01-12,15:00,Inverness,Ayr
-2019-01-12,15:00,Partick Thistle,Falkirk
-2019-01-12,15:00,Queen of South,Ross County
-2019-01-26,15:00,Ayr,Dundee Utd
-2019-01-26,15:00,Falkirk,Inverness
-2019-01-26,15:00,Morton,Dunfermline
-2019-01-26,15:00,Partick Thistle,Queen of South
-2019-01-26,15:00,Ross County,Alloa
-2019-02-02,15:00,Alloa,Ayr
-2019-02-02,15:00,Dundee Utd,Morton
-2019-02-02,15:00,Dunfermline,Ross County
-2019-02-02,15:00,Falkirk,Queen of South
-2019-02-02,15:00,Inverness,Partick Thistle
-2019-02-16,15:00,Alloa,Partick Thistle
-2019-02-16,15:00,Dunfermline,Inverness
-2019-02-16,15:00,Morton,Ayr
-2019-02-16,15:00,Queen of South,Dundee Utd
-2019-02-16,15:00,Ross County,Falkirk
-2019-02-23,15:00,Ayr,Dunfermline
-2019-02-23,15:00,Falkirk,Dundee Utd
-2019-02-23,15:00,Inverness,Morton
-2019-02-23,15:00,Partick Thistle,Ross County
-2019-02-23,15:00,Queen of South,Alloa
-2019-02-26,19:45,Alloa,Falkirk
-2019-02-26,19:45,Dundee Utd,Inverness
-2019-02-26,19:45,Dunfermline,Partick Thistle
-2019-02-26,19:45,Morton,Queen of South
-2019-02-26,19:45,Ross County,Ayr
+2018-12-15 00:00:00,15:00,Ayr,Ross County
+2018-12-15 00:00:00,15:00,Falkirk,Morton
+2018-12-15 00:00:00,15:00,Inverness,Dundee Utd
+2018-12-15 00:00:00,15:00,Partick Thistle,Alloa
+2018-12-15 00:00:00,15:00,Queen of South,Dunfermline
+2018-12-22 00:00:00,15:00,Alloa,Queen of South
+2018-12-22 00:00:00,15:00,Dundee Utd,Falkirk
+2018-12-22 00:00:00,15:00,Dunfermline,Ayr
+2018-12-22 00:00:00,15:00,Morton,Inverness
+2018-12-22 00:00:00,15:00,Ross County,Partick Thistle
+2018-12-29 00:00:00,15:00,Alloa,Dundee Utd
+2018-12-29 00:00:00,15:00,Falkirk,Dunfermline
+2018-12-29 00:00:00,15:00,Partick Thistle,Morton
+2018-12-29 00:00:00,15:00,Queen of South,Ayr
+2018-12-29 00:00:00,15:00,Ross County,Inverness
+2019-01-04 00:00:00,19:45,Morton,Ross County
+2019-01-05 00:00:00,15:00,Ayr,Falkirk
+2019-01-05 00:00:00,15:00,Dundee Utd,Partick Thistle
+2019-01-05 00:00:00,15:00,Dunfermline,Alloa
+2019-01-05 00:00:00,15:00,Inverness,Queen of South
+2019-01-12 00:00:00,15:00,Alloa,Morton
+2019-01-12 00:00:00,15:00,Dundee Utd,Dunfermline
+2019-01-12 00:00:00,15:00,Inverness,Ayr
+2019-01-12 00:00:00,15:00,Partick Thistle,Falkirk
+2019-01-12 00:00:00,15:00,Queen of South,Ross County
+2019-01-25 00:00:00,19:45,Ayr,Dundee Utd
+2019-01-26 00:00:00,15:00,Falkirk,Inverness
+2019-01-26 00:00:00,15:00,Morton,Dunfermline
+2019-01-26 00:00:00,15:00,Partick Thistle,Queen of South
+2019-01-26 00:00:00,15:00,Ross County,Alloa
+2019-02-02 00:00:00,15:00,Alloa,Ayr
+2019-02-02 00:00:00,15:00,Dundee Utd,Morton
+2019-02-02 00:00:00,15:00,Dunfermline,Ross County
+2019-02-02 00:00:00,15:00,Falkirk,Queen of South
+2019-02-02 00:00:00,15:00,Inverness,Partick Thistle
+2019-02-16 00:00:00,15:00,Alloa,Partick Thistle
+2019-02-16 00:00:00,15:00,Dunfermline,Inverness
+2019-02-16 00:00:00,15:00,Morton,Ayr
+2019-02-16 00:00:00,15:00,Queen of South,Dundee Utd
+2019-02-16 00:00:00,15:00,Ross County,Falkirk
+2019-02-23 00:00:00,15:00,Ayr,Dunfermline
+2019-02-23 00:00:00,15:00,Falkirk,Dundee Utd
+2019-02-23 00:00:00,15:00,Inverness,Morton
+2019-02-23 00:00:00,15:00,Partick Thistle,Ross County
+2019-02-23 00:00:00,15:00,Queen of South,Alloa
+2019-02-26 00:00:00,19:45,Alloa,Falkirk
+2019-02-26 00:00:00,19:45,Dundee Utd,Inverness
+2019-02-26 00:00:00,19:45,Dunfermline,Partick Thistle
+2019-02-26 00:00:00,19:45,Morton,Queen of South
+2019-02-26 00:00:00,19:45,Ross County,Ayr
+2019-03-02 00:00:00,15:00,Ayr,Partick Thistle
+2019-03-02 00:00:00,15:00,Dundee Utd,Ross County
+2019-03-02 00:00:00,15:00,Dunfermline,Queen of South
+2019-03-02 00:00:00,15:00,Inverness,Alloa
+2019-03-02 00:00:00,15:00,Morton,Falkirk
+2019-03-09 00:00:00,15:00,Alloa,Dunfermline
+2019-03-09 00:00:00,15:00,Falkirk,Ayr
+2019-03-09 00:00:00,15:00,Partick Thistle,Dundee Utd
+2019-03-09 00:00:00,15:00,Queen of South,Inverness
+2019-03-09 00:00:00,15:00,Ross County,Morton
+2019-03-16 00:00:00,15:00,Ayr,Queen of South
+2019-03-16 00:00:00,15:00,Dunfermline,Dundee Utd
+2019-03-16 00:00:00,15:00,Falkirk,Partick Thistle
+2019-03-16 00:00:00,15:00,Inverness,Ross County
+2019-03-16 00:00:00,15:00,Morton,Alloa
+2019-03-23 00:00:00,15:00,Ayr,Morton
+2019-03-23 00:00:00,15:00,Dundee Utd,Alloa
+2019-03-23 00:00:00,15:00,Partick Thistle,Inverness
+2019-03-23 00:00:00,15:00,Queen of South,Falkirk
+2019-03-23 00:00:00,15:00,Ross County,Dunfermline
+2019-03-30 00:00:00,15:00,Alloa,Ross County
+2019-03-30 00:00:00,15:00,Dundee Utd,Queen of South
+2019-03-30 00:00:00,15:00,Dunfermline,Ayr
+2019-03-30 00:00:00,15:00,Inverness,Falkirk
+2019-03-30 00:00:00,15:00,Morton,Partick Thistle
+2019-04-06 00:00:00,15:00,Ayr,Inverness
+2019-04-06 00:00:00,15:00,Falkirk,Alloa
+2019-04-06 00:00:00,15:00,Partick Thistle,Dunfermline
+2019-04-06 00:00:00,15:00,Queen of South,Morton
+2019-04-06 00:00:00,15:00,Ross County,Dundee Utd
+2019-04-13 00:00:00,15:00,Alloa,Queen of South
+2019-04-13 00:00:00,15:00,Dundee Utd,Ayr
+2019-04-13 00:00:00,15:00,Dunfermline,Falkirk
+2019-04-13 00:00:00,15:00,Morton,Inverness
+2019-04-13 00:00:00,15:00,Ross County,Partick Thistle
+2019-04-20 00:00:00,15:00,Ayr,Ross County
+2019-04-20 00:00:00,15:00,Falkirk,Morton
+2019-04-20 00:00:00,15:00,Inverness,Dundee Utd
+2019-04-20 00:00:00,15:00,Partick Thistle,Alloa
+2019-04-20 00:00:00,15:00,Queen of South,Dunfermline
+2019-04-27 00:00:00,15:00,Alloa,Inverness
+2019-04-27 00:00:00,15:00,Dundee Utd,Falkirk
+2019-04-27 00:00:00,15:00,Dunfermline,Morton
+2019-04-27 00:00:00,15:00,Partick Thistle,Ayr
+2019-04-27 00:00:00,15:00,Ross County,Queen of South
+2019-05-04 00:00:00,15:00,Ayr,Alloa
+2019-05-04 00:00:00,15:00,Falkirk,Ross County
+2019-05-04 00:00:00,15:00,Inverness,Dunfermline
+2019-05-04 00:00:00,15:00,Morton,Dundee Utd
+2019-05-04 00:00:00,15:00,Queen of South,Partick Thistle

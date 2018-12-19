@@ -1,118 +1,111 @@
 Date,Time,HomeTeam,AwayTeam
-2018-09-14,20:00,Venezia,Benevento
-2018-09-15,14:00,Ascoli,Lecce
-2018-09-15,14:00,Brescia,Pescara
-2018-09-15,14:00,Cittadella,Cosenza
-2018-09-15,17:00,Cremonese,Spezia
-2018-09-16,14:00,Salernitana,Padova
-2018-09-16,14:00,Verona,Carpi
-2018-09-16,20:00,Foggia,Palermo
-2018-09-17,20:00,Livorno,Crotone
-2018-09-21,20:00,Benevento,Salernitana
-2018-09-22,14:00,Carpi,Brescia
-2018-09-22,14:00,Crotone,Verona
-2018-09-22,14:00,Lecce,Venezia
-2018-09-22,14:00,Palermo,Perugia
-2018-09-22,14:00,Pescara,Foggia
-2018-09-22,14:00,Spezia,Cittadella
-2018-09-22,17:00,Cosenza,Livorno
-2018-09-23,20:00,Padova,Cremonese
-2018-09-25,20:00,Brescia,Palermo
-2018-09-25,20:00,Cittadella,Benevento
-2018-09-25,20:00,Livorno,Lecce
-2018-09-25,20:00,Perugia,Carpi
-2018-09-25,20:00,Pescara,Crotone
-2018-09-25,20:00,Salernitana,Ascoli
-2018-09-25,20:00,Verona,Spezia
-2018-09-26,18:00,Cremonese,Cosenza
-2018-09-26,20:00,Foggia,Padova
-2018-09-28,20:00,Crotone,Brescia
-2018-09-29,14:00,Lecce,Cittadella
-2018-09-29,14:00,Salernitana,Verona
-2018-09-29,14:00,Spezia,Carpi
-2018-09-29,17:00,Venezia,Livorno
-2018-09-30,14:00,Ascoli,Cremonese
-2018-09-30,14:00,Cosenza,Perugia
-2018-09-30,20:00,Benevento,Foggia
-2018-10-01,20:00,Padova,Pescara
-2018-10-05,20:00,Verona,Lecce
-2018-10-06,14:00,Carpi,Cosenza
-2018-10-06,14:00,Cremonese,Salernitana
-2018-10-06,14:00,Foggia,Ascoli
-2018-10-06,14:00,Pescara,Benevento
-2018-10-06,17:00,Perugia,Venezia
-2018-10-07,14:00,Brescia,Padova
-2018-10-07,14:00,Livorno,Spezia
-2018-10-07,20:00,Palermo,Crotone
-2018-10-19,20:00,Spezia,Pescara
-2018-10-20,14:00,Ascoli,Carpi
-2018-10-20,14:00,Cittadella,Brescia
-2018-10-20,14:00,Cosenza,Foggia
-2018-10-20,17:00,Crotone,Padova
-2018-10-21,14:00,Salernitana,Perugia
-2018-10-21,14:00,Venezia,Verona
-2018-10-21,20:00,Lecce,Palermo
-2018-10-22,20:00,Benevento,Livorno
-2018-10-27,14:00,Benevento,Cremonese
-2018-10-27,14:00,Brescia,Cosenza
-2018-10-27,14:00,Crotone,Salernitana
-2018-10-27,14:00,Foggia,Lecce
-2018-10-27,14:00,Livorno,Ascoli
-2018-10-27,14:00,Padova,Spezia
-2018-10-27,14:00,Palermo,Venezia
-2018-10-27,14:00,Pescara,Cittadella
-2018-10-27,14:00,Verona,Perugia
-2018-10-30,14:00,Ascoli,Verona
-2018-10-30,14:00,Carpi,Palermo
-2018-10-30,14:00,Cittadella,Foggia
-2018-10-30,14:00,Cosenza,Pescara
-2018-10-30,14:00,Cremonese,Venezia
-2018-10-30,14:00,Lecce,Crotone
-2018-10-30,14:00,Perugia,Padova
-2018-10-30,14:00,Salernitana,Livorno
-2018-10-30,14:00,Spezia,Benevento
-2018-11-03,14:00,Benevento,Ascoli
-2018-11-03,14:00,Crotone,Carpi
-2018-11-03,14:00,Foggia,Brescia
-2018-11-03,14:00,Livorno,Perugia
-2018-11-03,14:00,Padova,Cittadella
-2018-11-03,14:00,Palermo,Cosenza
-2018-11-03,14:00,Pescara,Lecce
-2018-11-03,14:00,Venezia,Salernitana
-2018-11-03,14:00,Verona,Cremonese
-2018-11-10,14:00,Ascoli,Padova
-2018-11-10,14:00,Brescia,Verona
-2018-11-10,14:00,Carpi,Benevento
-2018-11-10,14:00,Cittadella,Venezia
-2018-11-10,14:00,Cosenza,Lecce
-2018-11-10,14:00,Cremonese,Livorno
-2018-11-10,14:00,Palermo,Pescara
-2018-11-10,14:00,Perugia,Crotone
-2018-11-10,14:00,Salernitana,Spezia
-2018-11-24,14:00,Benevento,Perugia
-2018-11-24,14:00,Crotone,Cosenza
-2018-11-24,14:00,Lecce,Cremonese
-2018-11-24,14:00,Livorno,Cittadella
-2018-11-24,14:00,Padova,Carpi
-2018-11-24,14:00,Pescara,Ascoli
-2018-11-24,14:00,Spezia,Foggia
-2018-11-24,14:00,Venezia,Brescia
-2018-11-24,14:00,Verona,Palermo
-2018-12-01,14:00,Ascoli,Spezia
-2018-12-01,14:00,Brescia,Livorno
-2018-12-01,14:00,Carpi,Lecce
-2018-12-01,14:00,Cittadella,Salernitana
-2018-12-01,14:00,Cosenza,Padova
-2018-12-01,14:00,Cremonese,Crotone
-2018-12-01,14:00,Foggia,Venezia
-2018-12-01,14:00,Palermo,Benevento
-2018-12-01,14:00,Perugia,Pescara
-2018-12-08,14:00,Benevento,Verona
-2018-12-08,14:00,Cremonese,Cittadella
-2018-12-08,14:00,Lecce,Perugia
-2018-12-08,14:00,Livorno,Foggia
-2018-12-08,14:00,Padova,Palermo
-2018-12-08,14:00,Pescara,Carpi
-2018-12-08,14:00,Salernitana,Brescia
-2018-12-08,14:00,Spezia,Cosenza
-2018-12-08,14:00,Venezia,Ascoli
+2018-12-09 00:00:00,20:00,Benevento,Verona
+2018-12-10 00:00:00,20:00,Salernitana,Brescia
+2018-12-14 00:00:00,20:00,Foggia,Cremonese
+2018-12-15 00:00:00,14:00,Ascoli,Cittadella
+2018-12-15 00:00:00,14:00,Palermo,Livorno
+2018-12-15 00:00:00,14:00,Perugia,Spezia
+2018-12-15 00:00:00,17:00,Cosenza,Benevento
+2018-12-16 00:00:00,14:00,Carpi,Salernitana
+2018-12-16 00:00:00,14:00,Crotone,Venezia
+2018-12-16 00:00:00,20:00,Brescia,Lecce
+2018-12-17 00:00:00,20:00,Verona,Pescara
+2018-12-21 00:00:00,20:00,Ascoli,Brescia
+2018-12-22 00:00:00,14:00,Cremonese,Carpi
+2018-12-22 00:00:00,14:00,Livorno,Verona
+2018-12-23 00:00:00,11:30,Salernitana,Foggia
+2018-12-23 00:00:00,14:00,Cittadella,Perugia
+2018-12-23 00:00:00,14:00,Lecce,Padova
+2018-12-23 00:00:00,14:00,Venezia,Cosenza
+2018-12-23 00:00:00,16:30,Spezia,Palermo
+2018-12-23 00:00:00,20:00,Benevento,Crotone
+2018-12-26 00:00:00,14:00,Brescia,Cremonese
+2018-12-26 00:00:00,14:00,Carpi,Livorno
+2018-12-27 00:00:00,18:00,Pescara,Venezia
+2018-12-27 00:00:00,20:00,Cosenza,Salernitana
+2018-12-27 00:00:00,20:00,Crotone,Spezia
+2018-12-27 00:00:00,20:00,Padova,Benevento
+2018-12-27 00:00:00,20:00,Palermo,Ascoli
+2018-12-27 00:00:00,20:00,Perugia,Foggia
+2018-12-27 00:00:00,20:00,Verona,Cittadella
+2018-12-30 00:00:00,11:30,Foggia,Verona
+2018-12-30 00:00:00,14:00,Ascoli,Crotone
+2018-12-30 00:00:00,14:00,Cittadella,Palermo
+2018-12-30 00:00:00,14:00,Cremonese,Perugia
+2018-12-30 00:00:00,14:00,Salernitana,Pescara
+2018-12-30 00:00:00,14:00,Venezia,Carpi
+2018-12-30 00:00:00,15:00,Benevento,Brescia
+2018-12-30 00:00:00,17:00,Livorno,Padova
+2018-12-30 00:00:00,20:00,Spezia,Lecce
+2019-01-19 00:00:00,14:00,Carpi,Foggia
+2019-01-19 00:00:00,14:00,Cosenza,Ascoli
+2019-01-19 00:00:00,14:00,Crotone,Cittadella
+2019-01-19 00:00:00,14:00,Lecce,Benevento
+2019-01-19 00:00:00,14:00,Padova,Verona
+2019-01-19 00:00:00,14:00,Palermo,Salernitana
+2019-01-19 00:00:00,14:00,Perugia,Brescia
+2019-01-19 00:00:00,14:00,Pescara,Cremonese
+2019-01-19 00:00:00,14:00,Spezia,Venezia
+2019-01-26 00:00:00,14:00,Ascoli,Perugia
+2019-01-26 00:00:00,14:00,Brescia,Spezia
+2019-01-26 00:00:00,14:00,Cittadella,Carpi
+2019-01-26 00:00:00,14:00,Cremonese,Palermo
+2019-01-26 00:00:00,14:00,Foggia,Crotone
+2019-01-26 00:00:00,14:00,Livorno,Pescara
+2019-01-26 00:00:00,14:00,Salernitana,Lecce
+2019-01-26 00:00:00,14:00,Venezia,Padova
+2019-01-26 00:00:00,14:00,Verona,Cosenza
+2019-02-02 00:00:00,14:00,Benevento,Venezia
+2019-02-02 00:00:00,14:00,Carpi,Verona
+2019-02-02 00:00:00,14:00,Cosenza,Cittadella
+2019-02-02 00:00:00,14:00,Crotone,Livorno
+2019-02-02 00:00:00,14:00,Lecce,Ascoli
+2019-02-02 00:00:00,14:00,Padova,Salernitana
+2019-02-02 00:00:00,14:00,Palermo,Foggia
+2019-02-02 00:00:00,14:00,Pescara,Brescia
+2019-02-02 00:00:00,14:00,Spezia,Cremonese
+2019-02-09 00:00:00,14:00,Brescia,Carpi
+2019-02-09 00:00:00,14:00,Cittadella,Spezia
+2019-02-09 00:00:00,14:00,Cremonese,Padova
+2019-02-09 00:00:00,14:00,Foggia,Pescara
+2019-02-09 00:00:00,14:00,Livorno,Cosenza
+2019-02-09 00:00:00,14:00,Perugia,Palermo
+2019-02-09 00:00:00,14:00,Salernitana,Benevento
+2019-02-09 00:00:00,14:00,Venezia,Lecce
+2019-02-09 00:00:00,14:00,Verona,Crotone
+2019-02-16 00:00:00,14:00,Ascoli,Salernitana
+2019-02-16 00:00:00,14:00,Benevento,Cittadella
+2019-02-16 00:00:00,14:00,Carpi,Perugia
+2019-02-16 00:00:00,14:00,Cosenza,Cremonese
+2019-02-16 00:00:00,14:00,Crotone,Pescara
+2019-02-16 00:00:00,14:00,Lecce,Livorno
+2019-02-16 00:00:00,14:00,Padova,Foggia
+2019-02-16 00:00:00,14:00,Palermo,Brescia
+2019-02-16 00:00:00,14:00,Spezia,Verona
+2019-02-23 00:00:00,14:00,Brescia,Crotone
+2019-02-23 00:00:00,14:00,Carpi,Spezia
+2019-02-23 00:00:00,14:00,Cittadella,Lecce
+2019-02-23 00:00:00,14:00,Cremonese,Ascoli
+2019-02-23 00:00:00,14:00,Foggia,Benevento
+2019-02-23 00:00:00,14:00,Livorno,Venezia
+2019-02-23 00:00:00,14:00,Perugia,Cosenza
+2019-02-23 00:00:00,14:00,Pescara,Padova
+2019-02-23 00:00:00,14:00,Verona,Salernitana
+2019-02-26 00:00:00,14:00,Ascoli,Foggia
+2019-02-26 00:00:00,14:00,Benevento,Pescara
+2019-02-26 00:00:00,14:00,Cosenza,Carpi
+2019-02-26 00:00:00,14:00,Crotone,Palermo
+2019-02-26 00:00:00,14:00,Lecce,Verona
+2019-02-26 00:00:00,14:00,Padova,Brescia
+2019-02-26 00:00:00,14:00,Salernitana,Cremonese
+2019-02-26 00:00:00,14:00,Spezia,Livorno
+2019-02-26 00:00:00,14:00,Venezia,Perugia
+2019-03-02 00:00:00,14:00,Brescia,Cittadella
+2019-03-02 00:00:00,14:00,Carpi,Ascoli
+2019-03-02 00:00:00,14:00,Foggia,Cosenza
+2019-03-02 00:00:00,14:00,Livorno,Benevento
+2019-03-02 00:00:00,14:00,Padova,Crotone
+2019-03-02 00:00:00,14:00,Palermo,Lecce
+2019-03-02 00:00:00,14:00,Perugia,Salernitana
+2019-03-02 00:00:00,14:00,Pescara,Spezia
+2019-03-02 00:00:00,14:00,Verona,Venezia

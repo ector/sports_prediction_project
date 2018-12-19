@@ -1,111 +1,113 @@
 Date,Time,HomeTeam,AwayTeam
-2018-09-15,12:30,Tottenham Hotspur,Liverpool
-2018-09-15,15:00,Bournemouth,Leicester City
-2018-09-15,15:00,Chelsea,Cardiff
-2018-09-15,15:00,Huddersfield Town,Crystal Palace
-2018-09-15,15:00,Manchester City,Fulham
-2018-09-15,15:00,Newcastle United,Arsenal
-2018-09-15,17:30,Watford,Manchester United
-2018-09-16,13:30,Wolverhampton Wanderers,Burnley
-2018-09-16,16:00,Everton,West Ham United
-2018-09-17,20:00,Southampton,Brighton & Hove Albion
-2018-09-22,12:30,Fulham,Watford
-2018-09-22,15:00,Burnley,Bournemouth
-2018-09-22,15:00,Cardiff,Manchester City
-2018-09-22,15:00,Crystal Palace,Newcastle United
-2018-09-22,15:00,Leicester City,Huddersfield Town
-2018-09-22,15:00,Liverpool,Southampton
-2018-09-22,15:00,Manchester United,Wolverhampton Wanderers
-2018-09-22,17:30,Brighton & Hove Albion,Tottenham Hotspur
-2018-09-23,13:30,West Ham United,Chelsea
-2018-09-23,16:00,Arsenal,Everton
-2018-09-29,12:30,West Ham United,Manchester United
-2018-09-29,15:00,Arsenal,Watford
-2018-09-29,15:00,Everton,Fulham
-2018-09-29,15:00,Huddersfield Town,Tottenham Hotspur
-2018-09-29,15:00,Manchester City,Brighton & Hove Albion
-2018-09-29,15:00,Newcastle United,Leicester City
-2018-09-29,15:00,Wolverhampton Wanderers,Southampton
-2018-09-29,17:30,Chelsea,Liverpool
-2018-09-30,16:00,Cardiff,Burnley
-2018-10-01,20:00,Bournemouth,Crystal Palace
-2018-10-05,20:00,Brighton & Hove Albion,West Ham United
-2018-10-06,15:00,Burnley,Huddersfield Town
-2018-10-06,15:00,Crystal Palace,Wolverhampton Wanderers
-2018-10-06,15:00,Leicester City,Everton
-2018-10-06,15:00,Tottenham Hotspur,Cardiff
-2018-10-06,15:00,Watford,Bournemouth
-2018-10-06,17:30,Manchester United,Newcastle United
-2018-10-07,12:00,Fulham,Arsenal
-2018-10-07,14:15,Southampton,Chelsea
-2018-10-07,16:30,Liverpool,Manchester City
-2018-10-20,12:30,Chelsea,Manchester United
-2018-10-20,15:00,Bournemouth,Southampton
-2018-10-20,15:00,Cardiff,Fulham
-2018-10-20,15:00,Manchester City,Burnley
-2018-10-20,15:00,Newcastle United,Brighton & Hove Albion
-2018-10-20,15:00,West Ham United,Tottenham Hotspur
-2018-10-20,15:00,Wolverhampton Wanderers,Watford
-2018-10-20,17:30,Huddersfield Town,Liverpool
-2018-10-21,16:00,Everton,Crystal Palace
-2018-10-22,20:00,Arsenal,Leicester City
-2018-10-27,15:00,Brighton & Hove Albion,Wolverhampton Wanderers
-2018-10-27,15:00,Fulham,Bournemouth
-2018-10-27,15:00,Liverpool,Cardiff
-2018-10-27,15:00,Southampton,Newcastle United
-2018-10-27,15:00,Watford,Huddersfield Town
-2018-10-27,17:30,Leicester City,West Ham United
-2018-10-28,13:30,Burnley,Chelsea
-2018-10-28,13:30,Crystal Palace,Arsenal
-2018-10-28,16:00,Manchester United,Everton
-2018-10-29,20:00,Tottenham Hotspur,Manchester City
-2018-11-03,12:30,Bournemouth,Manchester United
-2018-11-03,15:00,Cardiff,Leicester City
-2018-11-03,15:00,Everton,Brighton & Hove Albion
-2018-11-03,15:00,Manchester City,Southampton
-2018-11-03,15:00,Newcastle United,Watford
-2018-11-03,15:00,West Ham United,Burnley
-2018-11-03,17:30,Arsenal,Liverpool
-2018-11-03,19:45,Wolverhampton Wanderers,Tottenham Hotspur
-2018-11-04,16:00,Chelsea,Crystal Palace
-2018-11-05,20:00,Huddersfield Town,Fulham
-2018-11-10,12:30,Cardiff,Brighton & Hove Albion
-2018-11-10,15:00,Huddersfield Town,West Ham United
-2018-11-10,15:00,Leicester City,Burnley
-2018-11-10,15:00,Newcastle United,Bournemouth
-2018-11-10,15:00,Southampton,Watford
-2018-11-10,17:30,Crystal Palace,Tottenham Hotspur
-2018-11-11,12:00,Liverpool,Fulham
-2018-11-11,14:15,Chelsea,Everton
-2018-11-11,16:30,Arsenal,Wolverhampton Wanderers
-2018-11-11,16:30,Manchester City,Manchester United
-2018-11-24,15:00,Brighton & Hove Albion,Leicester City
-2018-11-24,15:00,Everton,Cardiff
-2018-11-24,15:00,Fulham,Southampton
-2018-11-24,15:00,Manchester United,Crystal Palace
-2018-11-24,15:00,Watford,Liverpool
-2018-11-24,15:00,West Ham United,Manchester City
-2018-11-24,17:30,Tottenham Hotspur,Chelsea
-2018-11-25,13:30,Bournemouth,Arsenal
-2018-11-25,16:00,Wolverhampton Wanderers,Huddersfield Town
-2018-11-26,20:00,Burnley,Newcastle United
-2018-12-01,15:00,Arsenal,Tottenham Hotspur
-2018-12-01,15:00,Cardiff,Wolverhampton Wanderers
-2018-12-01,15:00,Chelsea,Fulham
-2018-12-01,15:00,Crystal Palace,Burnley
-2018-12-01,15:00,Huddersfield Town,Brighton & Hove Albion
-2018-12-01,15:00,Leicester City,Watford
-2018-12-01,15:00,Liverpool,Everton
-2018-12-01,15:00,Manchester City,Bournemouth
-2018-12-01,15:00,Newcastle United,West Ham United
-2018-12-01,15:00,Southampton,Manchester United
-2018-12-04,19:45,Bournemouth,Huddersfield Town
-2018-12-04,19:45,Brighton & Hove Albion,Crystal Palace
-2018-12-04,19:45,Burnley,Liverpool
-2018-12-04,19:45,Fulham,Leicester City
-2018-12-04,19:45,Watford,Manchester City
-2018-12-04,19:45,West Ham United,Cardiff
-2018-12-04,19:45,Wolverhampton Wanderers,Chelsea
-2018-12-04,20:00,Manchester United,Arsenal
-2018-12-05,19:45,Everton,Newcastle United
-2018-12-05,20:00,Tottenham Hotspur,Southampton
+2018-12-09 00:00:00,16:00,Newcastle United,Wolverhampton Wanderers
+2018-12-10 00:00:00,20:00,Everton,Watford
+2018-12-15 00:00:00,12:30,Manchester City,Everton
+2018-12-15 00:00:00,15:00,Crystal Palace,Leicester City
+2018-12-15 00:00:00,15:00,Huddersfield Town,Newcastle United
+2018-12-15 00:00:00,15:00,Tottenham Hotspur,Burnley
+2018-12-15 00:00:00,15:00,Watford,Cardiff
+2018-12-15 00:00:00,15:00,Wolverhampton Wanderers,Bournemouth
+2018-12-15 00:00:00,17:30,Fulham,West Ham United
+2018-12-16 00:00:00,13:30,Brighton & Hove Albion,Chelsea
+2018-12-16 00:00:00,13:30,Southampton,Arsenal
+2018-12-16 00:00:00,16:00,Liverpool,Manchester Utd
+2018-12-21 00:00:00,20:00,Wolverhampton Wanderers,Liverpool
+2018-12-22 00:00:00,12:30,Arsenal,Burnley
+2018-12-22 00:00:00,15:00,Bournemouth,Brighton & Hove Albion
+2018-12-22 00:00:00,15:00,Chelsea,Leicester City
+2018-12-22 00:00:00,15:00,Huddersfield Town,Southampton
+2018-12-22 00:00:00,15:00,Manchester City,Crystal Palace
+2018-12-22 00:00:00,15:00,Newcastle United,Fulham
+2018-12-22 00:00:00,15:00,West Ham United,Watford
+2018-12-22 00:00:00,17:30,Cardiff,Manchester Utd
+2018-12-23 00:00:00,16:00,Everton,Tottenham Hotspur
+2018-12-26 00:00:00,12:30,Fulham,Wolverhampton Wanderers
+2018-12-26 00:00:00,15:00,Burnley,Everton
+2018-12-26 00:00:00,15:00,Crystal Palace,Cardiff
+2018-12-26 00:00:00,15:00,Leicester City,Manchester City
+2018-12-26 00:00:00,15:00,Liverpool,Newcastle United
+2018-12-26 00:00:00,15:00,Manchester Utd,Huddersfield Town
+2018-12-26 00:00:00,15:00,Tottenham Hotspur,Bournemouth
+2018-12-26 00:00:00,17:15,Brighton & Hove Albion,Arsenal
+2018-12-26 00:00:00,19:30,Watford,Chelsea
+2018-12-27 00:00:00,19:45,Southampton,West Ham United
+2018-12-29 00:00:00,15:00,Brighton & Hove Albion,Everton
+2018-12-29 00:00:00,15:00,Fulham,Huddersfield Town
+2018-12-29 00:00:00,15:00,Leicester City,Cardiff
+2018-12-29 00:00:00,15:00,Tottenham Hotspur,Wolverhampton Wanderers
+2018-12-29 00:00:00,15:00,Watford,Newcastle United
+2018-12-29 00:00:00,17:30,Liverpool,Arsenal
+2018-12-30 00:00:00,12:00,Crystal Palace,Chelsea
+2018-12-30 00:00:00,14:15,Burnley,West Ham United
+2018-12-30 00:00:00,14:15,Southampton,Manchester City
+2018-12-30 00:00:00,16:30,Manchester Utd,Bournemouth
+2019-01-01 00:00:00,12:30,Everton,Leicester City
+2019-01-01 00:00:00,15:00,Arsenal,Fulham
+2019-01-01 00:00:00,17:30,Cardiff,Tottenham Hotspur
+2019-01-02 00:00:00,19:45,Bournemouth,Watford
+2019-01-02 00:00:00,19:45,Chelsea,Southampton
+2019-01-02 00:00:00,19:45,Huddersfield Town,Burnley
+2019-01-02 00:00:00,19:45,West Ham United,Brighton & Hove Albion
+2019-01-02 00:00:00,19:45,Wolverhampton Wanderers,Crystal Palace
+2019-01-02 00:00:00,20:00,Newcastle United,Manchester Utd
+2019-01-03 00:00:00,20:00,Manchester City,Liverpool
+2019-01-12 00:00:00,12:30,West Ham United,Arsenal
+2019-01-12 00:00:00,15:00,Brighton & Hove Albion,Liverpool
+2019-01-12 00:00:00,15:00,Burnley,Fulham
+2019-01-12 00:00:00,15:00,Cardiff,Huddersfield Town
+2019-01-12 00:00:00,15:00,Crystal Palace,Watford
+2019-01-12 00:00:00,15:00,Leicester City,Southampton
+2019-01-12 00:00:00,17:30,Chelsea,Newcastle United
+2019-01-13 00:00:00,14:15,Everton,Bournemouth
+2019-01-13 00:00:00,16:30,Tottenham Hotspur,Manchester Utd
+2019-01-14 00:00:00,20:00,Manchester City,Wolverhampton Wanderers
+2019-01-19 00:00:00,12:30,Wolverhampton Wanderers,Leicester City
+2019-01-19 00:00:00,15:00,Bournemouth,West Ham United
+2019-01-19 00:00:00,15:00,Liverpool,Crystal Palace
+2019-01-19 00:00:00,15:00,Manchester Utd,Brighton & Hove Albion
+2019-01-19 00:00:00,15:00,Newcastle United,Cardiff
+2019-01-19 00:00:00,15:00,Southampton,Everton
+2019-01-19 00:00:00,15:00,Watford,Burnley
+2019-01-19 00:00:00,17:30,Arsenal,Chelsea
+2019-01-20 00:00:00,13:30,Huddersfield Town,Manchester City
+2019-01-20 00:00:00,16:00,Fulham,Tottenham Hotspur
+2019-01-29 00:00:00,19:45,Arsenal,Cardiff
+2019-01-29 00:00:00,19:45,Bournemouth,Chelsea
+2019-01-29 00:00:00,19:45,Fulham,Brighton & Hove Albion
+2019-01-29 00:00:00,19:45,Huddersfield Town,Everton
+2019-01-29 00:00:00,19:45,Wolverhampton Wanderers,West Ham United
+2019-01-29 00:00:00,20:00,Manchester Utd,Burnley
+2019-01-29 00:00:00,20:00,Newcastle United,Manchester City
+2019-01-30 00:00:00,19:45,Southampton,Crystal Palace
+2019-01-30 00:00:00,20:00,Liverpool,Leicester City
+2019-01-30 00:00:00,20:00,Tottenham Hotspur,Watford
+2019-02-02 00:00:00,15:00,Brighton & Hove Albion,Watford
+2019-02-02 00:00:00,15:00,Burnley,Southampton
+2019-02-02 00:00:00,15:00,Cardiff,Bournemouth
+2019-02-02 00:00:00,15:00,Chelsea,Huddersfield Town
+2019-02-02 00:00:00,15:00,Crystal Palace,Fulham
+2019-02-02 00:00:00,15:00,Everton,Wolverhampton Wanderers
+2019-02-02 00:00:00,15:00,Leicester City,Manchester Utd
+2019-02-02 00:00:00,15:00,Manchester City,Arsenal
+2019-02-02 00:00:00,15:00,Tottenham Hotspur,Newcastle United
+2019-02-02 00:00:00,15:00,West Ham United,Liverpool
+2019-02-09 00:00:00,15:00,Brighton & Hove Albion,Burnley
+2019-02-09 00:00:00,15:00,Crystal Palace,West Ham United
+2019-02-09 00:00:00,15:00,Fulham,Manchester Utd
+2019-02-09 00:00:00,15:00,Huddersfield Town,Arsenal
+2019-02-09 00:00:00,15:00,Liverpool,Bournemouth
+2019-02-09 00:00:00,15:00,Manchester City,Chelsea
+2019-02-09 00:00:00,15:00,Southampton,Cardiff
+2019-02-09 00:00:00,15:00,Tottenham Hotspur,Leicester City
+2019-02-09 00:00:00,15:00,Watford,Everton
+2019-02-09 00:00:00,15:00,Wolverhampton Wanderers,Newcastle United
+2019-02-23 00:00:00,15:00,Arsenal,Southampton
+2019-02-23 00:00:00,15:00,Bournemouth,Wolverhampton Wanderers
+2019-02-23 00:00:00,15:00,Burnley,Tottenham Hotspur
+2019-02-23 00:00:00,15:00,Cardiff,Watford
+2019-02-23 00:00:00,15:00,Chelsea,Brighton & Hove Albion
+2019-02-23 00:00:00,15:00,Everton,Manchester City
+2019-02-23 00:00:00,15:00,Leicester City,Crystal Palace
+2019-02-23 00:00:00,15:00,Manchester Utd,Liverpool
+2019-02-23 00:00:00,15:00,Newcastle United,Huddersfield Town
+2019-02-23 00:00:00,15:00,West Ham United,Fulham

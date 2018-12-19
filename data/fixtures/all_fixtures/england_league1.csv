@@ -1,1 +1,122 @@
 Date,Time,HomeTeam,AwayTeam
+2018-12-11 00:00:00,19:45,Portsmouth,Charlton
+2018-12-15 00:00:00,12:15,Doncaster,Scunthorpe
+2018-12-15 00:00:00,15:00,Barnsley,Portsmouth
+2018-12-15 00:00:00,15:00,Bradford City,Walsall
+2018-12-15 00:00:00,15:00,Charlton,AFC Wimbledon
+2018-12-15 00:00:00,15:00,Coventry,Luton
+2018-12-15 00:00:00,15:00,Fleetwood,Burton
+2018-12-15 00:00:00,15:00,Gillingham,Wycombe
+2018-12-15 00:00:00,15:00,Oxford Utd,Blackpool
+2018-12-15 00:00:00,15:00,Rochdale,Plymouth
+2018-12-15 00:00:00,15:00,Shrewsbury,Peterborough
+2018-12-15 00:00:00,15:00,Southend,Accrington
+2018-12-15 00:00:00,15:00,Sunderland,Bristol Rovers
+2018-12-22 00:00:00,15:00,Blackpool,Barnsley
+2018-12-22 00:00:00,15:00,Bradford City,Scunthorpe
+2018-12-22 00:00:00,15:00,Bristol Rovers,Fleetwood
+2018-12-22 00:00:00,15:00,Charlton,Gillingham
+2018-12-22 00:00:00,15:00,Doncaster,Oxford Utd
+2018-12-22 00:00:00,15:00,Luton,Burton
+2018-12-22 00:00:00,15:00,Peterborough,Walsall
+2018-12-22 00:00:00,15:00,Plymouth,Accrington
+2018-12-22 00:00:00,15:00,Portsmouth,Sunderland
+2018-12-22 00:00:00,15:00,Shrewsbury,Coventry
+2018-12-22 00:00:00,15:00,Southend,Rochdale
+2018-12-22 00:00:00,15:00,Wycombe,AFC Wimbledon
+2018-12-26 00:00:00,13:00,Gillingham,Portsmouth
+2018-12-26 00:00:00,15:00,Accrington,Shrewsbury
+2018-12-26 00:00:00,15:00,AFC Wimbledon,Plymouth
+2018-12-26 00:00:00,15:00,Barnsley,Peterborough
+2018-12-26 00:00:00,15:00,Burton,Wycombe
+2018-12-26 00:00:00,15:00,Coventry,Charlton
+2018-12-26 00:00:00,15:00,Fleetwood,Doncaster
+2018-12-26 00:00:00,15:00,Oxford Utd,Southend
+2018-12-26 00:00:00,15:00,Rochdale,Blackpool
+2018-12-26 00:00:00,15:00,Scunthorpe,Luton
+2018-12-26 00:00:00,15:00,Sunderland,Bradford City
+2018-12-26 00:00:00,15:00,Walsall,Bristol Rovers
+2018-12-29 00:00:00,13:00,Oxford Utd,Bristol Rovers
+2018-12-29 00:00:00,15:00,Accrington,Peterborough
+2018-12-29 00:00:00,15:00,AFC Wimbledon,Blackpool
+2018-12-29 00:00:00,15:00,Barnsley,Charlton
+2018-12-29 00:00:00,15:00,Burton,Plymouth
+2018-12-29 00:00:00,15:00,Coventry,Southend
+2018-12-29 00:00:00,15:00,Fleetwood,Portsmouth
+2018-12-29 00:00:00,15:00,Gillingham,Doncaster
+2018-12-29 00:00:00,15:00,Rochdale,Bradford City
+2018-12-29 00:00:00,15:00,Scunthorpe,Wycombe
+2018-12-29 00:00:00,15:00,Sunderland,Shrewsbury
+2018-12-29 00:00:00,15:00,Walsall,Luton
+2019-01-01 00:00:00,15:00,Blackpool,Sunderland
+2019-01-01 00:00:00,15:00,Bradford City,Accrington
+2019-01-01 00:00:00,15:00,Bristol Rovers,Burton
+2019-01-01 00:00:00,15:00,Charlton,Walsall
+2019-01-01 00:00:00,15:00,Doncaster,Rochdale
+2019-01-01 00:00:00,15:00,Luton,Barnsley
+2019-01-01 00:00:00,15:00,Peterborough,Scunthorpe
+2019-01-01 00:00:00,15:00,Plymouth,Oxford Utd
+2019-01-01 00:00:00,15:00,Portsmouth,AFC Wimbledon
+2019-01-01 00:00:00,15:00,Shrewsbury,Fleetwood
+2019-01-01 00:00:00,15:00,Southend,Gillingham
+2019-01-01 00:00:00,15:00,Wycombe,Coventry
+2019-01-05 00:00:00,15:00,AFC Wimbledon,Fleetwood
+2019-01-05 00:00:00,15:00,Blackpool,Wycombe
+2019-01-05 00:00:00,15:00,Bradford City,Shrewsbury
+2019-01-05 00:00:00,15:00,Bristol Rovers,Peterborough
+2019-01-05 00:00:00,15:00,Charlton,Sunderland
+2019-01-05 00:00:00,15:00,Doncaster,Southend
+2019-01-05 00:00:00,15:00,Gillingham,Accrington
+2019-01-05 00:00:00,15:00,Luton,Portsmouth
+2019-01-05 00:00:00,15:00,Plymouth,Walsall
+2019-01-05 00:00:00,15:00,Rochdale,Burton
+2019-01-05 00:00:00,15:00,Scunthorpe,Coventry
+2019-01-12 00:00:00,15:00,Accrington,Bristol Rovers
+2019-01-12 00:00:00,15:00,Barnsley,Bradford City
+2019-01-12 00:00:00,15:00,Burton,Gillingham
+2019-01-12 00:00:00,15:00,Coventry,AFC Wimbledon
+2019-01-12 00:00:00,15:00,Fleetwood,Oxford Utd
+2019-01-12 00:00:00,15:00,Peterborough,Rochdale
+2019-01-12 00:00:00,15:00,Portsmouth,Blackpool
+2019-01-12 00:00:00,15:00,Shrewsbury,Charlton
+2019-01-12 00:00:00,15:00,Southend,Plymouth
+2019-01-12 00:00:00,15:00,Sunderland,Luton
+2019-01-12 00:00:00,15:00,Walsall,Scunthorpe
+2019-01-12 00:00:00,15:00,Wycombe,Doncaster
+2019-01-19 00:00:00,15:00,AFC Wimbledon,Barnsley
+2019-01-19 00:00:00,15:00,Blackpool,Shrewsbury
+2019-01-19 00:00:00,15:00,Bradford City,Southend
+2019-01-19 00:00:00,15:00,Bristol Rovers,Wycombe
+2019-01-19 00:00:00,15:00,Charlton,Accrington
+2019-01-19 00:00:00,15:00,Doncaster,Burton
+2019-01-19 00:00:00,15:00,Gillingham,Walsall
+2019-01-19 00:00:00,15:00,Luton,Peterborough
+2019-01-19 00:00:00,15:00,Oxford Utd,Portsmouth
+2019-01-19 00:00:00,15:00,Plymouth,Coventry
+2019-01-19 00:00:00,15:00,Rochdale,Fleetwood
+2019-01-19 00:00:00,15:00,Scunthorpe,Sunderland
+2019-01-26 00:00:00,15:00,Accrington,Oxford Utd
+2019-01-26 00:00:00,15:00,Barnsley,Rochdale
+2019-01-26 00:00:00,15:00,Burton,Bradford City
+2019-01-26 00:00:00,15:00,Coventry,Blackpool
+2019-01-26 00:00:00,15:00,Fleetwood,Scunthorpe
+2019-01-26 00:00:00,15:00,Peterborough,Charlton
+2019-01-26 00:00:00,15:00,Portsmouth,Bristol Rovers
+2019-01-26 00:00:00,15:00,Shrewsbury,Doncaster
+2019-01-26 00:00:00,15:00,Southend,Luton
+2019-01-26 00:00:00,15:00,Sunderland,Gillingham
+2019-01-26 00:00:00,15:00,Walsall,AFC Wimbledon
+2019-01-26 00:00:00,15:00,Wycombe,Plymouth
+2019-01-29 00:00:00,19:45,Oxford Utd,Barnsley
+2019-02-02 00:00:00,15:00,Accrington,Blackpool
+2019-02-02 00:00:00,15:00,Barnsley,Scunthorpe
+2019-02-02 00:00:00,15:00,Burton,Oxford Utd
+2019-02-02 00:00:00,15:00,Coventry,Gillingham
+2019-02-02 00:00:00,15:00,Fleetwood,Charlton
+2019-02-02 00:00:00,15:00,Peterborough,Plymouth
+2019-02-02 00:00:00,15:00,Portsmouth,Doncaster
+2019-02-02 00:00:00,15:00,Shrewsbury,Luton
+2019-02-02 00:00:00,15:00,Southend,Bristol Rovers
+2019-02-02 00:00:00,15:00,Sunderland,AFC Wimbledon
+2019-02-02 00:00:00,15:00,Walsall,Rochdale
+2019-02-02 00:00:00,15:00,Wycombe,Bradford City
