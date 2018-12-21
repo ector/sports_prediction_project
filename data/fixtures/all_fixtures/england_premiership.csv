@@ -1,16 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,16:00,Newcastle United,Wolverhampton Wanderers
-2018-12-10 00:00:00,20:00,Everton,Watford
-2018-12-15 00:00:00,12:30,Manchester City,Everton
-2018-12-15 00:00:00,15:00,Crystal Palace,Leicester City
-2018-12-15 00:00:00,15:00,Huddersfield Town,Newcastle United
-2018-12-15 00:00:00,15:00,Tottenham Hotspur,Burnley
-2018-12-15 00:00:00,15:00,Watford,Cardiff
-2018-12-15 00:00:00,15:00,Wolverhampton Wanderers,Bournemouth
-2018-12-15 00:00:00,17:30,Fulham,West Ham United
-2018-12-16 00:00:00,13:30,Brighton & Hove Albion,Chelsea
-2018-12-16 00:00:00,13:30,Southampton,Arsenal
-2018-12-16 00:00:00,16:00,Liverpool,Manchester Utd
 2018-12-21 00:00:00,20:00,Wolverhampton Wanderers,Liverpool
 2018-12-22 00:00:00,12:30,Arsenal,Burnley
 2018-12-22 00:00:00,15:00,Bournemouth,Brighton & Hove Albion
@@ -81,33 +69,43 @@ Date,Time,HomeTeam,AwayTeam
 2019-01-30 00:00:00,19:45,Southampton,Crystal Palace
 2019-01-30 00:00:00,20:00,Liverpool,Leicester City
 2019-01-30 00:00:00,20:00,Tottenham Hotspur,Watford
+2019-02-02 00:00:00,12:30,Tottenham Hotspur,Newcastle United
 2019-02-02 00:00:00,15:00,Brighton & Hove Albion,Watford
 2019-02-02 00:00:00,15:00,Burnley,Southampton
-2019-02-02 00:00:00,15:00,Cardiff,Bournemouth
 2019-02-02 00:00:00,15:00,Chelsea,Huddersfield Town
 2019-02-02 00:00:00,15:00,Crystal Palace,Fulham
 2019-02-02 00:00:00,15:00,Everton,Wolverhampton Wanderers
-2019-02-02 00:00:00,15:00,Leicester City,Manchester Utd
-2019-02-02 00:00:00,15:00,Manchester City,Arsenal
-2019-02-02 00:00:00,15:00,Tottenham Hotspur,Newcastle United
-2019-02-02 00:00:00,15:00,West Ham United,Liverpool
-2019-02-09 00:00:00,15:00,Brighton & Hove Albion,Burnley
+2019-02-02 00:00:00,17:30,Cardiff,Bournemouth
+2019-02-03 00:00:00,14:05,Leicester City,Manchester Utd
+2019-02-03 00:00:00,16:30,Manchester City,Arsenal
+2019-02-04 00:00:00,20:00,West Ham United,Liverpool
+2019-02-09 00:00:00,12:30,Fulham,Manchester Utd
 2019-02-09 00:00:00,15:00,Crystal Palace,West Ham United
-2019-02-09 00:00:00,15:00,Fulham,Manchester Utd
 2019-02-09 00:00:00,15:00,Huddersfield Town,Arsenal
 2019-02-09 00:00:00,15:00,Liverpool,Bournemouth
-2019-02-09 00:00:00,15:00,Manchester City,Chelsea
 2019-02-09 00:00:00,15:00,Southampton,Cardiff
-2019-02-09 00:00:00,15:00,Tottenham Hotspur,Leicester City
 2019-02-09 00:00:00,15:00,Watford,Everton
-2019-02-09 00:00:00,15:00,Wolverhampton Wanderers,Newcastle United
-2019-02-23 00:00:00,15:00,Arsenal,Southampton
+2019-02-09 00:00:00,17:30,Brighton & Hove Albion,Burnley
+2019-02-10 00:00:00,13:30,Tottenham Hotspur,Leicester City
+2019-02-10 00:00:00,16:00,Manchester City,Chelsea
+2019-02-11 00:00:00,20:00,Wolverhampton Wanderers,Newcastle United
+2019-02-22 00:00:00,19:45,Cardiff,Watford
+2019-02-22 00:00:00,19:45,West Ham United,Fulham
+2019-02-23 00:00:00,12:30,Burnley,Tottenham Hotspur
 2019-02-23 00:00:00,15:00,Bournemouth,Wolverhampton Wanderers
-2019-02-23 00:00:00,15:00,Burnley,Tottenham Hotspur
-2019-02-23 00:00:00,15:00,Cardiff,Watford
-2019-02-23 00:00:00,15:00,Chelsea,Brighton & Hove Albion
-2019-02-23 00:00:00,15:00,Everton,Manchester City
 2019-02-23 00:00:00,15:00,Leicester City,Crystal Palace
-2019-02-23 00:00:00,15:00,Manchester Utd,Liverpool
 2019-02-23 00:00:00,15:00,Newcastle United,Huddersfield Town
-2019-02-23 00:00:00,15:00,West Ham United,Fulham
+2019-02-23 00:00:00,17:30,Everton,Manchester City
+2019-02-24 00:00:00,12:00,Chelsea,Brighton & Hove Albion
+2019-02-24 00:00:00,14:05,Arsenal,Southampton
+2019-02-24 00:00:00,14:05,Manchester Utd,Liverpool
+2019-02-26 00:00:00,19:45,Cardiff,Everton
+2019-02-26 00:00:00,19:45,Huddersfield Town,Wolverhampton Wanderers
+2019-02-26 00:00:00,19:45,Leicester City,Brighton & Hove Albion
+2019-02-26 00:00:00,20:00,Manchester City,West Ham United
+2019-02-27 00:00:00,19:45,Arsenal,Bournemouth
+2019-02-27 00:00:00,19:45,Newcastle United,Burnley
+2019-02-27 00:00:00,19:45,Southampton,Fulham
+2019-02-27 00:00:00,20:00,Chelsea,Tottenham Hotspur
+2019-02-27 00:00:00,20:00,Crystal Palace,Manchester Utd
+2019-02-27 00:00:00,20:00,Liverpool,Watford

@@ -1,18 +1,5 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,16:00,Lille,Reims
-2018-12-09 00:00:00,20:00,Saint-Étienne,Olympique Marseille
-2018-12-14 00:00:00,19:45,Nice,Saint-Étienne
-2018-12-15 00:00:00,16:00,Dijon,Paris SG
-2018-12-15 00:00:00,19:00,Amiens SC,Angers SCO
-2018-12-15 00:00:00,19:00,Caen,Toulouse
-2018-12-15 00:00:00,19:00,Nantes,Montpellier
-2018-12-15 00:00:00,19:00,Reims,Strasbourg
-2018-12-16 00:00:00,12:00,Olympique Lyonnais,Monaco
-2018-12-16 00:00:00,14:00,Nimes,Lille
-2018-12-16 00:00:00,16:00,Guingamp,Rennes
-2018-12-16 00:00:00,20:00,Olympique Marseille,Bordeaux
 2018-12-22 00:00:00,20:00,Angers SCO,Olympique Marseille
-2018-12-22 00:00:00,20:00,Bordeaux,Amiens SC
 2018-12-22 00:00:00,20:00,Lille,Toulouse
 2018-12-22 00:00:00,20:00,Monaco,Guingamp
 2018-12-22 00:00:00,20:00,Montpellier,Olympique Lyonnais
@@ -21,6 +8,7 @@ Date,Time,HomeTeam,AwayTeam
 2018-12-22 00:00:00,20:00,Rennes,Nimes
 2018-12-22 00:00:00,20:00,Saint-Étienne,Dijon
 2018-12-22 00:00:00,20:00,Strasbourg,Nice
+2018-12-23 00:00:00,16:00,Bordeaux,Amiens SC
 2019-01-12 00:00:00,19:00,Amiens SC,Paris SG
 2019-01-12 00:00:00,19:00,Caen,Lille
 2019-01-12 00:00:00,19:00,Dijon,Montpellier
@@ -31,6 +19,13 @@ Date,Time,HomeTeam,AwayTeam
 2019-01-12 00:00:00,19:00,Nimes,Angers SCO
 2019-01-12 00:00:00,19:00,Toulouse,Strasbourg
 2019-01-13 00:00:00,20:00,Olympique Marseille,Monaco
+2019-01-15 00:00:00,18:00,Angers SCO,Bordeaux
+2019-01-15 00:00:00,20:00,Paris SG,Montpellier
+2019-01-16 00:00:00,18:00,Guingamp,Rennes
+2019-01-16 00:00:00,18:00,Monaco,Nice
+2019-01-16 00:00:00,18:00,Nimes,Nantes
+2019-01-16 00:00:00,18:00,Toulouse,Olympique Lyonnais
+2019-01-16 00:00:00,20:00,Saint-Étienne,Olympique Marseille
 2019-01-19 00:00:00,19:00,Angers SCO,Nantes
 2019-01-19 00:00:00,19:00,Bordeaux,Dijon
 2019-01-19 00:00:00,19:00,Caen,Olympique Marseille
@@ -111,3 +106,13 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-09 00:00:00,19:00,Saint-Étienne,Lille
 2019-03-09 00:00:00,19:00,Strasbourg,Olympique Lyonnais
 2019-03-09 00:00:00,19:00,Toulouse,Guingamp
+2019-03-13 00:00:00,19:00,Dijon,Paris SG
+2019-03-16 00:00:00,19:00,Angers SCO,Amiens SC
+2019-03-16 00:00:00,19:00,Bordeaux,Rennes
+2019-03-16 00:00:00,19:00,Caen,Saint-Étienne
+2019-03-16 00:00:00,19:00,Guingamp,Dijon
+2019-03-16 00:00:00,19:00,Lille,Monaco
+2019-03-16 00:00:00,19:00,Olympique Lyonnais,Montpellier
+2019-03-16 00:00:00,19:00,Nice,Toulouse
+2019-03-16 00:00:00,19:00,Nimes,Strasbourg
+2019-03-16 00:00:00,19:00,Reims,Nantes

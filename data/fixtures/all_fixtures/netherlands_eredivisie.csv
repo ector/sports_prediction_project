@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,15:45,Breda,Vitesse
-2018-12-14 00:00:00,19:00,Willem II,Den Haag
-2018-12-15 00:00:00,17:30,Zwolle,Breda
-2018-12-15 00:00:00,18:45,AZ Alkmaar,Excelsior
-2018-12-15 00:00:00,18:45,Heracles,PSV
-2018-12-15 00:00:00,19:45,Vitesse,Venlo
-2018-12-16 00:00:00,11:15,Heerenveen,Utrecht
-2018-12-16 00:00:00,13:30,Ajax,Graafschap
-2018-12-16 00:00:00,13:30,Groningen,FC Emmen
-2018-12-16 00:00:00,15:45,Feyenoord,Sittard
 2018-12-21 00:00:00,19:00,Venlo,Zwolle
 2018-12-22 00:00:00,17:30,Sittard,Groningen
 2018-12-22 00:00:00,18:45,Breda,Heerenveen
@@ -108,3 +98,10 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-31 00:00:00,13:30,Utrecht,Feyenoord
 2019-03-31 00:00:00,13:30,Zwolle,FC Emmen
 2019-03-31 00:00:00,15:45,Ajax,PSV
+2019-04-02 00:00:00,17:30,Vitesse,AZ Alkmaar
+2019-04-02 00:00:00,18:45,Heracles,Willem II
+2019-04-02 00:00:00,19:45,Groningen,Graafschap
+2019-04-03 00:00:00,17:30,Venlo,Utrecht
+2019-04-03 00:00:00,18:45,Excelsior,Breda
+2019-04-03 00:00:00,18:45,Sittard,Den Haag
+2019-04-03 00:00:00,19:45,FC Emmen,Ajax

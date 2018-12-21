@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-11 00:00:00,19:45,Aberdeen,Livingston
-2018-12-14 00:00:00,19:45,Livingston,Hearts
-2018-12-15 00:00:00,15:00,Kilmarnock,Dundee FC
-2018-12-15 00:00:00,15:00,St Johnstone,Motherwell
-2018-12-15 00:00:00,15:00,St. Mirren,Aberdeen
-2018-12-16 00:00:00,12:30,Hibernian,Celtic
-2018-12-16 00:00:00,15:00,Rangers,Hamilton
-2018-12-18 00:00:00,19:45,Aberdeen,Dundee FC
-2018-12-19 00:00:00,19:45,Celtic,Motherwell
-2018-12-19 00:00:00,19:45,Hibernian,Rangers
 2018-12-22 00:00:00,15:00,Aberdeen,Hearts
 2018-12-22 00:00:00,15:00,Celtic,Dundee FC
 2018-12-22 00:00:00,15:00,Hamilton,Kilmarnock
@@ -59,13 +49,13 @@ Date,Time,HomeTeam,AwayTeam
 2019-02-17 00:00:00,12:15,Motherwell,Hearts
 2019-02-17 00:00:00,16:00,Kilmarnock,Celtic
 2019-02-22 00:00:00,19:45,Dundee FC,Hibernian
-2019-02-23 00:00:00,15:00,Celtic,Motherwell
 2019-02-23 00:00:00,15:00,Hearts,St. Mirren
 2019-02-23 00:00:00,15:00,Livingston,Kilmarnock
 2019-02-23 00:00:00,15:00,St Johnstone,Aberdeen
 2019-02-24 00:00:00,12:15,Hamilton,Rangers
-2019-02-26 00:00:00,19:45,Hearts,Celtic
+2019-02-24 00:00:00,15:00,Celtic,Motherwell
 2019-02-27 00:00:00,19:45,Aberdeen,Hamilton
+2019-02-27 00:00:00,19:45,Hearts,Celtic
 2019-02-27 00:00:00,19:45,Kilmarnock,Motherwell
 2019-02-27 00:00:00,19:45,Rangers,Dundee FC
 2019-02-27 00:00:00,19:45,St Johnstone,Hibernian

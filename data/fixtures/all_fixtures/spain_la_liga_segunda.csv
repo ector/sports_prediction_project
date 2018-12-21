@@ -1,19 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,15:00,Cadiz CF,Rayo Majadahonda
-2018-12-09 00:00:00,17:00,Elche,Gijon
-2018-12-09 00:00:00,19:00,Lugo,Las Palmas
-2018-12-09 00:00:00,19:30,Zaragoza,Cordoba
-2018-12-14 00:00:00,20:00,Malaga,Cadiz CF
-2018-12-15 00:00:00,15:00,Granada CF,R. Oviedo
-2018-12-15 00:00:00,17:00,Numancia,Albacete
-2018-12-15 00:00:00,17:00,Reus Deportiu,Cordoba
-2018-12-15 00:00:00,19:00,Gijon,Mallorca
-2018-12-16 00:00:00,11:00,Rayo Majadahonda,Elche
-2018-12-16 00:00:00,15:00,Osasuna,Alcorcon
-2018-12-16 00:00:00,17:00,Extremadura UD,Gimnastic
-2018-12-16 00:00:00,17:00,Las Palmas,Tenerife
-2018-12-16 00:00:00,19:00,Almeria,Lugo
-2018-12-16 00:00:00,19:30,Dep. La Coruna,Zaragoza
 2018-12-21 00:00:00,18:00,Tenerife,Granada CF
 2018-12-21 00:00:00,20:00,Mallorca,Gimnastic
 2018-12-22 00:00:00,12:00,Lugo,Gijon
@@ -25,28 +10,28 @@ Date,Time,HomeTeam,AwayTeam
 2018-12-23 00:00:00,11:00,Reus Deportiu,Osasuna
 2018-12-23 00:00:00,15:00,Albacete,Rayo Majadahonda
 2018-12-23 00:00:00,17:00,Alcorcon,Numancia
-2019-01-06 00:00:00,19:00,Almeria,Mallorca
-2019-01-06 00:00:00,19:00,Dep. La Coruna,Lugo
-2019-01-06 00:00:00,19:00,Extremadura UD,Alcorcon
-2019-01-06 00:00:00,19:00,Gijon,Zaragoza
-2019-01-06 00:00:00,19:00,Gimnastic,Cordoba
-2019-01-06 00:00:00,19:00,Granada CF,Albacete
+2019-01-04 00:00:00,20:00,Granada CF,Albacete
+2019-01-04 00:00:00,20:00,Tenerife,Elche
+2019-01-05 00:00:00,15:00,Extremadura UD,Alcorcon
+2019-01-05 00:00:00,15:00,Gijon,Zaragoza
+2019-01-06 00:00:00,11:00,Almeria,Mallorca
+2019-01-06 00:00:00,16:30,Dep. La Coruna,Lugo
+2019-01-06 00:00:00,17:00,Gimnastic,Cordoba
+2019-01-06 00:00:00,17:00,Osasuna,Cadiz CF
 2019-01-06 00:00:00,19:00,Malaga,Reus Deportiu
-2019-01-06 00:00:00,19:00,Numancia,R. Oviedo
-2019-01-06 00:00:00,19:00,Osasuna,Cadiz CF
-2019-01-06 00:00:00,19:00,Rayo Majadahonda,Las Palmas
-2019-01-06 00:00:00,19:00,Tenerife,Elche
-2019-01-13 00:00:00,19:00,Albacete,Gijon
-2019-01-13 00:00:00,19:00,Alcorcon,Almeria
-2019-01-13 00:00:00,19:00,Cadiz CF,Granada CF
-2019-01-13 00:00:00,19:00,Cordoba,Rayo Majadahonda
+2019-01-07 00:00:00,17:00,Numancia,R. Oviedo
+2019-01-07 00:00:00,20:00,Rayo Majadahonda,Las Palmas
+2019-01-11 00:00:00,20:00,Cadiz CF,Granada CF
+2019-01-12 00:00:00,15:00,Albacete,Gijon
+2019-01-12 00:00:00,17:00,Las Palmas,Osasuna
+2019-01-12 00:00:00,17:00,Reus Deportiu,Numancia
+2019-01-12 00:00:00,19:30,Mallorca,Dep. La Coruna
+2019-01-12 00:00:00,19:30,R. Oviedo,Tenerife
+2019-01-13 00:00:00,11:00,Cordoba,Rayo Majadahonda
+2019-01-13 00:00:00,15:00,Alcorcon,Almeria
+2019-01-13 00:00:00,17:00,Lugo,Extremadura UD
+2019-01-13 00:00:00,17:00,Zaragoza,Malaga
 2019-01-13 00:00:00,19:00,Elche,Gimnastic
-2019-01-13 00:00:00,19:00,Las Palmas,Osasuna
-2019-01-13 00:00:00,19:00,Lugo,Extremadura UD
-2019-01-13 00:00:00,19:00,Mallorca,Dep. La Coruna
-2019-01-13 00:00:00,19:00,R. Oviedo,Tenerife
-2019-01-13 00:00:00,19:00,Reus Deportiu,Numancia
-2019-01-13 00:00:00,19:00,Zaragoza,Malaga
 2019-01-20 00:00:00,19:00,Almeria,Cadiz CF
 2019-01-20 00:00:00,19:00,Dep. La Coruna,Albacete
 2019-01-20 00:00:00,19:00,Extremadura UD,R. Oviedo
@@ -113,3 +98,25 @@ Date,Time,HomeTeam,AwayTeam
 2019-02-24 00:00:00,19:00,Malaga,Dep. La Coruna
 2019-02-24 00:00:00,19:00,Osasuna,Zaragoza
 2019-02-24 00:00:00,19:00,Tenerife,Mallorca
+2019-03-03 00:00:00,19:00,Cadiz CF,Albacete
+2019-03-03 00:00:00,19:00,Cordoba,Malaga
+2019-03-03 00:00:00,19:00,Dep. La Coruna,Alcorcon
+2019-03-03 00:00:00,19:00,Las Palmas,Extremadura UD
+2019-03-03 00:00:00,19:00,Mallorca,Elche
+2019-03-03 00:00:00,19:00,Numancia,Gijon
+2019-03-03 00:00:00,19:00,Osasuna,Gimnastic
+2019-03-03 00:00:00,19:00,R. Oviedo,Lugo
+2019-03-03 00:00:00,19:00,Rayo Majadahonda,Granada CF
+2019-03-03 00:00:00,19:00,Reus Deportiu,Tenerife
+2019-03-03 00:00:00,19:00,Zaragoza,Almeria
+2019-03-10 00:00:00,19:00,Dep. La Coruna,Las Palmas
+2019-03-10 00:00:00,19:00,Elche,Cadiz CF
+2019-03-10 00:00:00,19:00,Extremadura UD,Cordoba
+2019-03-10 00:00:00,19:00,Gijon,Almeria
+2019-03-10 00:00:00,19:00,Gimnastic,Albacete
+2019-03-10 00:00:00,19:00,Granada CF,Zaragoza
+2019-03-10 00:00:00,19:00,Lugo,Reus Deportiu
+2019-03-10 00:00:00,19:00,Malaga,Osasuna
+2019-03-10 00:00:00,19:00,Mallorca,R. Oviedo
+2019-03-10 00:00:00,19:00,Rayo Majadahonda,Alcorcon
+2019-03-10 00:00:00,19:00,Tenerife,Numancia

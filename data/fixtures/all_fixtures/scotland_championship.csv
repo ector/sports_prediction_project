@@ -1,9 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-15 00:00:00,15:00,Ayr,Ross County
-2018-12-15 00:00:00,15:00,Falkirk,Morton
-2018-12-15 00:00:00,15:00,Inverness,Dundee Utd
-2018-12-15 00:00:00,15:00,Partick Thistle,Alloa
-2018-12-15 00:00:00,15:00,Queen of South,Dunfermline
 2018-12-22 00:00:00,15:00,Alloa,Queen of South
 2018-12-22 00:00:00,15:00,Dundee Utd,Falkirk
 2018-12-22 00:00:00,15:00,Dunfermline,Ayr
@@ -29,6 +24,7 @@ Date,Time,HomeTeam,AwayTeam
 2019-01-26 00:00:00,15:00,Morton,Dunfermline
 2019-01-26 00:00:00,15:00,Partick Thistle,Queen of South
 2019-01-26 00:00:00,15:00,Ross County,Alloa
+2019-01-29 00:00:00,19:45,Ayr,Inverness
 2019-02-02 00:00:00,15:00,Alloa,Ayr
 2019-02-02 00:00:00,15:00,Dundee Utd,Morton
 2019-02-02 00:00:00,15:00,Dunfermline,Ross County

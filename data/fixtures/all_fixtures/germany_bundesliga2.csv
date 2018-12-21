@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-10 00:00:00,19:30,Bochum,St. Pauli
-2018-12-14 00:00:00,17:30,Duisburg,Hamburger SV
-2018-12-14 00:00:00,17:30,Holstein Kiel,Arminia Bielefeld
-2018-12-15 00:00:00,12:00,Paderborn,SG Dynamo Dresden
-2018-12-15 00:00:00,12:00,St. Pauli,Greuther Furth
-2018-12-15 00:00:00,12:00,Union Berlin,Bochum
-2018-12-16 00:00:00,12:30,Aue,Darmstadt
-2018-12-16 00:00:00,12:30,Ingolstadt,Heidenheim
-2018-12-16 00:00:00,12:30,Sandhausen,Regensburg
-2018-12-17 00:00:00,19:30,FC Koln,Magdeburg
 2018-12-21 00:00:00,17:30,FC Koln,Bochum
 2018-12-21 00:00:00,17:30,Sandhausen,Greuther Furth
 2018-12-22 00:00:00,12:00,Arminia Bielefeld,Heidenheim
@@ -45,69 +35,69 @@ Date,Time,HomeTeam,AwayTeam
 2019-02-10 00:00:00,12:30,Darmstadt,Heidenheim
 2019-02-10 00:00:00,12:30,Magdeburg,Holstein Kiel
 2019-02-11 00:00:00,19:30,Hamburger SV,SG Dynamo Dresden
-2019-02-16 00:00:00,12:00,Arminia Bielefeld,Magdeburg
+2019-02-15 00:00:00,17:30,Paderborn,FC Koln
+2019-02-15 00:00:00,17:30,Sandhausen,Darmstadt
 2019-02-16 00:00:00,12:00,Duisburg,Union Berlin
 2019-02-16 00:00:00,12:00,Heidenheim,Hamburger SV
-2019-02-16 00:00:00,12:00,Holstein Kiel,Greuther Furth
 2019-02-16 00:00:00,12:00,Ingolstadt,Bochum
-2019-02-16 00:00:00,12:00,Paderborn,FC Koln
-2019-02-16 00:00:00,12:00,Sandhausen,Darmstadt
-2019-02-16 00:00:00,12:00,SG Dynamo Dresden,Regensburg
 2019-02-16 00:00:00,12:00,St. Pauli,Aue
-2019-02-23 00:00:00,12:00,Aue,Duisburg
+2019-02-17 00:00:00,12:30,Arminia Bielefeld,Magdeburg
+2019-02-17 00:00:00,12:30,Holstein Kiel,Greuther Furth
+2019-02-17 00:00:00,12:30,SG Dynamo Dresden,Regensburg
+2019-02-22 00:00:00,17:30,Greuther Furth,Heidenheim
+2019-02-22 00:00:00,17:30,Union Berlin,Arminia Bielefeld
 2019-02-23 00:00:00,12:00,Bochum,Holstein Kiel
 2019-02-23 00:00:00,12:00,Darmstadt,SG Dynamo Dresden
 2019-02-23 00:00:00,12:00,FC Koln,Sandhausen
-2019-02-23 00:00:00,12:00,Greuther Furth,Heidenheim
-2019-02-23 00:00:00,12:00,Magdeburg,Paderborn
-2019-02-23 00:00:00,12:00,Regensburg,Hamburger SV
 2019-02-23 00:00:00,12:00,St. Pauli,Ingolstadt
-2019-02-23 00:00:00,12:00,Union Berlin,Arminia Bielefeld
-2019-03-02 00:00:00,12:00,Arminia Bielefeld,Darmstadt
-2019-03-02 00:00:00,12:00,Duisburg,Magdeburg
-2019-03-02 00:00:00,12:00,Hamburger SV,Greuther Furth
+2019-02-24 00:00:00,12:30,Aue,Duisburg
+2019-02-24 00:00:00,12:30,Magdeburg,Paderborn
+2019-02-24 00:00:00,12:30,Regensburg,Hamburger SV
+2019-03-01 00:00:00,17:30,Duisburg,Magdeburg
+2019-03-01 00:00:00,17:30,Holstein Kiel,Union Berlin
 2019-03-02 00:00:00,12:00,Heidenheim,Regensburg
-2019-03-02 00:00:00,12:00,Holstein Kiel,Union Berlin
-2019-03-02 00:00:00,12:00,Ingolstadt,FC Koln
 2019-03-02 00:00:00,12:00,Paderborn,St. Pauli
 2019-03-02 00:00:00,12:00,Sandhausen,Aue
-2019-03-02 00:00:00,12:00,SG Dynamo Dresden,Bochum
+2019-03-03 00:00:00,12:30,Arminia Bielefeld,Darmstadt
+2019-03-03 00:00:00,12:30,Ingolstadt,FC Koln
+2019-03-03 00:00:00,12:30,SG Dynamo Dresden,Bochum
+2019-03-04 00:00:00,19:30,Hamburger SV,Greuther Furth
+2019-03-08 00:00:00,17:30,Bochum,Heidenheim
+2019-03-08 00:00:00,17:30,Union Berlin,Ingolstadt
 2019-03-09 00:00:00,12:00,Aue,Paderborn
-2019-03-09 00:00:00,12:00,Bochum,Heidenheim
 2019-03-09 00:00:00,12:00,Darmstadt,Holstein Kiel
 2019-03-09 00:00:00,12:00,FC Koln,Arminia Bielefeld
-2019-03-09 00:00:00,12:00,Greuther Furth,SG Dynamo Dresden
-2019-03-09 00:00:00,12:00,Magdeburg,Sandhausen
 2019-03-09 00:00:00,12:00,Regensburg,Duisburg
-2019-03-09 00:00:00,12:00,St. Pauli,Hamburger SV
-2019-03-09 00:00:00,12:00,Union Berlin,Ingolstadt
-2019-03-16 00:00:00,12:00,Arminia Bielefeld,Bochum
-2019-03-16 00:00:00,12:00,Duisburg,FC Koln
+2019-03-10 00:00:00,12:30,Greuther Furth,SG Dynamo Dresden
+2019-03-10 00:00:00,12:30,Magdeburg,Sandhausen
+2019-03-10 00:00:00,12:30,St. Pauli,Hamburger SV
+2019-03-15 00:00:00,17:30,Heidenheim,Union Berlin
+2019-03-15 00:00:00,17:30,Holstein Kiel,Aue
 2019-03-16 00:00:00,12:00,Hamburger SV,Darmstadt
-2019-03-16 00:00:00,12:00,Heidenheim,Union Berlin
-2019-03-16 00:00:00,12:00,Holstein Kiel,Aue
-2019-03-16 00:00:00,12:00,Paderborn,Ingolstadt
-2019-03-16 00:00:00,12:00,Regensburg,Greuther Furth
 2019-03-16 00:00:00,12:00,Sandhausen,St. Pauli
 2019-03-16 00:00:00,12:00,SG Dynamo Dresden,Magdeburg
-2019-03-30 00:00:00,12:00,Aue,SG Dynamo Dresden
+2019-03-17 00:00:00,12:30,Arminia Bielefeld,Bochum
+2019-03-17 00:00:00,12:30,Duisburg,FC Koln
+2019-03-17 00:00:00,12:30,Paderborn,Ingolstadt
+2019-03-18 00:00:00,19:30,Regensburg,Greuther Furth
+2019-03-29 00:00:00,17:30,Magdeburg,Heidenheim
+2019-03-29 00:00:00,17:30,St. Pauli,Duisburg
 2019-03-30 00:00:00,12:00,Bochum,Hamburger SV
 2019-03-30 00:00:00,12:00,Darmstadt,Regensburg
-2019-03-30 00:00:00,12:00,FC Koln,Holstein Kiel
-2019-03-30 00:00:00,12:00,Greuther Furth,Arminia Bielefeld
-2019-03-30 00:00:00,12:00,Ingolstadt,Sandhausen
-2019-03-30 00:00:00,12:00,Magdeburg,Heidenheim
-2019-03-30 00:00:00,12:00,St. Pauli,Duisburg
 2019-03-30 00:00:00,12:00,Union Berlin,Paderborn
-2019-04-06 00:00:00,12:00,Arminia Bielefeld,Aue
+2019-03-31 00:00:00,12:30,FC Koln,Holstein Kiel
+2019-03-31 00:00:00,12:30,Greuther Furth,Arminia Bielefeld
+2019-03-31 00:00:00,12:30,Ingolstadt,Sandhausen
+2019-04-01 00:00:00,19:30,Aue,SG Dynamo Dresden
+2019-04-05 00:00:00,17:30,Arminia Bielefeld,Aue
+2019-04-05 00:00:00,17:30,Regensburg,Bochum
 2019-04-06 00:00:00,12:00,Duisburg,Ingolstadt
-2019-04-06 00:00:00,12:00,Greuther Furth,Darmstadt
-2019-04-06 00:00:00,12:00,Hamburger SV,Magdeburg
-2019-04-06 00:00:00,12:00,Heidenheim,FC Koln
 2019-04-06 00:00:00,12:00,Holstein Kiel,St. Pauli
-2019-04-06 00:00:00,12:00,Regensburg,Bochum
 2019-04-06 00:00:00,12:00,Sandhausen,Paderborn
-2019-04-06 00:00:00,12:00,SG Dynamo Dresden,Union Berlin
+2019-04-07 00:00:00,12:30,Greuther Furth,Darmstadt
+2019-04-07 00:00:00,12:30,Heidenheim,FC Koln
+2019-04-07 00:00:00,12:30,SG Dynamo Dresden,Union Berlin
+2019-04-08 00:00:00,19:30,Hamburger SV,Magdeburg
 2019-04-13 00:00:00,12:00,Aue,Heidenheim
 2019-04-13 00:00:00,12:00,Bochum,Greuther Furth
 2019-04-13 00:00:00,12:00,FC Koln,Hamburger SV
@@ -117,3 +107,12 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-13 00:00:00,12:00,Sandhausen,SG Dynamo Dresden
 2019-04-13 00:00:00,12:00,St. Pauli,Arminia Bielefeld
 2019-04-13 00:00:00,12:00,Union Berlin,Regensburg
+2019-04-20 00:00:00,12:00,Arminia Bielefeld,Ingolstadt
+2019-04-20 00:00:00,12:00,Darmstadt,Bochum
+2019-04-20 00:00:00,12:00,Duisburg,Sandhausen
+2019-04-20 00:00:00,12:00,Greuther Furth,Union Berlin
+2019-04-20 00:00:00,12:00,Hamburger SV,Aue
+2019-04-20 00:00:00,12:00,Heidenheim,St. Pauli
+2019-04-20 00:00:00,12:00,Holstein Kiel,Paderborn
+2019-04-20 00:00:00,12:00,Regensburg,Magdeburg
+2019-04-20 00:00:00,12:00,SG Dynamo Dresden,FC Koln

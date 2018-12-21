@@ -93,7 +93,6 @@ class Predictors(object):
         if match_predictions is not None:
             self.log.info("{} prediction dataframe sorted by date, time and league".format(league))
             preds = match_predictions.sort_values(['date', 'time', 'league'])
-
             pred_list = []
 
             try:

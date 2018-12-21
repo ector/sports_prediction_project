@@ -1,18 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,15:15,Huesca,Real Madrid
-2018-12-09 00:00:00,17:30,Real Sociedad,Valladolid
-2018-12-09 00:00:00,19:45,Real Betis,Rayo Vallecano
-2018-12-10 00:00:00,20:00,Athletic Club,Girona
-2018-12-14 00:00:00,20:00,Celta de Vigo,Leganés
-2018-12-15 00:00:00,12:00,Getafe,Real Sociedad
-2018-12-15 00:00:00,15:15,Valladolid,Atlético Madrid
-2018-12-15 00:00:00,17:30,Real Madrid,Rayo Vallecano
-2018-12-15 00:00:00,19:45,Eibar,Valencia
-2018-12-16 00:00:00,11:00,Sevilla,Girona
-2018-12-16 00:00:00,15:15,Espanol,Real Betis
-2018-12-16 00:00:00,17:30,Huesca,Villarreal
-2018-12-16 00:00:00,19:45,Levante,Barcelona
-2018-12-17 00:00:00,20:00,Deportivo Alavés,Athletic Club
 2018-12-21 00:00:00,18:30,Girona,Getafe
 2018-12-21 00:00:00,20:00,Real Sociedad,Deportivo Alavés
 2018-12-22 00:00:00,12:00,Real Betis,Eibar
@@ -23,26 +9,26 @@ Date,Time,HomeTeam,AwayTeam
 2018-12-23 00:00:00,15:15,Leganés,Sevilla
 2018-12-23 00:00:00,17:30,Rayo Vallecano,Levante
 2019-01-03 00:00:00,20:30,Villarreal,Real Madrid
-2019-01-06 00:00:00,19:00,Deportivo Alavés,Valencia
-2019-01-06 00:00:00,19:00,Celta de Vigo,Athletic Club
-2019-01-06 00:00:00,19:00,Eibar,Villarreal
-2019-01-06 00:00:00,19:00,Espanol,Leganés
-2019-01-06 00:00:00,19:00,Getafe,Barcelona
-2019-01-06 00:00:00,19:00,Huesca,Real Betis
-2019-01-06 00:00:00,19:00,Levante,Girona
-2019-01-06 00:00:00,19:00,Real Madrid,Real Sociedad
-2019-01-06 00:00:00,19:00,Sevilla,Atlético Madrid
-2019-01-06 00:00:00,19:00,Valladolid,Rayo Vallecano
-2019-01-13 00:00:00,19:00,Athletic Club,Sevilla
-2019-01-13 00:00:00,19:00,Atlético Madrid,Levante
-2019-01-13 00:00:00,19:00,Barcelona,Eibar
-2019-01-13 00:00:00,19:00,Real Betis,Real Madrid
-2019-01-13 00:00:00,19:00,Girona,Deportivo Alavés
-2019-01-13 00:00:00,19:00,Leganés,Huesca
-2019-01-13 00:00:00,19:00,Rayo Vallecano,Celta de Vigo
-2019-01-13 00:00:00,19:00,Real Sociedad,Espanol
-2019-01-13 00:00:00,19:00,Valencia,Valladolid
-2019-01-13 00:00:00,19:00,Villarreal,Getafe
+2019-01-04 00:00:00,18:00,Levante,Girona
+2019-01-04 00:00:00,20:00,Espanol,Leganés
+2019-01-05 00:00:00,12:00,Valladolid,Rayo Vallecano
+2019-01-05 00:00:00,15:15,Deportivo Alavés,Valencia
+2019-01-05 00:00:00,19:45,Huesca,Real Betis
+2019-01-06 00:00:00,11:00,Eibar,Villarreal
+2019-01-06 00:00:00,15:15,Sevilla,Atlético Madrid
+2019-01-06 00:00:00,17:30,Real Madrid,Real Sociedad
+2019-01-06 00:00:00,19:45,Getafe,Barcelona
+2019-01-07 00:00:00,20:00,Celta de Vigo,Athletic Club
+2019-01-11 00:00:00,20:00,Rayo Vallecano,Celta de Vigo
+2019-01-12 00:00:00,12:00,Leganés,Huesca
+2019-01-12 00:00:00,15:15,Valencia,Valladolid
+2019-01-12 00:00:00,17:30,Girona,Deportivo Alavés
+2019-01-12 00:00:00,19:45,Villarreal,Getafe
+2019-01-13 00:00:00,11:00,Atlético Madrid,Levante
+2019-01-13 00:00:00,15:15,Athletic Club,Sevilla
+2019-01-13 00:00:00,17:30,Barcelona,Eibar
+2019-01-13 00:00:00,19:45,Real Betis,Real Madrid
+2019-01-14 00:00:00,20:00,Real Sociedad,Espanol
 2019-01-20 00:00:00,19:00,Barcelona,Leganés
 2019-01-20 00:00:00,19:00,Real Betis,Girona
 2019-01-20 00:00:00,19:00,Celta de Vigo,Valencia
@@ -113,3 +99,23 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-03 00:00:00,19:00,Real Sociedad,Atlético Madrid
 2019-03-03 00:00:00,19:00,Valencia,Athletic Club
 2019-03-03 00:00:00,19:00,Villarreal,Deportivo Alavés
+2019-03-10 00:00:00,19:00,Deportivo Alavés,Eibar
+2019-03-10 00:00:00,19:00,Athletic Club,Espanol
+2019-03-10 00:00:00,19:00,Atlético Madrid,Leganés
+2019-03-10 00:00:00,19:00,Barcelona,Rayo Vallecano
+2019-03-10 00:00:00,19:00,Celta de Vigo,Real Betis
+2019-03-10 00:00:00,19:00,Getafe,Huesca
+2019-03-10 00:00:00,19:00,Girona,Valencia
+2019-03-10 00:00:00,19:00,Levante,Villarreal
+2019-03-10 00:00:00,19:00,Sevilla,Real Sociedad
+2019-03-10 00:00:00,19:00,Valladolid,Real Madrid
+2019-03-17 00:00:00,19:00,Athletic Club,Atlético Madrid
+2019-03-17 00:00:00,19:00,Real Betis,Barcelona
+2019-03-17 00:00:00,19:00,Eibar,Valladolid
+2019-03-17 00:00:00,19:00,Espanol,Sevilla
+2019-03-17 00:00:00,19:00,Huesca,Deportivo Alavés
+2019-03-17 00:00:00,19:00,Leganés,Girona
+2019-03-17 00:00:00,19:00,Real Madrid,Celta de Vigo
+2019-03-17 00:00:00,19:00,Real Sociedad,Levante
+2019-03-17 00:00:00,19:00,Valencia,Getafe
+2019-03-17 00:00:00,19:00,Villarreal,Rayo Vallecano

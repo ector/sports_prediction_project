@@ -1,15 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-09 00:00:00,20:00,Benevento,Verona
-2018-12-10 00:00:00,20:00,Salernitana,Brescia
-2018-12-14 00:00:00,20:00,Foggia,Cremonese
-2018-12-15 00:00:00,14:00,Ascoli,Cittadella
-2018-12-15 00:00:00,14:00,Palermo,Livorno
-2018-12-15 00:00:00,14:00,Perugia,Spezia
-2018-12-15 00:00:00,17:00,Cosenza,Benevento
-2018-12-16 00:00:00,14:00,Carpi,Salernitana
-2018-12-16 00:00:00,14:00,Crotone,Venezia
-2018-12-16 00:00:00,20:00,Brescia,Lecce
-2018-12-17 00:00:00,20:00,Verona,Pescara
 2018-12-21 00:00:00,20:00,Ascoli,Brescia
 2018-12-22 00:00:00,14:00,Cremonese,Carpi
 2018-12-22 00:00:00,14:00,Livorno,Verona
@@ -109,3 +98,21 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-02 00:00:00,14:00,Perugia,Salernitana
 2019-03-02 00:00:00,14:00,Pescara,Spezia
 2019-03-02 00:00:00,14:00,Verona,Venezia
+2019-03-09 00:00:00,14:00,Ascoli,Livorno
+2019-03-09 00:00:00,14:00,Cittadella,Pescara
+2019-03-09 00:00:00,14:00,Cosenza,Brescia
+2019-03-09 00:00:00,14:00,Cremonese,Benevento
+2019-03-09 00:00:00,14:00,Lecce,Foggia
+2019-03-09 00:00:00,14:00,Perugia,Verona
+2019-03-09 00:00:00,14:00,Salernitana,Crotone
+2019-03-09 00:00:00,14:00,Spezia,Padova
+2019-03-09 00:00:00,14:00,Venezia,Palermo
+2019-03-16 00:00:00,14:00,Benevento,Spezia
+2019-03-16 00:00:00,14:00,Crotone,Lecce
+2019-03-16 00:00:00,14:00,Foggia,Cittadella
+2019-03-16 00:00:00,14:00,Livorno,Salernitana
+2019-03-16 00:00:00,14:00,Padova,Perugia
+2019-03-16 00:00:00,14:00,Palermo,Carpi
+2019-03-16 00:00:00,14:00,Pescara,Cosenza
+2019-03-16 00:00:00,14:00,Venezia,Cremonese
+2019-03-16 00:00:00,14:00,Verona,Ascoli
