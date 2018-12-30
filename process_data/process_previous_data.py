@@ -165,6 +165,7 @@ class ProcessPreviousData(object):
             fix_data.loc[:, "FTR"] = 'D'
             fix_data.loc[:, "Season"] = 1819
             fix_data.loc[:, "played"] = 0
+            fix_data.loc[:, "BTTS"] = 0
 
             client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
             db = client.get_database("sports_prediction")
@@ -174,6 +175,10 @@ class ProcessPreviousData(object):
                                                              "Season"])
             data = team_translation(data=data, league=lg)
             data.loc[:, "played"] = 1
+            data.loc[:, "FTHG"] = pd.to_numeric(data.FTHG.values)
+            data.loc[:, "FTAG"] = pd.to_numeric(data.FTAG.values)
+            data.loc[(data.FTHG > 0) & (data.FTAG > 0), 'BTTS'] = 1
+            data.loc[(data.FTHG == 0) | (data.FTAG == 0), 'BTTS'] = 0
 
             agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
 
@@ -187,7 +192,7 @@ class ProcessPreviousData(object):
             target_real = played_data.FTR.map({"A": -3, "D": 0, "H": 3})
             dc_real = played_data.FTR.map({"A": 1, "D": 0, "H": 0})
             ou25_target = played_data.UO25
-            played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'UO25', "HLM", "ALM"], axis=1)
+            played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'UO25', "HLM", "ALM", 'BTTS'], axis=1)
 
             wdw_coef_data = played_data.corrwith(target_real)
             wdw_sig_cols = list(played_data.drop(["Date", "played", "Time"], axis=1).columns)
