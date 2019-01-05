@@ -219,6 +219,9 @@ class ProcessPreviousData(object):
 
             save_league_model_attr(model="ou25_columns", league=lg, cols=ou25_sig_cols)
 
+            # date without time
+            agg_data["Date"] = [pd.to_datetime(str(d)).date() for d in agg_data.Date.values]
+
             agg_data = agg_data.drop(['FTHG', 'FTAG'], axis=1)
             agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
             self.log.info("{} data saved in clean folder".format(lg.upper()))
