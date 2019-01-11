@@ -40,6 +40,10 @@ class GameFixtures(object):
             self.league_file = league
             fixtures = self.fetch_all_league_fixtures(league=league)
             fixtures = pd.DataFrame(fixtures).dropna()
+
+            # date without time
+            fixtures["Date"] = [pd.to_datetime(str(d)).date() for d in fixtures.Date.values]
+
             fixtures_length = len(fixtures)
             if fixtures_length != 0:
                 self.log.info("{} Fixtures shape: {}".format(league.upper(), fixtures.shape))

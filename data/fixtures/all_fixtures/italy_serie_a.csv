@@ -1,121 +1,121 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-22 00:00:00,11:30,Lazio,Cagliari
-2018-12-22 00:00:00,14:00,AC Milan,Fiorentina
-2018-12-22 00:00:00,14:00,Empoli,Sampdoria
-2018-12-22 00:00:00,14:00,Genoa,Atalanta
-2018-12-22 00:00:00,14:00,Napoli,Spal
-2018-12-22 00:00:00,14:00,Sassuolo,Torino
-2018-12-22 00:00:00,14:00,Udinese,Frosinone
-2018-12-22 00:00:00,17:00,Chievo,Inter
-2018-12-22 00:00:00,17:00,Parma,Bologna
-2018-12-22 00:00:00,19:30,Juventus,AS Roma
-2018-12-26 00:00:00,11:30,Frosinone,AC Milan
-2018-12-26 00:00:00,14:00,Atalanta,Juventus
-2018-12-26 00:00:00,14:00,Bologna,Lazio
-2018-12-26 00:00:00,14:00,Cagliari,Genoa
-2018-12-26 00:00:00,14:00,Fiorentina,Parma
-2018-12-26 00:00:00,14:00,Sampdoria,Chievo
-2018-12-26 00:00:00,17:00,AS Roma,Sassuolo
-2018-12-26 00:00:00,17:00,Spal,Udinese
-2018-12-26 00:00:00,17:00,Torino,Empoli
-2018-12-26 00:00:00,19:30,Inter,Napoli
-2018-12-29 00:00:00,11:30,Juventus,Sampdoria
-2018-12-29 00:00:00,14:00,Chievo,Frosinone
-2018-12-29 00:00:00,14:00,Empoli,Inter
-2018-12-29 00:00:00,14:00,Genoa,Fiorentina
-2018-12-29 00:00:00,14:00,Lazio,Torino
-2018-12-29 00:00:00,14:00,Parma,AS Roma
-2018-12-29 00:00:00,14:00,Sassuolo,Atalanta
-2018-12-29 00:00:00,14:00,Udinese,Cagliari
-2018-12-29 00:00:00,17:00,Napoli,Bologna
-2018-12-29 00:00:00,19:30,AC Milan,Spal
-2019-01-20 00:00:00,14:00,AS Roma,Torino
-2019-01-20 00:00:00,14:00,Cagliari,Empoli
+2019-01-19 00:00:00,14:00,AS Roma,Torino
+2019-01-19 00:00:00,17:00,Udinese,Parma
+2019-01-19 00:00:00,19:30,Inter,Sassuolo
+2019-01-20 00:00:00,11:30,Frosinone,Atalanta
 2019-01-20 00:00:00,14:00,Fiorentina,Sampdoria
-2019-01-20 00:00:00,14:00,Frosinone,Atalanta
-2019-01-20 00:00:00,14:00,Genoa,AC Milan
-2019-01-20 00:00:00,14:00,Inter,Sassuolo
-2019-01-20 00:00:00,14:00,Juventus,Chievo
-2019-01-20 00:00:00,14:00,Napoli,Lazio
 2019-01-20 00:00:00,14:00,Spal,Bologna
-2019-01-20 00:00:00,14:00,Udinese,Parma
+2019-01-20 00:00:00,17:00,Cagliari,Empoli
+2019-01-20 00:00:00,19:30,Napoli,Lazio
+2019-01-21 00:00:00,14:00,Genoa,AC Milan
+2019-01-21 00:00:00,19:30,Juventus,Chievo
+2019-01-26 00:00:00,14:00,Sassuolo,Cagliari
+2019-01-26 00:00:00,17:00,Sampdoria,Udinese
 2019-01-26 00:00:00,19:30,AC Milan,Napoli
+2019-01-27 00:00:00,11:30,Chievo,Fiorentina
 2019-01-27 00:00:00,14:00,Atalanta,AS Roma
 2019-01-27 00:00:00,14:00,Bologna,Frosinone
-2019-01-27 00:00:00,14:00,Chievo,Fiorentina
-2019-01-27 00:00:00,14:00,Empoli,Genoa
-2019-01-27 00:00:00,14:00,Lazio,Juventus
 2019-01-27 00:00:00,14:00,Parma,Spal
-2019-01-27 00:00:00,14:00,Sampdoria,Udinese
-2019-01-27 00:00:00,14:00,Sassuolo,Cagliari
-2019-01-27 00:00:00,14:00,Torino,Inter
-2019-02-03 00:00:00,14:00,Cagliari,Atalanta
-2019-02-03 00:00:00,14:00,Empoli,Chievo
+2019-01-27 00:00:00,17:00,Torino,Inter
+2019-01-27 00:00:00,19:30,Lazio,Juventus
+2019-01-28 00:00:00,19:30,Empoli,Genoa
+2019-02-02 00:00:00,14:00,Empoli,Chievo
+2019-02-02 00:00:00,17:00,Napoli,Sampdoria
+2019-02-02 00:00:00,19:30,Juventus,Parma
+2019-02-03 00:00:00,11:30,Spal,Torino
 2019-02-03 00:00:00,14:00,Frosinone,Lazio
 2019-02-03 00:00:00,14:00,Genoa,Sassuolo
-2019-02-03 00:00:00,14:00,Inter,Bologna
-2019-02-03 00:00:00,14:00,Juventus,Parma
-2019-02-03 00:00:00,14:00,Napoli,Sampdoria
-2019-02-03 00:00:00,14:00,Spal,Torino
 2019-02-03 00:00:00,14:00,Udinese,Fiorentina
+2019-02-03 00:00:00,17:00,Inter,Bologna
 2019-02-03 00:00:00,19:30,AS Roma,AC Milan
-2019-02-10 00:00:00,14:00,AC Milan,Cagliari
+2019-02-04 00:00:00,19:30,Cagliari,Atalanta
+2019-02-07 00:00:00,19:30,Lazio,Empoli
+2019-02-08 00:00:00,19:30,Chievo,AS Roma
+2019-02-09 00:00:00,17:00,Fiorentina,Napoli
+2019-02-09 00:00:00,19:30,Parma,Inter
+2019-02-10 00:00:00,11:30,Bologna,Genoa
 2019-02-10 00:00:00,14:00,Atalanta,Spal
-2019-02-10 00:00:00,14:00,Bologna,Genoa
-2019-02-10 00:00:00,14:00,Chievo,AS Roma
-2019-02-10 00:00:00,14:00,Fiorentina,Napoli
-2019-02-10 00:00:00,14:00,Lazio,Empoli
-2019-02-10 00:00:00,14:00,Parma,Inter
 2019-02-10 00:00:00,14:00,Sampdoria,Frosinone
-2019-02-10 00:00:00,14:00,Sassuolo,Juventus
 2019-02-10 00:00:00,14:00,Torino,Udinese
-2019-02-17 00:00:00,14:00,AS Roma,Bologna
-2019-02-17 00:00:00,14:00,Atalanta,AC Milan
-2019-02-17 00:00:00,14:00,Cagliari,Parma
+2019-02-10 00:00:00,17:00,Sassuolo,Juventus
+2019-02-10 00:00:00,19:30,AC Milan,Cagliari
+2019-02-15 00:00:00,19:30,Juventus,Frosinone
+2019-02-16 00:00:00,17:00,Cagliari,Parma
+2019-02-16 00:00:00,19:30,Atalanta,AC Milan
+2019-02-17 00:00:00,11:30,Spal,Fiorentina
 2019-02-17 00:00:00,14:00,Empoli,Sassuolo
 2019-02-17 00:00:00,14:00,Genoa,Lazio
-2019-02-17 00:00:00,14:00,Inter,Sampdoria
-2019-02-17 00:00:00,14:00,Juventus,Frosinone
-2019-02-17 00:00:00,14:00,Napoli,Torino
-2019-02-17 00:00:00,14:00,Spal,Fiorentina
 2019-02-17 00:00:00,14:00,Udinese,Chievo
+2019-02-17 00:00:00,17:00,Inter,Sampdoria
+2019-02-17 00:00:00,19:30,Napoli,Torino
+2019-02-18 00:00:00,19:30,AS Roma,Bologna
+2019-02-23 00:00:00,14:00,Torino,Atalanta
+2019-02-23 00:00:00,17:00,Bologna,Juventus
+2019-02-23 00:00:00,19:30,Frosinone,AS Roma
+2019-02-24 00:00:00,11:30,Sampdoria,Cagliari
 2019-02-24 00:00:00,14:00,AC Milan,Empoli
-2019-02-24 00:00:00,14:00,Bologna,Juventus
 2019-02-24 00:00:00,14:00,Chievo,Genoa
-2019-02-24 00:00:00,14:00,Fiorentina,Inter
-2019-02-24 00:00:00,14:00,Frosinone,AS Roma
-2019-02-24 00:00:00,14:00,Lazio,Udinese
-2019-02-24 00:00:00,14:00,Parma,Napoli
-2019-02-24 00:00:00,14:00,Sampdoria,Cagliari
 2019-02-24 00:00:00,14:00,Sassuolo,Spal
-2019-02-24 00:00:00,14:00,Torino,Atalanta
-2019-03-03 00:00:00,14:00,AC Milan,Sassuolo
-2019-03-03 00:00:00,14:00,Atalanta,Fiorentina
-2019-03-03 00:00:00,14:00,Cagliari,Inter
-2019-03-03 00:00:00,14:00,Empoli,Parma
+2019-02-24 00:00:00,17:00,Parma,Napoli
+2019-02-24 00:00:00,19:30,Fiorentina,Inter
+2019-02-25 00:00:00,19:30,Lazio,Udinese
+2019-03-02 00:00:00,14:00,Empoli,Parma
+2019-03-02 00:00:00,17:00,AC Milan,Sassuolo
+2019-03-02 00:00:00,19:30,Lazio,AS Roma
+2019-03-03 00:00:00,11:30,Torino,Chievo
 2019-03-03 00:00:00,14:00,Genoa,Frosinone
-2019-03-03 00:00:00,14:00,Lazio,AS Roma
 2019-03-03 00:00:00,14:00,Spal,Sampdoria
-2019-03-03 00:00:00,14:00,Torino,Chievo
 2019-03-03 00:00:00,14:00,Udinese,Bologna
+2019-03-03 00:00:00,17:00,Cagliari,Inter
 2019-03-03 00:00:00,19:30,Napoli,Juventus
-2019-03-10 00:00:00,14:00,AS Roma,Empoli
-2019-03-10 00:00:00,14:00,Bologna,Cagliari
-2019-03-10 00:00:00,14:00,Chievo,AC Milan
-2019-03-10 00:00:00,14:00,Fiorentina,Lazio
+2019-03-04 00:00:00,19:30,Atalanta,Fiorentina
+2019-03-08 00:00:00,19:30,Juventus,Udinese
+2019-03-09 00:00:00,17:00,Parma,Genoa
+2019-03-09 00:00:00,19:30,Chievo,AC Milan
+2019-03-10 00:00:00,11:30,Bologna,Cagliari
 2019-03-10 00:00:00,14:00,Frosinone,Torino
 2019-03-10 00:00:00,14:00,Inter,Spal
-2019-03-10 00:00:00,14:00,Juventus,Udinese
-2019-03-10 00:00:00,14:00,Parma,Genoa
 2019-03-10 00:00:00,14:00,Sampdoria,Atalanta
-2019-03-10 00:00:00,14:00,Sassuolo,Napoli
+2019-03-10 00:00:00,17:00,Sassuolo,Napoli
+2019-03-10 00:00:00,19:30,Fiorentina,Lazio
+2019-03-11 00:00:00,19:30,AS Roma,Empoli
+2019-03-15 00:00:00,19:30,Cagliari,Fiorentina
+2019-03-16 00:00:00,14:00,Sassuolo,Sampdoria
+2019-03-16 00:00:00,17:00,Spal,AS Roma
+2019-03-16 00:00:00,19:30,Torino,Bologna
+2019-03-17 00:00:00,11:30,Genoa,Juventus
 2019-03-17 00:00:00,14:00,Atalanta,Chievo
-2019-03-17 00:00:00,14:00,Cagliari,Fiorentina
 2019-03-17 00:00:00,14:00,Empoli,Frosinone
-2019-03-17 00:00:00,14:00,Genoa,Juventus
-2019-03-17 00:00:00,14:00,Lazio,Parma
 2019-03-17 00:00:00,14:00,Napoli,Udinese
-2019-03-17 00:00:00,14:00,Sassuolo,Sampdoria
-2019-03-17 00:00:00,14:00,Spal,AS Roma
-2019-03-17 00:00:00,14:00,Torino,Bologna
+2019-03-17 00:00:00,17:00,Lazio,Parma
 2019-03-17 00:00:00,19:30,AC Milan,Inter
+2019-03-31 00:00:00,14:00,Bologna,Sassuolo
+2019-03-31 00:00:00,14:00,Chievo,Cagliari
+2019-03-31 00:00:00,14:00,Fiorentina,Torino
+2019-03-31 00:00:00,14:00,Frosinone,Spal
+2019-03-31 00:00:00,14:00,Inter,Lazio
+2019-03-31 00:00:00,14:00,Juventus,Empoli
+2019-03-31 00:00:00,14:00,Parma,Atalanta
+2019-03-31 00:00:00,14:00,Sampdoria,AC Milan
+2019-03-31 00:00:00,14:00,Udinese,Genoa
+2019-03-31 00:00:00,19:30,AS Roma,Napoli
+2019-04-03 00:00:00,14:00,AC Milan,Udinese
+2019-04-03 00:00:00,14:00,AS Roma,Fiorentina
+2019-04-03 00:00:00,14:00,Atalanta,Bologna
+2019-04-03 00:00:00,14:00,Cagliari,Juventus
+2019-04-03 00:00:00,14:00,Empoli,Napoli
+2019-04-03 00:00:00,14:00,Frosinone,Parma
+2019-04-03 00:00:00,14:00,Genoa,Inter
+2019-04-03 00:00:00,14:00,Sassuolo,Chievo
+2019-04-03 00:00:00,14:00,Spal,Lazio
+2019-04-03 00:00:00,14:00,Torino,Sampdoria
+2019-04-07 00:00:00,14:00,Bologna,Chievo
+2019-04-07 00:00:00,14:00,Cagliari,Spal
+2019-04-07 00:00:00,14:00,Fiorentina,Frosinone
+2019-04-07 00:00:00,14:00,Inter,Atalanta
+2019-04-07 00:00:00,14:00,Lazio,Sassuolo
+2019-04-07 00:00:00,14:00,Napoli,Genoa
+2019-04-07 00:00:00,14:00,Parma,Torino
+2019-04-07 00:00:00,14:00,Sampdoria,AS Roma
+2019-04-07 00:00:00,14:00,Udinese,Empoli
+2019-04-07 00:00:00,19:30,Juventus,AC Milan

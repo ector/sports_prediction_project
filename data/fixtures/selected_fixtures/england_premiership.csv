@@ -1,8 +1,11 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-02 00:00:00,19:45,Bournemouth,Watford
-2019-01-02 00:00:00,19:45,Chelsea,Southampton
-2019-01-02 00:00:00,19:45,Huddersfield Town,Burnley
-2019-01-02 00:00:00,19:45,West Ham United,Brighton & Hove Albion
-2019-01-02 00:00:00,19:45,Wolverhampton Wanderers,Crystal Palace
-2019-01-02 00:00:00,20:00,Newcastle United,Manchester Utd
-2019-01-03 00:00:00,20:00,Manchester City,Liverpool
+2019-01-12,12:30,West Ham United,Arsenal
+2019-01-12,15:00,Brighton & Hove Albion,Liverpool
+2019-01-12,15:00,Burnley,Fulham
+2019-01-12,15:00,Cardiff,Huddersfield Town
+2019-01-12,15:00,Crystal Palace,Watford
+2019-01-12,15:00,Leicester City,Southampton
+2019-01-12,17:30,Chelsea,Newcastle United
+2019-01-13,14:15,Everton,Bournemouth
+2019-01-13,16:30,Tottenham Hotspur,Manchester Utd
+2019-01-14,20:00,Manchester City,Wolverhampton Wanderers

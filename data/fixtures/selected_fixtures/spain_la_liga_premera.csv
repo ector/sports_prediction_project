@@ -1,11 +1,11 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-03 00:00:00,20:30,Villarreal,Real Madrid
-2019-01-04 00:00:00,18:00,Levante,Girona
-2019-01-04 00:00:00,20:00,Espanol,Leganés
-2019-01-05 00:00:00,12:00,Valladolid,Rayo Vallecano
-2019-01-05 00:00:00,15:15,Deportivo Alavés,Valencia
-2019-01-05 00:00:00,19:45,Huesca,Real Betis
-2019-01-06 00:00:00,11:00,Eibar,Villarreal
-2019-01-06 00:00:00,15:15,Sevilla,Atlético Madrid
-2019-01-06 00:00:00,17:30,Real Madrid,Real Sociedad
-2019-01-06 00:00:00,19:45,Getafe,Barcelona
+2019-01-11,20:00,Rayo Vallecano,Celta de Vigo
+2019-01-12,12:00,Leganés,Huesca
+2019-01-12,15:15,Valencia,Valladolid
+2019-01-12,17:30,Girona,Deportivo Alavés
+2019-01-12,19:45,Villarreal,Getafe
+2019-01-13,11:00,Atlético Madrid,Levante
+2019-01-13,15:15,Athletic Club,Sevilla
+2019-01-13,17:30,Barcelona,Eibar
+2019-01-13,19:45,Real Betis,Real Madrid
+2019-01-14,20:00,Real Sociedad,Espanol

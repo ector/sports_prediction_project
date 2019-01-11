@@ -1,59 +1,30 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-22 00:00:00,15:30,Feirense,Portimonense
-2018-12-22 00:00:00,15:30,Vitória Setúbal,Santa Clara
-2018-12-22 00:00:00,15:30,Tondela,Marítimo
-2018-12-22 00:00:00,18:00,Belenenses,Aves
-2018-12-22 00:00:00,20:30,Moreirense,Boavista
-2018-12-23 00:00:00,15:00,FC Porto,Rio Ave
-2018-12-23 00:00:00,15:00,Nacional,Chaves
-2018-12-23 00:00:00,17:30,Benfica,Sporting Braga
-2018-12-23 00:00:00,20:00,Vitória Guimarães,Sporting
-2019-01-02 00:00:00,16:00,Santa Clara,Tondela
-2019-01-02 00:00:00,18:00,Boavista,Vitória Setúbal
-2019-01-02 00:00:00,18:00,Sporting Braga,Marítimo
-2019-01-02 00:00:00,18:00,Nacional,Vitória Guimarães
-2019-01-02 00:00:00,20:15,Portimonense,Benfica
-2019-01-02 00:00:00,20:15,Rio Ave,Moreirense
-2019-01-03 00:00:00,16:00,Chaves,Feirense
-2019-01-03 00:00:00,18:00,Sporting,Belenenses
-2019-01-03 00:00:00,20:15,Aves,FC Porto
-2019-01-05 00:00:00,20:30,Marítimo,Portimonense
-2019-01-06 00:00:00,15:00,Belenenses,Vitória Guimarães
-2019-01-06 00:00:00,15:00,Feirense,Santa Clara
-2019-01-06 00:00:00,15:00,Vitória Setúbal,Chaves
-2019-01-06 00:00:00,17:30,Benfica,Rio Ave
-2019-01-06 00:00:00,20:00,Sporting Braga,Boavista
-2019-01-07 00:00:00,19:00,Tondela,Sporting
-2019-01-07 00:00:00,21:15,FC Porto,Nacional
-2019-01-08 00:00:00,20:15,Moreirense,Aves
-2019-01-12 00:00:00,16:00,Aves,Feirense
-2019-01-12 00:00:00,16:00,Boavista,Marítimo
-2019-01-12 00:00:00,16:00,Chaves,Tondela
-2019-01-12 00:00:00,16:00,Vitória Guimarães,Moreirense
-2019-01-12 00:00:00,16:00,Nacional,Belenenses
-2019-01-12 00:00:00,16:00,Portimonense,Sporting Braga
-2019-01-12 00:00:00,16:00,Rio Ave,Vitória Setúbal
-2019-01-12 00:00:00,16:00,Santa Clara,Benfica
-2019-01-12 00:00:00,16:00,Sporting,FC Porto
-2019-01-19 00:00:00,16:00,Aves,Vitória Setúbal
-2019-01-19 00:00:00,16:00,Belenenses,Tondela
-2019-01-19 00:00:00,16:00,Boavista,Portimonense
-2019-01-19 00:00:00,16:00,Chaves,FC Porto
-2019-01-19 00:00:00,16:00,Vitória Guimarães,Benfica
-2019-01-19 00:00:00,16:00,Nacional,Sporting Braga
-2019-01-19 00:00:00,16:00,Rio Ave,Feirense
-2019-01-19 00:00:00,16:00,Santa Clara,Marítimo
-2019-01-19 00:00:00,16:00,Sporting,Moreirense
-2019-01-30 00:00:00,16:00,Benfica,Boavista
-2019-01-30 00:00:00,16:00,Sporting Braga,Santa Clara
-2019-01-30 00:00:00,16:00,FC Porto,Belenenses
-2019-01-30 00:00:00,16:00,Feirense,Vitória Guimarães
-2019-01-30 00:00:00,16:00,Marítimo,Rio Ave
-2019-01-30 00:00:00,16:00,Moreirense,Nacional
-2019-01-30 00:00:00,16:00,Portimonense,Chaves
-2019-01-30 00:00:00,16:00,Vitória Setúbal,Sporting
-2019-01-30 00:00:00,16:00,Tondela,Aves
-2019-02-03 00:00:00,15:00,Santa Clara,Portimonense
+2019-01-11 00:00:00,19:00,Aves,Feirense
+2019-01-11 00:00:00,19:00,Santa Clara,Benfica
+2019-01-11 00:00:00,21:15,Vitória Guimarães,Moreirense
+2019-01-12 00:00:00,15:30,Sporting,FC Porto
+2019-01-12 00:00:00,20:30,Boavista,Marítimo
+2019-01-13 00:00:00,15:00,Nacional,Belenenses
+2019-01-13 00:00:00,17:30,Chaves,Tondela
+2019-01-13 00:00:00,20:00,Rio Ave,Vitória Setúbal
+2019-01-18 00:00:00,19:00,Chaves,FC Porto
+2019-01-18 00:00:00,20:15,Nacional,Sporting Braga
+2019-01-18 00:00:00,21:15,Vitória Guimarães,Benfica
+2019-01-19 00:00:00,15:30,Belenenses,Tondela
+2019-01-19 00:00:00,18:00,Sporting,Moreirense
+2019-01-19 00:00:00,20:30,Boavista,Portimonense
+2019-01-20 00:00:00,15:00,Aves,Vitória Setúbal
+2019-01-20 00:00:00,17:30,Santa Clara,Marítimo
+2019-01-20 00:00:00,20:00,Rio Ave,Feirense
+2019-01-28 00:00:00,17:00,Marítimo,Rio Ave
+2019-01-28 00:00:00,19:00,Moreirense,Nacional
+2019-01-28 00:00:00,19:00,Tondela,Aves
+2019-01-28 00:00:00,21:15,Feirense,Vitória Guimarães
+2019-01-29 00:00:00,19:00,Portimonense,Chaves
+2019-01-30 00:00:00,21:15,Benfica,Boavista
+2019-01-30 00:00:00,21:15,Sporting Braga,Santa Clara
+2019-01-30 00:00:00,21:15,FC Porto,Belenenses
+2019-01-30 00:00:00,21:15,Vitória Setúbal,Sporting
 2019-02-03 00:00:00,16:00,Aves,Sporting Braga
 2019-02-03 00:00:00,16:00,Belenenses,Moreirense
 2019-02-03 00:00:00,16:00,Boavista,Feirense
@@ -61,6 +32,7 @@ Date,Time,HomeTeam,AwayTeam
 2019-02-03 00:00:00,16:00,Vitória Guimarães,FC Porto
 2019-02-03 00:00:00,16:00,Nacional,Vitória Setúbal
 2019-02-03 00:00:00,16:00,Rio Ave,Tondela
+2019-02-03 00:00:00,16:00,Santa Clara,Portimonense
 2019-02-03 00:00:00,16:00,Sporting,Benfica
 2019-02-10 00:00:00,16:00,Benfica,Nacional
 2019-02-10 00:00:00,16:00,Boavista,Santa Clara
@@ -116,3 +88,30 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-17 00:00:00,16:00,Vitória Setúbal,Sporting Braga
 2019-03-17 00:00:00,16:00,Sporting,Santa Clara
 2019-03-17 00:00:00,16:00,Tondela,Feirense
+2019-03-31 00:00:00,15:00,Santa Clara,Vitória Guimarães
+2019-03-31 00:00:00,16:00,Benfica,Tondela
+2019-03-31 00:00:00,16:00,Boavista,Belenenses
+2019-03-31 00:00:00,16:00,Sporting Braga,FC Porto
+2019-03-31 00:00:00,16:00,Chaves,Sporting
+2019-03-31 00:00:00,16:00,Feirense,Vitória Setúbal
+2019-03-31 00:00:00,16:00,Marítimo,Nacional
+2019-03-31 00:00:00,16:00,Portimonense,Moreirense
+2019-03-31 00:00:00,16:00,Rio Ave,Aves
+2019-04-07 00:00:00,16:00,Belenenses,Santa Clara
+2019-04-07 00:00:00,16:00,FC Porto,Boavista
+2019-04-07 00:00:00,16:00,Feirense,Benfica
+2019-04-07 00:00:00,16:00,Vitória Guimarães,Chaves
+2019-04-07 00:00:00,16:00,Moreirense,Sporting Braga
+2019-04-07 00:00:00,16:00,Nacional,Aves
+2019-04-07 00:00:00,16:00,Vitória Setúbal,Marítimo
+2019-04-07 00:00:00,16:00,Sporting,Rio Ave
+2019-04-07 00:00:00,16:00,Tondela,Portimonense
+2019-04-14 00:00:00,15:00,Santa Clara,Moreirense
+2019-04-14 00:00:00,16:00,Aves,Sporting
+2019-04-14 00:00:00,16:00,Benfica,Vitória Setúbal
+2019-04-14 00:00:00,16:00,Boavista,Nacional
+2019-04-14 00:00:00,16:00,Sporting Braga,Tondela
+2019-04-14 00:00:00,16:00,Chaves,Belenenses
+2019-04-14 00:00:00,16:00,Marítimo,Feirense
+2019-04-14 00:00:00,16:00,Portimonense,FC Porto
+2019-04-14 00:00:00,16:00,Rio Ave,Vitória Guimarães

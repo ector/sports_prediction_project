@@ -1,13 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2018-12-21 00:00:00,17:30,FC Koln,Bochum
-2018-12-21 00:00:00,17:30,Sandhausen,Greuther Furth
-2018-12-22 00:00:00,12:00,Arminia Bielefeld,Heidenheim
-2018-12-22 00:00:00,12:00,Ingolstadt,Regensburg
-2018-12-22 00:00:00,12:00,St. Pauli,Magdeburg
-2018-12-23 00:00:00,12:30,Aue,Union Berlin
-2018-12-23 00:00:00,12:30,Duisburg,SG Dynamo Dresden
-2018-12-23 00:00:00,12:30,Holstein Kiel,Hamburger SV
-2018-12-23 00:00:00,12:30,Paderborn,Darmstadt
 2019-01-29 00:00:00,17:30,Bochum,Duisburg
 2019-01-29 00:00:00,19:30,Darmstadt,St. Pauli
 2019-01-29 00:00:00,19:30,Greuther Furth,Ingolstadt
@@ -116,3 +107,12 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-20 00:00:00,12:00,Holstein Kiel,Paderborn
 2019-04-20 00:00:00,12:00,Regensburg,Magdeburg
 2019-04-20 00:00:00,12:00,SG Dynamo Dresden,FC Koln
+2019-04-27 00:00:00,12:00,Aue,Bochum
+2019-04-27 00:00:00,12:00,Duisburg,Arminia Bielefeld
+2019-04-27 00:00:00,12:00,FC Koln,Darmstadt
+2019-04-27 00:00:00,12:00,Ingolstadt,SG Dynamo Dresden
+2019-04-27 00:00:00,12:00,Magdeburg,Greuther Furth
+2019-04-27 00:00:00,12:00,Paderborn,Heidenheim
+2019-04-27 00:00:00,12:00,Sandhausen,Holstein Kiel
+2019-04-27 00:00:00,12:00,St. Pauli,Regensburg
+2019-04-27 00:00:00,12:00,Union Berlin,Hamburger SV

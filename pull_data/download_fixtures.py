@@ -9,7 +9,10 @@ from te_logger.logger import log
 leagues = get_config(file="flashscore_leagues")
 translation = get_config(file='team_translation')
 
-driver = webdriver.Chrome('/usr/bin/chromedriver')
+try:
+    driver = webdriver.Chrome('/usr/bin/chromedriver')
+except:
+    driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 
 for k in leagues.keys():
     country, league = leagues.get(k).split("_")
