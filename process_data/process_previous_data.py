@@ -132,8 +132,9 @@ class ProcessPreviousData(object):
             data.loc[:, "ALM_{}".format(s)] = data.groupby("AwayTeam")["ALM"].shift(s)
             data.loc[:, "AAG_{}".format(s)] = data.groupby(["AwayTeam"])["FTAG"].shift(s)
             data.loc[:, "HAG_{}".format(s)] = data.groupby(["HomeTeam"])["FTHG"].shift(s)
-            data.loc[:, "AAGC_{}".format(s)] = data.groupby(["AwayTeam"])["FTHG"].shift(s)
-            data.loc[:, "HAGC_{}".format(s)] = data.groupby(["AwayTeam"])["FTAG"].shift(s)
+
+            data.loc[:, "HSc_{}".format(s)] = data.groupby(["HomeTeam"])["HSc"].shift(s)
+            data.loc[:, "ASc_{}".format(s)] = data.groupby(["AwayTeam"])["ASc"].shift(s)
 
         data.loc[:, "ACUM"] = data.groupby(["Season", "AwayTeam"])["ALM_1"].cumsum()
         data.loc[:, "HCUM"] = data.groupby(["Season", "HomeTeam"])["HLM_1"].cumsum()
@@ -144,9 +145,9 @@ class ProcessPreviousData(object):
         data.loc[:, "HAG"] = data.groupby(["Season", "HomeTeam"])["HAG_1"].apply(
             lambda x: x.rolling(window=5, min_periods=1).mean())
 
-        data.loc[:, "AAGC"] = data.groupby(["Season", "AwayTeam"])["AAGC_1"].apply(
+        data.loc[:, "AAGC"] = data.groupby(["Season", "AwayTeam"])["HAG_1"].apply(
             lambda x: x.rolling(min_periods=1, window=5).mean())
-        data.loc[:, "HAGC"] = data.groupby(["Season", "HomeTeam"])["HAGC_1"].apply(
+        data.loc[:, "HAGC"] = data.groupby(["Season", "HomeTeam"])["AAG_1"].apply(
             lambda x: x.rolling(min_periods=1, window=5).mean())
 
         data = data.dropna()
@@ -166,6 +167,8 @@ class ProcessPreviousData(object):
             fix_data.loc[:, "Season"] = 1819
             fix_data.loc[:, "played"] = 0
             fix_data.loc[:, "BTTS"] = 0
+            fix_data.loc[:, "HSc"] = 0
+            fix_data.loc[:, "ASc"] = 0
 
             client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
             db = client.get_database("sports_prediction")
@@ -179,6 +182,8 @@ class ProcessPreviousData(object):
             data.loc[:, "FTAG"] = pd.to_numeric(data.FTAG.values)
             data.loc[(data.FTHG > 0) & (data.FTAG > 0), 'BTTS'] = 1
             data.loc[(data.FTHG == 0) | (data.FTAG == 0), 'BTTS'] = 0
+            data.loc[:, 'HSc'] = list(np.where(pd.to_numeric(data.FTHG.values) > 0, 1, 0))
+            data.loc[:, 'ASc'] = list(np.where(pd.to_numeric(data.FTAG.values) > 0, 1, 0))
 
             agg_data = pd.concat([data, fix_data], ignore_index=True, sort=False)
 
@@ -222,7 +227,7 @@ class ProcessPreviousData(object):
             # date without time
             agg_data["Date"] = [pd.to_datetime(str(d)).date() for d in agg_data.Date.values]
 
-            agg_data = agg_data.drop(['FTHG', 'FTAG'], axis=1)
+            agg_data = agg_data.drop(['FTHG', 'FTAG', "HSc", "ASc"], axis=1)
             agg_data.to_csv(self.clean_team_trend_data_directory.format(lg), index=False)
             self.log.info("{} data saved in clean folder".format(lg.upper()))
         else:
