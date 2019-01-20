@@ -5,10 +5,14 @@ Created on 15-06-2018 at 2:09 PM
 @author: tola
 """
 import os
+from time import sleep
+
 import numpy as np
 import pandas as pd
 from multiprocessing import Pool
 from pymongo import MongoClient
+
+from fixtures import GameFixtures
 from utils import get_config, save_league_model_attr, get_analysis_root_path, team_translation
 from te_logger.logger import log
 
@@ -197,7 +201,7 @@ class ProcessPreviousData(object):
             target_real = played_data.FTR.map({"A": -3, "D": 0, "H": 3})
             dc_real = played_data.FTR.map({"A": 1, "D": 0, "H": 0})
             ou25_target = played_data.UO25
-            played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'UO25', "HLM", "ALM", 'BTTS'], axis=1)
+            played_data = played_data.drop(['FTR', 'FTHG', 'FTAG', 'UO25', "HLM", "ALM", 'BTTS', "HSc", "ASc"], axis=1)
 
             wdw_coef_data = played_data.corrwith(target_real)
             wdw_sig_cols = list(played_data.drop(["Date", "played", "Time"], axis=1).columns)
@@ -235,10 +239,11 @@ class ProcessPreviousData(object):
 
 
 if __name__ == '__main__':
+    #pull and save fixture games for prediction
+    GameFixtures().save_games_to_predict()
+    sleep(2)
     ppd = ProcessPreviousData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
-    # for league in league_list:
-    #     ppd.store_significant_columns(lg=league)
     p = Pool(processes=20)
     p.map(ProcessPreviousData().store_significant_columns, league_list)

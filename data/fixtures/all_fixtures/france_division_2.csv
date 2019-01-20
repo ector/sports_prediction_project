@@ -1,11 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-11 00:00:00,19:00,AC Ajaccio,Beziers
-2019-01-11 00:00:00,19:00,Clermont,Niort
-2019-01-11 00:00:00,19:00,GFC Ajaccio,Auxerre
-2019-01-11 00:00:00,19:00,Lorient,Chateauroux
-2019-01-11 00:00:00,19:00,Nancy,Paris FC
-2019-01-11 00:00:00,19:00,Orleans,Metz
-2019-01-11 00:00:00,19:00,Valenciennes,Sochaux
 2019-01-12 00:00:00,14:00,Brest,Troyes
 2019-01-12 00:00:00,14:00,Grenoble,Le Havre
 2019-01-14 00:00:00,19:45,Red Star,Lens
@@ -111,3 +104,13 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-29 00:00:00,19:00,Orleans,Red Star
 2019-03-29 00:00:00,19:00,Paris FC,Auxerre
 2019-03-29 00:00:00,19:00,Troyes,Grenoble
+2019-04-05 00:00:00,19:00,Auxerre,Metz
+2019-04-05 00:00:00,19:00,Chateauroux,Lens
+2019-04-05 00:00:00,19:00,Clermont,Nancy
+2019-04-05 00:00:00,19:00,GFC Ajaccio,AC Ajaccio
+2019-04-05 00:00:00,19:00,Grenoble,Orleans
+2019-04-05 00:00:00,19:00,Le Havre,Niort
+2019-04-05 00:00:00,19:00,Lorient,Beziers
+2019-04-05 00:00:00,19:00,Red Star,Brest
+2019-04-05 00:00:00,19:00,Sochaux,Paris FC
+2019-04-05 00:00:00,19:00,Valenciennes,Troyes

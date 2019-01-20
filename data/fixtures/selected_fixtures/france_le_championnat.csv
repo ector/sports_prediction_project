@@ -1,12 +1,16 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-11,18:00,Caen,Lille
-2019-01-11,19:45,Olympique Lyonnais,Reims
-2019-01-12,16:00,Amiens SC,Paris SG
-2019-01-12,19:00,Guingamp,Saint-Étienne
-2019-01-12,19:00,Nice,Bordeaux
-2019-01-12,19:00,Nimes,Angers SCO
-2019-01-13,14:00,Nantes,Rennes
-2019-01-13,16:00,Dijon,Montpellier
-2019-01-13,16:00,Toulouse,Strasbourg
-2019-01-13,20:00,Olympique Marseille,Monaco
-2019-01-15,18:00,Angers SCO,Bordeaux
+2019-01-16,18:00,Guingamp,Rennes
+2019-01-16,18:00,Monaco,Nice
+2019-01-16,18:00,Nimes,Nantes
+2019-01-16,18:00,Toulouse,Olympique Lyonnais
+2019-01-16,20:00,Saint-Étienne,Olympique Marseille
+2019-01-18,19:45,Lille,Amiens SC
+2019-01-19,16:00,Paris SG,Guingamp
+2019-01-19,19:00,Angers SCO,Nantes
+2019-01-19,19:00,Bordeaux,Dijon
+2019-01-19,19:00,Monaco,Strasbourg
+2019-01-19,19:00,Nimes,Toulouse
+2019-01-19,19:00,Reims,Nice
+2019-01-20,14:00,Rennes,Montpellier
+2019-01-20,16:00,Caen,Olympique Marseille
+2019-01-20,20:00,Saint-Étienne,Olympique Lyonnais
