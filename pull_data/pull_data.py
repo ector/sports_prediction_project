@@ -71,7 +71,7 @@ class PullData(object):
             ft_data = dict(ft_data)
             exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
                      'Comp_id': ft_data.get('Comp_id')}
-            wdw_count = wdw_raw_data.find(exist).count_documents()
+            wdw_count = wdw_raw_data.find(exist).count()
 
             if int(wdw_count) == 0:
                 log.info("inserting {0}".format(ft_data))
@@ -90,6 +90,7 @@ class PullData(object):
 
 
 if __name__ == '__main__':
+
     dr = PullData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
