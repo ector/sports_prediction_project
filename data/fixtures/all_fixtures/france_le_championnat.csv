@@ -1,117 +1,101 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-12 00:00:00,16:00,Amiens SC,Paris SG
-2019-01-12 00:00:00,19:00,Guingamp,Saint-Étienne
-2019-01-12 00:00:00,19:00,Nice,Bordeaux
-2019-01-12 00:00:00,19:00,Nimes,Angers SCO
-2019-01-13 00:00:00,14:00,Nantes,Rennes
-2019-01-13 00:00:00,16:00,Dijon,Montpellier
-2019-01-13 00:00:00,16:00,Toulouse,Strasbourg
-2019-01-13 00:00:00,20:00,Olympique Marseille,Monaco
-2019-01-15 00:00:00,18:00,Angers SCO,Bordeaux
-2019-01-16 00:00:00,18:00,Guingamp,Rennes
-2019-01-16 00:00:00,18:00,Monaco,Nice
-2019-01-16 00:00:00,18:00,Nimes,Nantes
-2019-01-16 00:00:00,18:00,Toulouse,Olympique Lyonnais
-2019-01-16 00:00:00,20:00,Saint-Étienne,Olympique Marseille
-2019-01-18 00:00:00,19:45,Lille,Amiens SC
-2019-01-19 00:00:00,16:00,Paris SG,Guingamp
-2019-01-19 00:00:00,19:00,Angers SCO,Nantes
-2019-01-19 00:00:00,19:00,Bordeaux,Dijon
-2019-01-19 00:00:00,19:00,Monaco,Strasbourg
-2019-01-19 00:00:00,19:00,Nimes,Toulouse
-2019-01-19 00:00:00,19:00,Reims,Nice
-2019-01-20 00:00:00,14:00,Rennes,Montpellier
-2019-01-20 00:00:00,16:00,Caen,Olympique Marseille
-2019-01-20 00:00:00,20:00,Saint-Étienne,Olympique Lyonnais
-2019-01-26 00:00:00,19:00,Amiens SC,Olympique Lyonnais
-2019-01-26 00:00:00,19:00,Dijon,Monaco
-2019-01-26 00:00:00,19:00,Guingamp,Reims
-2019-01-26 00:00:00,19:00,Olympique Marseille,Lille
-2019-01-26 00:00:00,19:00,Montpellier,Caen
-2019-01-26 00:00:00,19:00,Nantes,Saint-Étienne
-2019-01-26 00:00:00,19:00,Nice,Nimes
-2019-01-26 00:00:00,19:00,Paris SG,Rennes
-2019-01-26 00:00:00,19:00,Strasbourg,Bordeaux
-2019-01-26 00:00:00,19:00,Toulouse,Angers SCO
-2019-02-02 00:00:00,19:00,Angers SCO,Dijon
-2019-02-02 00:00:00,19:00,Bordeaux,Guingamp
-2019-02-02 00:00:00,19:00,Caen,Nantes
-2019-02-02 00:00:00,19:00,Lille,Nice
-2019-02-02 00:00:00,19:00,Monaco,Toulouse
-2019-02-02 00:00:00,19:00,Nimes,Montpellier
-2019-02-02 00:00:00,19:00,Reims,Olympique Marseille
-2019-02-02 00:00:00,19:00,Rennes,Amiens SC
-2019-02-02 00:00:00,19:00,Saint-Étienne,Strasbourg
-2019-02-03 00:00:00,20:00,Olympique Lyonnais,Paris SG
-2019-02-09 00:00:00,19:00,Amiens SC,Caen
-2019-02-09 00:00:00,19:00,Dijon,Olympique Marseille
-2019-02-09 00:00:00,19:00,Guingamp,Lille
-2019-02-09 00:00:00,19:00,Montpellier,Monaco
-2019-02-09 00:00:00,19:00,Nantes,Nimes
-2019-02-09 00:00:00,19:00,Nice,Olympique Lyonnais
-2019-02-09 00:00:00,19:00,Paris SG,Bordeaux
-2019-02-09 00:00:00,19:00,Rennes,Saint-Étienne
-2019-02-09 00:00:00,19:00,Strasbourg,Angers SCO
-2019-02-09 00:00:00,19:00,Toulouse,Reims
-2019-02-16 00:00:00,19:00,Angers SCO,Nice
-2019-02-16 00:00:00,19:00,Bordeaux,Toulouse
-2019-02-16 00:00:00,19:00,Caen,Strasbourg
-2019-02-16 00:00:00,19:00,Lille,Montpellier
-2019-02-16 00:00:00,19:00,Olympique Lyonnais,Guingamp
-2019-02-16 00:00:00,19:00,Olympique Marseille,Amiens SC
-2019-02-16 00:00:00,19:00,Monaco,Nantes
-2019-02-16 00:00:00,19:00,Nimes,Dijon
-2019-02-16 00:00:00,19:00,Reims,Rennes
-2019-02-16 00:00:00,19:00,Saint-Étienne,Paris SG
-2019-02-20 00:00:00,20:00,Paris SG,Montpellier
-2019-02-23 00:00:00,19:00,Amiens SC,Nice
-2019-02-23 00:00:00,19:00,Dijon,Saint-Étienne
-2019-02-23 00:00:00,19:00,Guingamp,Angers SCO
-2019-02-23 00:00:00,19:00,Montpellier,Reims
-2019-02-23 00:00:00,19:00,Nantes,Bordeaux
-2019-02-23 00:00:00,19:00,Paris SG,Nimes
-2019-02-23 00:00:00,19:00,Rennes,Olympique Marseille
-2019-02-23 00:00:00,19:00,Strasbourg,Lille
-2019-02-23 00:00:00,19:00,Toulouse,Caen
-2019-02-24 00:00:00,20:00,Monaco,Olympique Lyonnais
-2019-03-02 00:00:00,19:00,Angers SCO,Monaco
-2019-03-02 00:00:00,19:00,Bordeaux,Montpellier
-2019-03-02 00:00:00,19:00,Caen,Paris SG
-2019-03-02 00:00:00,19:00,Guingamp,Nantes
-2019-03-02 00:00:00,19:00,Lille,Dijon
-2019-03-02 00:00:00,19:00,Olympique Lyonnais,Toulouse
-2019-03-02 00:00:00,19:00,Olympique Marseille,Saint-Étienne
-2019-03-02 00:00:00,19:00,Nice,Strasbourg
-2019-03-02 00:00:00,19:00,Nimes,Rennes
-2019-03-02 00:00:00,19:00,Reims,Amiens SC
-2019-03-09 00:00:00,19:00,Amiens SC,Nimes
-2019-03-09 00:00:00,19:00,Dijon,Reims
-2019-03-09 00:00:00,19:00,Olympique Marseille,Nice
-2019-03-09 00:00:00,19:00,Monaco,Bordeaux
-2019-03-09 00:00:00,19:00,Montpellier,Angers SCO
-2019-03-09 00:00:00,19:00,Nantes,Paris SG
-2019-03-09 00:00:00,19:00,Rennes,Caen
-2019-03-09 00:00:00,19:00,Saint-Étienne,Lille
-2019-03-09 00:00:00,19:00,Strasbourg,Olympique Lyonnais
-2019-03-09 00:00:00,19:00,Toulouse,Guingamp
-2019-03-13 00:00:00,19:00,Dijon,Paris SG
+2019-03-15 00:00:00,18:00,Nice,Toulouse
+2019-03-15 00:00:00,19:45,Lille,Monaco
 2019-03-16 00:00:00,19:00,Angers SCO,Amiens SC
-2019-03-16 00:00:00,19:00,Bordeaux,Rennes
 2019-03-16 00:00:00,19:00,Caen,Saint-Étienne
 2019-03-16 00:00:00,19:00,Guingamp,Dijon
-2019-03-16 00:00:00,19:00,Lille,Monaco
-2019-03-16 00:00:00,19:00,Olympique Lyonnais,Montpellier
-2019-03-16 00:00:00,19:00,Nice,Toulouse
 2019-03-16 00:00:00,19:00,Nimes,Strasbourg
-2019-03-16 00:00:00,19:00,Reims,Nantes
+2019-03-17 00:00:00,13:30,Olympique Lyonnais,Montpellier
+2019-03-17 00:00:00,14:00,Reims,Nantes
+2019-03-17 00:00:00,16:00,Bordeaux,Rennes
 2019-03-17 00:00:00,20:00,Paris SG,Olympique Marseille
-2019-03-31 00:00:00,19:00,Amiens SC,Bordeaux
-2019-03-31 00:00:00,19:00,Dijon,Nice
-2019-03-31 00:00:00,19:00,Olympique Marseille,Angers SCO
-2019-03-31 00:00:00,19:00,Monaco,Caen
-2019-03-31 00:00:00,19:00,Montpellier,Guingamp
-2019-03-31 00:00:00,19:00,Nantes,Lille
-2019-03-31 00:00:00,19:00,Rennes,Olympique Lyonnais
-2019-03-31 00:00:00,19:00,Saint-Étienne,Nimes
-2019-03-31 00:00:00,19:00,Strasbourg,Reims
-2019-03-31 00:00:00,19:00,Toulouse,Paris SG
+2019-03-29 00:00:00,19:45,Rennes,Olympique Lyonnais
+2019-03-30 00:00:00,16:00,Olympique Marseille,Angers SCO
+2019-03-31 00:00:00,14:00,Amiens SC,Bordeaux
+2019-03-31 00:00:00,14:00,Dijon,Nice
+2019-03-31 00:00:00,14:00,Monaco,Caen
+2019-03-31 00:00:00,14:00,Saint-Étienne,Nimes
+2019-03-31 00:00:00,16:00,Nantes,Lille
+2019-03-31 00:00:00,20:00,Toulouse,Paris SG
+2019-04-03 00:00:00,18:00,Montpellier,Guingamp
+2019-04-03 00:00:00,18:00,Strasbourg,Reims
+2019-04-06 00:00:00,19:00,Amiens SC,Saint-Étienne
+2019-04-06 00:00:00,19:00,Angers SCO,Rennes
+2019-04-06 00:00:00,19:00,Bordeaux,Olympique Marseille
+2019-04-06 00:00:00,19:00,Guingamp,Monaco
+2019-04-06 00:00:00,19:00,Olympique Lyonnais,Dijon
+2019-04-06 00:00:00,19:00,Nice,Montpellier
+2019-04-06 00:00:00,19:00,Nimes,Caen
+2019-04-06 00:00:00,19:00,Paris SG,Strasbourg
+2019-04-06 00:00:00,19:00,Reims,Lille
+2019-04-06 00:00:00,19:00,Toulouse,Nantes
+2019-04-13 00:00:00,19:00,Caen,Angers SCO
+2019-04-13 00:00:00,19:00,Dijon,Amiens SC
+2019-04-13 00:00:00,19:00,Lille,Paris SG
+2019-04-13 00:00:00,19:00,Olympique Marseille,Nimes
+2019-04-13 00:00:00,19:00,Monaco,Reims
+2019-04-13 00:00:00,19:00,Montpellier,Toulouse
+2019-04-13 00:00:00,19:00,Nantes,Olympique Lyonnais
+2019-04-13 00:00:00,19:00,Rennes,Nice
+2019-04-13 00:00:00,19:00,Saint-Étienne,Bordeaux
+2019-04-13 00:00:00,19:00,Strasbourg,Guingamp
+2019-04-20 00:00:00,19:00,Dijon,Rennes
+2019-04-20 00:00:00,19:00,Guingamp,Olympique Marseille
+2019-04-20 00:00:00,19:00,Olympique Lyonnais,Angers SCO
+2019-04-20 00:00:00,19:00,Nantes,Amiens SC
+2019-04-20 00:00:00,19:00,Nice,Caen
+2019-04-20 00:00:00,19:00,Nimes,Bordeaux
+2019-04-20 00:00:00,19:00,Reims,Saint-Étienne
+2019-04-20 00:00:00,19:00,Strasbourg,Montpellier
+2019-04-20 00:00:00,19:00,Toulouse,Lille
+2019-04-21 00:00:00,20:00,Paris SG,Monaco
+2019-04-28 00:00:00,19:00,Amiens SC,Strasbourg
+2019-04-28 00:00:00,19:00,Angers SCO,Reims
+2019-04-28 00:00:00,19:00,Bordeaux,Olympique Lyonnais
+2019-04-28 00:00:00,19:00,Caen,Dijon
+2019-04-28 00:00:00,19:00,Lille,Nimes
+2019-04-28 00:00:00,19:00,Olympique Marseille,Nantes
+2019-04-28 00:00:00,19:00,Montpellier,Paris SG
+2019-04-28 00:00:00,19:00,Nice,Guingamp
+2019-04-28 00:00:00,19:00,Rennes,Monaco
+2019-04-28 00:00:00,19:00,Saint-Étienne,Toulouse
+2019-05-04 00:00:00,19:00,Bordeaux,Angers SCO
+2019-05-04 00:00:00,19:00,Guingamp,Caen
+2019-05-04 00:00:00,19:00,Olympique Lyonnais,Lille
+2019-05-04 00:00:00,19:00,Monaco,Saint-Étienne
+2019-05-04 00:00:00,19:00,Montpellier,Amiens SC
+2019-05-04 00:00:00,19:00,Nantes,Dijon
+2019-05-04 00:00:00,19:00,Paris SG,Nice
+2019-05-04 00:00:00,19:00,Reims,Nimes
+2019-05-04 00:00:00,19:00,Strasbourg,Olympique Marseille
+2019-05-04 00:00:00,19:00,Toulouse,Rennes
+2019-05-11 00:00:00,19:00,Amiens SC,Toulouse
+2019-05-11 00:00:00,19:00,Angers SCO,Paris SG
+2019-05-11 00:00:00,19:00,Caen,Reims
+2019-05-11 00:00:00,19:00,Dijon,Strasbourg
+2019-05-11 00:00:00,19:00,Lille,Bordeaux
+2019-05-11 00:00:00,19:00,Nice,Nantes
+2019-05-11 00:00:00,19:00,Nimes,Monaco
+2019-05-11 00:00:00,19:00,Rennes,Guingamp
+2019-05-11 00:00:00,19:00,Saint-Étienne,Montpellier
+2019-05-12 00:00:00,20:00,Olympique Marseille,Olympique Lyonnais
+2019-05-18 00:00:00,19:00,Bordeaux,Reims
+2019-05-18 00:00:00,19:00,Guingamp,Nimes
+2019-05-18 00:00:00,19:00,Lille,Angers SCO
+2019-05-18 00:00:00,19:00,Olympique Lyonnais,Caen
+2019-05-18 00:00:00,19:00,Monaco,Amiens SC
+2019-05-18 00:00:00,19:00,Montpellier,Nantes
+2019-05-18 00:00:00,19:00,Paris SG,Dijon
+2019-05-18 00:00:00,19:00,Saint-Étienne,Nice
+2019-05-18 00:00:00,19:00,Strasbourg,Rennes
+2019-05-18 00:00:00,19:00,Toulouse,Olympique Marseille
+2019-05-25 00:00:00,19:00,Amiens SC,Guingamp
+2019-05-25 00:00:00,19:00,Angers SCO,Saint-Étienne
+2019-05-25 00:00:00,19:00,Caen,Bordeaux
+2019-05-25 00:00:00,19:00,Dijon,Toulouse
+2019-05-25 00:00:00,19:00,Olympique Marseille,Montpellier
+2019-05-25 00:00:00,19:00,Nantes,Strasbourg
+2019-05-25 00:00:00,19:00,Nice,Monaco
+2019-05-25 00:00:00,19:00,Nimes,Olympique Lyonnais
+2019-05-25 00:00:00,19:00,Reims,Paris SG
+2019-05-25 00:00:00,19:00,Rennes,Lille

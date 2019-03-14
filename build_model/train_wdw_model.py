@@ -14,7 +14,6 @@ from te_logger.logger import log
 
 
 leagues_data = get_config(file="league")
-model_columns = get_config(file="model_columns")
 leagues = list(leagues_data.keys())
 
 
@@ -25,34 +24,20 @@ for league in leagues:
         games = pd.read_csv(lg_data_path)
         games = games.dropna(how='any')
 
-        model_columns = get_config(file="wdw_columns/{}".format(league)).get(league)
-        dc_columns = get_config(file="dc_columns/{}".format(league)).get(league)
+        model_columns = get_config(file="wdw_columns/{}".format(league))
         played_data = games.loc[(games.Season.isin([1415, 1516, 1617, 1718, 1819])) & (games.played == 1)]
 
         target = played_data.FTR.map({"D": 0, "A": 1, "H": 2})
-        target_1x = played_data.FTR.map({"D": 0, "A": 1, "H": 0})
-        log.info("{} significant columns: {}".format(league.upper(), model_columns))
 
         # Select significant columns
         data = played_data[model_columns]
-        dc_data = played_data[dc_columns]
 
         model = LogisticRegression(C=1e5)
         sm = SMOTE(random_state=2)
         data_res, target_res = sm.fit_sample(data, target.ravel())
         model.fit(data_res, target_res)
         log.info("League: {}\t score: {}".format(league, model.score(data_res, target_res)))
-        model_filename = get_analysis_root_path("tools/league_models/{}".format(league))
-        joblib.dump(model, model_filename)
-
-        # Double chance model fit
-        sm = SMOTE(random_state=2)
-        dc_data_res, target_1x_res = sm.fit_sample(dc_data, target_1x.ravel())
-
-        model = LogisticRegression(C=1e5)
-        model.fit(dc_data_res, target_1x_res)
-        log.info("0: '1x', 1: 'A' League: {}\t DC score: {}".format(league, model.score(dc_data_res, target_1x_res)))
-        model_filename = get_analysis_root_path("tools/league_models/{}_1x".format(league))
+        model_filename = get_analysis_root_path("tools/league_models/{}_wdw".format(league))
         joblib.dump(model, model_filename)
 
     except Exception as e:

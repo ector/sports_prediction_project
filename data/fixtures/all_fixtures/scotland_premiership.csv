@@ -1,74 +1,25 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-23 00:00:00,19:45,Celtic,St. Mirren
-2019-01-23 00:00:00,19:45,Hamilton,Aberdeen
-2019-01-23 00:00:00,19:45,Hearts,Dundee FC
-2019-01-23 00:00:00,19:45,Kilmarnock,Rangers
-2019-01-23 00:00:00,19:45,Motherwell,Hibernian
-2019-01-23 00:00:00,19:45,St Johnstone,Livingston
-2019-01-26 00:00:00,15:00,Aberdeen,Kilmarnock
-2019-01-26 00:00:00,15:00,Celtic,Hamilton
-2019-01-26 00:00:00,15:00,Dundee FC,Motherwell
-2019-01-26 00:00:00,15:00,Hearts,St Johnstone
-2019-01-27 00:00:00,13:30,St. Mirren,Hibernian
-2019-01-27 00:00:00,16:00,Livingston,Rangers
-2019-01-30 00:00:00,19:45,Celtic,St Johnstone
-2019-02-01 00:00:00,19:45,Kilmarnock,Hearts
-2019-02-02 00:00:00,15:00,Hamilton,Dundee FC
-2019-02-02 00:00:00,15:00,Hibernian,Aberdeen
-2019-02-02 00:00:00,15:00,Motherwell,Livingston
-2019-02-02 00:00:00,15:00,Rangers,St. Mirren
-2019-02-03 00:00:00,12:30,St Johnstone,Celtic
-2019-02-06 00:00:00,19:45,Aberdeen,Rangers
-2019-02-06 00:00:00,19:45,Celtic,Hibernian
-2019-02-06 00:00:00,19:45,Dundee FC,Kilmarnock
-2019-02-06 00:00:00,19:45,Hamilton,St Johnstone
-2019-02-06 00:00:00,19:45,Hearts,Livingston
-2019-02-06 00:00:00,19:45,St. Mirren,Motherwell
-2019-02-16 00:00:00,15:00,Aberdeen,St. Mirren
-2019-02-16 00:00:00,15:00,Hibernian,Hamilton
-2019-02-16 00:00:00,15:00,Livingston,Dundee FC
-2019-02-16 00:00:00,15:00,Rangers,St Johnstone
-2019-02-17 00:00:00,12:15,Motherwell,Hearts
-2019-02-17 00:00:00,16:00,Kilmarnock,Celtic
-2019-02-22 00:00:00,19:45,Dundee FC,Hibernian
-2019-02-23 00:00:00,15:00,Hearts,St. Mirren
-2019-02-23 00:00:00,15:00,Livingston,Kilmarnock
-2019-02-23 00:00:00,15:00,St Johnstone,Aberdeen
-2019-02-24 00:00:00,12:15,Hamilton,Rangers
-2019-02-24 00:00:00,15:00,Celtic,Motherwell
-2019-02-27 00:00:00,19:45,Aberdeen,Hamilton
-2019-02-27 00:00:00,19:45,Hearts,Celtic
-2019-02-27 00:00:00,19:45,Kilmarnock,Motherwell
-2019-02-27 00:00:00,19:45,Rangers,Dundee FC
-2019-02-27 00:00:00,19:45,St Johnstone,Hibernian
-2019-02-27 00:00:00,19:45,St. Mirren,Livingston
-2019-03-09 00:00:00,15:00,Celtic,Aberdeen
-2019-03-09 00:00:00,15:00,Dundee FC,Hearts
-2019-03-09 00:00:00,15:00,Hibernian,Rangers
-2019-03-09 00:00:00,15:00,Livingston,St Johnstone
-2019-03-09 00:00:00,15:00,Motherwell,Hamilton
-2019-03-09 00:00:00,15:00,St. Mirren,Kilmarnock
 2019-03-16 00:00:00,15:00,Aberdeen,Livingston
-2019-03-16 00:00:00,15:00,Dundee FC,Celtic
 2019-03-16 00:00:00,15:00,Hamilton,Hearts
 2019-03-16 00:00:00,15:00,Hibernian,Motherwell
 2019-03-16 00:00:00,15:00,Rangers,Kilmarnock
 2019-03-16 00:00:00,15:00,St Johnstone,St. Mirren
-2019-03-30 00:00:00,15:00,Celtic,Rangers
+2019-03-17 00:00:00,12:30,Dundee FC,Celtic
+2019-03-29 00:00:00,19:45,Livingston,Hibernian
 2019-03-30 00:00:00,15:00,Hearts,Aberdeen
 2019-03-30 00:00:00,15:00,Kilmarnock,Hamilton
-2019-03-30 00:00:00,15:00,Livingston,Hibernian
 2019-03-30 00:00:00,15:00,Motherwell,St Johnstone
 2019-03-30 00:00:00,15:00,St. Mirren,Dundee FC
+2019-03-31 00:00:00,12:00,Celtic,Rangers
 2019-04-03 00:00:00,19:45,Aberdeen,Motherwell
 2019-04-03 00:00:00,19:45,Hibernian,Kilmarnock
 2019-04-03 00:00:00,19:45,Livingston,Hamilton
 2019-04-03 00:00:00,19:45,Rangers,Hearts
 2019-04-03 00:00:00,19:45,St Johnstone,Dundee FC
 2019-04-03 00:00:00,19:45,St. Mirren,Celtic
+2019-04-06 00:00:00,12:30,Hearts,Hibernian
 2019-04-06 00:00:00,15:00,Celtic,Livingston
 2019-04-06 00:00:00,15:00,Dundee FC,Aberdeen
 2019-04-06 00:00:00,15:00,Hamilton,St. Mirren
-2019-04-06 00:00:00,15:00,Hearts,Hibernian
 2019-04-06 00:00:00,15:00,Kilmarnock,St Johnstone
-2019-04-06 00:00:00,15:00,Motherwell,Rangers
+2019-04-07 00:00:00,12:30,Motherwell,Rangers

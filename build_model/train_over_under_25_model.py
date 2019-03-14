@@ -22,7 +22,7 @@ for league in leagues:
         games = pd.read_csv(get_analysis_root_path('tools/data/clean_data/team_trend/{}.csv'.format(league)))
         games = games.dropna(how='any')
 
-        model_columns = get_config(file="ou25_columns/{}".format(league)).get(league)
+        model_columns = get_config(file="ou25_columns/{}".format(league))
         data = games.loc[(games.Season.isin([1415, 1516, 1617, 1718, 1819])) & (games.played == 1)]
 
         target = data.UO25.values

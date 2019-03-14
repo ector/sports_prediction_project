@@ -64,10 +64,9 @@ def save_league_model_attr(model, league, cols):
     """
     filename = "tools/config/{}/{}.json".format(model, league)
     file_path = get_analysis_root_path(filepath=filename)
-    config = {league: cols}
 
     with open(file_path, 'w') as outfile:
-        json.dump(config, outfile)
+        json.dump(cols, outfile)
     outfile.close()
 
 
@@ -109,7 +108,7 @@ def get_analysis_root_path(filepath):
     :return: string
     """
     complete_path = os.getcwd()
-    root_path = os.path.join(complete_path.split('workshop')[0], 'workshop', filepath)
+    root_path = os.path.join(complete_path.split('workspace')[0], 'workspace', filepath)
     return root_path
 
 

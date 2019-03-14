@@ -1,10 +1,10 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-01,19:00,AZ Alkmaar,Sittard
-2019-03-02,17:30,Ajax,Zwolle
-2019-03-02,17:30,Heracles,Utrecht
-2019-03-02,19:45,Excelsior,PSV
-2019-03-02,19:45,Vitesse,Breda
-2019-03-03,11:15,Graafschap,Den Haag
-2019-03-03,13:30,Groningen,Venlo
-2019-03-03,13:30,Heerenveen,Willem II
-2019-03-03,15:45,Feyenoord,FC Emmen
+2019-03-15,19:00,Sittard,FC Emmen
+2019-03-16,17:30,Heerenveen,Graafschap
+2019-03-16,18:45,Breda,Utrecht
+2019-03-16,18:45,Feyenoord,Willem II
+2019-03-16,19:45,Heracles,Vitesse
+2019-03-17,11:15,Venlo,PSV
+2019-03-17,13:30,AZ Alkmaar,Ajax
+2019-03-17,13:30,Groningen,Den Haag
+2019-03-17,15:45,Excelsior,Zwolle

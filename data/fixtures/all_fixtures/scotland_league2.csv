@@ -1,54 +1,10 @@
 Date,Time,HomeTeam,AwayTeam
-2019-01-12 00:00:00,15:00,Albion Rovers,Peterhead
-2019-01-12 00:00:00,15:00,Berwick,Clyde
-2019-01-12 00:00:00,15:00,Elgin City,Cowdenbeath
-2019-01-12 00:00:00,15:00,Queen's Park,Edinburgh City
-2019-01-12 00:00:00,15:00,Stirling,Annan
-2019-01-19 00:00:00,15:00,Clyde,Elgin City
-2019-01-19 00:00:00,15:00,Cowdenbeath,Albion Rovers
-2019-01-19 00:00:00,15:00,Edinburgh City,Annan
-2019-01-19 00:00:00,15:00,Peterhead,Berwick
-2019-01-19 00:00:00,15:00,Stirling,Queen's Park
-2019-01-26 00:00:00,15:00,Albion Rovers,Stirling
-2019-01-26 00:00:00,15:00,Annan,Peterhead
-2019-01-26 00:00:00,15:00,Clyde,Cowdenbeath
-2019-01-26 00:00:00,15:00,Elgin City,Edinburgh City
-2019-01-26 00:00:00,15:00,Queen's Park,Berwick
-2019-02-02 00:00:00,15:00,Berwick,Annan
-2019-02-02 00:00:00,15:00,Cowdenbeath,Peterhead
-2019-02-02 00:00:00,15:00,Edinburgh City,Albion Rovers
-2019-02-02 00:00:00,15:00,Elgin City,Queen's Park
-2019-02-02 00:00:00,15:00,Stirling,Clyde
-2019-02-09 00:00:00,15:00,Albion Rovers,Elgin City
-2019-02-09 00:00:00,15:00,Annan,Clyde
-2019-02-09 00:00:00,15:00,Berwick,Stirling
-2019-02-09 00:00:00,15:00,Peterhead,Edinburgh City
-2019-02-09 00:00:00,15:00,Queen's Park,Cowdenbeath
-2019-02-16 00:00:00,15:00,Clyde,Albion Rovers
-2019-02-16 00:00:00,15:00,Cowdenbeath,Annan
-2019-02-16 00:00:00,15:00,Edinburgh City,Berwick
-2019-02-16 00:00:00,15:00,Elgin City,Stirling
-2019-02-16 00:00:00,15:00,Peterhead,Queen's Park
-2019-02-23 00:00:00,15:00,Annan,Albion Rovers
-2019-02-23 00:00:00,15:00,Berwick,Elgin City
-2019-02-23 00:00:00,15:00,Edinburgh City,Cowdenbeath
-2019-02-23 00:00:00,15:00,Queen's Park,Clyde
-2019-02-23 00:00:00,15:00,Stirling,Peterhead
-2019-03-02 00:00:00,15:00,Albion Rovers,Berwick
-2019-03-02 00:00:00,15:00,Annan,Queen's Park
-2019-03-02 00:00:00,15:00,Clyde,Edinburgh City
-2019-03-02 00:00:00,15:00,Cowdenbeath,Stirling
-2019-03-02 00:00:00,15:00,Peterhead,Elgin City
-2019-03-09 00:00:00,15:00,Berwick,Cowdenbeath
-2019-03-09 00:00:00,15:00,Edinburgh City,Queen's Park
-2019-03-09 00:00:00,15:00,Elgin City,Clyde
-2019-03-09 00:00:00,15:00,Peterhead,Annan
-2019-03-09 00:00:00,15:00,Stirling,Albion Rovers
 2019-03-16 00:00:00,15:00,Albion Rovers,Cowdenbeath
 2019-03-16 00:00:00,15:00,Annan,Edinburgh City
 2019-03-16 00:00:00,15:00,Berwick,Peterhead
 2019-03-16 00:00:00,15:00,Clyde,Stirling
 2019-03-16 00:00:00,15:00,Queen's Park,Elgin City
+2019-03-19 00:00:00,19:45,Clyde,Elgin City
 2019-03-23 00:00:00,15:00,Clyde,Annan
 2019-03-23 00:00:00,15:00,Cowdenbeath,Queen's Park
 2019-03-23 00:00:00,15:00,Edinburgh City,Peterhead
