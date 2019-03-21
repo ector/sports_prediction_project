@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-16 00:00:00,15:00,Albacete,Extremadura UD
-2019-03-16 00:00:00,17:00,Cadiz CF,Lugo
-2019-03-16 00:00:00,19:30,Alcorcon,Tenerife
-2019-03-16 00:00:00,19:30,Zaragoza,Elche
-2019-03-17 00:00:00,11:00,R. Oviedo,Gimnastic
-2019-03-17 00:00:00,15:00,Cordoba,Gijon
-2019-03-17 00:00:00,17:00,Almeria,Granada CF
-2019-03-17 00:00:00,17:00,Osasuna,Rayo Majadahonda
-2019-03-17 00:00:00,19:00,Las Palmas,Mallorca
-2019-03-18 00:00:00,20:00,Numancia,Malaga
 2019-03-22 00:00:00,20:00,Dep. La Coruna,Almeria
 2019-03-22 00:00:00,20:00,Tenerife,Osasuna
 2019-03-23 00:00:00,15:00,Elche,Alcorcon
@@ -39,16 +29,16 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-07 00:00:00,17:00,Gimnastic,Numancia
 2019-04-07 00:00:00,19:00,Elche,Cordoba
 2019-04-08 00:00:00,20:00,Cadiz CF,Zaragoza
-2019-04-14 00:00:00,19:00,Albacete,Elche
-2019-04-14 00:00:00,19:00,Almeria,Gimnastic
-2019-04-14 00:00:00,19:00,Cordoba,Lugo
-2019-04-14 00:00:00,19:00,Gijon,Granada CF
+2019-04-12 00:00:00,20:00,Gijon,Granada CF
+2019-04-13 00:00:00,15:00,Malaga,Extremadura UD
+2019-04-13 00:00:00,17:00,Almeria,Gimnastic
+2019-04-13 00:00:00,17:00,Osasuna,Dep. La Coruna
+2019-04-13 00:00:00,19:30,Rayo Majadahonda,Tenerife
+2019-04-14 00:00:00,11:00,Albacete,Elche
+2019-04-14 00:00:00,15:00,Numancia,Mallorca
+2019-04-14 00:00:00,17:00,Cordoba,Lugo
 2019-04-14 00:00:00,19:00,Las Palmas,Cadiz CF
-2019-04-14 00:00:00,19:00,Malaga,Extremadura UD
-2019-04-14 00:00:00,19:00,Numancia,Mallorca
-2019-04-14 00:00:00,19:00,Osasuna,Dep. La Coruna
-2019-04-14 00:00:00,19:00,Rayo Majadahonda,Tenerife
-2019-04-14 00:00:00,19:00,Zaragoza,Alcorcon
+2019-04-14 00:00:00,19:30,Zaragoza,Alcorcon
 2019-04-21 00:00:00,19:00,Albacete,Las Palmas
 2019-04-21 00:00:00,19:00,Alcorcon,Malaga
 2019-04-21 00:00:00,19:00,Cadiz CF,Numancia
@@ -119,3 +109,13 @@ Date,Time,HomeTeam,AwayTeam
 2019-06-02 00:00:00,19:00,Mallorca,Granada CF
 2019-06-02 00:00:00,19:00,R. Oviedo,Rayo Majadahonda
 2019-06-02 00:00:00,19:00,Zaragoza,Numancia
+2019-06-09 00:00:00,19:00,Almeria,Albacete
+2019-06-09 00:00:00,19:00,Dep. La Coruna,Cordoba
+2019-06-09 00:00:00,19:00,Extremadura UD,Mallorca
+2019-06-09 00:00:00,19:00,Gijon,Cadiz CF
+2019-06-09 00:00:00,19:00,Gimnastic,Lugo
+2019-06-09 00:00:00,19:00,Granada CF,Alcorcon
+2019-06-09 00:00:00,19:00,Malaga,Elche
+2019-06-09 00:00:00,19:00,Numancia,Las Palmas
+2019-06-09 00:00:00,19:00,Osasuna,R. Oviedo
+2019-06-09 00:00:00,19:00,Tenerife,Zaragoza

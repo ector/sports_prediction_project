@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-15 00:00:00,18:00,Nice,Toulouse
-2019-03-15 00:00:00,19:45,Lille,Monaco
-2019-03-16 00:00:00,19:00,Angers SCO,Amiens SC
-2019-03-16 00:00:00,19:00,Caen,Saint-Étienne
-2019-03-16 00:00:00,19:00,Guingamp,Dijon
-2019-03-16 00:00:00,19:00,Nimes,Strasbourg
-2019-03-17 00:00:00,13:30,Olympique Lyonnais,Montpellier
-2019-03-17 00:00:00,14:00,Reims,Nantes
-2019-03-17 00:00:00,16:00,Bordeaux,Rennes
-2019-03-17 00:00:00,20:00,Paris SG,Olympique Marseille
 2019-03-29 00:00:00,19:45,Rennes,Olympique Lyonnais
 2019-03-30 00:00:00,16:00,Olympique Marseille,Angers SCO
 2019-03-31 00:00:00,14:00,Amiens SC,Bordeaux
@@ -19,26 +9,28 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-31 00:00:00,20:00,Toulouse,Paris SG
 2019-04-03 00:00:00,18:00,Montpellier,Guingamp
 2019-04-03 00:00:00,18:00,Strasbourg,Reims
+2019-04-05 00:00:00,19:45,Bordeaux,Olympique Marseille
+2019-04-06 00:00:00,16:00,Olympique Lyonnais,Dijon
 2019-04-06 00:00:00,19:00,Amiens SC,Saint-Étienne
 2019-04-06 00:00:00,19:00,Angers SCO,Rennes
-2019-04-06 00:00:00,19:00,Bordeaux,Olympique Marseille
 2019-04-06 00:00:00,19:00,Guingamp,Monaco
-2019-04-06 00:00:00,19:00,Olympique Lyonnais,Dijon
-2019-04-06 00:00:00,19:00,Nice,Montpellier
 2019-04-06 00:00:00,19:00,Nimes,Caen
-2019-04-06 00:00:00,19:00,Paris SG,Strasbourg
-2019-04-06 00:00:00,19:00,Reims,Lille
 2019-04-06 00:00:00,19:00,Toulouse,Nantes
+2019-04-07 00:00:00,14:00,Reims,Lille
+2019-04-07 00:00:00,16:00,Nice,Montpellier
+2019-04-07 00:00:00,20:00,Paris SG,Strasbourg
+2019-04-09 00:00:00,19:00,Nimes,Rennes
+2019-04-12 00:00:00,19:45,Nantes,Olympique Lyonnais
+2019-04-13 00:00:00,16:00,Olympique Marseille,Nimes
 2019-04-13 00:00:00,19:00,Caen,Angers SCO
 2019-04-13 00:00:00,19:00,Dijon,Amiens SC
-2019-04-13 00:00:00,19:00,Lille,Paris SG
-2019-04-13 00:00:00,19:00,Olympique Marseille,Nimes
 2019-04-13 00:00:00,19:00,Monaco,Reims
 2019-04-13 00:00:00,19:00,Montpellier,Toulouse
-2019-04-13 00:00:00,19:00,Nantes,Olympique Lyonnais
-2019-04-13 00:00:00,19:00,Rennes,Nice
-2019-04-13 00:00:00,19:00,Saint-Étienne,Bordeaux
 2019-04-13 00:00:00,19:00,Strasbourg,Guingamp
+2019-04-14 00:00:00,14:00,Rennes,Nice
+2019-04-14 00:00:00,16:00,Saint-Étienne,Bordeaux
+2019-04-14 00:00:00,20:00,Lille,Paris SG
+2019-04-17 00:00:00,18:00,Nantes,Paris SG
 2019-04-20 00:00:00,19:00,Dijon,Rennes
 2019-04-20 00:00:00,19:00,Guingamp,Olympique Marseille
 2019-04-20 00:00:00,19:00,Olympique Lyonnais,Angers SCO

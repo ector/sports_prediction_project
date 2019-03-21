@@ -1,13 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-16 00:00:00,15:00,Bournemouth,Newcastle United
-2019-03-16 00:00:00,15:00,Brighton & Hove Albion,Cardiff
-2019-03-16 00:00:00,15:00,Burnley,Leicester City
-2019-03-16 00:00:00,15:00,Watford,Southampton
-2019-03-16 00:00:00,15:00,West Ham United,Huddersfield Town
-2019-03-16 00:00:00,15:00,Wolverhampton Wanderers,Arsenal
-2019-03-17 00:00:00,12:00,Tottenham Hotspur,Crystal Palace
-2019-03-17 00:00:00,14:15,Fulham,Liverpool
-2019-03-17 00:00:00,16:30,Everton,Chelsea
 2019-03-30 00:00:00,12:30,Fulham,Manchester City
 2019-03-30 00:00:00,15:00,Brighton & Hove Albion,Southampton
 2019-03-30 00:00:00,15:00,Burnley,Wolverhampton Wanderers
@@ -18,15 +9,16 @@ Date,Time,HomeTeam,AwayTeam
 2019-03-31 00:00:00,14:05,Cardiff,Chelsea
 2019-03-31 00:00:00,16:30,Liverpool,Tottenham Hotspur
 2019-04-01 00:00:00,20:00,Arsenal,Newcastle United
+2019-04-02 00:00:00,19:45,Watford,Fulham
 2019-04-02 00:00:00,19:45,Wolverhampton Wanderers,Manchester United
+2019-04-03 00:00:00,19:45,Chelsea,Brighton & Hove Albion
+2019-04-03 00:00:00,19:45,Manchester City,Cardiff
+2019-04-03 00:00:00,19:45,Tottenham Hotspur,Crystal Palace
 2019-04-05 00:00:00,20:00,Southampton,Liverpool
-2019-04-06 00:00:00,12:30,Manchester City,Cardiff
 2019-04-06 00:00:00,15:00,Bournemouth,Burnley
 2019-04-06 00:00:00,15:00,Huddersfield Town,Leicester City
 2019-04-06 00:00:00,15:00,Newcastle United,Crystal Palace
-2019-04-06 00:00:00,15:00,Watford,Fulham
 2019-04-07 00:00:00,14:05,Everton,Arsenal
-2019-04-07 00:00:00,16:30,Tottenham Hotspur,Brighton & Hove Albion
 2019-04-08 00:00:00,20:00,Chelsea,West Ham United
 2019-04-12 00:00:00,20:00,Leicester City,Newcastle United
 2019-04-13 00:00:00,12:30,Tottenham Hotspur,Huddersfield Town
@@ -38,16 +30,20 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-14 00:00:00,14:05,Crystal Palace,Manchester City
 2019-04-14 00:00:00,16:30,Liverpool,Chelsea
 2019-04-15 00:00:00,20:00,Watford,Arsenal
+2019-04-16 00:00:00,19:45,Brighton & Hove Albion,Cardiff
 2019-04-20 00:00:00,12:30,Manchester City,Tottenham Hotspur
-2019-04-20 00:00:00,15:00,Arsenal,Crystal Palace
 2019-04-20 00:00:00,15:00,Bournemouth,Fulham
 2019-04-20 00:00:00,15:00,Huddersfield Town,Watford
 2019-04-20 00:00:00,15:00,West Ham United,Leicester City
 2019-04-20 00:00:00,15:00,Wolverhampton Wanderers,Brighton & Hove Albion
 2019-04-20 00:00:00,17:30,Newcastle United,Southampton
 2019-04-21 00:00:00,13:30,Everton,Manchester United
+2019-04-21 00:00:00,16:00,Arsenal,Crystal Palace
 2019-04-21 00:00:00,16:00,Cardiff,Liverpool
 2019-04-22 00:00:00,20:00,Chelsea,Burnley
+2019-04-23 00:00:00,19:45,Tottenham Hotspur,Brighton & Hove Albion
+2019-04-23 00:00:00,19:45,Watford,Southampton
+2019-04-24 00:00:00,19:45,Wolverhampton Wanderers,Arsenal
 2019-04-24 00:00:00,20:00,Manchester United,Manchester City
 2019-04-26 00:00:00,20:00,Liverpool,Huddersfield Town
 2019-04-27 00:00:00,12:30,Tottenham Hotspur,West Ham United

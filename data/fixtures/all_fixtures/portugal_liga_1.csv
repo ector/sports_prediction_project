@@ -1,22 +1,13 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-15 00:00:00,20:30,Sporting,Santa Clara
-2019-03-16 00:00:00,15:30,Belenenses,Portimonense
-2019-03-16 00:00:00,15:30,Vitória Setúbal,Sporting Braga
-2019-03-16 00:00:00,18:00,Vitória Guimarães,Boavista
-2019-03-16 00:00:00,20:30,FC Porto,Marítimo
-2019-03-17 00:00:00,15:00,Aves,Chaves
-2019-03-17 00:00:00,15:00,Nacional,Rio Ave
-2019-03-17 00:00:00,17:30,Moreirense,Benfica
-2019-03-17 00:00:00,20:00,Tondela,Feirense
-2019-03-31 00:00:00,16:00,Benfica,Tondela
-2019-03-31 00:00:00,16:00,Boavista,Belenenses
-2019-03-31 00:00:00,16:00,Sporting Braga,FC Porto
-2019-03-31 00:00:00,16:00,Chaves,Sporting
-2019-03-31 00:00:00,16:00,Feirense,Vitória Setúbal
-2019-03-31 00:00:00,16:00,Marítimo,Nacional
-2019-03-31 00:00:00,16:00,Portimonense,Moreirense
-2019-03-31 00:00:00,16:00,Rio Ave,Aves
-2019-03-31 00:00:00,16:00,Santa Clara,Vitória Guimarães
+2019-03-29 00:00:00,20:30,Portimonense,Moreirense
+2019-03-30 00:00:00,15:30,Sporting Braga,FC Porto
+2019-03-30 00:00:00,18:00,Chaves,Sporting
+2019-03-30 00:00:00,20:30,Benfica,Tondela
+2019-03-30 00:00:00,20:30,Santa Clara,Vitória Guimarães
+2019-03-31 00:00:00,15:00,Marítimo,Nacional
+2019-03-31 00:00:00,17:30,Rio Ave,Aves
+2019-03-31 00:00:00,20:00,Boavista,Belenenses
+2019-04-01 00:00:00,20:15,Feirense,Vitória Setúbal
 2019-04-07 00:00:00,16:00,Belenenses,Santa Clara
 2019-04-07 00:00:00,16:00,FC Porto,Boavista
 2019-04-07 00:00:00,16:00,Feirense,Benfica
@@ -44,7 +35,6 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-20 00:00:00,16:00,Nacional,Sporting
 2019-04-20 00:00:00,16:00,Vitória Setúbal,Portimonense
 2019-04-20 00:00:00,16:00,Tondela,Boavista
-2019-04-28 00:00:00,15:00,Santa Clara,Vitória Setúbal
 2019-04-28 00:00:00,16:00,Aves,Belenenses
 2019-04-28 00:00:00,16:00,Boavista,Moreirense
 2019-04-28 00:00:00,16:00,Sporting Braga,Benfica
@@ -52,6 +42,7 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-28 00:00:00,16:00,Marítimo,Tondela
 2019-04-28 00:00:00,16:00,Portimonense,Feirense
 2019-04-28 00:00:00,16:00,Rio Ave,FC Porto
+2019-04-28 00:00:00,16:00,Santa Clara,Vitória Setúbal
 2019-04-28 00:00:00,16:00,Sporting,Vitória Guimarães
 2019-05-05 00:00:00,16:00,Belenenses,Sporting
 2019-05-05 00:00:00,16:00,Benfica,Portimonense

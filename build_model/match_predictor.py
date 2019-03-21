@@ -31,11 +31,12 @@ class Predictors(object):
         self.unplayed_df = unplayed_games
 
     def predict(self, league, market):
-
-        unplayed_data, columns = self.unplayed_df(league=league, market=market)
-        if unplayed_data is None or columns is None:
+        print(league , market)
+        unplayed_data_columns = self.unplayed_df(league=league, market=market)
+        if unplayed_data_columns is None:
             return None
-
+        unplayed_data= unplayed_data_columns[0]
+        columns = unplayed_data_columns[1]
         unplayed_df = unplayed_data[columns]
 
 

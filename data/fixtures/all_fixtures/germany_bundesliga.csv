@@ -1,13 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-15 00:00:00,19:30,Borussia M'gladbach,Freiburg
-2019-03-16 00:00:00,14:30,Augsburg,Hannover 96
-2019-03-16 00:00:00,14:30,Schalke 04,RB Leipzig
-2019-03-16 00:00:00,14:30,Stuttgart,Hoffenheim
-2019-03-16 00:00:00,14:30,Wolfsburg,Dusseldorf
-2019-03-16 00:00:00,17:30,Hertha Berlin,Borussia Dortmund
-2019-03-17 00:00:00,12:30,Bayer Leverkusen,Werder Bremen
-2019-03-17 00:00:00,14:30,Ein Frankfurt,Nurnberg
-2019-03-17 00:00:00,17:00,Bayern München,Mainz 05
 2019-03-29 00:00:00,19:30,Hoffenheim,Bayer Leverkusen
 2019-03-30 00:00:00,14:30,Borussia Dortmund,Wolfsburg
 2019-03-30 00:00:00,14:30,Dusseldorf,Borussia M'gladbach
@@ -26,42 +17,42 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-06 00:00:00,17:30,Bayern München,Borussia Dortmund
 2019-04-07 00:00:00,14:30,Augsburg,Hoffenheim
 2019-04-07 00:00:00,17:00,Borussia M'gladbach,Werder Bremen
-2019-04-13 00:00:00,14:30,Borussia Dortmund,Mainz 05
-2019-04-13 00:00:00,14:30,Dusseldorf,Bayern München
-2019-04-13 00:00:00,14:30,Ein Frankfurt,Augsburg
+2019-04-12 00:00:00,19:30,Nurnberg,Schalke 04
 2019-04-13 00:00:00,14:30,Hannover 96,Borussia M'gladbach
-2019-04-13 00:00:00,14:30,Hoffenheim,Hertha Berlin
-2019-04-13 00:00:00,14:30,Nurnberg,Schalke 04
 2019-04-13 00:00:00,14:30,RB Leipzig,Wolfsburg
 2019-04-13 00:00:00,14:30,Stuttgart,Bayer Leverkusen
 2019-04-13 00:00:00,14:30,Werder Bremen,Freiburg
+2019-04-13 00:00:00,17:30,Borussia Dortmund,Mainz 05
+2019-04-14 00:00:00,12:30,Hoffenheim,Hertha Berlin
+2019-04-14 00:00:00,14:30,Dusseldorf,Bayern München
+2019-04-14 00:00:00,17:00,Ein Frankfurt,Augsburg
 2019-04-20 00:00:00,14:30,Augsburg,Stuttgart
-2019-04-20 00:00:00,14:30,Borussia M'gladbach,RB Leipzig
 2019-04-20 00:00:00,14:30,Bayer Leverkusen,Nurnberg
 2019-04-20 00:00:00,14:30,Bayern München,Werder Bremen
-2019-04-20 00:00:00,14:30,Freiburg,Borussia Dortmund
-2019-04-20 00:00:00,14:30,Hertha Berlin,Hannover 96
 2019-04-20 00:00:00,14:30,Mainz 05,Dusseldorf
-2019-04-20 00:00:00,14:30,Schalke 04,Hoffenheim
-2019-04-20 00:00:00,14:30,Wolfsburg,Ein Frankfurt
-2019-04-27 00:00:00,14:30,Augsburg,Bayer Leverkusen
+2019-04-20 00:00:00,17:30,Borussia M'gladbach,RB Leipzig
+2019-04-20 00:00:00,19:30,Schalke 04,Hoffenheim
+2019-04-21 00:00:00,14:30,Freiburg,Borussia Dortmund
+2019-04-21 00:00:00,17:00,Hertha Berlin,Hannover 96
+2019-04-22 00:00:00,19:30,Wolfsburg,Ein Frankfurt
+2019-04-26 00:00:00,19:30,Augsburg,Bayer Leverkusen
 2019-04-27 00:00:00,14:30,Borussia Dortmund,Schalke 04
 2019-04-27 00:00:00,14:30,Dusseldorf,Werder Bremen
 2019-04-27 00:00:00,14:30,Ein Frankfurt,Hertha Berlin
 2019-04-27 00:00:00,14:30,Hannover 96,Mainz 05
-2019-04-27 00:00:00,14:30,Hoffenheim,Wolfsburg
-2019-04-27 00:00:00,14:30,Nurnberg,Bayern München
 2019-04-27 00:00:00,14:30,RB Leipzig,Freiburg
-2019-04-27 00:00:00,14:30,Stuttgart,Borussia M'gladbach
+2019-04-27 00:00:00,17:30,Stuttgart,Borussia M'gladbach
+2019-04-28 00:00:00,14:30,Hoffenheim,Wolfsburg
+2019-04-28 00:00:00,17:00,Nurnberg,Bayern München
+2019-05-03 00:00:00,19:30,Mainz 05,RB Leipzig
 2019-05-04 00:00:00,14:30,Borussia M'gladbach,Hoffenheim
-2019-05-04 00:00:00,14:30,Bayer Leverkusen,Ein Frankfurt
 2019-05-04 00:00:00,14:30,Bayern München,Hannover 96
-2019-05-04 00:00:00,14:30,Freiburg,Dusseldorf
 2019-05-04 00:00:00,14:30,Hertha Berlin,Stuttgart
-2019-05-04 00:00:00,14:30,Mainz 05,RB Leipzig
-2019-05-04 00:00:00,14:30,Schalke 04,Augsburg
-2019-05-04 00:00:00,14:30,Werder Bremen,Borussia Dortmund
 2019-05-04 00:00:00,14:30,Wolfsburg,Nurnberg
+2019-05-04 00:00:00,17:30,Werder Bremen,Borussia Dortmund
+2019-05-05 00:00:00,12:30,Schalke 04,Augsburg
+2019-05-05 00:00:00,14:30,Freiburg,Dusseldorf
+2019-05-05 00:00:00,17:00,Bayer Leverkusen,Ein Frankfurt
 2019-05-11 00:00:00,14:30,Augsburg,Hertha Berlin
 2019-05-11 00:00:00,14:30,Bayer Leverkusen,Schalke 04
 2019-05-11 00:00:00,14:30,Borussia Dortmund,Dusseldorf

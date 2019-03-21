@@ -1,14 +1,4 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-15 00:00:00,20:00,Real Sociedad,Levante
-2019-03-16 00:00:00,12:00,Huesca,Deportivo Alavés
-2019-03-16 00:00:00,15:15,Real Madrid,Celta de Vigo
-2019-03-16 00:00:00,17:30,Athletic Club,Atlético Madrid
-2019-03-16 00:00:00,19:45,Leganés,Girona
-2019-03-17 00:00:00,11:00,Eibar,Valladolid
-2019-03-17 00:00:00,15:15,Espanol,Sevilla
-2019-03-17 00:00:00,17:30,Valencia,Getafe
-2019-03-17 00:00:00,17:30,Villarreal,Rayo Vallecano
-2019-03-17 00:00:00,19:45,Real Betis,Barcelona
 2019-03-29 00:00:00,20:00,Girona,Athletic Club
 2019-03-30 00:00:00,12:00,Getafe,Leganés
 2019-03-30 00:00:00,15:15,Barcelona,Espanol
@@ -39,16 +29,16 @@ Date,Time,HomeTeam,AwayTeam
 2019-04-07 00:00:00,17:30,Celta de Vigo,Real Sociedad
 2019-04-07 00:00:00,17:30,Levante,Huesca
 2019-04-07 00:00:00,19:45,Real Betis,Villarreal
-2019-04-14 00:00:00,19:00,Athletic Club,Rayo Vallecano
-2019-04-14 00:00:00,19:00,Atlético Madrid,Celta de Vigo
-2019-04-14 00:00:00,19:00,Espanol,Deportivo Alavés
-2019-04-14 00:00:00,19:00,Girona,Villarreal
-2019-04-14 00:00:00,19:00,Huesca,Barcelona
-2019-04-14 00:00:00,19:00,Leganés,Real Madrid
-2019-04-14 00:00:00,19:00,Real Sociedad,Eibar
-2019-04-14 00:00:00,19:00,Sevilla,Real Betis
-2019-04-14 00:00:00,19:00,Valencia,Levante
-2019-04-14 00:00:00,19:00,Valladolid,Getafe
+2019-04-13 00:00:00,12:00,Espanol,Deportivo Alavés
+2019-04-13 00:00:00,15:15,Huesca,Barcelona
+2019-04-13 00:00:00,17:30,Atlético Madrid,Celta de Vigo
+2019-04-13 00:00:00,19:45,Sevilla,Real Betis
+2019-04-14 00:00:00,11:00,Valladolid,Getafe
+2019-04-14 00:00:00,13:00,Athletic Club,Rayo Vallecano
+2019-04-14 00:00:00,15:15,Real Sociedad,Eibar
+2019-04-14 00:00:00,17:30,Girona,Villarreal
+2019-04-14 00:00:00,19:45,Valencia,Levante
+2019-04-15 00:00:00,20:00,Leganés,Real Madrid
 2019-04-21 00:00:00,19:00,Deportivo Alavés,Valladolid
 2019-04-21 00:00:00,19:00,Barcelona,Real Sociedad
 2019-04-21 00:00:00,19:00,Real Betis,Valencia
