@@ -1,12 +1,12 @@
 import time
-import pandas as pd
 from multiprocessing.pool import Pool
 
+import pandas as pd
 import requests
 from pymongo import MongoClient
 
-from utils import get_config
 from te_logger.logger import log
+from utils import get_config
 
 mongodb_uri = get_config("db").get("sport_prediction_url")
 translation = get_config("team_translation")
@@ -34,7 +34,6 @@ class PullData(object):
             log.info("Year: {0}, League code: {1}, URL: {2}".format(year, self.league_code, formated_data_url))
 
             if requests.get(formated_data_url).status_code == 200:
-
                 dd = pd.read_csv(formated_data_url, error_bad_lines=False, usecols=clmns)
 
                 dd['Date'] = pd.to_datetime(dd['Date'], dayfirst=True)
@@ -48,17 +47,18 @@ class PullData(object):
                 data = pd.concat(pieces, ignore_index=True)
                 data = data.drop_duplicates(subset=['Date', 'HomeTeam', 'AwayTeam', 'Season'], inplace=False)
                 self.football_data = data.copy()
-                self.merge_to_existing_data()
+                self.merge_with_existing_data()
             except ValueError:
                 pass
         return self
 
-    def merge_to_existing_data(self):
+    def merge_with_existing_data(self):
         """Merge data if any exist"""
         client = MongoClient(mongodb_uri, connectTimeoutMS=30000)
 
         db = client.get_database("sports_prediction")
         wdw_raw_data = db[self.filename]
+        result_db = db["wdw_football"]
 
         self.football_data = self.football_data.dropna(how='any')
 
@@ -69,13 +69,21 @@ class PullData(object):
 
         for idx, ft_data in self.football_data.iterrows():
             ft_data = dict(ft_data)
-            exist = {'Date': ft_data.get('Date'), 'HomeTeam': ft_data.get('HomeTeam'), 'AwayTeam': ft_data.get('AwayTeam'),
-                     'Comp_id': ft_data.get('Comp_id')}
-            wdw_count = wdw_raw_data.find(exist).count()
+            date = ft_data.get('Date')
+            home = ft_data.get('HomeTeam')
+            away = ft_data.get('AwayTeam')
+            comp_id = ft_data.get('Comp_id')
+            ftr = ft_data.get('FTR')
+            exist = {'Date': date, 'HomeTeam': home, 'AwayTeam': away, 'Comp_id': comp_id}
+            wdw_count = wdw_raw_data.find(exist).estimated_document_counts()
+            print("existing data found in db: {}".format(wdw_count))
 
             if int(wdw_count) == 0:
                 log.info("inserting {0}".format(ft_data))
                 wdw_raw_data.insert_one(ft_data)
+
+            game_update = {'date': date, 'home': home, 'away': away, "real": {"$exists": False}}
+            result_db.update_one(game_update, {"$set": {"real": ftr}})
 
     def download_league_data(self, league):
         """
@@ -90,7 +98,6 @@ class PullData(object):
 
 
 if __name__ == '__main__':
-
     dr = PullData()
     leagues_data = get_config(file="leagues_id")
     league_list = list(leagues_data.keys())
