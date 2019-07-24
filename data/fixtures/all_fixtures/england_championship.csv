@@ -1,101 +1,116 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-29 00:00:00,20:00,West Brom,Birmingham City
-2019-03-30 00:00:00,15:00,Aston Villa,Blackburn
-2019-03-30 00:00:00,15:00,Derby County,Rotherham
-2019-03-30 00:00:00,15:00,Ipswich Town,Hull City
-2019-03-30 00:00:00,15:00,Leeds United,Millwall
-2019-03-30 00:00:00,15:00,Nottingham Forest,Swansea
-2019-03-30 00:00:00,15:00,Queens Park Rangers,Bolton Wanderers
-2019-03-30 00:00:00,15:00,Reading,Preston North End
-2019-03-30 00:00:00,15:00,Sheffield United,Bristol City
-2019-03-30 00:00:00,15:00,Stoke,Sheffield Wednesday
-2019-03-30 00:00:00,15:00,Wigan,Brentford
-2019-03-30 00:00:00,17:30,Middlesbrough,Norwich City
-2019-04-02 00:00:00,19:45,Middlesbrough,Bristol City
-2019-04-02 00:00:00,19:45,Swansea,Brentford
-2019-04-06 00:00:00,12:30,Norwich City,Queens Park Rangers
-2019-04-06 00:00:00,15:00,Birmingham City,Leeds United
-2019-04-06 00:00:00,15:00,Blackburn,Stoke
-2019-04-06 00:00:00,15:00,Bolton Wanderers,Ipswich Town
-2019-04-06 00:00:00,15:00,Brentford,Derby County
-2019-04-06 00:00:00,15:00,Bristol City,Wigan
-2019-04-06 00:00:00,15:00,Hull City,Reading
-2019-04-06 00:00:00,15:00,Millwall,West Brom
-2019-04-06 00:00:00,15:00,Preston North End,Sheffield United
-2019-04-06 00:00:00,15:00,Rotherham,Nottingham Forest
-2019-04-06 00:00:00,15:00,Sheffield Wednesday,Aston Villa
-2019-04-06 00:00:00,15:00,Swansea,Middlesbrough
-2019-04-09 00:00:00,19:45,Blackburn,Derby County
-2019-04-09 00:00:00,19:45,Bristol City,West Brom
-2019-04-09 00:00:00,19:45,Preston North End,Leeds United
-2019-04-09 00:00:00,19:45,Sheffield Wednesday,Nottingham Forest
-2019-04-09 00:00:00,19:45,Swansea,Stoke
-2019-04-09 00:00:00,20:00,Bolton Wanderers,Middlesbrough
-2019-04-10 00:00:00,19:45,Birmingham City,Sheffield United
-2019-04-10 00:00:00,19:45,Brentford,Ipswich Town
-2019-04-10 00:00:00,19:45,Hull City,Wigan
-2019-04-10 00:00:00,19:45,Millwall,Queens Park Rangers
-2019-04-10 00:00:00,19:45,Norwich City,Reading
-2019-04-10 00:00:00,19:45,Rotherham,Aston Villa
-2019-04-13 00:00:00,15:00,Aston Villa,Bristol City
-2019-04-13 00:00:00,15:00,Derby County,Bolton Wanderers
-2019-04-13 00:00:00,15:00,Ipswich Town,Birmingham City
-2019-04-13 00:00:00,15:00,Middlesbrough,Hull City
-2019-04-13 00:00:00,15:00,Nottingham Forest,Blackburn
-2019-04-13 00:00:00,15:00,Queens Park Rangers,Swansea
-2019-04-13 00:00:00,15:00,Reading,Brentford
-2019-04-13 00:00:00,15:00,Sheffield United,Millwall
-2019-04-13 00:00:00,15:00,Stoke,Rotherham
-2019-04-13 00:00:00,15:00,West Brom,Preston North End
-2019-04-13 00:00:00,17:30,Leeds United,Sheffield Wednesday
-2019-04-14 00:00:00,12:00,Wigan,Norwich City
-2019-04-19 00:00:00,12:00,Bristol City,Reading
-2019-04-19 00:00:00,12:30,Sheffield United,Nottingham Forest
-2019-04-19 00:00:00,13:00,Millwall,Brentford
-2019-04-19 00:00:00,15:00,Birmingham City,Derby County
-2019-04-19 00:00:00,15:00,Bolton Wanderers,Aston Villa
-2019-04-19 00:00:00,15:00,Leeds United,Wigan
-2019-04-19 00:00:00,15:00,Middlesbrough,Stoke
-2019-04-19 00:00:00,15:00,Preston North End,Ipswich Town
-2019-04-19 00:00:00,15:00,Queens Park Rangers,Blackburn
-2019-04-19 00:00:00,15:00,Swansea,Rotherham
-2019-04-19 00:00:00,15:00,West Brom,Hull City
-2019-04-19 00:00:00,19:45,Norwich City,Sheffield Wednesday
-2019-04-22 00:00:00,13:00,Aston Villa,Millwall
-2019-04-22 00:00:00,15:00,Blackburn,Bolton Wanderers
-2019-04-22 00:00:00,15:00,Derby County,Queens Park Rangers
-2019-04-22 00:00:00,15:00,Hull City,Sheffield United
-2019-04-22 00:00:00,15:00,Ipswich Town,Swansea
-2019-04-22 00:00:00,15:00,Nottingham Forest,Middlesbrough
-2019-04-22 00:00:00,15:00,Reading,West Brom
-2019-04-22 00:00:00,15:00,Rotherham,Birmingham City
-2019-04-22 00:00:00,15:00,Sheffield Wednesday,Bristol City
-2019-04-22 00:00:00,15:00,Stoke,Norwich City
-2019-04-22 00:00:00,15:00,Wigan,Preston North End
-2019-04-22 00:00:00,17:15,Brentford,Leeds United
-2019-04-27 00:00:00,13:30,Millwall,Stoke
-2019-04-27 00:00:00,15:00,Birmingham City,Wigan
-2019-04-27 00:00:00,15:00,Bolton Wanderers,Brentford
-2019-04-27 00:00:00,15:00,Bristol City,Derby County
-2019-04-27 00:00:00,15:00,Leeds United,Aston Villa
-2019-04-27 00:00:00,15:00,Middlesbrough,Reading
-2019-04-27 00:00:00,15:00,Norwich City,Blackburn
-2019-04-27 00:00:00,15:00,Preston North End,Sheffield Wednesday
-2019-04-27 00:00:00,15:00,Queens Park Rangers,Nottingham Forest
-2019-04-27 00:00:00,15:00,Sheffield United,Ipswich Town
-2019-04-27 00:00:00,15:00,Swansea,Hull City
-2019-04-27 00:00:00,15:00,West Brom,Rotherham
-2019-04-30 00:00:00,19:45,Millwall,Bristol City
-2019-05-01 00:00:00,19:45,Swansea,Derby County
-2019-05-05 00:00:00,12:30,Aston Villa,Norwich City
-2019-05-05 00:00:00,12:30,Blackburn,Swansea
-2019-05-05 00:00:00,12:30,Brentford,Preston North End
-2019-05-05 00:00:00,12:30,Derby County,West Brom
-2019-05-05 00:00:00,12:30,Hull City,Bristol City
-2019-05-05 00:00:00,12:30,Ipswich Town,Leeds United
-2019-05-05 00:00:00,12:30,Nottingham Forest,Bolton Wanderers
-2019-05-05 00:00:00,12:30,Reading,Birmingham City
-2019-05-05 00:00:00,12:30,Rotherham,Middlesbrough
-2019-05-05 00:00:00,12:30,Sheffield Wednesday,Queens Park Rangers
-2019-05-05 00:00:00,12:30,Stoke,Sheffield United
-2019-05-05 00:00:00,12:30,Wigan,Millwall
+2019-08-02 00:00:00,19:45,Luton,Middlesbrough
+2019-08-03 00:00:00,15:00,Barnsley,Fulham
+2019-08-03 00:00:00,15:00,Blackburn,Charlton
+2019-08-03 00:00:00,15:00,Brentford,Birmingham City
+2019-08-03 00:00:00,15:00,Millwall,Preston North End
+2019-08-03 00:00:00,15:00,Reading,Sheffield Wednesday
+2019-08-03 00:00:00,15:00,Stoke,Queens Park Rangers
+2019-08-03 00:00:00,15:00,Swansea,Hull City
+2019-08-03 00:00:00,15:00,Wigan,Cardiff City
+2019-08-03 00:00:00,17:30,Nottingham Forest,West Brom
+2019-08-04 00:00:00,16:30,Bristol City,Leeds United
+2019-08-05 00:00:00,19:45,Huddersfield,Derby County
+2019-08-10 00:00:00,12:30,Leeds United,Nottingham Forest
+2019-08-10 00:00:00,15:00,Birmingham City,Bristol City
+2019-08-10 00:00:00,15:00,Cardiff City,Luton
+2019-08-10 00:00:00,15:00,Charlton,Stoke
+2019-08-10 00:00:00,15:00,Derby County,Swansea
+2019-08-10 00:00:00,15:00,Fulham,Blackburn
+2019-08-10 00:00:00,15:00,Hull City,Reading
+2019-08-10 00:00:00,15:00,Middlesbrough,Brentford
+2019-08-10 00:00:00,15:00,Preston North End,Wigan
+2019-08-10 00:00:00,15:00,Queens Park Rangers,Huddersfield
+2019-08-10 00:00:00,15:00,Sheffield Wednesday,Barnsley
+2019-08-10 00:00:00,15:00,West Brom,Millwall
+2019-08-16 00:00:00,19:45,Huddersfield,Fulham
+2019-08-17 00:00:00,15:00,Barnsley,Charlton
+2019-08-17 00:00:00,15:00,Blackburn,Middlesbrough
+2019-08-17 00:00:00,15:00,Brentford,Hull City
+2019-08-17 00:00:00,15:00,Bristol City,Queens Park Rangers
+2019-08-17 00:00:00,15:00,Luton,West Brom
+2019-08-17 00:00:00,15:00,Millwall,Sheffield Wednesday
+2019-08-17 00:00:00,15:00,Nottingham Forest,Birmingham City
+2019-08-17 00:00:00,15:00,Stoke,Derby County
+2019-08-17 00:00:00,15:00,Swansea,Preston North End
+2019-08-17 00:00:00,15:00,Wigan,Leeds United
+2019-08-18 00:00:00,12:00,Reading,Cardiff City
+2019-08-20 00:00:00,19:45,Birmingham City,Barnsley
+2019-08-20 00:00:00,19:45,Derby County,Bristol City
+2019-08-20 00:00:00,19:45,Hull City,Blackburn
+2019-08-20 00:00:00,19:45,Middlesbrough,Wigan
+2019-08-20 00:00:00,19:45,Sheffield Wednesday,Luton
+2019-08-21 00:00:00,19:45,Cardiff City,Huddersfield
+2019-08-21 00:00:00,19:45,Charlton,Nottingham Forest
+2019-08-21 00:00:00,19:45,Fulham,Millwall
+2019-08-21 00:00:00,19:45,Leeds United,Brentford
+2019-08-21 00:00:00,19:45,Preston North End,Stoke
+2019-08-21 00:00:00,19:45,Queens Park Rangers,Swansea
+2019-08-21 00:00:00,20:00,West Brom,Reading
+2019-08-24 00:00:00,12:30,Derby County,West Brom
+2019-08-24 00:00:00,15:00,Barnsley,Luton
+2019-08-24 00:00:00,15:00,Blackburn,Cardiff City
+2019-08-24 00:00:00,15:00,Charlton,Brentford
+2019-08-24 00:00:00,15:00,Fulham,Nottingham Forest
+2019-08-24 00:00:00,15:00,Huddersfield,Reading
+2019-08-24 00:00:00,15:00,Hull City,Bristol City
+2019-08-24 00:00:00,15:00,Middlesbrough,Millwall
+2019-08-24 00:00:00,15:00,Preston North End,Sheffield Wednesday
+2019-08-24 00:00:00,15:00,Queens Park Rangers,Wigan
+2019-08-24 00:00:00,15:00,Stoke,Leeds United
+2019-08-25 00:00:00,12:00,Swansea,Birmingham City
+2019-08-30 00:00:00,19:45,Cardiff City,Fulham
+2019-08-31 00:00:00,12:30,Bristol City,Middlesbrough
+2019-08-31 00:00:00,15:00,Birmingham City,Stoke
+2019-08-31 00:00:00,15:00,Brentford,Derby County
+2019-08-31 00:00:00,15:00,Leeds United,Swansea
+2019-08-31 00:00:00,15:00,Luton,Huddersfield
+2019-08-31 00:00:00,15:00,Millwall,Hull City
+2019-08-31 00:00:00,15:00,Nottingham Forest,Preston North End
+2019-08-31 00:00:00,15:00,Reading,Charlton
+2019-08-31 00:00:00,15:00,Sheffield Wednesday,Queens Park Rangers
+2019-08-31 00:00:00,15:00,West Brom,Blackburn
+2019-08-31 00:00:00,15:00,Wigan,Barnsley
+2019-09-13 00:00:00,19:45,Derby County,Cardiff City
+2019-09-14 00:00:00,12:30,Fulham,West Brom
+2019-09-14 00:00:00,15:00,Barnsley,Leeds United
+2019-09-14 00:00:00,15:00,Blackburn,Millwall
+2019-09-14 00:00:00,15:00,Charlton,Birmingham City
+2019-09-14 00:00:00,15:00,Hull City,Wigan
+2019-09-14 00:00:00,15:00,Middlesbrough,Reading
+2019-09-14 00:00:00,15:00,Preston North End,Brentford
+2019-09-14 00:00:00,15:00,Queens Park Rangers,Luton
+2019-09-14 00:00:00,15:00,Stoke,Bristol City
+2019-09-14 00:00:00,15:00,Swansea,Nottingham Forest
+2019-09-15 00:00:00,12:00,Huddersfield,Sheffield Wednesday
+2019-09-21 00:00:00,12:30,Leeds United,Derby County
+2019-09-21 00:00:00,15:00,Birmingham City,Preston North End
+2019-09-21 00:00:00,15:00,Brentford,Stoke
+2019-09-21 00:00:00,15:00,Bristol City,Swansea
+2019-09-21 00:00:00,15:00,Cardiff City,Middlesbrough
+2019-09-21 00:00:00,15:00,Luton,Hull City
+2019-09-21 00:00:00,15:00,Millwall,Queens Park Rangers
+2019-09-21 00:00:00,15:00,Nottingham Forest,Barnsley
+2019-09-21 00:00:00,15:00,Reading,Blackburn
+2019-09-21 00:00:00,15:00,Sheffield Wednesday,Fulham
+2019-09-21 00:00:00,15:00,West Brom,Huddersfield
+2019-09-21 00:00:00,15:00,Wigan,Charlton
+2019-09-27 00:00:00,20:00,Stoke,Nottingham Forest
+2019-09-28 00:00:00,12:30,Queens Park Rangers,West Brom
+2019-09-28 00:00:00,15:00,Blackburn,Luton
+2019-09-28 00:00:00,15:00,Charlton,Leeds United
+2019-09-28 00:00:00,15:00,Derby County,Birmingham City
+2019-09-28 00:00:00,15:00,Fulham,Wigan
+2019-09-28 00:00:00,15:00,Huddersfield,Millwall
+2019-09-28 00:00:00,15:00,Hull City,Cardiff City
+2019-09-28 00:00:00,15:00,Middlesbrough,Sheffield Wednesday
+2019-09-28 00:00:00,15:00,Preston North End,Bristol City
+2019-09-28 00:00:00,15:00,Swansea,Reading
+2019-09-29 00:00:00,13:30,Barnsley,Brentford
+2019-10-01 00:00:00,19:45,Blackburn,Nottingham Forest
+2019-10-01 00:00:00,19:45,Hull City,Sheffield Wednesday
+2019-10-01 00:00:00,19:45,Leeds United,West Brom
+2019-10-01 00:00:00,19:45,Middlesbrough,Preston North End
+2019-10-01 00:00:00,19:45,Wigan,Birmingham City
+2019-10-01 00:00:00,20:00,Reading,Fulham
+2019-10-01 00:00:00,20:00,Stoke,Huddersfield

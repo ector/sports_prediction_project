@@ -1,73 +1,118 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-29 00:00:00,19:30,Hoffenheim,Bayer Leverkusen
-2019-03-30 00:00:00,14:30,Borussia Dortmund,Wolfsburg
-2019-03-30 00:00:00,14:30,Dusseldorf,Borussia M'gladbach
-2019-03-30 00:00:00,14:30,Freiburg,Bayern München
-2019-03-30 00:00:00,14:30,Nurnberg,Augsburg
-2019-03-30 00:00:00,14:30,Werder Bremen,Mainz 05
-2019-03-30 00:00:00,17:30,RB Leipzig,Hertha Berlin
-2019-03-31 00:00:00,14:30,Hannover 96,Schalke 04
-2019-03-31 00:00:00,17:00,Ein Frankfurt,Stuttgart
-2019-04-05 00:00:00,19:30,Mainz 05,Freiburg
-2019-04-06 00:00:00,14:30,Bayer Leverkusen,RB Leipzig
-2019-04-06 00:00:00,14:30,Hertha Berlin,Dusseldorf
-2019-04-06 00:00:00,14:30,Schalke 04,Ein Frankfurt
-2019-04-06 00:00:00,14:30,Stuttgart,Nurnberg
-2019-04-06 00:00:00,14:30,Wolfsburg,Hannover 96
-2019-04-06 00:00:00,17:30,Bayern München,Borussia Dortmund
-2019-04-07 00:00:00,14:30,Augsburg,Hoffenheim
-2019-04-07 00:00:00,17:00,Borussia M'gladbach,Werder Bremen
-2019-04-12 00:00:00,19:30,Nurnberg,Schalke 04
-2019-04-13 00:00:00,14:30,Hannover 96,Borussia M'gladbach
-2019-04-13 00:00:00,14:30,RB Leipzig,Wolfsburg
-2019-04-13 00:00:00,14:30,Stuttgart,Bayer Leverkusen
-2019-04-13 00:00:00,14:30,Werder Bremen,Freiburg
-2019-04-13 00:00:00,17:30,Borussia Dortmund,Mainz 05
-2019-04-14 00:00:00,12:30,Hoffenheim,Hertha Berlin
-2019-04-14 00:00:00,14:30,Dusseldorf,Bayern München
-2019-04-14 00:00:00,17:00,Ein Frankfurt,Augsburg
-2019-04-20 00:00:00,14:30,Augsburg,Stuttgart
-2019-04-20 00:00:00,14:30,Bayer Leverkusen,Nurnberg
-2019-04-20 00:00:00,14:30,Bayern München,Werder Bremen
-2019-04-20 00:00:00,14:30,Mainz 05,Dusseldorf
-2019-04-20 00:00:00,17:30,Borussia M'gladbach,RB Leipzig
-2019-04-20 00:00:00,19:30,Schalke 04,Hoffenheim
-2019-04-21 00:00:00,14:30,Freiburg,Borussia Dortmund
-2019-04-21 00:00:00,17:00,Hertha Berlin,Hannover 96
-2019-04-22 00:00:00,19:30,Wolfsburg,Ein Frankfurt
-2019-04-26 00:00:00,19:30,Augsburg,Bayer Leverkusen
-2019-04-27 00:00:00,14:30,Borussia Dortmund,Schalke 04
-2019-04-27 00:00:00,14:30,Dusseldorf,Werder Bremen
-2019-04-27 00:00:00,14:30,Ein Frankfurt,Hertha Berlin
-2019-04-27 00:00:00,14:30,Hannover 96,Mainz 05
-2019-04-27 00:00:00,14:30,RB Leipzig,Freiburg
-2019-04-27 00:00:00,17:30,Stuttgart,Borussia M'gladbach
-2019-04-28 00:00:00,14:30,Hoffenheim,Wolfsburg
-2019-04-28 00:00:00,17:00,Nurnberg,Bayern München
-2019-05-03 00:00:00,19:30,Mainz 05,RB Leipzig
-2019-05-04 00:00:00,14:30,Borussia M'gladbach,Hoffenheim
-2019-05-04 00:00:00,14:30,Bayern München,Hannover 96
-2019-05-04 00:00:00,14:30,Hertha Berlin,Stuttgart
-2019-05-04 00:00:00,14:30,Wolfsburg,Nurnberg
-2019-05-04 00:00:00,17:30,Werder Bremen,Borussia Dortmund
-2019-05-05 00:00:00,12:30,Schalke 04,Augsburg
-2019-05-05 00:00:00,14:30,Freiburg,Dusseldorf
-2019-05-05 00:00:00,17:00,Bayer Leverkusen,Ein Frankfurt
-2019-05-11 00:00:00,14:30,Augsburg,Hertha Berlin
-2019-05-11 00:00:00,14:30,Bayer Leverkusen,Schalke 04
-2019-05-11 00:00:00,14:30,Borussia Dortmund,Dusseldorf
-2019-05-11 00:00:00,14:30,Ein Frankfurt,Mainz 05
-2019-05-11 00:00:00,14:30,Hannover 96,Freiburg
-2019-05-11 00:00:00,14:30,Hoffenheim,Werder Bremen
-2019-05-11 00:00:00,14:30,Nurnberg,Borussia M'gladbach
-2019-05-11 00:00:00,14:30,RB Leipzig,Bayern München
-2019-05-11 00:00:00,14:30,Stuttgart,Wolfsburg
-2019-05-18 00:00:00,14:30,Borussia M'gladbach,Borussia Dortmund
-2019-05-18 00:00:00,14:30,Bayern München,Ein Frankfurt
-2019-05-18 00:00:00,14:30,Dusseldorf,Hannover 96
-2019-05-18 00:00:00,14:30,Freiburg,Nurnberg
-2019-05-18 00:00:00,14:30,Hertha Berlin,Bayer Leverkusen
-2019-05-18 00:00:00,14:30,Mainz 05,Hoffenheim
-2019-05-18 00:00:00,14:30,Schalke 04,Stuttgart
-2019-05-18 00:00:00,14:30,Werder Bremen,RB Leipzig
-2019-05-18 00:00:00,14:30,Wolfsburg,Augsburg
+2019-08-16 00:00:00,19:30,Bayern München,Hertha Berlin
+2019-08-17 00:00:00,14:30,Bayer Leverkusen,Paderborn
+2019-08-17 00:00:00,14:30,Borussia Dortmund,Augsburg
+2019-08-17 00:00:00,14:30,Freiburg,Mainz 05
+2019-08-17 00:00:00,14:30,Werder Bremen,Dusseldorf
+2019-08-17 00:00:00,14:30,Wolfsburg,FC Köln
+2019-08-17 00:00:00,17:30,Borussia M'gladbach,Schalke 04
+2019-08-18 00:00:00,14:30,Ein Frankfurt,Hoffenheim
+2019-08-18 00:00:00,17:00,Union Berlin,RB Leipzig
+2019-08-23 00:00:00,19:30,FC Köln,Borussia Dortmund
+2019-08-24 00:00:00,14:30,Augsburg,Union Berlin
+2019-08-24 00:00:00,14:30,Dusseldorf,Bayer Leverkusen
+2019-08-24 00:00:00,14:30,Hoffenheim,Werder Bremen
+2019-08-24 00:00:00,14:30,Mainz 05,Borussia M'gladbach
+2019-08-24 00:00:00,14:30,Paderborn,Freiburg
+2019-08-24 00:00:00,17:30,Schalke 04,Bayern München
+2019-08-25 00:00:00,14:30,RB Leipzig,Ein Frankfurt
+2019-08-25 00:00:00,17:00,Hertha Berlin,Wolfsburg
+2019-08-30 00:00:00,19:30,Borussia M'gladbach,RB Leipzig
+2019-08-31 00:00:00,14:30,Bayer Leverkusen,Hoffenheim
+2019-08-31 00:00:00,14:30,Bayern München,Mainz 05
+2019-08-31 00:00:00,14:30,Freiburg,FC Köln
+2019-08-31 00:00:00,14:30,Schalke 04,Hertha Berlin
+2019-08-31 00:00:00,14:30,Wolfsburg,Paderborn
+2019-08-31 00:00:00,17:30,Union Berlin,Borussia Dortmund
+2019-09-01 00:00:00,14:30,Werder Bremen,Augsburg
+2019-09-01 00:00:00,17:00,Ein Frankfurt,Dusseldorf
+2019-09-13 00:00:00,19:30,Dusseldorf,Wolfsburg
+2019-09-14 00:00:00,14:30,Augsburg,Ein Frankfurt
+2019-09-14 00:00:00,14:30,Borussia Dortmund,Bayer Leverkusen
+2019-09-14 00:00:00,14:30,FC Köln,Borussia M'gladbach
+2019-09-14 00:00:00,14:30,Mainz 05,Hertha Berlin
+2019-09-14 00:00:00,14:30,Union Berlin,Werder Bremen
+2019-09-14 00:00:00,17:30,RB Leipzig,Bayern München
+2019-09-15 00:00:00,14:30,Hoffenheim,Freiburg
+2019-09-15 00:00:00,17:00,Paderborn,Schalke 04
+2019-09-20 00:00:00,19:30,Schalke 04,Mainz 05
+2019-09-21 00:00:00,14:30,Bayer Leverkusen,Union Berlin
+2019-09-21 00:00:00,14:30,Bayern München,FC Köln
+2019-09-21 00:00:00,14:30,Freiburg,Augsburg
+2019-09-21 00:00:00,14:30,Hertha Berlin,Paderborn
+2019-09-21 00:00:00,17:30,Werder Bremen,RB Leipzig
+2019-09-22 00:00:00,14:30,Borussia M'gladbach,Dusseldorf
+2019-09-22 00:00:00,17:00,Ein Frankfurt,Borussia Dortmund
+2019-09-23 00:00:00,19:30,Wolfsburg,Hoffenheim
+2019-09-27 00:00:00,19:30,Union Berlin,Ein Frankfurt
+2019-09-28 00:00:00,14:30,Augsburg,Bayer Leverkusen
+2019-09-28 00:00:00,14:30,Hoffenheim,Borussia M'gladbach
+2019-09-28 00:00:00,14:30,Mainz 05,Wolfsburg
+2019-09-28 00:00:00,14:30,Paderborn,Bayern München
+2019-09-28 00:00:00,14:30,RB Leipzig,Schalke 04
+2019-09-28 00:00:00,17:30,Borussia Dortmund,Werder Bremen
+2019-09-29 00:00:00,14:30,Dusseldorf,Freiburg
+2019-09-29 00:00:00,17:00,FC Köln,Hertha Berlin
+2019-10-05 00:00:00,14:30,Borussia M'gladbach,Augsburg
+2019-10-05 00:00:00,14:30,Bayer Leverkusen,RB Leipzig
+2019-10-05 00:00:00,14:30,Bayern München,Hoffenheim
+2019-10-05 00:00:00,14:30,Ein Frankfurt,Werder Bremen
+2019-10-05 00:00:00,14:30,Freiburg,Borussia Dortmund
+2019-10-05 00:00:00,14:30,Hertha Berlin,Dusseldorf
+2019-10-05 00:00:00,14:30,Paderborn,Mainz 05
+2019-10-05 00:00:00,14:30,Schalke 04,FC Köln
+2019-10-05 00:00:00,14:30,Wolfsburg,Union Berlin
+2019-10-19 00:00:00,14:30,Augsburg,Bayern München
+2019-10-19 00:00:00,14:30,Borussia Dortmund,Borussia M'gladbach
+2019-10-19 00:00:00,14:30,Dusseldorf,Mainz 05
+2019-10-19 00:00:00,14:30,Ein Frankfurt,Bayer Leverkusen
+2019-10-19 00:00:00,14:30,FC Köln,Paderborn
+2019-10-19 00:00:00,14:30,Hoffenheim,Schalke 04
+2019-10-19 00:00:00,14:30,RB Leipzig,Wolfsburg
+2019-10-19 00:00:00,14:30,Union Berlin,Freiburg
+2019-10-19 00:00:00,14:30,Werder Bremen,Hertha Berlin
+2019-10-26 00:00:00,14:30,Borussia M'gladbach,Ein Frankfurt
+2019-10-26 00:00:00,14:30,Bayer Leverkusen,Werder Bremen
+2019-10-26 00:00:00,14:30,Bayern München,Union Berlin
+2019-10-26 00:00:00,14:30,Freiburg,RB Leipzig
+2019-10-26 00:00:00,14:30,Hertha Berlin,Hoffenheim
+2019-10-26 00:00:00,14:30,Mainz 05,FC Köln
+2019-10-26 00:00:00,14:30,Paderborn,Dusseldorf
+2019-10-26 00:00:00,14:30,Schalke 04,Borussia Dortmund
+2019-10-26 00:00:00,14:30,Wolfsburg,Augsburg
+2019-11-02 00:00:00,14:30,Augsburg,Schalke 04
+2019-11-02 00:00:00,14:30,Bayer Leverkusen,Borussia M'gladbach
+2019-11-02 00:00:00,14:30,Borussia Dortmund,Wolfsburg
+2019-11-02 00:00:00,14:30,Dusseldorf,FC Köln
+2019-11-02 00:00:00,14:30,Ein Frankfurt,Bayern München
+2019-11-02 00:00:00,14:30,Hoffenheim,Paderborn
+2019-11-02 00:00:00,14:30,RB Leipzig,Mainz 05
+2019-11-02 00:00:00,14:30,Union Berlin,Hertha Berlin
+2019-11-02 00:00:00,14:30,Werder Bremen,Freiburg
+2019-11-09 00:00:00,14:30,Borussia M'gladbach,Werder Bremen
+2019-11-09 00:00:00,14:30,Bayern München,Borussia Dortmund
+2019-11-09 00:00:00,14:30,FC Köln,Hoffenheim
+2019-11-09 00:00:00,14:30,Freiburg,Ein Frankfurt
+2019-11-09 00:00:00,14:30,Hertha Berlin,RB Leipzig
+2019-11-09 00:00:00,14:30,Mainz 05,Union Berlin
+2019-11-09 00:00:00,14:30,Paderborn,Augsburg
+2019-11-09 00:00:00,14:30,Schalke 04,Dusseldorf
+2019-11-09 00:00:00,14:30,Wolfsburg,Bayer Leverkusen
+2019-11-23 00:00:00,14:30,Augsburg,Hertha Berlin
+2019-11-23 00:00:00,14:30,Bayer Leverkusen,Freiburg
+2019-11-23 00:00:00,14:30,Borussia Dortmund,Paderborn
+2019-11-23 00:00:00,14:30,Dusseldorf,Bayern München
+2019-11-23 00:00:00,14:30,Ein Frankfurt,Wolfsburg
+2019-11-23 00:00:00,14:30,Hoffenheim,Mainz 05
+2019-11-23 00:00:00,14:30,RB Leipzig,FC Köln
+2019-11-23 00:00:00,14:30,Union Berlin,Borussia M'gladbach
+2019-11-23 00:00:00,14:30,Werder Bremen,Schalke 04
+2019-11-30 00:00:00,14:30,Borussia M'gladbach,Freiburg
+2019-11-30 00:00:00,14:30,Bayern München,Bayer Leverkusen
+2019-11-30 00:00:00,14:30,FC Köln,Augsburg
+2019-11-30 00:00:00,14:30,Hertha Berlin,Borussia Dortmund
+2019-11-30 00:00:00,14:30,Hoffenheim,Dusseldorf
+2019-11-30 00:00:00,14:30,Mainz 05,Ein Frankfurt
+2019-11-30 00:00:00,14:30,Paderborn,RB Leipzig
+2019-11-30 00:00:00,14:30,Schalke 04,Union Berlin
+2019-11-30 00:00:00,14:30,Wolfsburg,Werder Bremen

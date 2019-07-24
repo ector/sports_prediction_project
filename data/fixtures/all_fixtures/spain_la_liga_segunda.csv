@@ -1,121 +1,122 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-22 00:00:00,20:00,Dep. La Coruna,Almeria
-2019-03-22 00:00:00,20:00,Tenerife,Osasuna
-2019-03-23 00:00:00,15:00,Elche,Alcorcon
-2019-03-23 00:00:00,17:00,Lugo,Albacete
-2019-03-24 00:00:00,11:00,Rayo Majadahonda,Numancia
-2019-03-24 00:00:00,15:00,Gimnastic,Malaga
-2019-03-24 00:00:00,17:00,Cadiz CF,Cordoba
-2019-03-24 00:00:00,19:00,Granada CF,Las Palmas
-2019-03-24 00:00:00,19:45,Gijon,R. Oviedo
-2019-03-25 00:00:00,20:00,Mallorca,Zaragoza
-2019-03-29 00:00:00,20:00,Malaga,Gijon
-2019-03-30 00:00:00,15:00,Almeria,Rayo Majadahonda
-2019-03-30 00:00:00,17:00,Numancia,Granada CF
-2019-03-30 00:00:00,19:30,Albacete,Tenerife
-2019-03-31 00:00:00,11:00,Cordoba,Mallorca
-2019-03-31 00:00:00,15:00,Osasuna,Extremadura UD
-2019-03-31 00:00:00,17:00,Alcorcon,Lugo
-2019-03-31 00:00:00,17:00,R. Oviedo,Dep. La Coruna
-2019-03-31 00:00:00,19:00,Las Palmas,Elche
-2019-04-01 00:00:00,20:00,Zaragoza,Gimnastic
-2019-04-05 00:00:00,20:00,Tenerife,Gijon
-2019-04-06 00:00:00,15:00,Dep. La Coruna,Rayo Majadahonda
-2019-04-06 00:00:00,17:00,Extremadura UD,Almeria
-2019-04-06 00:00:00,17:00,Granada CF,Malaga
-2019-04-06 00:00:00,19:30,R. Oviedo,Las Palmas
-2019-04-07 00:00:00,11:00,Alcorcon,Albacete
-2019-04-07 00:00:00,15:00,Lugo,Osasuna
-2019-04-07 00:00:00,17:00,Gimnastic,Numancia
-2019-04-07 00:00:00,19:00,Elche,Cordoba
-2019-04-08 00:00:00,20:00,Cadiz CF,Zaragoza
-2019-04-12 00:00:00,20:00,Gijon,Granada CF
-2019-04-13 00:00:00,15:00,Malaga,Extremadura UD
-2019-04-13 00:00:00,17:00,Almeria,Gimnastic
-2019-04-13 00:00:00,17:00,Osasuna,Dep. La Coruna
-2019-04-13 00:00:00,19:30,Rayo Majadahonda,Tenerife
-2019-04-14 00:00:00,11:00,Albacete,Elche
-2019-04-14 00:00:00,15:00,Numancia,Mallorca
-2019-04-14 00:00:00,17:00,Cordoba,Lugo
-2019-04-14 00:00:00,19:00,Las Palmas,Cadiz CF
-2019-04-14 00:00:00,19:30,Zaragoza,Alcorcon
-2019-04-21 00:00:00,19:00,Albacete,Las Palmas
-2019-04-21 00:00:00,19:00,Alcorcon,Malaga
-2019-04-21 00:00:00,19:00,Cadiz CF,Numancia
-2019-04-21 00:00:00,19:00,Dep. La Coruna,Extremadura UD
-2019-04-21 00:00:00,19:00,Elche,Osasuna
-2019-04-21 00:00:00,19:00,Gimnastic,Gijon
-2019-04-21 00:00:00,19:00,Lugo,Granada CF
-2019-04-21 00:00:00,19:00,Mallorca,Rayo Majadahonda
-2019-04-21 00:00:00,19:00,R. Oviedo,Cordoba
-2019-04-21 00:00:00,19:00,Tenerife,Almeria
-2019-04-28 00:00:00,19:00,Almeria,R. Oviedo
-2019-04-28 00:00:00,19:00,Cordoba,Zaragoza
-2019-04-28 00:00:00,19:00,Extremadura UD,Tenerife
-2019-04-28 00:00:00,19:00,Gijon,Elche
-2019-04-28 00:00:00,19:00,Granada CF,Gimnastic
-2019-04-28 00:00:00,19:00,Las Palmas,Lugo
-2019-04-28 00:00:00,19:00,Malaga,Mallorca
-2019-04-28 00:00:00,19:00,Numancia,Dep. La Coruna
-2019-04-28 00:00:00,19:00,Osasuna,Albacete
-2019-04-28 00:00:00,19:00,Rayo Majadahonda,Cadiz CF
-2019-05-05 00:00:00,19:00,Albacete,Numancia
-2019-05-05 00:00:00,19:00,Alcorcon,Osasuna
-2019-05-05 00:00:00,19:00,Cadiz CF,Malaga
-2019-05-05 00:00:00,19:00,Elche,Rayo Majadahonda
-2019-05-05 00:00:00,19:00,Gimnastic,Extremadura UD
-2019-05-05 00:00:00,19:00,Lugo,Almeria
-2019-05-05 00:00:00,19:00,Mallorca,Gijon
-2019-05-05 00:00:00,19:00,R. Oviedo,Granada CF
-2019-05-05 00:00:00,19:00,Tenerife,Las Palmas
-2019-05-05 00:00:00,19:00,Zaragoza,Dep. La Coruna
-2019-05-12 00:00:00,19:00,Almeria,Elche
-2019-05-12 00:00:00,19:00,Dep. La Coruna,Cadiz CF
-2019-05-12 00:00:00,19:00,Extremadura UD,Zaragoza
-2019-05-12 00:00:00,19:00,Gijon,Lugo
-2019-05-12 00:00:00,19:00,Gimnastic,Mallorca
-2019-05-12 00:00:00,19:00,Granada CF,Tenerife
-2019-05-12 00:00:00,19:00,Las Palmas,Cordoba
-2019-05-12 00:00:00,19:00,Malaga,R. Oviedo
-2019-05-12 00:00:00,19:00,Numancia,Alcorcon
-2019-05-12 00:00:00,19:00,Rayo Majadahonda,Albacete
-2019-05-19 00:00:00,19:00,Albacete,Granada CF
-2019-05-19 00:00:00,19:00,Alcorcon,Extremadura UD
-2019-05-19 00:00:00,19:00,Cadiz CF,Osasuna
-2019-05-19 00:00:00,19:00,Cordoba,Gimnastic
-2019-05-19 00:00:00,19:00,Elche,Tenerife
-2019-05-19 00:00:00,19:00,Las Palmas,Rayo Majadahonda
-2019-05-19 00:00:00,19:00,Lugo,Dep. La Coruna
-2019-05-19 00:00:00,19:00,Mallorca,Almeria
-2019-05-19 00:00:00,19:00,R. Oviedo,Numancia
-2019-05-19 00:00:00,19:00,Zaragoza,Gijon
-2019-05-26 00:00:00,19:00,Almeria,Alcorcon
-2019-05-26 00:00:00,19:00,Dep. La Coruna,Mallorca
-2019-05-26 00:00:00,19:00,Extremadura UD,Lugo
-2019-05-26 00:00:00,19:00,Gijon,Albacete
-2019-05-26 00:00:00,19:00,Gimnastic,Elche
-2019-05-26 00:00:00,19:00,Granada CF,Cadiz CF
-2019-05-26 00:00:00,19:00,Malaga,Zaragoza
-2019-05-26 00:00:00,19:00,Osasuna,Las Palmas
-2019-05-26 00:00:00,19:00,Rayo Majadahonda,Cordoba
-2019-05-26 00:00:00,19:00,Tenerife,R. Oviedo
-2019-06-02 00:00:00,19:00,Albacete,Malaga
-2019-06-02 00:00:00,19:00,Alcorcon,Gimnastic
-2019-06-02 00:00:00,19:00,Cadiz CF,Extremadura UD
-2019-06-02 00:00:00,19:00,Cordoba,Osasuna
-2019-06-02 00:00:00,19:00,Elche,Dep. La Coruna
-2019-06-02 00:00:00,19:00,Las Palmas,Almeria
-2019-06-02 00:00:00,19:00,Lugo,Tenerife
-2019-06-02 00:00:00,19:00,Mallorca,Granada CF
-2019-06-02 00:00:00,19:00,R. Oviedo,Rayo Majadahonda
-2019-06-02 00:00:00,19:00,Zaragoza,Numancia
-2019-06-09 00:00:00,19:00,Almeria,Albacete
-2019-06-09 00:00:00,19:00,Dep. La Coruna,Cordoba
-2019-06-09 00:00:00,19:00,Extremadura UD,Mallorca
-2019-06-09 00:00:00,19:00,Gijon,Cadiz CF
-2019-06-09 00:00:00,19:00,Gimnastic,Lugo
-2019-06-09 00:00:00,19:00,Granada CF,Alcorcon
-2019-06-09 00:00:00,19:00,Malaga,Elche
-2019-06-09 00:00:00,19:00,Numancia,Las Palmas
-2019-06-09 00:00:00,19:00,Osasuna,R. Oviedo
-2019-06-09 00:00:00,19:00,Tenerife,Zaragoza
+2019-08-18 00:00:00,19:00,Almeria,Albacete
+2019-08-18 00:00:00,19:00,Cadiz CF,Ponferradina
+2019-08-18 00:00:00,19:00,Dep. La Coruna,R. Oviedo
+2019-08-18 00:00:00,19:00,Elche,Fuenlabrada
+2019-08-18 00:00:00,19:00,Girona,Gijon
+2019-08-18 00:00:00,19:00,Las Palmas,Huesca
+2019-08-18 00:00:00,19:00,Lugo,Extremadura UD
+2019-08-18 00:00:00,19:00,Numancia,Alcorcon
+2019-08-18 00:00:00,19:00,Rayo Vallecano,Mirandes
+2019-08-18 00:00:00,19:00,Santander,Malaga
+2019-08-18 00:00:00,19:00,Zaragoza,Tenerife
+2019-08-25 00:00:00,19:00,Albacete,Girona
+2019-08-25 00:00:00,19:00,Alcorcon,Elche
+2019-08-25 00:00:00,19:00,Extremadura UD,Fuenlabrada
+2019-08-25 00:00:00,19:00,Gijon,Rayo Vallecano
+2019-08-25 00:00:00,19:00,Huesca,Dep. La Coruna
+2019-08-25 00:00:00,19:00,Malaga,Las Palmas
+2019-08-25 00:00:00,19:00,Mirandes,Cadiz CF
+2019-08-25 00:00:00,19:00,Ponferradina,Zaragoza
+2019-08-25 00:00:00,19:00,R. Oviedo,Lugo
+2019-08-25 00:00:00,19:00,Santander,Almeria
+2019-08-25 00:00:00,19:00,Tenerife,Numancia
+2019-09-01 00:00:00,19:00,Almeria,Huesca
+2019-09-01 00:00:00,19:00,Cadiz CF,Extremadura UD
+2019-09-01 00:00:00,19:00,Fuenlabrada,R. Oviedo
+2019-09-01 00:00:00,19:00,Gijon,Albacete
+2019-09-01 00:00:00,19:00,Girona,Malaga
+2019-09-01 00:00:00,19:00,Las Palmas,Santander
+2019-09-01 00:00:00,19:00,Lugo,Alcorcon
+2019-09-01 00:00:00,19:00,Numancia,Mirandes
+2019-09-01 00:00:00,19:00,Ponferradina,Tenerife
+2019-09-01 00:00:00,19:00,Rayo Vallecano,Dep. La Coruna
+2019-09-01 00:00:00,19:00,Zaragoza,Elche
+2019-09-08 00:00:00,19:00,Alcorcon,Zaragoza
+2019-09-08 00:00:00,19:00,Dep. La Coruna,Albacete
+2019-09-08 00:00:00,19:00,Elche,Lugo
+2019-09-08 00:00:00,19:00,Extremadura UD,Numancia
+2019-09-08 00:00:00,19:00,Fuenlabrada,Ponferradina
+2019-09-08 00:00:00,19:00,Girona,Rayo Vallecano
+2019-09-08 00:00:00,19:00,Huesca,Gijon
+2019-09-08 00:00:00,19:00,Malaga,Almeria
+2019-09-08 00:00:00,19:00,Mirandes,R. Oviedo
+2019-09-08 00:00:00,19:00,Santander,Cadiz CF
+2019-09-08 00:00:00,19:00,Tenerife,Las Palmas
+2019-09-15 00:00:00,19:00,Albacete,Tenerife
+2019-09-15 00:00:00,19:00,Cadiz CF,Girona
+2019-09-15 00:00:00,19:00,Gijon,Dep. La Coruna
+2019-09-15 00:00:00,19:00,Las Palmas,Almeria
+2019-09-15 00:00:00,19:00,Lugo,Fuenlabrada
+2019-09-15 00:00:00,19:00,Mirandes,Malaga
+2019-09-15 00:00:00,19:00,Numancia,Huesca
+2019-09-15 00:00:00,19:00,Ponferradina,Alcorcon
+2019-09-15 00:00:00,19:00,R. Oviedo,Elche
+2019-09-15 00:00:00,19:00,Rayo Vallecano,Santander
+2019-09-15 00:00:00,19:00,Zaragoza,Extremadura UD
+2019-09-18 00:00:00,19:00,Alcorcon,Cadiz CF
+2019-09-18 00:00:00,19:00,Almeria,Girona
+2019-09-18 00:00:00,19:00,Dep. La Coruna,Numancia
+2019-09-18 00:00:00,19:00,Elche,Tenerife
+2019-09-18 00:00:00,19:00,Fuenlabrada,Zaragoza
+2019-09-18 00:00:00,19:00,Huesca,Albacete
+2019-09-18 00:00:00,19:00,Las Palmas,Gijon
+2019-09-18 00:00:00,19:00,Lugo,Ponferradina
+2019-09-18 00:00:00,19:00,Malaga,Rayo Vallecano
+2019-09-18 00:00:00,19:00,R. Oviedo,Extremadura UD
+2019-09-18 00:00:00,19:00,Santander,Mirandes
+2019-09-22 00:00:00,19:00,Albacete,Malaga
+2019-09-22 00:00:00,19:00,Cadiz CF,Dep. La Coruna
+2019-09-22 00:00:00,19:00,Extremadura UD,Huesca
+2019-09-22 00:00:00,19:00,Gijon,Santander
+2019-09-22 00:00:00,19:00,Girona,Las Palmas
+2019-09-22 00:00:00,19:00,Mirandes,Alcorcon
+2019-09-22 00:00:00,19:00,Numancia,Elche
+2019-09-22 00:00:00,19:00,Ponferradina,R. Oviedo
+2019-09-22 00:00:00,19:00,Rayo Vallecano,Almeria
+2019-09-22 00:00:00,19:00,Tenerife,Fuenlabrada
+2019-09-22 00:00:00,19:00,Zaragoza,Lugo
+2019-09-29 00:00:00,19:00,Alcorcon,Extremadura UD
+2019-09-29 00:00:00,19:00,Almeria,Cadiz CF
+2019-09-29 00:00:00,19:00,Dep. La Coruna,Mirandes
+2019-09-29 00:00:00,19:00,Elche,Ponferradina
+2019-09-29 00:00:00,19:00,Fuenlabrada,Rayo Vallecano
+2019-09-29 00:00:00,19:00,Huesca,Girona
+2019-09-29 00:00:00,19:00,Las Palmas,Albacete
+2019-09-29 00:00:00,19:00,Lugo,Tenerife
+2019-09-29 00:00:00,19:00,Malaga,Gijon
+2019-09-29 00:00:00,19:00,R. Oviedo,Zaragoza
+2019-09-29 00:00:00,19:00,Santander,Numancia
+2019-10-02 00:00:00,19:00,Albacete,Santander
+2019-10-02 00:00:00,19:00,Cadiz CF,Huesca
+2019-10-02 00:00:00,19:00,Extremadura UD,Elche
+2019-10-02 00:00:00,19:00,Gijon,Almeria
+2019-10-02 00:00:00,19:00,Girona,Dep. La Coruna
+2019-10-02 00:00:00,19:00,Mirandes,Lugo
+2019-10-02 00:00:00,19:00,Numancia,Fuenlabrada
+2019-10-02 00:00:00,19:00,Ponferradina,Las Palmas
+2019-10-02 00:00:00,19:00,Rayo Vallecano,Alcorcon
+2019-10-02 00:00:00,19:00,Tenerife,R. Oviedo
+2019-10-02 00:00:00,19:00,Zaragoza,Malaga
+2019-10-06 00:00:00,19:00,Alcorcon,Albacete
+2019-10-06 00:00:00,19:00,Dep. La Coruna,Almeria
+2019-10-06 00:00:00,19:00,Elche,Rayo Vallecano
+2019-10-06 00:00:00,19:00,Fuenlabrada,Gijon
+2019-10-06 00:00:00,19:00,Huesca,Malaga
+2019-10-06 00:00:00,19:00,Lugo,Las Palmas
+2019-10-06 00:00:00,19:00,Ponferradina,Mirandes
+2019-10-06 00:00:00,19:00,R. Oviedo,Numancia
+2019-10-06 00:00:00,19:00,Santander,Girona
+2019-10-06 00:00:00,19:00,Tenerife,Extremadura UD
+2019-10-06 00:00:00,19:00,Zaragoza,Cadiz CF
+2019-10-13 00:00:00,19:00,Albacete,R. Oviedo
+2019-10-13 00:00:00,19:00,Almeria,Lugo
+2019-10-13 00:00:00,19:00,Extremadura UD,Ponferradina
+2019-10-13 00:00:00,19:00,Gijon,Alcorcon
+2019-10-13 00:00:00,19:00,Girona,Elche
+2019-10-13 00:00:00,19:00,Huesca,Santander
+2019-10-13 00:00:00,19:00,Las Palmas,Dep. La Coruna
+2019-10-13 00:00:00,19:00,Malaga,Cadiz CF
+2019-10-13 00:00:00,19:00,Mirandes,Fuenlabrada
+2019-10-13 00:00:00,19:00,Numancia,Zaragoza
+2019-10-13 00:00:00,19:00,Rayo Vallecano,Tenerife

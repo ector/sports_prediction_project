@@ -2,10 +2,6 @@ APScheduler==3.5.3
 certifi==2018.4.16
 chardet==3.0.4
 click==6.7
-Flask==1.0.2
-Flask-Cors==3.0.4
-Flask-JWT-Extended==3.9.1
-Flask-PyMongo==0.5.2
 gunicorn==19.8.1
 idna==2.7
 imbalanced-learn==0.4.3
@@ -18,7 +14,7 @@ pandas==0.23.4
 passlib==1.7.1
 py4j==0.10.6
 PyJWT==1.6.3
-pymongo==3.7.1
+pymongo==3.8.0
 pyspark==2.3.0
 python-dateutil==2.7.3
 pytz==2018.5

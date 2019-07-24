@@ -1,20 +1,109 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-27 00:00:00,19:45,St Johnstone,St. Mirren
-2019-03-29 00:00:00,19:45,Livingston,Hibernian
-2019-03-30 00:00:00,15:00,Hearts,Aberdeen
-2019-03-30 00:00:00,15:00,Kilmarnock,Hamilton
-2019-03-30 00:00:00,15:00,Motherwell,St Johnstone
-2019-03-30 00:00:00,15:00,St. Mirren,Dundee FC
-2019-03-31 00:00:00,12:00,Celtic,Rangers
-2019-04-03 00:00:00,19:45,Aberdeen,Motherwell
-2019-04-03 00:00:00,19:45,Hibernian,Kilmarnock
-2019-04-03 00:00:00,19:45,Livingston,Hamilton
-2019-04-03 00:00:00,19:45,Rangers,Hearts
-2019-04-03 00:00:00,19:45,St Johnstone,Dundee FC
-2019-04-03 00:00:00,19:45,St. Mirren,Celtic
-2019-04-06 00:00:00,12:30,Hearts,Hibernian
-2019-04-06 00:00:00,15:00,Celtic,Livingston
-2019-04-06 00:00:00,15:00,Dundee FC,Aberdeen
-2019-04-06 00:00:00,15:00,Hamilton,St. Mirren
-2019-04-06 00:00:00,15:00,Kilmarnock,St Johnstone
-2019-04-07 00:00:00,12:30,Motherwell,Rangers
+2019-08-03 00:00:00,15:00,Aberdeen,Hearts
+2019-08-03 00:00:00,15:00,Celtic,St Johnstone
+2019-08-03 00:00:00,15:00,Hibernian,St. Mirren
+2019-08-03 00:00:00,15:00,Livingston,Motherwell
+2019-08-03 00:00:00,15:00,Ross County,Hamilton
+2019-08-04 00:00:00,13:30,Kilmarnock,Rangers
+2019-08-10 00:00:00,12:00,Motherwell,Celtic
+2019-08-10 00:00:00,14:00,St Johnstone,Livingston
+2019-08-10 00:00:00,15:00,Hamilton,Kilmarnock
+2019-08-10 00:00:00,15:00,Hearts,Ross County
+2019-08-10 00:00:00,15:00,Rangers,Hibernian
+2019-08-10 00:00:00,15:00,St. Mirren,Aberdeen
+2019-08-24 00:00:00,15:00,Celtic,Hearts
+2019-08-24 00:00:00,15:00,Hamilton,Motherwell
+2019-08-24 00:00:00,15:00,Hibernian,St Johnstone
+2019-08-24 00:00:00,15:00,Kilmarnock,Aberdeen
+2019-08-24 00:00:00,15:00,Ross County,Livingston
+2019-08-25 00:00:00,12:15,St. Mirren,Rangers
+2019-08-31 00:00:00,15:00,Aberdeen,Ross County
+2019-08-31 00:00:00,15:00,Hearts,Hamilton
+2019-08-31 00:00:00,15:00,Livingston,St. Mirren
+2019-08-31 00:00:00,15:00,Motherwell,Hibernian
+2019-08-31 00:00:00,15:00,St Johnstone,Kilmarnock
+2019-09-01 00:00:00,12:00,Rangers,Celtic
+2019-09-14 00:00:00,15:00,Aberdeen,St Johnstone
+2019-09-14 00:00:00,15:00,Hamilton,Celtic
+2019-09-14 00:00:00,15:00,Hearts,Motherwell
+2019-09-14 00:00:00,15:00,Kilmarnock,Hibernian
+2019-09-14 00:00:00,15:00,Rangers,Livingston
+2019-09-14 00:00:00,15:00,Ross County,St. Mirren
+2019-09-21 00:00:00,15:00,Celtic,Kilmarnock
+2019-09-21 00:00:00,15:00,Hibernian,Hearts
+2019-09-21 00:00:00,15:00,Livingston,Aberdeen
+2019-09-21 00:00:00,15:00,Motherwell,Ross County
+2019-09-21 00:00:00,15:00,St Johnstone,Rangers
+2019-09-21 00:00:00,15:00,St. Mirren,Hamilton
+2019-09-28 00:00:00,15:00,Hamilton,Livingston
+2019-09-28 00:00:00,15:00,Hibernian,Celtic
+2019-09-28 00:00:00,15:00,Kilmarnock,Ross County
+2019-09-28 00:00:00,15:00,Rangers,Aberdeen
+2019-09-28 00:00:00,15:00,St Johnstone,Motherwell
+2019-09-28 00:00:00,15:00,St. Mirren,Hearts
+2019-10-05 00:00:00,15:00,Aberdeen,Hibernian
+2019-10-05 00:00:00,15:00,Hearts,Kilmarnock
+2019-10-05 00:00:00,15:00,Livingston,Celtic
+2019-10-05 00:00:00,15:00,Motherwell,St. Mirren
+2019-10-05 00:00:00,15:00,Rangers,Hamilton
+2019-10-05 00:00:00,15:00,Ross County,St Johnstone
+2019-10-19 00:00:00,15:00,Celtic,Ross County
+2019-10-19 00:00:00,15:00,Hamilton,Hibernian
+2019-10-19 00:00:00,15:00,Hearts,Rangers
+2019-10-19 00:00:00,15:00,Kilmarnock,Livingston
+2019-10-19 00:00:00,15:00,Motherwell,Aberdeen
+2019-10-19 00:00:00,15:00,St. Mirren,St Johnstone
+2019-10-26 00:00:00,15:00,Aberdeen,Celtic
+2019-10-26 00:00:00,15:00,Hibernian,Ross County
+2019-10-26 00:00:00,15:00,Kilmarnock,St. Mirren
+2019-10-26 00:00:00,15:00,Livingston,Hearts
+2019-10-26 00:00:00,15:00,Rangers,Motherwell
+2019-10-26 00:00:00,15:00,St Johnstone,Hamilton
+2019-10-30 00:00:00,19:45,Celtic,St. Mirren
+2019-10-30 00:00:00,19:45,Hamilton,Aberdeen
+2019-10-30 00:00:00,19:45,Hibernian,Livingston
+2019-10-30 00:00:00,19:45,Motherwell,Kilmarnock
+2019-10-30 00:00:00,19:45,Ross County,Rangers
+2019-10-30 00:00:00,19:45,St Johnstone,Hearts
+2019-11-02 00:00:00,15:00,Aberdeen,Kilmarnock
+2019-11-02 00:00:00,15:00,Hamilton,Ross County
+2019-11-02 00:00:00,15:00,Hearts,Celtic
+2019-11-02 00:00:00,15:00,Motherwell,Livingston
+2019-11-02 00:00:00,15:00,Rangers,St Johnstone
+2019-11-02 00:00:00,15:00,St. Mirren,Hibernian
+2019-11-09 00:00:00,15:00,Celtic,Motherwell
+2019-11-09 00:00:00,15:00,Hearts,St. Mirren
+2019-11-09 00:00:00,15:00,Kilmarnock,Hamilton
+2019-11-09 00:00:00,15:00,Livingston,Rangers
+2019-11-09 00:00:00,15:00,Ross County,Aberdeen
+2019-11-09 00:00:00,15:00,St Johnstone,Hibernian
+2019-11-23 00:00:00,15:00,Celtic,Livingston
+2019-11-23 00:00:00,15:00,Hamilton,Rangers
+2019-11-23 00:00:00,15:00,Hibernian,Motherwell
+2019-11-23 00:00:00,15:00,Kilmarnock,Hearts
+2019-11-23 00:00:00,15:00,St Johnstone,Aberdeen
+2019-11-23 00:00:00,15:00,St. Mirren,Ross County
+2019-11-30 00:00:00,15:00,Aberdeen,St. Mirren
+2019-11-30 00:00:00,15:00,Hibernian,Kilmarnock
+2019-11-30 00:00:00,15:00,Livingston,Hamilton
+2019-11-30 00:00:00,15:00,Motherwell,St Johnstone
+2019-11-30 00:00:00,15:00,Rangers,Hearts
+2019-11-30 00:00:00,15:00,Ross County,Celtic
+2019-12-04 00:00:00,19:45,Aberdeen,Rangers
+2019-12-04 00:00:00,19:45,Celtic,Hamilton
+2019-12-04 00:00:00,19:45,Hearts,Livingston
+2019-12-04 00:00:00,19:45,Kilmarnock,St Johnstone
+2019-12-04 00:00:00,19:45,Ross County,Hibernian
+2019-12-04 00:00:00,19:45,St. Mirren,Motherwell
+2019-12-07 00:00:00,15:00,Hamilton,St. Mirren
+2019-12-07 00:00:00,15:00,Hibernian,Aberdeen
+2019-12-07 00:00:00,15:00,Livingston,Kilmarnock
+2019-12-07 00:00:00,15:00,Motherwell,Hearts
+2019-12-07 00:00:00,15:00,Rangers,Ross County
+2019-12-07 00:00:00,15:00,St Johnstone,Celtic
+2019-12-14 00:00:00,15:00,Aberdeen,Hamilton
+2019-12-14 00:00:00,15:00,Celtic,Hibernian
+2019-12-14 00:00:00,15:00,Hearts,St Johnstone
+2019-12-14 00:00:00,15:00,Motherwell,Rangers
+2019-12-14 00:00:00,15:00,Ross County,Kilmarnock
+2019-12-14 00:00:00,15:00,St. Mirren,Livingston

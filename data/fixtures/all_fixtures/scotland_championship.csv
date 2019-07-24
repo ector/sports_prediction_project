@@ -1,41 +1,111 @@
 Date,Time,HomeTeam,AwayTeam
-2019-03-22 00:00:00,19:05,Partick Thistle,Inverness
-2019-03-23 00:00:00,15:00,Dundee Utd,Alloa
-2019-03-26 00:00:00,19:45,Dunfermline,Dundee Utd
-2019-03-26 00:00:00,19:45,Inverness,Alloa
-2019-03-29 00:00:00,19:05,Dunfermline,Ayr
-2019-03-30 00:00:00,15:00,Alloa,Ross County
-2019-03-30 00:00:00,15:00,Dundee Utd,Queen of South
-2019-03-30 00:00:00,15:00,Inverness,Falkirk
-2019-03-30 00:00:00,15:00,Morton,Partick Thistle
-2019-04-02 00:00:00,19:45,Ayr,Morton
-2019-04-02 00:00:00,19:45,Queen of South,Falkirk
-2019-04-05 00:00:00,19:05,Ross County,Dundee Utd
-2019-04-06 00:00:00,15:00,Ayr,Inverness
-2019-04-06 00:00:00,15:00,Falkirk,Alloa
-2019-04-06 00:00:00,15:00,Partick Thistle,Dunfermline
-2019-04-06 00:00:00,15:00,Queen of South,Morton
-2019-04-09 00:00:00,19:45,Ayr,Queen of South
-2019-04-09 00:00:00,19:45,Morton,Alloa
-2019-04-09 00:00:00,19:45,Ross County,Dunfermline
-2019-04-12 00:00:00,19:05,Dundee Utd,Ayr
-2019-04-13 00:00:00,15:00,Alloa,Queen of South
-2019-04-13 00:00:00,15:00,Dunfermline,Falkirk
-2019-04-13 00:00:00,15:00,Ross County,Partick Thistle
-2019-04-16 00:00:00,19:45,Morton,Inverness
-2019-04-19 00:00:00,19:05,Ayr,Ross County
-2019-04-20 00:00:00,15:00,Falkirk,Morton
-2019-04-20 00:00:00,15:00,Inverness,Dundee Utd
-2019-04-20 00:00:00,15:00,Partick Thistle,Alloa
-2019-04-20 00:00:00,15:00,Queen of South,Dunfermline
-2019-04-23 00:00:00,19:45,Ayr,Partick Thistle
-2019-04-27 00:00:00,15:00,Alloa,Inverness
-2019-04-27 00:00:00,15:00,Dundee Utd,Falkirk
-2019-04-27 00:00:00,15:00,Dunfermline,Morton
-2019-04-27 00:00:00,15:00,Partick Thistle,Ayr
-2019-04-27 00:00:00,15:00,Ross County,Queen of South
-2019-05-04 00:00:00,15:00,Ayr,Alloa
-2019-05-04 00:00:00,15:00,Falkirk,Ross County
-2019-05-04 00:00:00,15:00,Inverness,Dunfermline
-2019-05-04 00:00:00,15:00,Morton,Dundee Utd
-2019-05-04 00:00:00,15:00,Queen of South,Partick Thistle
+2019-08-02 00:00:00,19:05,Dunfermline,Dundee FC
+2019-08-03 00:00:00,15:00,Alloa,Partick Thistle
+2019-08-03 00:00:00,15:00,Arbroath,Queen of South
+2019-08-03 00:00:00,15:00,Ayr,Morton
+2019-08-03 00:00:00,15:00,Dundee Utd,Inverness
+2019-08-09 00:00:00,19:05,Partick Thistle,Dundee Utd
+2019-08-10 00:00:00,15:00,Dundee FC,Ayr
+2019-08-10 00:00:00,15:00,Inverness,Arbroath
+2019-08-10 00:00:00,15:00,Morton,Alloa
+2019-08-10 00:00:00,15:00,Queen of South,Dunfermline
+2019-08-23 00:00:00,19:05,Morton,Partick Thistle
+2019-08-24 00:00:00,15:00,Alloa,Arbroath
+2019-08-24 00:00:00,15:00,Ayr,Queen of South
+2019-08-24 00:00:00,15:00,Dundee FC,Inverness
+2019-08-24 00:00:00,15:00,Dunfermline,Dundee Utd
+2019-08-30 00:00:00,19:05,Inverness,Morton
+2019-08-30 00:00:00,19:45,Dundee Utd,Dundee FC
+2019-08-31 00:00:00,15:00,Arbroath,Dunfermline
+2019-08-31 00:00:00,15:00,Partick Thistle,Ayr
+2019-08-31 00:00:00,15:00,Queen of South,Alloa
+2019-09-13 00:00:00,19:05,Arbroath,Partick Thistle
+2019-09-14 00:00:00,15:00,Ayr,Dundee Utd
+2019-09-14 00:00:00,15:00,Dundee FC,Alloa
+2019-09-14 00:00:00,15:00,Dunfermline,Inverness
+2019-09-14 00:00:00,15:00,Queen of South,Morton
+2019-09-21 00:00:00,15:00,Alloa,Ayr
+2019-09-21 00:00:00,15:00,Dundee Utd,Arbroath
+2019-09-21 00:00:00,15:00,Inverness,Queen of South
+2019-09-21 00:00:00,15:00,Morton,Dundee FC
+2019-09-21 00:00:00,15:00,Partick Thistle,Dunfermline
+2019-09-27 00:00:00,19:05,Queen of South,Dundee FC
+2019-09-28 00:00:00,15:00,Arbroath,Ayr
+2019-09-28 00:00:00,15:00,Dundee Utd,Morton
+2019-09-28 00:00:00,15:00,Dunfermline,Alloa
+2019-09-28 00:00:00,15:00,Inverness,Partick Thistle
+2019-10-04 00:00:00,19:05,Alloa,Dundee Utd
+2019-10-05 00:00:00,15:00,Ayr,Inverness
+2019-10-05 00:00:00,15:00,Dundee FC,Arbroath
+2019-10-05 00:00:00,15:00,Morton,Dunfermline
+2019-10-05 00:00:00,15:00,Partick Thistle,Queen of South
+2019-10-19 00:00:00,15:00,Arbroath,Morton
+2019-10-19 00:00:00,15:00,Dundee FC,Partick Thistle
+2019-10-19 00:00:00,15:00,Dunfermline,Ayr
+2019-10-19 00:00:00,15:00,Inverness,Alloa
+2019-10-19 00:00:00,15:00,Queen of South,Dundee Utd
+2019-10-25 00:00:00,19:05,Ayr,Dundee FC
+2019-10-26 00:00:00,15:00,Alloa,Queen of South
+2019-10-26 00:00:00,15:00,Dundee Utd,Dunfermline
+2019-10-26 00:00:00,15:00,Morton,Inverness
+2019-10-26 00:00:00,15:00,Partick Thistle,Arbroath
+2019-10-29 00:00:00,19:45,Alloa,Dundee FC
+2019-10-29 00:00:00,19:45,Dundee Utd,Partick Thistle
+2019-10-29 00:00:00,19:45,Dunfermline,Arbroath
+2019-10-29 00:00:00,19:45,Morton,Ayr
+2019-10-29 00:00:00,19:45,Queen of South,Inverness
+2019-11-01 00:00:00,19:05,Dundee FC,Morton
+2019-11-02 00:00:00,15:00,Arbroath,Alloa
+2019-11-02 00:00:00,15:00,Ayr,Partick Thistle
+2019-11-02 00:00:00,15:00,Dunfermline,Queen of South
+2019-11-02 00:00:00,15:00,Inverness,Dundee Utd
+2019-11-09 00:00:00,15:00,Alloa,Dunfermline
+2019-11-09 00:00:00,15:00,Arbroath,Inverness
+2019-11-09 00:00:00,15:00,Dundee FC,Dundee Utd
+2019-11-09 00:00:00,15:00,Partick Thistle,Morton
+2019-11-09 00:00:00,15:00,Queen of South,Ayr
+2019-11-16 00:00:00,15:00,Ayr,Dunfermline
+2019-11-16 00:00:00,15:00,Dundee Utd,Queen of South
+2019-11-16 00:00:00,15:00,Inverness,Dundee FC
+2019-11-16 00:00:00,15:00,Morton,Arbroath
+2019-11-16 00:00:00,15:00,Partick Thistle,Alloa
+2019-11-30 00:00:00,15:00,Alloa,Inverness
+2019-11-30 00:00:00,15:00,Ayr,Arbroath
+2019-11-30 00:00:00,15:00,Dundee FC,Queen of South
+2019-11-30 00:00:00,15:00,Dunfermline,Partick Thistle
+2019-11-30 00:00:00,15:00,Morton,Dundee Utd
+2019-12-07 00:00:00,15:00,Arbroath,Dundee FC
+2019-12-07 00:00:00,15:00,Dundee Utd,Alloa
+2019-12-07 00:00:00,15:00,Dunfermline,Morton
+2019-12-07 00:00:00,15:00,Inverness,Ayr
+2019-12-07 00:00:00,15:00,Queen of South,Partick Thistle
+2019-12-14 00:00:00,15:00,Arbroath,Dundee Utd
+2019-12-14 00:00:00,15:00,Ayr,Alloa
+2019-12-14 00:00:00,15:00,Dundee FC,Dunfermline
+2019-12-14 00:00:00,15:00,Morton,Queen of South
+2019-12-14 00:00:00,15:00,Partick Thistle,Inverness
+2019-12-21 00:00:00,15:00,Alloa,Morton
+2019-12-21 00:00:00,15:00,Dundee Utd,Ayr
+2019-12-21 00:00:00,15:00,Inverness,Dunfermline
+2019-12-21 00:00:00,15:00,Partick Thistle,Dundee FC
+2019-12-21 00:00:00,15:00,Queen of South,Arbroath
+2019-12-28 00:00:00,15:00,Ayr,Queen of South
+2019-12-28 00:00:00,15:00,Dundee Utd,Dundee FC
+2019-12-28 00:00:00,15:00,Dunfermline,Alloa
+2019-12-28 00:00:00,15:00,Inverness,Arbroath
+2019-12-28 00:00:00,15:00,Morton,Partick Thistle
+2020-01-04 00:00:00,15:00,Alloa,Partick Thistle
+2020-01-04 00:00:00,15:00,Arbroath,Morton
+2020-01-04 00:00:00,15:00,Dundee FC,Inverness
+2020-01-04 00:00:00,15:00,Dunfermline,Ayr
+2020-01-04 00:00:00,15:00,Queen of South,Dundee Utd
+2020-01-11 00:00:00,15:00,Alloa,Arbroath
+2020-01-11 00:00:00,15:00,Dundee FC,Ayr
+2020-01-11 00:00:00,15:00,Inverness,Queen of South
+2020-01-11 00:00:00,15:00,Morton,Dunfermline
+2020-01-11 00:00:00,15:00,Partick Thistle,Dundee Utd
+2020-01-25 00:00:00,15:00,Arbroath,Partick Thistle
+2020-01-25 00:00:00,15:00,Ayr,Inverness
+2020-01-25 00:00:00,15:00,Dundee Utd,Morton
+2020-01-25 00:00:00,15:00,Dunfermline,Dundee FC
+2020-01-25 00:00:00,15:00,Queen of South,Alloa
